@@ -29,26 +29,26 @@
     <section class="box special features">
         <div class="features-row">
             <section>
-                <span class="icon major fa-cloud accent4"></span>
+                <span class="icon major fa-bolt accent4"></span>
                 <h3>Easy to install</h3>
-                <p>Get up and running in less then 5minutes!</p>
+                <p>Get up and running in less then 5 minutes!</p>
             </section>
             <section>
-                <span class="icon major fa-area-chart accent3"></span>
+                <span class="icon major fa-flag accent3"></span>
                 <h3>Multilingual</h3>
                 <p>Asguard CMS is completely multilingual. The backend too.</p>
             </section>
         </div>
         <div class="features-row">
             <section>
-                <span class="icon major fa-bolt accent2"></span>
+                <span class="icon major fa-th-large accent2"></span>
                 <h3>Modular</h3>
                 <p>Asguard CMS uses a modular approach. Each part of the CMS is a seperate module, all the modules are loosely coupled.</p>
             </section>
             <section>
-                <span class="icon major fa-lock accent5"></span>
-                <h3>Enim phasellus</h3>
-                <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+                <span class="icon major fa-smile-o accent5"></span>
+                <h3>Clean UI</h3>
+                <p>The backend UI uses the <a target="_blank" href="http://almsaeedstudio.com/AdminLTE">Admin LTE</a> theme for a clear and to the point user interface. Your clients'll feel right at home.</p>
             </section>
         </div>
     </section>
