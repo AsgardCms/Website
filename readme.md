@@ -1,3 +1,3 @@
-# Asquard[^workingtitle] CMS website
+# Asquard<sup>1</sup> CMS website
 
- [workingtitle]:Still a working title.
+ 1:Still a working title.
