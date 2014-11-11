@@ -69,7 +69,8 @@
     <h2>Get notified when we launch</h2>
     <p>Your email will safely be stored. You'll be kept up to date with the CMS and its launchdate.</p>
 
-    <form>
+    <form action="api/subscribe" method="POST" class="jsSubscribe">
+        {{ Form::token() }}
         <div class="row uniform 50%">
             <div class="8u 12u(3)">
                 <input type="email" name="email" id="email" placeholder="Email Address" />
@@ -87,6 +88,23 @@
 <script>
 $( document ).ready(function() {
     $('.bxslider').bxSlider();
+
+    $(document).on('submit', 'form.jsSubscribe', function(e) {
+        e.preventDefault();
+        var $form = $(this);
+        $.ajax({
+            type: 'POST',
+            url: $form,
+            data: $form.serialize(),
+            contentType: 'application/json;',
+            dataType: 'json',
+            success: function(data) {
+                console.log(data);
+            },
+            error:function (xhr, ajaxOptions, thrownError){
+            }
+        });
+    });
 });
 </script>
 @stop
