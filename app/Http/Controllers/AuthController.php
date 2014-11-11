@@ -1,8 +1,8 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Asguard\Http\Controllers;
 
-use App\Http\Requests\LoginRequest;
+use Asguard\Http\Requests\LoginRequest;
 use Illuminate\Contracts\Auth\Guard;
-use App\Http\Requests\RegisterRequest;
+use Asguard\Http\Requests\RegisterRequest;
 
 class AuthController extends Controller {
 

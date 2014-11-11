@@ -1,4 +1,4 @@
-<?php namespace App\Http;
+<?php namespace Asguard\Http;
 
 use Exception;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;

@@ -1,4 +1,4 @@
-<?php namespace App\Providers;
+<?php namespace Asguard\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -11,9 +11,9 @@ class RouteServiceProvider extends ServiceProvider {
 	 * @var array
 	 */
 	protected $middleware = [
-		'auth' => 'App\Http\Middleware\Authenticated',
+		'auth' => 'Asguard\Http\Middleware\Authenticated',
 		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticatedWithBasicAuth',
-		'guest' => 'App\Http\Middleware\IsGuest',
+		'guest' => 'Asguard\Http\Middleware\IsGuest',
 	];
 
 	/**
@@ -37,7 +37,7 @@ class RouteServiceProvider extends ServiceProvider {
 	 */
 	public function map(Router $router)
 	{
-		$router->group(['namespace' => 'App\Http\Controllers'], function($router)
+		$router->group(['namespace' => 'Asguard\Http\Controllers'], function($router)
 		{
 			require app_path('Http/routes.php');
 		});
