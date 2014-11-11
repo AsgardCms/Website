@@ -835,7 +835,7 @@
 			background-color: lighten($color-accent1-bg, 5);
 		}
 
-		&:active {
+		&.active {
 			background-color: darken($color-accent1-bg, 5);
 		}
 
@@ -874,7 +874,7 @@
 				background-color: $color-border-bg;
 			}
 
-			&:active {
+			&.active {
 				background-color: $color-border2-bg;
 			}
 
@@ -893,7 +893,7 @@
 				background-color: lighten($color-accent2-bg, 5);
 			}
 
-			&:active {
+			&.active {
 				background-color: darken($color-accent2-bg, 5);
 			}
 		}
@@ -1027,7 +1027,7 @@
 				background-color: transparentize($color-header-fg-light, 0.75);
 			}
 
-			&:active {
+			&.active {
 				background-color: transparentize($color-header-fg-light, 0.5);
 			}
 		}
@@ -1084,7 +1084,7 @@
 					background-color: rgba(255,255,255,0.1);
 				}
 
-				&:active {
+				&.active {
 					background-color: rgba(255,255,255,0.2);
 				}
 			}
@@ -1196,7 +1196,7 @@
 				background-color: rgba(255,255,255,0.1);
 			}
 
-			&:active {
+			&.active {
 				background-color: rgba(255,255,255,0.2);
 			}
 
