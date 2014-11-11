@@ -56,8 +56,8 @@
     <div class="row">
         <ul class="bxslider">
           <li><img src="assets/images/admin-ui-screenshot.png" /></li>
-          <li><img src="assets/images/730_200/houses.jpg" /></li>
-          <li><img src="assets/images/730_200/hill_fence.jpg" /></li>
+          <li><img src="assets/images/asguard-media.png" /></li>
+          <li><img src="assets/images/asguard-roles.png" /></li>
         </ul>
     </div>
 
@@ -86,8 +86,7 @@
 @section('scripts')
 <script>
 $( document ).ready(function() {
-    $('.bxslider').bxSlider({
-    });
+    $('.bxslider').bxSlider();
 });
 </script>
 @stop
