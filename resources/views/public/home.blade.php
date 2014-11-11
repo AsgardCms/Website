@@ -53,6 +53,14 @@
         </div>
     </section>
 
+    <div class="row">
+        <ul class="bxslider">
+          <li><img src="assets/images/admin-ui-screenshot.png" /></li>
+          <li><img src="assets/images/730_200/houses.jpg" /></li>
+          <li><img src="assets/images/730_200/hill_fence.jpg" /></li>
+        </ul>
+    </div>
+
 </section>
 
 <!-- CTA -->
@@ -73,4 +81,13 @@
     </form>
 
 </section>
+@stop
+
+@section('scripts')
+<script>
+$( document ).ready(function() {
+    $('.bxslider').bxSlider({
+    });
+});
+</script>
 @stop

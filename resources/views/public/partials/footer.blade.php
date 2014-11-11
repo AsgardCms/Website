@@ -7,5 +7,7 @@
                 <li>{{ date('Y') }} &copy; Asguard. All rights reserved.</li>
             </ul>
         </footer>
+
+        @yield('scripts')
 	</body>
 </html>
