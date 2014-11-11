@@ -23,7 +23,7 @@
                 Asguard CMS will kickstart all your future client applications.
             </p>
         </header>
-        <span class="image featured"><img src="assets/images/pic01.jpg" alt="" /></span>
+        <span class="image featured"><img src="assets/images/admin-ui-screenshot.png" alt="" /></span>
     </section>
 
     <section class="box special features">
