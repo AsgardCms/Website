@@ -54,14 +54,12 @@
     </div>
     <div class="row">
         <div class="6u 12u(2)">
-            <a class="button special fit" href="https://github.com/nWidart-Modules/Documentation" target="_blank">
-                <span class="icon fa-book"></span>&nbsp;
+            <a class="button special fit icon fa-book" href="https://github.com/nWidart-Modules/Documentation" target="_blank">
                 Read the full documentation
             </a>
         </div>
         <div class="6u 12u(2)">
-            <a class="button fit" href="https://github.com/nWidart-Modules" target="_blank">
-                <span class="icon fa-th-large"></span>&nbsp;
+            <a class="button fit icon fa-th-large" href="https://github.com/nWidart-Modules" target="_blank">
                 View Modules
             </a>
         </div>
