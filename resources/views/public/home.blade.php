@@ -6,7 +6,7 @@
     <h2>Asguard CMS</h2>
     <p>A modular multilingual CMS built with Laravel 5.</p>
     <ul class="actions">
-        <li><a href="#" class="button special">Install</a></li>
+        <li><a href="{{ URL::route('install') }}" class="button special">Install</a></li>
         <li><a href="#" class="button">Learn More</a></li>
     </ul>
 </section>
