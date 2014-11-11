@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b200235a93a73fcb828571296156d231",
+    "hash": "80358ad065e1e3bda756ac712d484482",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -210,6 +210,52 @@
             "time": "2014-09-09 13:34:57"
         },
         {
+            "name": "illuminate/html",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/html.git",
+                "reference": "b04be9a84be0d6f7552b281ad6b9e2795218fe56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/html/zipball/b04be9a84be0d6f7552b281ad6b9e2795218fe56",
+                "reference": "b04be9a84be0d6f7552b281ad6b9e2795218fe56",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "~5.0",
+                "illuminate/session": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Html\\": ""
+                },
+                "files": [
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "time": "2014-10-16 14:38:30"
+        },
+        {
             "name": "ircmaxell/password-compat",
             "version": "1.0.x-dev",
             "source": {
@@ -302,12 +348,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "c50086cb7b09ffae771618a0ba45092043b052b1"
+                "reference": "19f716f470ffa5586e569474037a212556de43b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/c50086cb7b09ffae771618a0ba45092043b052b1",
-                "reference": "c50086cb7b09ffae771618a0ba45092043b052b1",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/19f716f470ffa5586e569474037a212556de43b3",
+                "reference": "19f716f470ffa5586e569474037a212556de43b3",
                 "shasum": ""
             },
             "require": {
@@ -409,7 +455,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-11-11 01:24:03"
+            "time": "2014-11-11 16:27:28"
         },
         {
             "name": "league/flysystem",
@@ -417,12 +463,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "d0a9b7cd0494fa200b10369abc46f59ab321afe0"
+                "reference": "ee5f284f9f71d05f203c960f9a0c75501115a955"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/d0a9b7cd0494fa200b10369abc46f59ab321afe0",
-                "reference": "d0a9b7cd0494fa200b10369abc46f59ab321afe0",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/ee5f284f9f71d05f203c960f9a0c75501115a955",
+                "reference": "ee5f284f9f71d05f203c960f9a0c75501115a955",
                 "shasum": ""
             },
             "require": {
@@ -433,7 +479,6 @@
                 "barracuda/copy": "~1.1.4",
                 "dropbox/dropbox-sdk": "~1.1.1",
                 "ext-fileinfo": "*",
-                "guzzlehttp/guzzle": "~4.0",
                 "league/event": "~1.0",
                 "league/phpunit-coverage-listener": "~1.1",
                 "mockery/mockery": "~0.9",
@@ -441,7 +486,7 @@
                 "phpspec/phpspec": "~2.0",
                 "phpunit/phpunit": "~4.0",
                 "predis/predis": "~1.0",
-                "rackspace/php-opencloud": "~1.10.0",
+                "rackspace/php-opencloud": "~1.11",
                 "sabre/dav": "~2.0.2",
                 "tedivm/stash": "~0.12.0"
             },
@@ -497,7 +542,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2014-11-10 13:07:14"
+            "time": "2014-11-11 18:42:37"
         },
         {
             "name": "monolog/monolog",
@@ -1716,12 +1761,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "28d21b57c189cb72829056353de603c4d4da55a0"
+                "reference": "21b9006b7ceb7e1cb0b705615af31f67c8cd1692"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/28d21b57c189cb72829056353de603c4d4da55a0",
-                "reference": "28d21b57c189cb72829056353de603c4d4da55a0",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/21b9006b7ceb7e1cb0b705615af31f67c8cd1692",
+                "reference": "21b9006b7ceb7e1cb0b705615af31f67c8cd1692",
                 "shasum": ""
             },
             "require": {
@@ -1770,7 +1815,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-10-05 10:46:54"
+            "time": "2014-11-11 14:18:30"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -2400,17 +2445,17 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "2.6.x-dev",
+            "version": "2.7.x-dev",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "ff1193da791bfbad1a8d506cf91ee4575e3450fe"
+                "reference": "6165f4b5224c22de2873deb6a3a4e622044f0705"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/ff1193da791bfbad1a8d506cf91ee4575e3450fe",
-                "reference": "ff1193da791bfbad1a8d506cf91ee4575e3450fe",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/6165f4b5224c22de2873deb6a3a4e622044f0705",
+                "reference": "6165f4b5224c22de2873deb6a3a4e622044f0705",
                 "shasum": ""
             },
             "require": {
@@ -2419,7 +2464,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.7-dev"
                 }
             },
             "autoload": {
@@ -2443,7 +2488,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-11-03 03:55:50"
+            "time": "2014-11-10 18:00:54"
         }
     ],
     "aliases": [],
