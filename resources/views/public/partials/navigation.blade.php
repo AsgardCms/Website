@@ -2,6 +2,6 @@
 <nav id="nav">
     <ul>
         <li><a href="{{ URL::route('home') }}">Home</a></li>
-        <li><a href="#" class="button">Install</a></li>
+        <li><a href="{{ URL::route('install') }}" class="button">Install</a></li>
     </ul>
 </nav>

@@ -1,7 +1,7 @@
 <?php
 
 $router->get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
-$router->get('install', 'FrontController@getInstallPage');
+$router->get('install', ['as' => 'install', 'uses' => 'FrontController@getInstallPage']);
 
 $router->controller('auth', 'AuthController');
 
