@@ -7,7 +7,7 @@
     <p>A modular multilingual CMS built with Laravel 5.</p>
     <ul class="actions">
         <li><a href="{{ URL::route('install') }}" class="button special">Install</a></li>
-        <li><a href="#" class="button">Learn More</a></li>
+        <li><a href="#cta" class="button">Get notified</a></li>
     </ul>
 </section>
 
@@ -53,38 +53,13 @@
         </div>
     </section>
 
-    <div class="row">
-        <div class="6u 12u(2)">
-            <section class="box special">
-                <span class="image featured"><img src="assets/images/pic02.jpg" alt="" /></span>
-                <h3>Sed lorem adipiscing</h3>
-                <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-                <ul class="actions">
-                    <li><a href="#" class="button alt">Learn More</a></li>
-                </ul>
-            </section>
-        </div>
-        <div class="6u 12u(2)">
-
-            <section class="box special">
-                <span class="image featured"><img src="assets/images/pic03.jpg" alt="" /></span>
-                <h3>Accumsan integer</h3>
-                <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-                <ul class="actions">
-                    <li><a href="#" class="button alt">Learn More</a></li>
-                </ul>
-            </section>
-
-        </div>
-    </div>
-
 </section>
 
 <!-- CTA -->
 <section id="cta">
 
-    <h2>Sign up for beta access</h2>
-    <p>Your email will safely be stored. You'll be kept up to date with 	 </p>
+    <h2>Get notified when we launch</h2>
+    <p>Your email will safely be stored. You'll be kept up to date with the CMS and its launchdate.</p>
 
     <form>
         <div class="row uniform 50%">
