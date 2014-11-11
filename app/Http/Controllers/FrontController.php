@@ -1,6 +1,6 @@
 <?php namespace Asguard\Http\Controllers;
 
-class FrontController
+class FrontController extends Controller
 {
     public function getInstallPage()
     {

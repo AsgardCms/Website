@@ -1,4 +1,4 @@
-@include('public.partials.header')
+@include('public.partials.header', ['header' => 'generic'])
 
 @yield('content')
 

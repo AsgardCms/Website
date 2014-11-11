@@ -20,13 +20,4 @@
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie/v8.css" /><![endif]-->
 	</head>
-	<body class="landing">
-        <header id="header" class="alt">
-            <h1><a href="index.html">Asguard</a> CMS</h1>
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#" class="button">Install</a></li>
-                </ul>
-            </nav>
-        </header>
+	@include("public.partials.{$header}-header")
