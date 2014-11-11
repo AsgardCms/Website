@@ -34,7 +34,7 @@
                             php artisan platform:install
                         </code>
                         This will do the following:
-                        <ul>
+                         <ul>
                             <li>Setup database information</li>
                             <li>Running migrations</li>
                             <li>Running seeds</li>
@@ -51,6 +51,20 @@
                 </li>
             </ol>
         </p>
+    </div>
+    <div class="row">
+        <div class="6u 12u(2)">
+            <a class="button special fit" href="https://github.com/nWidart-Modules/Documentation" target="_blank">
+                <span class="icon fa-book"></span>&nbsp;
+                Read the full documentation
+            </a>
+        </div>
+        <div class="6u 12u(2)">
+            <a class="button fit" href="https://github.com/nWidart-Modules" target="_blank">
+                <span class="icon fa-th-large"></span>&nbsp;
+                View Modules
+            </a>
+        </div>
     </div>
 </section>
 
