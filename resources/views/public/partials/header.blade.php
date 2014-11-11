@@ -13,7 +13,6 @@
 		<script src="assets/js/skel.min.js"></script>
 		<script src="assets/js/skel-layers.min.js"></script>
 		<script src="assets/js/init.js"></script>
-		<link rel="stylesheet" href="assets/css/style.css" />
 		<link rel="stylesheet" href="assets/css/jquery.bxslider.css" />
 		<noscript>
 			<link rel="stylesheet" href="assets/css/skel.css" />
