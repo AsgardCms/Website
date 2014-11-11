@@ -70,7 +70,7 @@
     <p>Your email will safely be stored. You'll be kept up to date with the CMS and its launchdate.</p>
 
     <form action="api/subscribe" method="POST" class="jsSubscribe">
-        {{ Form::token() }}
+        {!! Form::token() !!}
         <div class="row uniform 50%">
             <div class="8u 12u(3)">
                 <input type="email" name="email" id="email" placeholder="Email Address" />
@@ -87,6 +87,12 @@
 @section('scripts')
 <script>
 $( document ).ready(function() {
+    $.ajaxSetup({
+        headers: {
+            'X-XSRF-TOKEN': $('input[name="_token"]').val()
+        }
+    });
+
     $('.bxslider').bxSlider();
 
     $(document).on('submit', 'form.jsSubscribe', function(e) {
