@@ -43,7 +43,7 @@
             <section>
                 <span class="icon major fa-th-large accent2"></span>
                 <h3>Modular</h3>
-                <p>Asguard CMS uses a modular approach. Each part of the CMS is a seperate module, all the modules are loosely coupled.</p>
+                <p>Asguard CMS uses a modular approach. Each part of the CMS is a seperate module, all modules are loosely coupled.</p>
             </section>
             <section>
                 <span class="icon major fa-smile-o accent5"></span>
