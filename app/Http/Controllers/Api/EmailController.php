@@ -21,6 +21,6 @@ class EmailController extends Controller
     {
         $this->entry->subscribe($request->email);
 
-        return Response::json('Thank you! You have successfully subscribed.');
+        return Response::json('Thank you! You have successfully applied for beta access.');
     }
 }
