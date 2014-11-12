@@ -2,11 +2,6 @@
 
 use Illuminate\Routing\Router;
 
-$router->get('test', function()
-{
-    dd(app()->environment(), app('config')->get('database.connections.mysql'));
-});
-
 $router->get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 $router->get('install', ['as' => 'install', 'uses' => 'FrontController@getInstallPage']);
 
