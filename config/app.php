@@ -142,6 +142,7 @@ return [
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Html\HtmlServiceProvider',
 
+		'Asguard\Entries\EntryServiceProvider'
 	],
 
 	/*
