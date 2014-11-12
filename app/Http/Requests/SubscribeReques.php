@@ -7,7 +7,7 @@ class SubscribeRequest extends FormRequest
     public function rules()
     {
         return [
-            'email' => 'email|unique'
+            'email' => 'required|email|unique:entries'
         ];
     }
 
