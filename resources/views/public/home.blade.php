@@ -6,8 +6,8 @@
     <h2>Asgard CMS</h2>
     <p>A modular multilingual CMS built with Laravel 5.</p>
     <ul class="actions">
-        <li><a href="{{ URL::route('install') }}" class="button special">Install</a></li>
-        <li><a href="#cta" class="button">Get notified</a></li>
+        {{--<li><a href="{{ URL::route('install') }}" class="button special">Install</a></li>--}}
+        <li><a href="#cta" class="button">Apply for the beta</a></li>
     </ul>
 </section>
 
@@ -43,12 +43,12 @@
             <section>
                 <span class="icon major fa-th-large accent2"></span>
                 <h3>Modular</h3>
-                <p>Asgard CMS uses a modular approach. Each part of the CMS is a seperate module, all modules are loosely coupled.</p>
+                <p>Asgard CMS uses a modular approach. Each part of the CMS is a separate module, all modules are loosely coupled.</p>
             </section>
             <section>
                 <span class="icon major fa-smile-o accent5"></span>
                 <h3>Clean UI</h3>
-                <p>The backend UI uses the <a target="_blank" href="http://almsaeedstudio.com/AdminLTE">Admin LTE</a> theme for a clear and to the point user interface. Your clients'll feel right at home.</p>
+                <p>The backend UI uses the <a target="_blank" href="http://almsaeedstudio.com/AdminLTE">Admin LTE</a> theme for a clear and to the point user interface. Your clients will feel right at home.</p>
             </section>
         </div>
     </section>
@@ -66,8 +66,8 @@
 <!-- CTA -->
 <section id="cta">
 
-    <h2>Get notified when we launch</h2>
-    <p>Your email will safely be stored. You'll be kept up to date with the CMS and its launchdate.</p>
+    <h2>Apply for beta access</h2>
+    <p>Your email will safely be stored. You will be on the waiting list to join the beta program.</p>
 
     <form action="{{ URL::route('subscribe') }}" method="POST" class="jsSubscribe">
         {!! Form::token() !!}
