@@ -56,8 +56,8 @@
     <div class="row">
         <ul class="bxslider">
           <li><img src="assets/images/admin-ui-screenshot.png" /></li>
-          <li><img src="assets/images/Asgard-media.png" /></li>
-          <li><img src="assets/images/Asgard-roles.png" /></li>
+          <li><img src="assets/images/asgard-media.png" /></li>
+          <li><img src="assets/images/asgard-roles.png" /></li>
         </ul>
     </div>
 
