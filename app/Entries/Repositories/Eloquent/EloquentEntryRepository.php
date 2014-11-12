@@ -1,5 +1,6 @@
 <?php namespace Asguard\Entries\Repositories\Eloquent;
 
+use Asguard\Entries\Entities\Entry;
 use Asguard\Entries\Repositories\EntryRepository;
 use Illuminate\Database\Eloquent\Model;
 
@@ -21,7 +22,11 @@ class EloquentEntryRepository implements EntryRepository
      */
     public function subscribe($email)
     {
-        // TODO: Implement subscribe() method.
+        $entry = new Entry;
+        $entry->email = $email;
+        $entry->save();
+
+        return $entry;
     }
 
     /**
