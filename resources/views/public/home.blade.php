@@ -101,13 +101,13 @@ $( document ).ready(function() {
         $.ajax({
             type: 'POST',
             url: $form.attr('action'),
-            data: $form.serialize(),
-            contentType: 'application/json;',
-            dataType: 'json',
+            data: {email: $form.find('input[name=email]').val()},
             success: function(data) {
-                console.log(data);
+                $form.html('<p class="success">' + data + '</p>');
             },
-            error:function (xhr, ajaxOptions, thrownError){
+            error:function (xhr){
+                var error = JSON.parse(xhr.responseText);
+                $form.html('<p class="error">' + error.email[0] + '</p>');
             }
         });
     });
