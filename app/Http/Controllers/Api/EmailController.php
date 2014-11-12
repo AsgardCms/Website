@@ -2,6 +2,8 @@
 
 use Asguard\Entries\Repositories\EntryRepository;
 use Asguard\Http\Controllers\Controller;
+use Asguard\Http\Requests\SubscribeRequest;
+use Illuminate\Support\Facades\Response;
 
 class EmailController extends Controller
 {
@@ -12,13 +14,13 @@ class EmailController extends Controller
 
     public function __construct(EntryRepository $entry)
     {
-        parent::__construct();
-
         $this->entry = $entry;
     }
 
-    public function subscribe()
+    public function subscribe(SubscribeRequest $request)
     {
-        dd('called');
+        $this->entry->subscribe($request->email);
+
+        return Response::json('Thank you! You have successfully subscribed.');
     }
 }
