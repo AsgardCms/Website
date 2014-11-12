@@ -69,7 +69,7 @@
     <h2>Get notified when we launch</h2>
     <p>Your email will safely be stored. You'll be kept up to date with the CMS and its launchdate.</p>
 
-    <form action="api/subscribe" method="POST" class="jsSubscribe">
+    <form action="{{ URL::route('subscribe') }}" method="POST" class="jsSubscribe">
         {!! Form::token() !!}
         <div class="row uniform 50%">
             <div class="8u 12u(3)">
@@ -100,7 +100,7 @@ $( document ).ready(function() {
         var $form = $(this);
         $.ajax({
             type: 'POST',
-            url: $form,
+            url: $form.attr('action'),
             data: $form.serialize(),
             contentType: 'application/json;',
             dataType: 'json',
