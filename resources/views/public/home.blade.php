@@ -3,7 +3,7 @@
 @section('content')
 <!-- Banner -->
 <section id="banner">
-    <h2>Asguard CMS</h2>
+    <h2>Asgard CMS</h2>
     <p>A modular multilingual CMS built with Laravel 5.</p>
     <ul class="actions">
         <li><a href="{{ URL::route('install') }}" class="button special">Install</a></li>
@@ -20,7 +20,7 @@
             <br />
             built on top of the Laravel framework.</h2>
             <p>
-                Asguard CMS will kickstart all your future client applications.
+                Asgard CMS will kickstart all your future client applications.
             </p>
         </header>
         <span class="image featured"><img src="assets/images/admin-ui-screenshot.png" alt="" /></span>
@@ -36,14 +36,14 @@
             <section>
                 <span class="icon major fa-flag accent3"></span>
                 <h3>Multilingual</h3>
-                <p>Asguard CMS is completely multilingual. The backend too.</p>
+                <p>Asgard CMS is completely multilingual. The backend too.</p>
             </section>
         </div>
         <div class="features-row">
             <section>
                 <span class="icon major fa-th-large accent2"></span>
                 <h3>Modular</h3>
-                <p>Asguard CMS uses a modular approach. Each part of the CMS is a seperate module, all modules are loosely coupled.</p>
+                <p>Asgard CMS uses a modular approach. Each part of the CMS is a seperate module, all modules are loosely coupled.</p>
             </section>
             <section>
                 <span class="icon major fa-smile-o accent5"></span>
@@ -56,8 +56,8 @@
     <div class="row">
         <ul class="bxslider">
           <li><img src="assets/images/admin-ui-screenshot.png" /></li>
-          <li><img src="assets/images/asguard-media.png" /></li>
-          <li><img src="assets/images/asguard-roles.png" /></li>
+          <li><img src="assets/images/Asgard-media.png" /></li>
+          <li><img src="assets/images/Asgard-roles.png" /></li>
         </ul>
     </div>
 

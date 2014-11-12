@@ -1,4 +1,4 @@
-<h1><a href="{{ URL::route('home') }}">Asguard</a> CMS</h1>
+<h1><a href="{{ URL::route('home') }}">Asgard</a> CMS</h1>
 <nav id="nav">
     <ul>
         <li><a href="{{ URL::route('home') }}" class="{{ Request::is('/') ? 'active' : ''}}">Home</a></li>
