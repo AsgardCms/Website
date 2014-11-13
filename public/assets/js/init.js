@@ -106,4 +106,12 @@
 
 	});
 
+	$( document ).ready(function() {
+		// ScrollTo
+		$.localScroll({
+			target: 'body',
+			hash: true
+		});
+	});
+
 })(jQuery);

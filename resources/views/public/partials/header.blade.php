@@ -8,6 +8,8 @@
 		<!--[if lte IE 8]><script src="assets/css/ie/html5shiv.js"></script><![endif]-->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.bxslider.min.js"></script>
+		<script src="assets/js/jquery.scrollTo.min.js"></script>
+		<script src="assets/js/jquery.localScroll.min.js"></script>
 		<script src="assets/js/jquery.dropotron.min.js"></script>
 		<script src="assets/js/jquery.scrollgress.min.js"></script>
 		<script src="assets/js/skel.min.js"></script>

@@ -7,7 +7,7 @@
     <p>A modular multilingual CMS built with Laravel 5.</p>
     <ul class="actions">
         {{--<li><a href="{{ URL::route('install') }}" class="button special">Install</a></li>--}}
-        <li><a href="#cta" class="button special">Apply for the beta</a></li>
+        <li><a href="#cta" class="button special" id="jsApply">Apply for the beta</a></li>
     </ul>
 </section>
 
