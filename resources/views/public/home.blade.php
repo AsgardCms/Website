@@ -87,11 +87,11 @@
 @section('scripts')
 <script>
 $( document ).ready(function() {
-    $.ajaxSetup({
-        headers: {
-            'X-XSRF-TOKEN': $('input[name="_token"]').val()
-        }
-    });
+//    $.ajaxSetup({
+//        headers: {
+//            'X-XSRF-TOKEN': $('input[name="_token"]').val()
+//        }
+//    });
 
     $('.bxslider').bxSlider();
 
