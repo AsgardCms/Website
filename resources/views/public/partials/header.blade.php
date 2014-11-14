@@ -10,7 +10,7 @@
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://asgardcms.com" />
         <meta property="og:description" content="Introducing a full-featured modular multilingual CMS built on top of the Laravel framework. Asgard CMS will kickstart all your future client applications." />
-        <meta property="og:image" content="assets/images/thor-the-dark-world-asgard.jpg" />
+        <meta property="og:image" content="{{ asset('assets/images/thor-the-dark-world-asgard.jpg')}}" />
 
 		<!--[if lte IE 8]><script src="assets/css/ie/html5shiv.js"></script><![endif]-->
 		<script src="assets/js/jquery.min.js"></script>
