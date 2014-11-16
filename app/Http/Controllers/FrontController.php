@@ -6,4 +6,9 @@ class FrontController extends Controller
     {
         return view('public.install');
     }
+
+    public function getFaq()
+    {
+        return view('public.faq');
+    }
 }
