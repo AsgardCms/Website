@@ -8,6 +8,9 @@
                 <li>Proudly built with <a href="http://www.laravel.com" target="_blank">Laravel</a></li>
                 <li>Hosted on <a href="http://forge.laravel.com" target="_blank">Laravel Forge</a></li>
             </ul>
+            <ul class="copyright">
+                <li>Created by <a href="http://nicolaswidart.com">Nicolas Widart</a></li>
+            </ul>
         </footer>
 
         @yield('scripts')
