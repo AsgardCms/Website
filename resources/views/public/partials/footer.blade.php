@@ -5,6 +5,8 @@
             </ul>
             <ul class="copyright">
                 <li>{{ date('Y') }} &copy; Asgard. All rights reserved.</li>
+                <li>Proudly built with <a href="http://www.laravel.com" target="_blank">Laravel</a></li>
+                <li>Hosted on <a href="http://forge.laravel.com" target="_blank">Laravel Forge</a></li>
             </ul>
         </footer>
 
