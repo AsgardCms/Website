@@ -3,7 +3,7 @@
 	<head>
 		<title>Asgard CMS</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="A modular multilingual Content Management System built with Laravel 5" />
+		<meta name="description" content="A modular multilingual Content Management System built with Laravel 5. Introducing a full-featured modular multilingual CMS built on top of the Laravel framework." />
 		<meta name="keywords" content="laravel, CMS, Modular, Multilingual" />
 
 		<meta property="og:title" content="A modular multilingual Content Management System built with Laravel 5" />
