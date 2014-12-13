@@ -9,8 +9,7 @@
   "type": "project",
   "require": {
     "laravel/framework": "dev-master#19f716f470ffa5586e569474037a212556de43b3",
-    "illuminate/html": "~5.0",
-    "codexproject/core": "dev-laravel5support"
+    "illuminate/html": "~5.0"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.0"
