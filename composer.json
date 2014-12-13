@@ -1,42 +1,52 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
-	"license": "MIT",
-	"type": "project",
-	"require": {
-		"laravel/framework": "dev-master#19f716f470ffa5586e569474037a212556de43b3",
-		"illuminate/html": "~5.0"
-	},
-	"require-dev": {
-		"phpunit/phpunit": "~4.0"
-	},
-	"autoload": {
-		"classmap": [
-			"database",
-			"tests/TestCase.php"
-		],
-		"psr-4": {
-			"Asguard\\": "app/"
-		}
-	},
-	"scripts": {
-		"post-install-cmd": [
-			"php artisan clear-compiled",
-			"php artisan route:scan",
-			"php artisan event:scan",
-			"php artisan optimize"
-		],
-		"post-update-cmd": [
-			"php artisan clear-compiled",
-			"php artisan optimize"
-		],
-		"post-create-project-cmd": [
-			"php artisan key:generate"
-		]
-	},
-	"config": {
-		"preferred-install": "dist"
-	},
-	"minimum-stability": "dev"
+  "name": "laravel/laravel",
+  "description": "The Laravel Framework.",
+  "keywords": [
+    "framework",
+    "laravel"
+  ],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "laravel/framework": "dev-master#19f716f470ffa5586e569474037a212556de43b3",
+    "illuminate/html": "~5.0",
+    "codexproject/core": "dev-laravel5support"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/nWidart/core"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "database",
+      "tests/TestCase.php"
+    ],
+    "psr-4": {
+      "Asguard\\": "app/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php artisan clear-compiled",
+      "php artisan route:scan",
+      "php artisan event:scan",
+      "php artisan optimize"
+    ],
+    "post-update-cmd": [
+      "php artisan clear-compiled",
+      "php artisan optimize"
+    ],
+    "post-create-project-cmd": [
+      "php artisan key:generate"
+    ]
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev"
 }
