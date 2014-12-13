@@ -1,4 +1,4 @@
-<?php namespace Asguard\Http\Middleware;
+<?php namespace Asgard\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;

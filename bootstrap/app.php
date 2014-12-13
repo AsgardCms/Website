@@ -28,12 +28,12 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
 	'Illuminate\Contracts\Http\Kernel',
-	'Asguard\Http\Kernel'
+	'Asgard\Http\Kernel'
 );
 
 $app->singleton(
 	'Illuminate\Contracts\Console\Kernel',
-	'Asguard\Console\Kernel'
+	'Asgard\Console\Kernel'
 );
 
 $app->singleton(

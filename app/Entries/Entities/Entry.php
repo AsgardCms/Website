@@ -1,4 +1,4 @@
-<?php namespace Asguard\Entries\Entities;
+<?php namespace Asgard\Entries\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 

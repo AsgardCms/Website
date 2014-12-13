@@ -1,8 +1,8 @@
-<?php namespace Asguard\Http\Controllers\Api;
+<?php namespace Asgard\Http\Controllers\Api;
 
-use Asguard\Entries\Repositories\EntryRepository;
-use Asguard\Http\Controllers\Controller;
-use Asguard\Http\Requests\SubscribeRequest;
+use Asgard\Entries\Repositories\EntryRepository;
+use Asgard\Http\Controllers\Controller;
+use Asgard\Http\Requests\SubscribeRequest;
 use Illuminate\Support\Facades\Response;
 
 class EmailController extends Controller

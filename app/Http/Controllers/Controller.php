@@ -1,4 +1,4 @@
-<?php namespace Asguard\Http\Controllers;
+<?php namespace Asgard\Http\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;

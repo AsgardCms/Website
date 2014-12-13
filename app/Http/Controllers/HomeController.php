@@ -1,4 +1,4 @@
-<?php namespace Asguard\Http\Controllers;
+<?php namespace Asgard\Http\Controllers;
 
 class HomeController extends Controller
 {

@@ -1,4 +1,4 @@
-<?php namespace Asguard\Console;
+<?php namespace Asgard\Console;
 
 use Exception;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -11,7 +11,7 @@ class Kernel extends ConsoleKernel {
 	 * @var array
 	 */
 	protected $commands = [
-		'Asguard\Console\Commands\InspireCommand',
+		'Asgard\Console\Commands\InspireCommand',
 	];
 
 	/**

@@ -113,9 +113,9 @@ return [
 		/*
 		 * Application Service Providers...
 		 */
-		'Asguard\Providers\AppServiceProvider',
-		'Asguard\Providers\EventServiceProvider',
-		'Asguard\Providers\RouteServiceProvider',
+		'Asgard\Providers\AppServiceProvider',
+		'Asgard\Providers\EventServiceProvider',
+		'Asgard\Providers\RouteServiceProvider',
 
 		/*
 		 * Laravel Framework Service Providers...
@@ -142,7 +142,7 @@ return [
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Html\HtmlServiceProvider',
 
-		'Asguard\Entries\EntryServiceProvider'
+		'Asgard\Entries\EntryServiceProvider'
 	],
 
 	/*

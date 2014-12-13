@@ -1,7 +1,7 @@
-<?php namespace Asguard\Entries;
+<?php namespace Asgard\Entries;
 
-use Asguard\Entries\Entities\Entry;
-use Asguard\Entries\Repositories\Eloquent\EloquentEntryRepository;
+use Asgard\Entries\Entities\Entry;
+use Asgard\Entries\Repositories\Eloquent\EloquentEntryRepository;
 use Illuminate\Support\ServiceProvider;
 
 class EntryServiceProvider extends ServiceProvider
@@ -20,7 +20,7 @@ class EntryServiceProvider extends ServiceProvider
 
     private function registerBindings()
     {
-        $this->app->bind('Asguard\Entries\Repositories\EntryRepository', function() {
+        $this->app->bind('Asgard\Entries\Repositories\EntryRepository', function() {
             return new EloquentEntryRepository(new Entry);
         });
     }

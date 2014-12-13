@@ -1,4 +1,4 @@
-<?php namespace Asguard;
+<?php namespace Asgard;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;

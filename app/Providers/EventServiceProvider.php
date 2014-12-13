@@ -1,4 +1,4 @@
-<?php namespace Asguard\Providers;
+<?php namespace Asgard\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 

@@ -1,4 +1,4 @@
-<?php namespace Asguard\Entries\Repositories;
+<?php namespace Asgard\Entries\Repositories;
 
 interface EntryRepository
 {

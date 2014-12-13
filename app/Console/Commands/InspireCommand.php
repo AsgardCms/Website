@@ -1,4 +1,4 @@
-<?php namespace Asguard\Console\Commands;
+<?php namespace Asgard\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

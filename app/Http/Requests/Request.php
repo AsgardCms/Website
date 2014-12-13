@@ -1,4 +1,4 @@
-<?php namespace Asguard\Http\Requests;
+<?php namespace Asgard\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

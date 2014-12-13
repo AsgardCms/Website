@@ -11,5 +11,4 @@ $router->group(['prefix' => 'api', 'namespace' => 'Api'], function(Router $route
     $router->post('subscribe', ['as' => 'subscribe', 'uses' => 'EmailController@subscribe']);
 });
 
-$router->controller('auth', 'AuthController');
-$router->controller('password', 'PasswordController');
+$router->get('documentation', ['as' => 'doc.index', 'uses' => 'DocumentationController@index']);

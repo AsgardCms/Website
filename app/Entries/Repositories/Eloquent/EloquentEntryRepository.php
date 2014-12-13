@@ -1,7 +1,7 @@
-<?php namespace Asguard\Entries\Repositories\Eloquent;
+<?php namespace Asgard\Entries\Repositories\Eloquent;
 
-use Asguard\Entries\Entities\Entry;
-use Asguard\Entries\Repositories\EntryRepository;
+use Asgard\Entries\Entities\Entry;
+use Asgard\Entries\Repositories\EntryRepository;
 use Illuminate\Database\Eloquent\Model;
 
 class EloquentEntryRepository implements EntryRepository

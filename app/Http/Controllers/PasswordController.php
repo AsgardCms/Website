@@ -1,4 +1,4 @@
-<?php namespace Asguard\Http\Controllers;
+<?php namespace Asgard\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Contracts\Auth\PasswordBroker;
