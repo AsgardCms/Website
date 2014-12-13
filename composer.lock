@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "250afc01d294ce8a1905f440397ae7cf",
+    "hash": "200c236eeeb0ee9e735fbdbf1dd22438",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -344,6 +344,52 @@
                 "tokenizer"
             ],
             "time": "2013-10-09 04:20:00"
+        },
+        {
+            "name": "kzykhys/git",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kzykhys/PHPGit.git",
+                "reference": "3c4db987494c38eac300593719a4a7832abddadd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kzykhys/PHPGit/zipball/3c4db987494c38eac300593719a4a7832abddadd",
+                "reference": "3c4db987494c38eac300593719a4a7832abddadd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/options-resolver": ">=2.3",
+                "symfony/process": ">=2.3"
+            },
+            "require-dev": {
+                "symfony/filesystem": ">=2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kazuyuki Hayashi",
+                    "email": "hayashi@valnur.net"
+                }
+            ],
+            "description": "A Git wrapper for PHP5.3+",
+            "time": "2014-02-15 06:18:00"
         },
         {
             "name": "laravel/framework",
@@ -1352,6 +1398,58 @@
             "time": "2014-12-12 16:21:40"
         },
         {
+            "name": "symfony/options-resolver",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/OptionsResolver",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/OptionsResolver.git",
+                "reference": "0d2f9cb52f029c09f078a0380c4d34b60185fb79"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/OptionsResolver/zipball/0d2f9cb52f029c09f078a0380c4d34b60185fb79",
+                "reference": "0d2f9cb52f029c09f078a0380c4d34b60185fb79",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\OptionsResolver\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony OptionsResolver Component",
+            "homepage": "http://symfony.com",
+            "keywords": [
+                "config",
+                "configuration",
+                "options"
+            ],
+            "time": "2014-12-12 16:24:25"
+        },
+        {
             "name": "symfony/process",
             "version": "2.6.x-dev",
             "target-dir": "Symfony/Component/Process",
@@ -1888,52 +1986,6 @@
                 "stream"
             ],
             "time": "2014-10-12 19:45:36"
-        },
-        {
-            "name": "kzykhys/git",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kzykhys/PHPGit.git",
-                "reference": "8b3ee3147d58e0aee62610f0aebcd30eb076ad5d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kzykhys/PHPGit/zipball/8b3ee3147d58e0aee62610f0aebcd30eb076ad5d",
-                "reference": "8b3ee3147d58e0aee62610f0aebcd30eb076ad5d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "symfony/options-resolver": ">=2.3",
-                "symfony/process": ">=2.3"
-            },
-            "require-dev": {
-                "symfony/filesystem": ">=2.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kazuyuki Hayashi",
-                    "email": "hayashi@valnur.net"
-                }
-            ],
-            "description": "A Git wrapper for PHP5.3+",
-            "time": "2014-02-27 13:14:59"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -2777,58 +2829,6 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "time": "2014-03-07 15:35:33"
-        },
-        {
-            "name": "symfony/options-resolver",
-            "version": "dev-master",
-            "target-dir": "Symfony/Component/OptionsResolver",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/OptionsResolver.git",
-                "reference": "0d2f9cb52f029c09f078a0380c4d34b60185fb79"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/OptionsResolver/zipball/0d2f9cb52f029c09f078a0380c4d34b60185fb79",
-                "reference": "0d2f9cb52f029c09f078a0380c4d34b60185fb79",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\OptionsResolver\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Symfony OptionsResolver Component",
-            "homepage": "http://symfony.com",
-            "keywords": [
-                "config",
-                "configuration",
-                "options"
-            ],
-            "time": "2014-12-12 16:24:25"
         },
         {
             "name": "symfony/yaml",
