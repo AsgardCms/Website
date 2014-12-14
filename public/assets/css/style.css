@@ -31,6 +31,8 @@
   border: none; }
   .anchor:before {
     content: '#'; }
+  .anchor:hover {
+    opacity: 1; }
 
 /*
 	Alpha by HTML5 UP
