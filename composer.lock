@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "64c1b7a735f73f81759408c8597bdefe",
+    "hash": "e4c3845301abd77b6e46c5fc6cec382d",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -86,6 +86,50 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "time": "2014-01-17 12:21:18"
+        },
+        {
+            "name": "daylerees/kurenai",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/daylerees/kurenai.git",
+                "reference": "581f64394874df527c2dabf80b8b0890a2a39584"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/daylerees/kurenai/zipball/581f64394874df527c2dabf80b8b0890a2a39584",
+                "reference": "581f64394874df527c2dabf80b8b0890a2a39584",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown-extra": "0.2.*"
+            },
+            "require-dev": {
+                "dflydev/markdown": "1.0.*",
+                "phpunit/phpunit": "4.*"
+            },
+            "suggest": {
+                "dflydev/markdown": "Parsing markdown using dflydev/markdown"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Kurenai": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Markdown document parser with metadata.",
+            "keywords": [
+                "daylerees",
+                "document",
+                "kurenai",
+                "markdown",
+                "metadata"
+            ],
+            "time": "2014-11-07 00:30:07"
         },
         {
             "name": "doctrine/annotations",
@@ -208,6 +252,89 @@
                 "parser"
             ],
             "time": "2014-09-09 13:34:57"
+        },
+        {
+            "name": "erusev/parsedown",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown.git",
+                "reference": "495e7ac73bb5fde6b857b88ff2bb1b5e79a4263a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/495e7ac73bb5fde6b857b88ff2bb1b5e79a4263a",
+                "reference": "495e7ac73bb5fde6b857b88ff2bb1b5e79a4263a",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Parsedown": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "Parser for Markdown.",
+            "homepage": "http://parsedown.org",
+            "keywords": [
+                "markdown",
+                "parser"
+            ],
+            "time": "2014-11-29 02:29:14"
+        },
+        {
+            "name": "erusev/parsedown-extra",
+            "version": "0.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown-extra.git",
+                "reference": "77f604b65b08550f229c2e79c0427c84c0c0979e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/77f604b65b08550f229c2e79c0427c84c0c0979e",
+                "reference": "77f604b65b08550f229c2e79c0427c84c0c0979e",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown": "~1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ParsedownExtra": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "An extension of Parsedown that adds support for Markdown Extra.",
+            "homepage": "https://github.com/erusev/parsedown-extra",
+            "keywords": [
+                "markdown",
+                "markdown extra",
+                "parsedown",
+                "parser"
+            ],
+            "time": "2014-11-20 20:21:03"
         },
         {
             "name": "illuminate/html",
@@ -1840,45 +1967,6 @@
                 "instantiate"
             ],
             "time": "2014-12-12 16:47:07"
-        },
-        {
-            "name": "erusev/parsedown",
-            "version": "1.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/erusev/parsedown.git",
-                "reference": "495e7ac73bb5fde6b857b88ff2bb1b5e79a4263a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/495e7ac73bb5fde6b857b88ff2bb1b5e79a4263a",
-                "reference": "495e7ac73bb5fde6b857b88ff2bb1b5e79a4263a",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Parsedown": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Emanuil Rusev",
-                    "email": "hello@erusev.com",
-                    "homepage": "http://erusev.com"
-                }
-            ],
-            "description": "Parser for Markdown.",
-            "homepage": "http://parsedown.org",
-            "keywords": [
-                "markdown",
-                "parser"
-            ],
-            "time": "2014-11-29 02:29:14"
         },
         {
             "name": "guzzlehttp/guzzle",

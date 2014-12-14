@@ -11,6 +11,7 @@
     "laravel/framework": "dev-master#19f716f470ffa5586e569474037a212556de43b3",
     "illuminate/html": "~5.0",
     "kzykhys/git": "~0.1",
+    "daylerees/kurenai": "~1.0",
     "michelf/php-markdown": "~1.4"
   },
   "require-dev": {
