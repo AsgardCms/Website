@@ -72,7 +72,7 @@
                 </li>
             </ul>
         </div>
-        <div class="9u">
+        <div class="9u content">
             {!! $content !!}
         </div>
     </div>
