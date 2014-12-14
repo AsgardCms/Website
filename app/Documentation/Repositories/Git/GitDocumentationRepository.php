@@ -1,23 +1,33 @@
 <?php namespace Asgard\Documentation\Repositories\Git;
 
 use Asgard\Documentation\Repositories\DocumentationRepository;
-use Asgard\Documentation\Traits\CacheTrait;
+use Illuminate\Cache\Repository;
 use Illuminate\Filesystem\Filesystem;
+use Kurenai\DocumentParser;
 use Michelf\MarkdownExtra;
 use PHPGit\Git;
 
 class GitDocumentationRepository implements DocumentationRepository
 {
-    use CacheTrait;
+    /**
+     * @var DocumentParser
+     */
+    protected $parser;
     /**
      * @var Filesystem
      */
     private $finder;
+    /**
+     * @var Repository
+     */
+    private $cache;
 
-    public function __construct(Filesystem $finder)
+    public function __construct(Filesystem $finder, Repository $cache)
     {
         $this->finder = $finder;
         $this->git = new Git;
+        $this->parser = new DocumentParser;
+        $this->cache = $cache;
 
         if ( ! $this->finder->exists($this->getDocumentationPath())) {
             $this->git->clone('https://github.com/AsgardCms/Documentation.git');
@@ -34,14 +44,15 @@ class GitDocumentationRepository implements DocumentationRepository
         return public_path() . '/Documentation';
     }
 
-    public function getPage($page)
+    public function getContent($page)
     {
         $pageFile = $this->getDocumentationPath() . "/$page.md";
 
-        return $this->cached(
-            "doc_page_{$pageFile}_content",
-            MarkdownExtra::defaultTransform($this->finder->get($pageFile))
-        );
+        return $this->cache->remember("doc_page_{$pageFile}_content", 60, function() use($pageFile)
+        {
+            $data = $this->parser->parse($this->finder->get($pageFile));
+            return MarkdownExtra::defaultTransform($data->getContent());
+        });
     }
 
     public function toc()
@@ -98,5 +109,23 @@ class GitDocumentationRepository implements DocumentationRepository
     private function removeExtension($requestName, $extension)
     {
         return str_replace($extension, '', $requestName);
+    }
+
+    /**
+     * Get the page title
+     *
+     * @param string $page
+     * @return string
+     */
+    public function getTitle($page)
+    {
+        $pageFile = $this->getDocumentationPath() . "/$page.md";
+
+        return $this->cache->remember("doc_page_{$pageFile}_title", 60, function() use($pageFile)
+        {
+            $data = $this->parser->parse($this->finder->get($pageFile));
+
+            return $data->get('title');
+        });
     }
 }

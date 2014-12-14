@@ -5,8 +5,7 @@
 @section('content')
 <section id="main" class="container">
     <header>
-        <h2>Documentation</h2>
-        <p>All your questions answered</p>
+        <h2>{{ $title }}</h2>
     </header>
     <div class="row box row-box">
         <div class="3u">

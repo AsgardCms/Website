@@ -22,8 +22,9 @@ class DocumentationController extends Controller
 
     public function show($page)
     {
-        $content = $this->documentation->getPage($page);
+        $title = $this->documentation->getTitle($page);
+        $content = $this->documentation->getContent($page);
 
-        return view('public.doc.index', compact('content'));
+        return view('public.doc.index', compact('content', 'title'));
     }
 }
