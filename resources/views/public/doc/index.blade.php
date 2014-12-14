@@ -3,7 +3,7 @@
 @section('content')
 <section id="main" class="container">
     <div class="row box row-box">
-        <div class="2u">
+        <div class="3u">
             <ul class="side-menu">
                 <li class="header">
                     <i class="fa fa-bolt"></i>
@@ -27,7 +27,7 @@
                 </li>
             </ul>
         </div>
-        <div class="10u">
+        <div class="9u">
             {!! $content !!}
         </div>
     </div>
