@@ -1,5 +1,7 @@
 @extends('public.layouts.master')
 
+@section('title')Documentation | @parent @stop
+
 @section('content')
 <section id="main" class="container">
     <header>

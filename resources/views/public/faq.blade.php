@@ -1,5 +1,7 @@
 @extends('public.layouts.master')
 
+@section('title')F.A.Q. | @parent @stop
+
 @section('content')
 <!-- Main -->
 <section id="main" class="container">
