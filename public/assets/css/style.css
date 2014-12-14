@@ -23,6 +23,15 @@
     color: #999;
     border: none; }
 
+.anchor {
+  display: inline-block;
+  outline: medium none;
+  text-decoration: none;
+  opacity: 0.5;
+  border: none; }
+  .anchor:before {
+    content: '#'; }
+
 /*
 	Alpha by HTML5 UP
 	html5up.net | @n33co

@@ -27,3 +27,14 @@
     border: none;
   }
 }
+
+.anchor {
+  display: inline-block;
+  outline: medium none;
+  text-decoration: none;
+  opacity: 0.5;
+  border: none;
+  &:before {
+    content: '#';
+  }
+}
