@@ -9,7 +9,17 @@
                     <i class="fa fa-bolt"></i>
                     Core
                 </li>
+                <li class="active">
+                    <a href="#test">Install</a>
+                </li>
                 <li>
+                    <a href="#test">Install</a>
+                </li>
+                <li class="header">
+                    <i class="fa fa-bolt"></i>
+                    Core
+                </li>
+                <li class="active">
                     <a href="#test">Install</a>
                 </li>
                 <li>

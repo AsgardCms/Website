@@ -16,7 +16,8 @@ class DocumentationController extends Controller
 
     public function index()
     {
-        $toc = $this->documentation->toc();
-        dd('toc view', $toc);
+        /*$toc = $this->documentation->toc();
+        dd('toc view', $toc);*/
+        return view('public.doc.index');
     }
 }
