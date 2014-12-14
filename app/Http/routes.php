@@ -12,3 +12,4 @@ $router->group(['prefix' => 'api', 'namespace' => 'Api'], function(Router $route
 });
 
 $router->get('docs', ['as' => 'doc.index', 'uses' => 'DocumentationController@index']);
+$router->get('docs/{page}', 'DocumentationController@show')->where('page', '.*');

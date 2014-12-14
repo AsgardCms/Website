@@ -10,7 +10,7 @@
                     Core
                 </li>
                 <li class="active">
-                    <a href="#test">Install</a>
+                    <a href="#test">Installation</a>
                 </li>
                 <li>
                     <a href="#test">Install</a>
@@ -28,7 +28,7 @@
             </ul>
         </div>
         <div class="10u">
-            <h3>Doc</h3>
+            {!! $content !!}
         </div>
     </div>
 </section>
