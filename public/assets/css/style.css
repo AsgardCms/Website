@@ -1,5 +1,25 @@
 @import url(font-awesome.min.css);
 @import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic');
+.side-menu {
+  padding: 0px;
+  list-style: outside none none;
+  font-size: 16px;
+  margin-top: -30px;
+  margin-bottom: 40px; }
+  .side-menu li {
+    margin-bottom: 10px;
+    position: relative; }
+    .side-menu li i {
+      position: absolute;
+      font-size: 20px;
+      left: -30px; }
+
+li.header {
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px; }
+
 /*
 	Alpha by HTML5 UP
 	html5up.net | @n33co
@@ -299,6 +319,9 @@ input[type="radio"] + label:before {
   opacity: 1; }
 
 /* Box */
+.row-box {
+  padding: 3em 0 !important; }
+
 .box {
   background: #fff;
   border-radius: 6px;

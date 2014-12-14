@@ -1,0 +1,24 @@
+.side-menu {
+  padding: 0px;
+  list-style: outside none none;
+  font-size: 16px;
+  margin-top: -30px;
+  margin-bottom: 40px;
+
+  li {
+    margin-bottom: 10px;
+    position: relative;
+    i {
+      position: absolute;
+      font-size: 20px;
+      left: -30px;
+    }
+  }
+}
+
+li.header {
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}

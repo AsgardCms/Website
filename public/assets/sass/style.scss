@@ -2,7 +2,7 @@
 @import 'mixins';
 @import 'font-awesome.min.css';
 @import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic');
-
+@import 'docs';
 /*
 	Alpha by HTML5 UP
 	html5up.net | @n33co
@@ -387,7 +387,9 @@
 /* Box */
 
 	$box-padding: 3em;
-
+	.row-box {
+	  padding: 3em 0 !important;
+	}
 	.box {
 		background: #fff;
 		border-radius: $size-border-radius;
