@@ -35,7 +35,7 @@ body {
 body, input, select, textarea {
   color: #777;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16pt;
+  font-size: 14pt;
   font-weight: 300;
   line-height: 1.65em;
   letter-spacing: -0.015em; }
@@ -115,6 +115,9 @@ blockquote {
   font-style: italic;
   margin: 0 0 2em 0;
   padding: 0.5em 0 0.5em 2em; }
+
+pre, code {
+  font-size: 0.8em; }
 
 code {
   background: none repeat scroll 0% 0% #272822;

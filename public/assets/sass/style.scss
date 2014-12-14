@@ -18,7 +18,7 @@
 	body, input, select, textarea {
 		color: $color-fg;
 		font-family: $font-family;
-		font-size: 16pt;
+		font-size: 14pt;
 		font-weight: $font-weight;
 		line-height: 1.65em;
 		letter-spacing: -0.015em;
@@ -119,6 +119,10 @@
 		font-style: italic;
 		margin: 0 0 $size-element-margin 0;
 		padding: 0.5em 0 0.5em 2em;
+	}
+
+	pre, code {
+	  font-size: 0.8em;
 	}
 
 	code {
