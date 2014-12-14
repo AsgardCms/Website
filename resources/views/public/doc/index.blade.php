@@ -9,8 +9,8 @@
                     <i class="fa fa-bolt"></i>
                     Core
                 </li>
-                <li class="active">
-                    <a href="#test">Installation</a>
+                <li class="{{ Request::is('*/getting-started/installation') ? 'active' : ''}}">
+                    <a href="{{ route('doc.show', ['getting-started/installation']) }}">Installation</a>
                 </li>
                 <li>
                     <a href="#test">Install</a>
