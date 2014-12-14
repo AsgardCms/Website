@@ -1,6 +1,7 @@
 <?php namespace Asgard\Http\Controllers;
 
 use Asgard\Documentation\Repositories\DocumentationRepository;
+use Illuminate\Support\Facades\Redirect;
 
 class DocumentationController extends Controller
 {
@@ -16,9 +17,7 @@ class DocumentationController extends Controller
 
     public function index()
     {
-        $toc = $this->documentation->toc();
-        dd('toc view', $toc);
-        return view('public.doc.index');
+        return Redirect::route('doc.show', 'getting-started/installation');
     }
 
     public function show($page)
