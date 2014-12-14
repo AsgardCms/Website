@@ -11,4 +11,4 @@ $router->group(['prefix' => 'api', 'namespace' => 'Api'], function(Router $route
     $router->post('subscribe', ['as' => 'subscribe', 'uses' => 'EmailController@subscribe']);
 });
 
-$router->get('documentation', ['as' => 'doc.index', 'uses' => 'DocumentationController@index']);
+$router->get('docs', ['as' => 'doc.index', 'uses' => 'DocumentationController@index']);
