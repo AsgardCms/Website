@@ -21,8 +21,10 @@
 		<script src="{{ asset('/assets/js/jquery.scrollgress.min.js') }}"></script>
 		<script src="{{ asset('/assets/js/skel.min.js') }}"></script>
 		<script src="{{ asset('/assets/js/skel-layers.min.js') }}"></script>
+		<script src="{{ asset('/assets/js/vendor/prism.js') }}"></script>
 		<script src="{{ asset('/assets/js/init.js') }}"></script>
 		<link rel="stylesheet" href="{{ asset('/assets/css/jquery.bxslider.css') }}" />
+		<link rel="stylesheet" href="{{ asset('/assets/css/vendor/prism.css') }}" />
 		<noscript>
 			<link rel="stylesheet" href="{{ asset('/assets/css/skel.css') }}" />
 			<link rel="stylesheet" href="{{ asset('/assets/css/style.css') }}" />
