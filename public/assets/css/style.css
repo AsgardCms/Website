@@ -68,13 +68,13 @@ em, i {
   font-style: italic; }
 
 p {
-  margin: 0 0 2em 0; }
+  margin: 0 0 1em 0; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #646464;
   font-weight: 300;
   line-height: 1em;
-  margin: 0 0 0.5em 0; }
+  margin: 0 0 0.25em 0; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: inherit;
     text-decoration: none; }
@@ -117,14 +117,14 @@ sup {
 hr {
   border: 0;
   border-bottom: solid 2px #e5e5e5;
-  margin: 2em 0; }
+  margin: 1em 0; }
   hr.major {
-    margin: 3em 0; }
+    margin: 1.5em 0; }
 
 blockquote {
   border-left: solid 4px #e5e5e5;
   font-style: italic;
-  margin: 0 0 2em 0;
+  margin: 0 0 1em 0;
   padding: 0.5em 0 0.5em 2em; }
 
 pre, code {
@@ -154,7 +154,7 @@ section.special, article.special {
 header p {
   color: #999;
   position: relative;
-  margin: 0 0 1.5em 0;
+  margin: 0 0 0.75em 0;
   font-style: italic; }
 header h2 + p {
   font-size: 1.25em;
@@ -183,14 +183,14 @@ header.major {
 
 /* Form */
 form {
-  margin: 0 0 2em 0; }
+  margin: 0 0 1em 0; }
 
 label {
   color: #646464;
   display: block;
   font-size: 0.9em;
   font-weight: 300;
-  margin: 0 0 1em 0; }
+  margin: 0 0 0.5em 0; }
 
 input[type="text"], input[type="password"], input[type="email"], select, textarea {
   -moz-appearance: none;
@@ -330,7 +330,7 @@ input[type="radio"] + label:before {
   background: #fff;
   border-radius: 6px;
   box-shadow: 0 2px 0 0 #e5e5e5;
-  margin: 0 0 2em 0;
+  margin: 0 0 1em 0;
   padding: 3em; }
   .box > :last-child {
     margin-bottom: 0; }
@@ -338,7 +338,7 @@ input[type="radio"] + label:before {
     background: none !important;
     border-radius: 0 !important;
     box-shadow: none !important;
-    margin: 0 0 2em 0;
+    margin: 0 0 1em 0;
     padding: 0 !important; }
   .box.features .features-row {
     border-top: solid 2px #e5e5e5;
@@ -421,7 +421,7 @@ input[type="radio"] + label:before {
     display: inline-block;
     height: 5.5em;
     line-height: 5.5em;
-    margin: 0 0 2em 0;
+    margin: 0 0 1em 0;
     width: 5.5em; }
     .icon.major:before {
       font-size: 2.5em; }
@@ -460,7 +460,7 @@ input[type="radio"] + label:before {
     top: 0.25em; }
   .image.fit {
     display: block;
-    margin: 0 0 2em 0;
+    margin: 0 0 1em 0;
     width: 100%; }
     .image.fit img {
       display: block;
@@ -469,14 +469,14 @@ input[type="radio"] + label:before {
 /* List */
 ol {
   list-style: decimal;
-  margin: 0 0 2em 0;
+  margin: 0 0 1em 0;
   padding-left: 1.25em; }
   ol li {
     padding-left: 0.25em; }
 
 ul {
   list-style: disc;
-  margin: 0 0 2em 0;
+  margin: 0 0 1em 0;
   padding-left: 1em; }
   ul li {
     padding-left: 0.5em; }
@@ -508,42 +508,42 @@ ul {
     padding-left: 0; }
     ul.actions li {
       display: inline-block;
-      padding: 0 1em 0 0;
+      padding: 0 0.5em 0 0;
       vertical-align: middle; }
       ul.actions li:last-child {
         padding-right: 0; }
     ul.actions.small li {
-      padding: 0 0.5em 0 0; }
+      padding: 0 0.25em 0 0; }
     ul.actions.vertical li {
       display: block;
-      padding: 1em 0 0 0; }
+      padding: 0.5em 0 0 0; }
       ul.actions.vertical li:first-child {
         padding-top: 0; }
       ul.actions.vertical li > * {
         margin-bottom: 0; }
     ul.actions.vertical.small li {
-      padding: 0.5em 0 0 0; }
+      padding: 0.25em 0 0 0; }
       ul.actions.vertical.small li:first-child {
         padding-top: 0; }
     ul.actions.fit {
       display: table;
-      margin-left: -1em;
+      margin-left: -0.5em;
       padding: 0;
       table-layout: fixed;
-      width: calc(100% + 1em); }
+      width: calc(100% + 0.5em); }
       ul.actions.fit li {
         display: table-cell;
-        padding: 0 0 0 1em; }
+        padding: 0 0 0 0.5em; }
         ul.actions.fit li > * {
           margin-bottom: 0; }
       ul.actions.fit.small {
-        margin-left: -0.5em;
-        width: calc(100% + 0.5em); }
+        margin-left: -0.25em;
+        width: calc(100% + 0.25em); }
         ul.actions.fit.small li {
-          padding: 0 0 0 0.5em; }
+          padding: 0 0 0 0.25em; }
 
 dl {
-  margin: 0 0 2em 0; }
+  margin: 0 0 1em 0; }
 
 /* Table */
 .table-wrapper {
@@ -551,7 +551,7 @@ dl {
   overflow-x: auto; }
 
 table {
-  margin: 0 0 2em 0;
+  margin: 0 0 1em 0;
   width: 100%; }
   table tbody tr {
     border: solid 1px #e5e5e5;
@@ -618,7 +618,7 @@ input[type="submit"], input[type="reset"], input[type="button"], .button {
       margin-right: 0.5em; }
   input[type="submit"].fit, input[type="reset"].fit, input[type="button"].fit, .button.fit {
     display: block;
-    margin: 0 0 1em 0;
+    margin: 0 0 0.5em 0;
     width: 100%; }
   input[type="submit"].small, input[type="reset"].small, input[type="button"].small, .button.small {
     font-size: 0.8em;
