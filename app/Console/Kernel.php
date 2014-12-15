@@ -11,7 +11,7 @@ class Kernel extends ConsoleKernel {
 	 * @var array
 	 */
 	protected $commands = [
-		'Asgard\Console\Commands\InspireCommand',
+		'Asgard\Console\Commands\UpdateDocumentationCommand',
 	];
 
 	/**
