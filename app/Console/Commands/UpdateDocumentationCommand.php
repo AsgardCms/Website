@@ -30,11 +30,11 @@ class UpdateDocumentationCommand extends Command
 
     public function fire()
     {
-        $this->comment('Updating documentation');
+        $this->comment('Updating documentation...');
 
         $this->git->setRepository(public_path() . '/Documentation');
         $this->git->pull('origin', 'master');
 
-        $this->info('Documentation updated');
+        $this->info('Documentation updated!');
     }
 }
