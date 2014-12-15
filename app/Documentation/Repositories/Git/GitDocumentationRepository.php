@@ -128,4 +128,22 @@ class GitDocumentationRepository implements DocumentationRepository
             return $data->get('title');
         });
     }
+
+    /**
+     * Get the page sub title
+     *
+     * @param string $page
+     * @return string
+     */
+    public function getSubTitle($page)
+    {
+        $pageFile = $this->getDocumentationPath() . "/$page.md";
+
+        return $this->cache->remember("doc_page_{$pageFile}_sub-title", 60, function() use($pageFile)
+        {
+            $data = $this->parser->parse($this->finder->get($pageFile));
+
+            return $data->get('subtitle');
+        });
+    }
 }

@@ -20,4 +20,11 @@ interface DocumentationRepository
      * @return string
      */
     public function getTitle($page);
+
+    /**
+     * Get the page sub title
+     * @param string $page
+     * @return string
+     */
+    public function getSubTitle($page);
 }

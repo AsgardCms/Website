@@ -6,6 +6,7 @@
 <section id="main" class="container">
     <header>
         <h2>{{ $title }}</h2>
+        <p>{{ $subtitle }}</p>
     </header>
     <div class="row box row-box">
         <div class="3u">
