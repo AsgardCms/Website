@@ -478,12 +478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nWidart/PHPGit.git",
-                "reference": "cd1b4a57e3327971e8a0a6dc94038544eb0beb24"
+                "reference": "a326334762dff0de5a5ad4fb566c15d1bfaa89ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nWidart/PHPGit/zipball/cd1b4a57e3327971e8a0a6dc94038544eb0beb24",
-                "reference": "cd1b4a57e3327971e8a0a6dc94038544eb0beb24",
+                "url": "https://api.github.com/repos/nWidart/PHPGit/zipball/a326334762dff0de5a5ad4fb566c15d1bfaa89ee",
+                "reference": "a326334762dff0de5a5ad4fb566c15d1bfaa89ee",
                 "shasum": ""
             },
             "require": {
@@ -518,7 +518,7 @@
             "support": {
                 "source": "https://github.com/nWidart/PHPGit/tree/patch-1"
             },
-            "time": "2014-12-15 19:20:14"
+            "time": "2014-12-15 19:25:57"
         },
         {
             "name": "laravel/framework",
