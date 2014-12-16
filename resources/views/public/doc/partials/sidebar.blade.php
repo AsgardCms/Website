@@ -58,4 +58,11 @@
     <li class="{{ Request::is('*/themes/usage') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['themes/usage']) }}">Usage</a>
     </li>
+    <li class="header">
+        <i class="fa fa-bars"></i>
+        Menu Module
+    </li>
+    <li class="{{ Request::is('*/menu-module/managing-menus') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['menu-module/managing-menus']) }}">Managing menus</a>
+    </li>
 </ul>
