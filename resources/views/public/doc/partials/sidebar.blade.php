@@ -65,4 +65,7 @@
     <li class="{{ Request::is('*/menu-module/managing-menus') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['menu-module/managing-menus']) }}">Managing menus</a>
     </li>
+    <li class="{{ Request::is('*/menu-module/displaying-menus') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['menu-module/displaying-menus']) }}">Displaying menus</a>
+    </li>
 </ul>
