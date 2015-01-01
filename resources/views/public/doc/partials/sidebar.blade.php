@@ -68,4 +68,11 @@
     <li class="{{ Request::is('*/themes/usage') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['themes/usage']) }}">Usage</a>
     </li>
+    <li class="header">
+        <i class="fa fa-user"></i>
+        User Module
+    </li>
+    <li class="{{ Request::is('*/user-module/drivers') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['user-module/drivers']) }}">Drivers</a>
+    </li>
 </ul>
