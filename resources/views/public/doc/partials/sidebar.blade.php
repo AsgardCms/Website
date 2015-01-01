@@ -75,4 +75,7 @@
     <li class="{{ Request::is('*/user-module/drivers') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['user-module/drivers']) }}">Drivers</a>
     </li>
+    <li class="{{ Request::is('*/user-module/users') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['user-module/users']) }}">Users</a>
+    </li>
 </ul>
