@@ -35,6 +35,8 @@ class UpdateDocumentationCommand extends Command
         $this->git->setRepository(public_path() . '/Documentation');
         $this->git->pull('origin', 'master');
 
+        $this->call('cache:clear');
+
         $this->info('Documentation updated!');
     }
 }
