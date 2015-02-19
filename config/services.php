@@ -27,5 +27,8 @@ return [
 		'model'  => 'User',
 		'secret' => '',
 	],
+    'github' => [
+        'token' => getenv('GITHUB_TOKEN')
+    ]
 
 ];
