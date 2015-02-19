@@ -15,6 +15,11 @@
                     {{ Session::get('error') }} <a href="/#cta">Did you apply yet ?</a>
                 </p>
             <?php endif; ?>
+            <?php if (Session::has('success')): ?>
+            <p>
+                {{ Session::get('success') }}
+            </p>
+            <?php endif; ?>
             {!! Form::open(['route' => ['last.action.post', $token], 'method' => 'post']) !!}
                 <div class="row uniform 50%">
                     <div class="12u">
