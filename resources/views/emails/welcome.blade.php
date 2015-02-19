@@ -72,11 +72,6 @@
                                 </tr>
                                 <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
                                     <td class="content-block" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
-                                        You signed up for beta access to AsgardCMS, I'm happy to say that you have been invited!
-                                    </td>
-                                </tr>
-                                <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
-                                    <td class="content-block" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
                                         Starting now you can download and install AsgardCMS. Keep in mind this is a beta, their will be bugs. If you find one, you can submit your issue on the <strong><a href="https://github.com/AsgardCms/">AsgardCms/Platform</a></strong> repository.
                                     </td>
                                 </tr>
@@ -108,7 +103,8 @@
                                 <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
                                     <td class="content-block" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
                                         <em>
-                                            Please note: If you haven't received an invitation email from Github and/or you can't access the repository, <strong>please reply with your Github usename</strong>.
+                                            Please note: If you haven't received an invitation email from Github and/or you can't access the repository, please double check your emails from Github.
+                                            If you still have no access, <strong>please reply with your Github usename</strong>.
                                         </em>
                                     </td>
                                 </tr>
