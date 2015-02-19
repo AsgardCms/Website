@@ -41,4 +41,9 @@ class EloquentEntryRepository implements EntryRepository
     {
         return $this->entry->where('accepted', '!=', 1)->orderBy('created_at')->take(50)->get();
     }
+
+    public function findByEmail($email)
+    {
+        return $this->entry->whereEmail($email)->first();
+    }
 }

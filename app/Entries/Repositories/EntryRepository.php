@@ -14,4 +14,6 @@ interface EntryRepository
     public function all();
 
     public function allNotAccepted();
+
+    public function findByEmail($email);
 }

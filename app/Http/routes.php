@@ -12,3 +12,7 @@ $router->group(['prefix' => 'api', 'namespace' => 'Api'], function (Router $rout
 
 $router->get('docs', ['as' => 'doc.index', 'uses' => 'DocumentationController@index']);
 $router->get('docs/{page}', ['as' => 'doc.show', 'uses' => 'DocumentationController@show'])->where('page', '.*');
+
+$router->get('email', ['as' => 'email.index', 'uses' => 'EmailController@index']);
+$router->get('last/action/{token}', ['as' => 'last.action', 'uses' => 'EmailController@validateInvite']);
+$router->post('last/action/{token}', ['as' => 'last.action.post', 'uses' => 'EmailController@addToOrganisation']);
