@@ -8,6 +8,7 @@ class GithubUsernameRequest extends FormRequest
     {
         return [
             'username' => 'required',
+            'email' => 'required|email',
         ];
     }
 
