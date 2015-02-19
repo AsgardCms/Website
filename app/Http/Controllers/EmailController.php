@@ -31,7 +31,7 @@ class EmailController extends Controller
         foreach ($entries as $entry) {
             $token = $this->createNewToken($entry->email);
 
-            Mail::send('emails.finish', compact('token'), function($message) use ($entry)
+            Mail::queue('emails.finish', compact('token'), function($message) use ($entry)
             {
                 $message->to($entry->email, $entry->email)->subject('AsgardCms: final step required');
             });
@@ -112,7 +112,7 @@ class EmailController extends Controller
 
     private function sendConfirmationEmail($entry)
     {
-        Mail::send('emails.welcome', [], function($message) use ($entry)
+        Mail::queue('emails.welcome', [], function($message) use ($entry)
         {
             $message->to($entry->email, $entry->email)->subject('You\'re in! Welcome to AsgardCms Beta!');
         });
