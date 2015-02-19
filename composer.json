@@ -13,7 +13,8 @@
     "guzzlehttp/guzzle": "~4.0",
     "kzykhys/git": "dev-patch-1",
     "daylerees/kurenai": "~1.0",
-    "michelf/php-markdown": "~1.4"
+    "michelf/php-markdown": "~1.4",
+    "knplabs/github-api": "~1.2"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.0"
