@@ -36,4 +36,9 @@ class EloquentEntryRepository implements EntryRepository
     {
         return $this->entry->all();
     }
+
+    public function allNotAccepted()
+    {
+        return $this->entry->where('accepted', '!=', 1)->orderBy('created_at')->take(50)->get();
+    }
 }

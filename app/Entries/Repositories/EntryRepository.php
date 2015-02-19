@@ -12,4 +12,6 @@ interface EntryRepository
      * @return mixed
      */
     public function all();
+
+    public function allNotAccepted();
 }
