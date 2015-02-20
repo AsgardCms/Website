@@ -95,7 +95,7 @@ class EmailController extends Controller
      */
     private function isValidEntry($token, $entry)
     {
-        $activation = Activation::where('code', $token)->whereEntryId($entry->id)->first();
+        $activation = Activation::where('code', $token)->whereEntryId($entry->id)->where('completed', 0)->first();
         if (! $activation) {
             return false;
         }
