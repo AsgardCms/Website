@@ -26,7 +26,7 @@
                 <li>
                     <strong>When will it be done ?</strong>
                     <br/>
-                    When it's ready.
+                    When it's ready. You'll be pleased to know that the beta has already started.
                 </li>
                 <li>
                     <strong>How many developers are working on the project ?</strong>
