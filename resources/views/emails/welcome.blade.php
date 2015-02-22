@@ -72,7 +72,7 @@
                                 </tr>
                                 <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
                                     <td class="content-block" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
-                                        Starting now you can download and install AsgardCMS. Keep in mind this is a beta, their will be bugs. If you find one, you can submit your issue on the <strong><a href="https://github.com/AsgardCms/">AsgardCms/Platform</a></strong> repository.
+                                        Starting now you can download and install AsgardCMS. Keep in mind this is a beta, there will be bugs. If you find one, you can submit your issue on the <strong><a href="https://github.com/AsgardCms/">AsgardCms/Platform</a></strong> repository.
                                     </td>
                                 </tr>
                                 <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
