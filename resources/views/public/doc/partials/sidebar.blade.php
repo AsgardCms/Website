@@ -81,4 +81,11 @@
     <li class="{{ Request::is('*/user-module/users') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['user-module/users']) }}">Users</a>
     </li>
+    <li class="header">
+        <i class="fa fa-cogs"></i>
+        Workshop Module
+    </li>
+    <li class="{{ Request::is('*/workshop-module/module-scaffold') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['workshop-module/module-scaffold']) }}">Module Scaffold</a>
+    </li>
 </ul>
