@@ -22,6 +22,9 @@
     <li class="{{ Request::is('*/core-module/repositories') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['core-module/repositories']) }}">Repositories</a>
     </li>
+    <li class="{{ Request::is('*/core-module/assetmanager') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['core-module/assetmanager']) }}">Asset Manager</a>
+    </li>
     <li class="header">
         <i class="fa fa-file-image-o"></i>
         Media Module
