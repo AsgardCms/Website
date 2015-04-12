@@ -38,6 +38,9 @@
     <li class="{{ Request::is('*/media-module/refreshing-thumbnails') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['media-module/refreshing-thumbnails']) }}">Refreshing thumbnails</a>
     </li>
+    <li class="{{ Request::is('*/media-module/events') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['media-module/events']) }}">Events</a>
+    </li>
     <li class="header">
         <i class="fa fa-bars"></i>
         Menu Module
