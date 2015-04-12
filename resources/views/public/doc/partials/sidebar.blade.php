@@ -67,6 +67,9 @@
     <li class="{{ Request::is('*/setting-module/reading-settings') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['setting-module/reading-settings']) }}">Reading settings</a>
     </li>
+    <li class="{{ Request::is('*/setting-module/events') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['setting-module/events']) }}">Events</a>
+    </li>
     <li class="header">
         <i class="fa fa-picture-o"></i>
         Themes
