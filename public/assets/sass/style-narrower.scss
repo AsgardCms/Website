@@ -10,7 +10,7 @@
 /* Basic */
 
 	body, input, select, textarea {
-		font-size: 11pt;
+		font-size: 12pt;
 	}
 
 	h2, h3, h4, h5, h6 {
@@ -25,7 +25,7 @@
 		br {
 			display: none;
 		}
-		
+
 		&.major {
 			padding: 0 4em;
 		}
@@ -38,18 +38,18 @@
 
 	.box {
 		padding: $box-padding-vertical $box-padding-horizontal;
-		
+
 		&.features {
 			> section {
 				padding: $box-padding-vertical $box-padding-horizontal;
 			}
 		}
-		
+
 		.image {
 			&.featured {
 				margin-left: ($box-padding-horizontal * -1);
 				width: calc(100% + #{$box-padding-horizontal * 2});
-			
+
 				&:first-child {
 					margin-bottom: $box-padding-vertical;
 					margin-top: $box-padding-vertical * -1;
@@ -79,7 +79,7 @@
 	#banner {
 		//padding: 6em 2em;
 	}
-		
+
 /* Layers */
 
 	#navButton {
@@ -90,7 +90,7 @@
 			position: absolute;
 			top: 0;
 			width: 100%;
-			
+
 			&:before {
 				background: rgba(192,192,192,0.75);
 				border-radius: $size-border-radius;
@@ -122,15 +122,15 @@
 			line-height: 44px;
 			padding: 0 1em 0 1em;
 			text-decoration: none;
-		
+
 			&:first-child {
 				border-top: 0;
 			}
-			
+
 			&.depth-0 {
 				color: $color-header-fg-bold;
 			}
-			
+
 			.indent-1 { display: inline-block; width: 1em; }
 			.indent-2 { display: inline-block; width: 2em; }
 			.indent-3 { display: inline-block; width: 3em; }

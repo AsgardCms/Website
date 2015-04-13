@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic');
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 .row-box .content {
   padding-right: 30px; }
 
@@ -13,12 +13,13 @@
     .side-menu li i {
       position: absolute;
       font-size: 20px;
-      left: -25px; }
+      left: -25px;
+      top: 5px; }
   .side-menu li.header {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
-    margin-top: 30px; }
+    margin-top: 20px; }
   .side-menu li.active a {
     color: #999;
     border: none; }
@@ -44,15 +45,18 @@ body {
   background: #f5f5f5; }
 
 body, input, select, textarea {
-  color: #777;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14pt;
+  color: #646464;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15pt;
   font-weight: 300;
   line-height: 1.65em;
   letter-spacing: -0.015em; }
 
 a {
+  -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
   color: #e89980;
@@ -134,7 +138,7 @@ code {
   background: none repeat scroll 0% 0% #272822;
   color: #F8F8F2;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.3);
-  font-family: Consolas, Monaco, "Andale Mono", monospace;
+  font-family: Consolas,Monaco,"Andale Mono",monospace;
   border-radius: 0.3em;
   padding: 0 10px; }
 
@@ -164,7 +168,9 @@ header h3 + p {
   font-size: 1.1em;
   margin-top: -0.85em;
   line-height: 1.5em; }
-header h4 + p, header h5 + p, header h6 + p {
+header h4 + p,
+header h5 + p,
+header h6 + p {
   font-size: 0.8em;
   margin-top: -0.5em;
   line-height: 1.5em; }
@@ -176,7 +182,7 @@ header.major {
   header.major p {
     display: inline-block;
     border-top: solid 2px #e5e5e5;
-    color: #777;
+    color: #646464;
     margin: 1.5em 0 0 0;
     padding: 1.5em 0 0 0;
     font-style: normal; }
@@ -192,7 +198,11 @@ label {
   font-weight: 300;
   margin: 0 0 0.5em 0; }
 
-input[type="text"], input[type="password"], input[type="email"], select, textarea {
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
   -moz-appearance: none;
   -webkit-appearance: none;
   -o-appearance: none;
@@ -207,9 +217,17 @@ input[type="text"], input[type="password"], input[type="email"], select, textare
   padding: 0 1em;
   text-decoration: none;
   width: 100%; }
-  input[type="text"]:invalid, input[type="password"]:invalid, input[type="email"]:invalid, select:invalid, textarea:invalid {
+  input[type="text"]:invalid,
+  input[type="password"]:invalid,
+  input[type="email"]:invalid,
+  select:invalid,
+  textarea:invalid {
     box-shadow: none; }
-  input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="email"]:focus,
+  select:focus,
+  textarea:focus {
     border-color: #e89980;
     box-shadow: 0 0 0 2px #e89980; }
 
@@ -239,13 +257,17 @@ input[type="text"], input[type="password"], input[type="email"], select, textare
   .select-wrapper select::-ms-expand {
     display: none; }
 
-input[type="text"], input[type="password"], input[type="email"], select {
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
   height: 3em; }
 
 textarea {
   padding: 0.75em 1em; }
 
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   -moz-appearance: none;
   -webkit-appearance: none;
   -o-appearance: none;
@@ -257,9 +279,10 @@ input[type="checkbox"], input[type="radio"] {
   opacity: 0;
   width: 1em;
   z-index: -1; }
-  input[type="checkbox"] + label, input[type="radio"] + label {
+  input[type="checkbox"] + label,
+  input[type="radio"] + label {
     text-decoration: none;
-    color: #777;
+    color: #646464;
     cursor: pointer;
     display: inline-block;
     font-size: 1em;
@@ -267,14 +290,16 @@ input[type="checkbox"], input[type="radio"] {
     padding-left: 2.55em;
     padding-right: 0.75em;
     position: relative; }
-    input[type="checkbox"] + label:before, input[type="radio"] + label:before {
+    input[type="checkbox"] + label:before,
+    input[type="radio"] + label:before {
       -moz-osx-font-smoothing: grayscale;
       -webkit-font-smoothing: antialiased;
       font-family: FontAwesome;
       font-style: normal;
       font-weight: normal;
       text-transform: none !important; }
-    input[type="checkbox"] + label:before, input[type="radio"] + label:before {
+    input[type="checkbox"] + label:before,
+    input[type="radio"] + label:before {
       background: #f8f8f8;
       border-radius: 6px;
       border: solid 1px #e5e5e5;
@@ -287,12 +312,14 @@ input[type="checkbox"], input[type="radio"] {
       text-align: center;
       top: 0;
       width: 1.8em; }
-  input[type="checkbox"]:checked + label:before, input[type="radio"]:checked + label:before {
+  input[type="checkbox"]:checked + label:before,
+  input[type="radio"]:checked + label:before {
     background: #666;
     border-color: #666;
     color: #ffffff;
     content: '\f00c'; }
-  input[type="checkbox"]:focus + label:before, input[type="radio"]:focus + label:before {
+  input[type="checkbox"]:focus + label:before,
+  input[type="radio"]:focus + label:before {
     border-color: #e89980;
     box-shadow: 0 0 0 1px #e89980; }
 
@@ -304,23 +331,23 @@ input[type="radio"] + label:before {
 
 ::-webkit-input-placeholder {
   color: #999 !important;
-  opacity: 1; }
+  opacity: 1.0; }
 
 :-moz-placeholder {
   color: #999 !important;
-  opacity: 1; }
+  opacity: 1.0; }
 
 ::-moz-placeholder {
   color: #999 !important;
-  opacity: 1; }
+  opacity: 1.0; }
 
 :-ms-input-placeholder {
   color: #999 !important;
-  opacity: 1; }
+  opacity: 1.0; }
 
 .formerize-placeholder {
   color: #999 !important;
-  opacity: 1; }
+  opacity: 1.0; }
 
 /* Box */
 .row-box {
@@ -557,7 +584,7 @@ table {
     border: solid 1px #e5e5e5;
     border-left: 0;
     border-right: 0; }
-    table tbody tr:nth-child(2n+1) {
+    table tbody tr:nth-child(2n + 1) {
       background-color: #f8f8f8; }
   table td {
     padding: 0.75em 0.75em; }
@@ -587,13 +614,19 @@ table {
       border-top: 0; }
 
 /* Button */
-input[type="submit"], input[type="reset"], input[type="button"], .button {
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button {
   -moz-appearance: none;
   -webkit-appearance: none;
   -o-appearance: none;
   -ms-appearance: none;
   appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   background-color: #666;
   border-radius: 6px;
@@ -608,45 +641,93 @@ input[type="submit"], input[type="reset"], input[type="button"], .button {
   text-align: center;
   text-decoration: none;
   white-space: nowrap; }
-  input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:hover {
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover,
+  .button:hover {
     background-color: #737373; }
-  input[type="submit"].active, input[type="reset"].active, input[type="button"].active, .button.active {
+  input[type="submit"].active,
+  input[type="reset"].active,
+  input[type="button"].active,
+  .button.active {
     background-color: #595959; }
-  input[type="submit"].icon, input[type="reset"].icon, input[type="button"].icon, .button.icon {
+  input[type="submit"].icon,
+  input[type="reset"].icon,
+  input[type="button"].icon,
+  .button.icon {
     padding-left: 1.35em; }
-    input[type="submit"].icon:before, input[type="reset"].icon:before, input[type="button"].icon:before, .button.icon:before {
+    input[type="submit"].icon:before,
+    input[type="reset"].icon:before,
+    input[type="button"].icon:before,
+    .button.icon:before {
       margin-right: 0.5em; }
-  input[type="submit"].fit, input[type="reset"].fit, input[type="button"].fit, .button.fit {
+  input[type="submit"].fit,
+  input[type="reset"].fit,
+  input[type="button"].fit,
+  .button.fit {
     display: block;
     margin: 0 0 0.5em 0;
     width: 100%; }
-  input[type="submit"].small, input[type="reset"].small, input[type="button"].small, .button.small {
+  input[type="submit"].small,
+  input[type="reset"].small,
+  input[type="button"].small,
+  .button.small {
     font-size: 0.8em;
     height: 2.7em;
     line-height: 2.7em; }
-  input[type="submit"].big, input[type="reset"].big, input[type="button"].big, .button.big {
+  input[type="submit"].big,
+  input[type="reset"].big,
+  input[type="button"].big,
+  .button.big {
     font-size: 1.25em;
     height: 2.7em;
     line-height: 2.7em; }
-  input[type="submit"].alt, input[type="reset"].alt, input[type="button"].alt, .button.alt {
+  input[type="submit"].alt,
+  input[type="reset"].alt,
+  input[type="button"].alt,
+  .button.alt {
     background-color: transparent;
     box-shadow: inset 0 0 0 2px #e5e5e5;
-    color: #777; }
-    input[type="submit"].alt:hover, input[type="reset"].alt:hover, input[type="button"].alt:hover, .button.alt:hover {
+    color: #646464; }
+    input[type="submit"].alt:hover,
+    input[type="reset"].alt:hover,
+    input[type="button"].alt:hover,
+    .button.alt:hover {
       background-color: #f8f8f8; }
-    input[type="submit"].alt.active, input[type="reset"].alt.active, input[type="button"].alt.active, .button.alt.active {
+    input[type="submit"].alt.active,
+    input[type="reset"].alt.active,
+    input[type="button"].alt.active,
+    .button.alt.active {
       background-color: #f0f0f0; }
-    input[type="submit"].alt.icon:before, input[type="reset"].alt.icon:before, input[type="button"].alt.icon:before, .button.alt.icon:before {
+    input[type="submit"].alt.icon:before,
+    input[type="reset"].alt.icon:before,
+    input[type="button"].alt.icon:before,
+    .button.alt.icon:before {
       color: #999; }
-  input[type="submit"].special, input[type="reset"].special, input[type="button"].special, .button.special {
+  input[type="submit"].special,
+  input[type="reset"].special,
+  input[type="button"].special,
+  .button.special {
     background-color: #e89980;
     color: #ffffff !important; }
-    input[type="submit"].special:hover, input[type="reset"].special:hover, input[type="button"].special:hover, .button.special:hover {
+    input[type="submit"].special:hover,
+    input[type="reset"].special:hover,
+    input[type="button"].special:hover,
+    .button.special:hover {
       background-color: #ecaa96; }
-    input[type="submit"].special.active, input[type="reset"].special.active, input[type="button"].special.active, .button.special.active {
-      background-color: #e4876a; }
-  input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"].disabled, input[type="reset"]:disabled, input[type="button"].disabled, input[type="button"]:disabled, .button.disabled, .button:disabled {
-    background-color: #777 !important;
+    input[type="submit"].special.active,
+    input[type="reset"].special.active,
+    input[type="button"].special.active,
+    .button.special.active {
+      background-color: #e4886a; }
+  input[type="submit"].disabled, input[type="submit"]:disabled,
+  input[type="reset"].disabled,
+  input[type="reset"]:disabled,
+  input[type="button"].disabled,
+  input[type="button"]:disabled,
+  .button.disabled,
+  .button:disabled {
+    background-color: #646464 !important;
     box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
     color: #f5f5f5 !important;
     cursor: default;
@@ -659,27 +740,31 @@ input[type="submit"], input[type="reset"], input[type="button"], .button {
 body.landing #skel-layers-wrapper {
   padding-top: 0; }
 
+@-moz-keyframes reveal-header {
+  0% {
+    top: -5em; }
+  100% {
+    top: 0; } }
 @-webkit-keyframes reveal-header {
   0% {
     top: -5em; }
-
   100% {
     top: 0; } }
-
+@-o-keyframes reveal-header {
+  0% {
+    top: -5em; }
+  100% {
+    top: 0; } }
 @-ms-keyframes reveal-header {
   0% {
     top: -5em; }
-
   100% {
     top: 0; } }
-
 @keyframes reveal-header {
   0% {
     top: -5em; }
-
   100% {
     top: 0; } }
-
 #header {
   background: #444;
   color: #bbb;
@@ -741,13 +826,22 @@ body.landing #skel-layers-wrapper {
         #header nav > ul > li .button {
           margin: 0 0 0 0.5em;
           position: relative; }
-  #header input[type="submit"], #header input[type="reset"], #header input[type="button"], #header .button {
+  #header input[type="submit"],
+  #header input[type="reset"],
+  #header input[type="button"],
+  #header .button {
     background-color: transparent;
     box-shadow: inset 0 0 0 2px #999;
     color: #fff; }
-    #header input[type="submit"]:hover, #header input[type="reset"]:hover, #header input[type="button"]:hover, #header .button:hover {
+    #header input[type="submit"]:hover,
+    #header input[type="reset"]:hover,
+    #header input[type="button"]:hover,
+    #header .button:hover {
       background-color: rgba(153, 153, 153, 0.25); }
-    #header input[type="submit"].active, #header input[type="reset"].active, #header input[type="button"].active, #header .button.active {
+    #header input[type="submit"].active,
+    #header input[type="reset"].active,
+    #header input[type="button"].active,
+    #header .button.active {
       background-color: rgba(153, 153, 153, 0.5); }
   #header .container {
     position: relative; }
@@ -756,11 +850,15 @@ body.landing #skel-layers-wrapper {
     #header .container nav {
       right: 0; }
   #header.reveal {
+    -moz-animation: reveal-header 0.5s;
     -webkit-animation: reveal-header 0.5s;
+    -o-animation: reveal-header 0.5s;
     -ms-animation: reveal-header 0.5s;
     animation: reveal-header 0.5s; }
   #header.alt {
+    -moz-animation: none;
     -webkit-animation: none;
+    -o-animation: none;
     -ms-animation: none;
     animation: none;
     background: none;
@@ -770,11 +868,20 @@ body.landing #skel-layers-wrapper {
       color: rgba(255, 255, 255, 0.75); }
     #header.alt nav > ul > li.active a:not(.button) {
       background-color: rgba(255, 255, 255, 0.2); }
-    #header.alt input[type="submit"], #header.alt input[type="reset"], #header.alt input[type="button"], #header.alt .button {
+    #header.alt input[type="submit"],
+    #header.alt input[type="reset"],
+    #header.alt input[type="button"],
+    #header.alt .button {
       box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5); }
-      #header.alt input[type="submit"]:hover, #header.alt input[type="reset"]:hover, #header.alt input[type="button"]:hover, #header.alt .button:hover {
+      #header.alt input[type="submit"]:hover,
+      #header.alt input[type="reset"]:hover,
+      #header.alt input[type="button"]:hover,
+      #header.alt .button:hover {
         background-color: rgba(255, 255, 255, 0.1); }
-      #header.alt input[type="submit"].active, #header.alt input[type="reset"].active, #header.alt input[type="button"].active, #header.alt .button.active {
+      #header.alt input[type="submit"].active,
+      #header.alt input[type="reset"].active,
+      #header.alt input[type="button"].active,
+      #header.alt .button.active {
         background-color: rgba(255, 255, 255, 0.2); }
 
 .dropotron {
@@ -788,7 +895,10 @@ body.landing #skel-layers-wrapper {
   .dropotron li {
     padding: 0; }
     .dropotron li a, .dropotron li span {
+      -moz-transition: none;
       -webkit-transition: none;
+      -o-transition: none;
+      -ms-transition: none;
       transition: none;
       border: 0;
       border-top: solid 1px #f2f2f2;
@@ -804,7 +914,9 @@ body.landing #skel-layers-wrapper {
     font-size: 0.9em;
     margin: 1em 0 0 0; }
     .dropotron.level-0:before {
+      -moz-transform: rotate(45deg);
       -webkit-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
       background: #fff;
@@ -823,12 +935,12 @@ body.landing #skel-layers-wrapper {
 
 /* Banner */
 #banner {
-  background-attachment: scroll, fixed;
+  background-attachment: scroll,							fixed;
   background-color: #666;
-  background-image: url('images/overlay.png'), url('../images/thor-the-dark-world-asgard.jpg');
-  background-position: top left, center center;
-  background-repeat: repeat, no-repeat;
-  background-size: auto, cover;
+  background-image: url("images/overlay.png"), url("../images/thor-the-dark-world-asgard.jpg");
+  background-position: top left,						center center;
+  background-repeat: repeat,							no-repeat;
+  background-size: auto,							cover;
   color: #fff;
   padding: 12em 0 20em 0;
   text-align: center; }
@@ -844,16 +956,28 @@ body.landing #skel-layers-wrapper {
   #banner p {
     font-size: 1.25em;
     margin-bottom: 1.75em; }
-  #banner input[type="submit"], #banner input[type="reset"], #banner input[type="button"], #banner .button {
+  #banner input[type="submit"],
+  #banner input[type="reset"],
+  #banner input[type="button"],
+  #banner .button {
     background-color: transparent;
     box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
     color: #fff;
     min-width: 12em; }
-    #banner input[type="submit"]:hover, #banner input[type="reset"]:hover, #banner input[type="button"]:hover, #banner .button:hover {
+    #banner input[type="submit"]:hover,
+    #banner input[type="reset"]:hover,
+    #banner input[type="button"]:hover,
+    #banner .button:hover {
       background-color: rgba(255, 255, 255, 0.1); }
-    #banner input[type="submit"].active, #banner input[type="reset"].active, #banner input[type="button"].active, #banner .button.active {
+    #banner input[type="submit"].active,
+    #banner input[type="reset"].active,
+    #banner input[type="button"].active,
+    #banner .button.active {
       background-color: rgba(255, 255, 255, 0.2); }
-    #banner input[type="submit"].special, #banner input[type="reset"].special, #banner input[type="button"].special, #banner .button.special {
+    #banner input[type="submit"].special,
+    #banner input[type="reset"].special,
+    #banner input[type="button"].special,
+    #banner .button.special {
       background: #fff;
       color: #666 !important; }
 
@@ -868,7 +992,7 @@ body.landing #skel-layers-wrapper {
       margin: 0; }
     #main > header p {
       border-top: solid 2px #e5e5e5;
-      color: #777;
+      color: #646464;
       display: inline-block;
       font-style: normal;
       margin: 1em 0 0 0;
@@ -883,7 +1007,10 @@ body.landing #main {
   padding: 4em 0 6em 0;
   text-align: center; }
   #footer .icons a {
+    -moz-transition: opacity 0.2s ease-in-out;
     -webkit-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
     opacity: 0.35; }
     #footer .icons a:hover {
@@ -920,15 +1047,26 @@ body.landing #main {
     margin: 0 auto;
     max-width: 100%;
     width: 25em; }
-  #cta input[type="submit"], #cta input[type="reset"], #cta input[type="button"], #cta .button {
+  #cta input[type="submit"],
+  #cta input[type="reset"],
+  #cta input[type="button"],
+  #cta .button {
     box-shadow: none;
     background: #fff;
     color: #e89980; }
-  #cta input[type="text"], #cta input[type="password"], #cta input[type="email"], #cta select, #cta textarea {
+  #cta input[type="text"],
+  #cta input[type="password"],
+  #cta input[type="email"],
+  #cta select,
+  #cta textarea {
     color: #ffffff;
     background: rgba(255, 255, 255, 0.15);
     border: 0; }
-    #cta input[type="text"]:focus, #cta input[type="password"]:focus, #cta input[type="email"]:focus, #cta select:focus, #cta textarea:focus {
+    #cta input[type="text"]:focus,
+    #cta input[type="password"]:focus,
+    #cta input[type="email"]:focus,
+    #cta select:focus,
+    #cta textarea:focus {
       box-shadow: inset 0 0 0 2px #fff; }
   #cta ::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.75) !important; }
