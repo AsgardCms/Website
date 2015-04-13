@@ -26,6 +26,13 @@
         <a href="{{ route('doc.show', ['core-module/assetmanager']) }}">Asset Manager</a>
     </li>
     <li class="header">
+        <i class="fa fa-tachometer"></i>
+        Dashboard Module
+    </li>
+    <li class="{{ Request::is('*/dashboard-module/widgets') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['dashboard-module/widgets']) }}">Widgets</a>
+    </li>
+    <li class="header">
         <i class="fa fa-file-image-o"></i>
         Media Module
     </li>
