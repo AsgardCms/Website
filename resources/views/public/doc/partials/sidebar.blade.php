@@ -97,6 +97,9 @@
     <li class="{{ Request::is('*/user-module/users') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['user-module/users']) }}">Users</a>
     </li>
+    <li class="{{ Request::is('*/user-module/events') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['user-module/events']) }}">Events</a>
+    </li>
     <li class="header">
         <i class="fa fa-cogs"></i>
         Workshop Module
