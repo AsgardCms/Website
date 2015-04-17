@@ -48,6 +48,9 @@
     <li class="{{ Request::is('*/media-module/events') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['media-module/events']) }}">Events</a>
     </li>
+    <li class="{{ Request::is('*/media-module/relations') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['media-module/relations']) }}">Relations</a>
+    </li>
     <li class="header">
         <i class="fa fa-bars"></i>
         Menu Module
