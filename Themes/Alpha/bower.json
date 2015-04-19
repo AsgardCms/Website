@@ -1,0 +1,24 @@
+{
+  "name": "alpha-theme",
+  "version": "1.0.0",
+  "description": "Alpha Theme",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "/resources/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.1",
+    "font-awesome": ">=4.3.0",
+    "prism": "*",
+    "bxslider-4": ">=4.2.3",
+    "jquery.localScroll": ">=1.4.0",
+    "scrollgress": ">=1.0",
+    "skel": ">=2.2.1",
+    "jquery.scrollwatch": "*"
+  }
+}

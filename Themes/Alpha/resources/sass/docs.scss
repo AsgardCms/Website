@@ -1,0 +1,44 @@
+.row-box .content {
+   padding-right: 30px;
+}
+.side-menu {
+  list-style: outside none none;
+  font-size: 16px;
+  margin-bottom: 40px;
+  margin-top: -30px;
+  li {
+    position: relative;
+    i {
+      position: absolute;
+      font-size: 20px;
+      left: -25px;
+      top: 5px;
+    }
+  }
+
+  li.header {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+
+  li.active a {
+    color: #999;
+    border: none;
+  }
+}
+
+.anchor {
+  display: inline-block;
+  outline: medium none;
+  text-decoration: none;
+  opacity: 0.5;
+  border: none;
+  &:before {
+    content: '#';
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
