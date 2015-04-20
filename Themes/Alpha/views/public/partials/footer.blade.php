@@ -3,7 +3,7 @@
                 <li><a href="https://twitter.com/AsgardCMS" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
                 <li><a href="https://github.com/AsgardCms" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
                 <li>
-                    <script async defer src="http://slack.asgardcms.com/slackin.js"></script>
+                    <a href="http://slack.asgardcms.com"><img src="http://slack.asgardcms.com/badge.svg" alt="Slack"/></a>
                 </li>
             </ul>
             <ul class="copyright">
