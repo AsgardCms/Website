@@ -11,10 +11,10 @@ var gulp = require('gulp'),
     themeInfo = require('./theme.json');
 
 // Sass
-var sass_path = './resources/scss/**/*.scss',
+var sass_path = './resources/sass/**/*.scss',
     vendor = './resources/vendor';
 gulp.task('sass', function () {
-    gulp.src('./resources/scss/*.scss')
+    gulp.src('./resources/sass/*.scss')
         .pipe(sass())
         .pipe(notify({
             'title': 'Css',
