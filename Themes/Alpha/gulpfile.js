@@ -36,8 +36,7 @@ gulp.task('concat-css', ['sass'], function () {
     return gulp.src([
         vendor + '/font-awesome/css/font-awesome.min.css',
         vendor + '/bxslider-4/dist/jquery.bxslider.css',
-        vendor + '/prism/prism.css',
-        vendor + '/prism/prism-dark.css',
+        './resources/css/vendor/prism.css',
         vendor + '/skel/dist/skel.css',
         './assets/css/dist/main.min.css'
     ])
@@ -55,18 +54,18 @@ var js_path = './resources/js/*.js';
 gulp.task('scripts', function() {
     return gulp.src([
         vendor + '/jquery/dist/jquery.js',
-        vendor + '/jquery.scrollwatch/jquery.scrollwatch.min.js',
-        vendor + '/bxslider-4/dist/jquery.bxslider.min.js',
         vendor + '/jquery.scrollTo/jquery.scrollTo.min.js',
         vendor + '/jquery.localScroll/jquery.localScroll.min.js',
-        vendor + '/scrollgress/build/scrollgress.min.js',
-        vendor + '/lodash/dist/lodash.min.js',
-        vendor + '/prism/prism.js',
-        vendor + '/skel/dist/skel.min.js',
+        './resources/js/vendor/jquery.bxslider.min.js',
         './resources/js/vendor/jquery.dropotron.min.js',
+        './resources/js/vendor/jquery.scrollgress.min.js',
+        './resources/js/vendor/prism.js',
+        vendor + '/lodash/dist/lodash.min.js',
+        vendor + '/skel/dist/skel.min.js',
+        './resources/js/vendor/skel-layers.min.js',
         './resources/js/*.js'
     ])
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(concat('all.min.js'))
         .pipe(gulp.dest('./assets/js/dist'))
         .pipe(shell("php ../../artisan stylist:publish " + themeInfo.name))
@@ -79,7 +78,7 @@ gulp.task('scripts', function() {
 // Copy
 gulp.task('copies', function() {
     return gulp.src('./resources/vendor/font-awesome/fonts/**/*')
-        .pipe(gulp.dest('./assets/css/fonts'));
+        .pipe(gulp.dest('./assets/fonts'));
 });
 
 // Publish all assets

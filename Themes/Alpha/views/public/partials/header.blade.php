@@ -13,8 +13,6 @@
         <meta property="og:image" content="{{ asset('/assets/images/thor-the-dark-world-asgard.jpg')}}" />
 
 		<!--[if lte IE 8]><script src="assets/css/ie/html5shiv.js"></script><![endif]-->
-		{!! Theme::script('js/dist/all.min.js') !!}
-
 		{!! Theme::style('css/dist/all.min.css') !!}
 		<noscript>
 			{!! Theme::style('css/style-wide.css') !!}
