@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'faq.questions' => [
+    'faq.faqs' => [
         'index',
         'create',
         'store',
@@ -9,15 +9,4 @@ return [
         'update',
         'destroy',
     ],
-    'faq.answers' => [
-        'index',
-        'create',
-        'store',
-        'edit',
-        'update',
-        'destroy',
-    ],
-// append
-
-
 ];
