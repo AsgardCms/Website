@@ -14,7 +14,7 @@ class CreateFaqQuestionTranslationsTable extends Migration
     {
         Schema::create('faq__question_translations', function (Blueprint $table) {
             $table->increments('id');
-            // Your translatable fields
+            $table->string('name');
 
             $table->integer('question_id')->unsigned();
             $table->string('locale')->index();

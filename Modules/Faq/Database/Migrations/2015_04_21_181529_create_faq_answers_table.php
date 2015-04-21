@@ -14,8 +14,9 @@ class CreateFaqAnswersTable extends Migration
     {
         Schema::create('faq__answers', function (Blueprint $table) {
             $table->increments('id');
-            // Your fields
+            $table->integer('question_id')->unsigned();
             $table->timestamps();
+            $table->foreign('question_id')->references('id')->on('faq__questions')->onDelete('cascade');
         });
     }
 
