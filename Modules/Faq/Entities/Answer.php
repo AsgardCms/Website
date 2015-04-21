@@ -8,6 +8,6 @@ class Answer extends Model
     use Translatable;
 
     protected $table = 'faq__answers';
-    public $translatedAttributes = [];
-    protected $fillable = [];
+    public $translatedAttributes = ['content'];
+    protected $fillable = ['content', 'question_id'];
 }
