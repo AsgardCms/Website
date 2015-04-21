@@ -24,4 +24,4 @@
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ asset('/assets/css/ie/v8.css')}}" /><![endif]-->
 	</head>
-	@include("public.partials.{$header}-header")
+	@include("partials.{$header}-header")

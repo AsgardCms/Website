@@ -1,4 +1,4 @@
 <body class="landing">
     <header id="header" class="alt">
-        @include('public.partials.navigation')
+        @include('partials.navigation')
     </header>

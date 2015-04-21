@@ -1,4 +1,4 @@
-@extends('public.layouts.landing')
+@extends('layouts.landing')
 
 @section('content')
 <!-- Banner -->
