@@ -1,16 +1,16 @@
 {
-    "name": "Faq",
-    "alias": "faq",
-    "description": "",
-    "keywords": [],
-    "active": 1,
-    "order": 0,
-    "providers": [
-        "Modules\\Faq\\Providers\\FaqServiceProvider",
+  "name": "Faq",
+  "alias": "faq",
+  "description": "",
+  "keywords": [],
+  "active": 1,
+  "order": 0,
+  "providers": [
+    "Modules\\Faq\\Providers\\FaqServiceProvider",
     "Modules\\Faq\\Providers\\RouteServiceProvider"
-    ],
-    "aliases":{},
-    "files": [
-        "composers.php"
-    ]
+  ],
+  "aliases": {},
+  "files": [
+    "composers.php"
+  ]
 }
