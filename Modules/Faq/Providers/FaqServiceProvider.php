@@ -1,6 +1,9 @@
 <?php namespace Modules\Faq\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Modules\Faq\Entities\Faq;
+use Modules\Faq\Repositories\Cache\CacheFaqDecorator;
+use Modules\Faq\Repositories\Eloquent\EloquentFaqRepository;
 
 class FaqServiceProvider extends ServiceProvider
 {
@@ -34,29 +37,16 @@ class FaqServiceProvider extends ServiceProvider
     private function registerBindings()
     {
         $this->app->bind(
-            'Modules\Faq\Repositories\QuestionRepository',
+            'Modules\Faq\Repositories\FaqRepository',
             function () {
-                $repository = new \Modules\Faq\Repositories\Eloquent\EloquentQuestionRepository(new \Modules\Faq\Entities\Question());
+                $repository = new EloquentFaqRepository(new Faq());
 
                 if (! config('app.cache')) {
                     return $repository;
                 }
 
-                return new \Modules\Faq\Repositories\Cache\CacheQuestionDecorator($repository);
+                return new CacheFaqDecorator($repository);
             }
         );
-        $this->app->bind(
-            'Modules\Faq\Repositories\AnswerRepository',
-            function () {
-                $repository = new \Modules\Faq\Repositories\Eloquent\EloquentAnswerRepository(new \Modules\Faq\Entities\Answer());
-
-                if (! config('app.cache')) {
-                    return $repository;
-                }
-
-                return new \Modules\Faq\Repositories\Cache\CacheAnswerDecorator($repository);
-            }
-        );
-// add bindings
     }
 }

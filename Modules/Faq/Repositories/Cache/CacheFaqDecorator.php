@@ -1,11 +1,11 @@
 <?php namespace Modules\Faq\Repositories\Cache;
 
 use Modules\Core\Repositories\Cache\BaseCacheDecorator;
-use Modules\Faq\Repositories\AnswerRepository;
+use Modules\Faq\Repositories\FaqRepository;
 
-class CacheAnswerDecorator extends BaseCacheDecorator implements AnswerRepository
+class CacheFaqDecorator extends BaseCacheDecorator implements FaqRepository
 {
-    public function __construct(AnswerRepository $answer)
+    public function __construct(FaqRepository $answer)
     {
         parent::__construct();
         $this->entityName = 'faq.answers';
