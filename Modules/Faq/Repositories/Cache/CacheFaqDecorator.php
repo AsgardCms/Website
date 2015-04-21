@@ -5,10 +5,10 @@ use Modules\Faq\Repositories\FaqRepository;
 
 class CacheFaqDecorator extends BaseCacheDecorator implements FaqRepository
 {
-    public function __construct(FaqRepository $answer)
+    public function __construct(FaqRepository $faq)
     {
         parent::__construct();
-        $this->entityName = 'faq.answers';
-        $this->repository = $answer;
+        $this->entityName = 'faq.faqs';
+        $this->repository = $faq;
     }
 }

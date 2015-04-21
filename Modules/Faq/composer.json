@@ -1,5 +1,5 @@
 {
-  "name": "asgard/faq",
+  "name": "asgardcms/faq",
   "description": "",
   "type": "asgard-module",
   "require": {
@@ -22,7 +22,7 @@
   "authors": [
     {
       "name": "Nicolas Widart",
-      "email": "support@asgardcms.com"
+      "email": "support@asgarcms.com"
     }
   ],
   "autoload": {

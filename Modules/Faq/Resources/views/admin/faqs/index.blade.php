@@ -2,11 +2,11 @@
 
 @section('content-header')
     <h1>
-        {{ trans('faq::questions.title.questions') }}
+        {{ trans('faq::faqs.title.faqs') }}
     </h1>
     <ol class="breadcrumb">
         <li><a href="{{ URL::route('dashboard.index') }}"><i class="fa fa-dashboard"></i> {{ trans('core::core.breadcrumb.home') }}</a></li>
-        <li class="active">{{ trans('faq::questions.title.questions') }}</li>
+        <li class="active">{{ trans('faq::faqs.title.faqs') }}</li>
     </ol>
 @stop
 
@@ -15,8 +15,8 @@
         <div class="col-xs-12">
             <div class="row">
                 <div class="btn-group pull-right" style="margin: 0 15px 15px 0;">
-                    <a href="{{ URL::route('admin.faq.question.create') }}" class="btn btn-primary btn-flat" style="padding: 4px 10px;">
-                        <i class="fa fa-pencil"></i> {{ trans('faq::questions.button.create question') }}
+                    <a href="{{ URL::route('admin.faq.faq.create') }}" class="btn btn-primary btn-flat" style="padding: 4px 10px;">
+                        <i class="fa fa-pencil"></i> {{ trans('faq::faqs.button.create faq') }}
                     </a>
                 </div>
             </div>
@@ -33,18 +33,18 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <?php if (isset($questions)): ?>
-                        <?php foreach ($questions as $question): ?>
+                        <?php if (isset($faqs)): ?>
+                        <?php foreach ($faqs as $faq): ?>
                         <tr>
                             <td>
-                                <a href="{{ URL::route('admin.faq.question.edit', [$question->id]) }}">
-                                    {{ $question->created_at }}
+                                <a href="{{ URL::route('admin.faq.faq.edit', [$faq->id]) }}">
+                                    {{ $faq->created_at }}
                                 </a>
                             </td>
                             <td>
                                 <div class="btn-group">
-                                    <a href="{{ URL::route('admin.faq.question.edit', [$question->id]) }}" class="btn btn-default btn-flat"><i class="glyphicon glyphicon-pencil"></i></a>
-                                    <button class="btn btn-danger btn-flat" data-toggle="modal" data-target="#confirmation-{{ $question->id }}"><i class="glyphicon glyphicon-trash"></i></button>
+                                    <a href="{{ URL::route('admin.faq.faq.edit', [$faq->id]) }}" class="btn btn-default btn-flat"><i class="glyphicon glyphicon-pencil"></i></a>
+                                    <button class="btn btn-danger btn-flat" data-toggle="modal" data-target="#confirmation-{{ $faq->id }}"><i class="glyphicon glyphicon-trash"></i></button>
                                 </div>
                             </td>
                         </tr>
@@ -64,10 +64,10 @@
             </div>
         </div>
     </div>
-    <?php if (isset($questions)): ?>
-    <?php foreach ($questions as $question): ?>
+    <?php if (isset($faqs)): ?>
+    <?php foreach ($faqs as $faq): ?>
     <!-- Modal -->
-    <div class="modal fade modal-danger" id="confirmation-{{ $question->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade modal-danger" id="confirmation-{{ $faq->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -79,7 +79,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline btn-flat" data-dismiss="modal">{{ trans('core::core.button.cancel') }}</button>
-                    {!! Form::open(['route' => ['admin.faq.question.destroy', $question->id], 'method' => 'delete', 'class' => 'pull-left']) !!}
+                    {!! Form::open(['route' => ['admin.faq.faq.destroy', $faq->id], 'method' => 'delete', 'class' => 'pull-left']) !!}
                     <button type="submit" class="btn btn-outline btn-flat"><i class="glyphicon glyphicon-trash"></i> {{ trans('core::core.button.delete') }}</button>
                     {!! Form::close() !!}
                 </div>
@@ -96,7 +96,7 @@
 @section('shortcuts')
     <dl class="dl-horizontal">
         <dt><code>c</code></dt>
-        <dd>{{ trans('faq::questions.title.create question') }}</dd>
+        <dd>{{ trans('faq::faqs.title.create faq') }}</dd>
     </dl>
 @stop
 
@@ -105,7 +105,7 @@
         $( document ).ready(function() {
             $(document).keypressAction({
                 actions: [
-                    { key: 'c', route: "<?= route('admin.faq.question.create') ?>" }
+                    { key: 'c', route: "<?= route('admin.faq.faq.create') ?>" }
                 ]
             });
         });
