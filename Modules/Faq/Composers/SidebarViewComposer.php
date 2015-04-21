@@ -15,30 +15,11 @@ class SidebarViewComposer extends BaseSidebarViewComposer
             $group->addItem('Faq', function (SidebarItem $item) {
                 $item->icon = 'fa fa-copy';
                 $item->weight = 10;
+                $item->append('admin.faq.faq.create');
+                $item->route('admin.faq.faq.index');
                 $item->authorize(
-                     /* append */
+                    $this->auth->hasAccess('faq.faqs.index')
                 );
-                $item->addItem(trans('faq::questions.title.questions'), function (SidebarItem $item) {
-                    $item->icon = 'fa fa-copy';
-                    $item->weight = 0;
-                    $item->append('admin.faq.question.create');
-                    $item->route('admin.faq.question.index');
-                    $item->authorize(
-                        $this->auth->hasAccess('faq.questions.index')
-                    );
-                });
-                $item->addItem(trans('faq::answers.title.answers'), function (SidebarItem $item) {
-                    $item->icon = 'fa fa-copy';
-                    $item->weight = 0;
-                    $item->append('admin.faq.answer.create');
-                    $item->route('admin.faq.answer.index');
-                    $item->authorize(
-                        $this->auth->hasAccess('faq.answers.index')
-                    );
-                });
-// append
-
-
             });
         });
     }
