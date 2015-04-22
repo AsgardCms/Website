@@ -27,9 +27,9 @@ class FaqController extends AdminBaseController
      */
     public function index()
     {
-        //$faqs = $this->faq->all();
+        $faqs = $this->faq->all();
 
-        return view('faq::admin.faqs.index', compact(''));
+        return view('faq::admin.faqs.index', compact('faqs'));
     }
 
     /**
