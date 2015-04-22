@@ -1,9 +1,10 @@
 <?php namespace Modules\Faq\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
 use Laracasts\Flash\Flash;
 use Modules\Core\Http\Controllers\Admin\AdminBaseController;
 use Modules\Faq\Entities\Faq;
+use Modules\Faq\Http\Requests\CreateFaqRequest;
+use Modules\Faq\Http\Requests\UpdateFaqRequest;
 use Modules\Faq\Repositories\FaqRepository;
 
 class FaqController extends AdminBaseController
@@ -45,10 +46,10 @@ class FaqController extends AdminBaseController
     /**
      * Store a newly created resource in storage.
      *
-     * @param  Request $request
+     * @param  CreateFaqRequest $request
      * @return Response
      */
-    public function store(Request $request)
+    public function store(CreateFaqRequest $request)
     {
         $this->faq->create($request->all());
 
@@ -72,10 +73,10 @@ class FaqController extends AdminBaseController
      * Update the specified resource in storage.
      *
      * @param  Faq $faq
-     * @param  Request $request
+     * @param  UpdateFaqRequest $request
      * @return Response
      */
-    public function update(Faq $faq, Request $request)
+    public function update(Faq $faq, UpdateFaqRequest $request)
     {
         $this->faq->update($faq, $request->all());
 

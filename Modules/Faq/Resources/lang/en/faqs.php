@@ -20,6 +20,8 @@ return [
         'faq deleted' => 'Faq successfully deleted.',
     ],
     'validation' => [
+        'question is required' => 'Question is required',
+        'answer is required' => 'Answer is required',
     ],
     'answer' => 'Answer',
     'question' => 'Question',
