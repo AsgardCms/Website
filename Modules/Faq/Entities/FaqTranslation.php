@@ -6,5 +6,5 @@ class FaqTranslation extends Model
 {
     public $timestamps = false;
     protected $fillable = ['question', 'answer'];
-    protected $table = 'faq__faqs_translations';
+    protected $table = 'faq__faq_translations';
 }
