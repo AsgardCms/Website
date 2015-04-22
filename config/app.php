@@ -147,6 +147,7 @@ return [
 
         'Cartalyst\Sentry\SentryServiceProvider',
         'Barryvdh\Debugbar\ServiceProvider',
+		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
 		'Modules\Core\Providers\AsgardServiceProvider',
 	],
 
