@@ -5,6 +5,6 @@ use Illuminate\Database\Eloquent\Model;
 class FaqTranslation extends Model
 {
     public $timestamps = false;
-    protected $fillable = [];
+    protected $fillable = ['question', 'answer'];
     protected $table = 'faq__faqs_translations';
 }
