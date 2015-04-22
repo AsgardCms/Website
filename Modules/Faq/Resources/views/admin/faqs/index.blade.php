@@ -29,6 +29,8 @@
                         <thead>
                         <tr>
                             <th>{{ trans('core::core.table.created at') }}</th>
+                            <th>{{ trans('faq::faqs.question') }}</th>
+                            <th>{{ trans('faq::faqs.answer') }}</th>
                             <th>{{ trans('core::core.table.actions') }}</th>
                         </tr>
                         </thead>
@@ -39,6 +41,16 @@
                             <td>
                                 <a href="{{ URL::route('admin.faq.faq.edit', [$faq->id]) }}">
                                     {{ $faq->created_at }}
+                                </a>
+                            </td>
+                            <td>
+                                <a href="{{ URL::route('admin.faq.faq.edit', [$faq->id]) }}">
+                                    {{ $faq->question }}
+                                </a>
+                            </td>
+                            <td>
+                                <a href="{{ URL::route('admin.faq.faq.edit', [$faq->id]) }}">
+                                    {{ str_limit(strip_tags($faq->answer), 100) }}
                                 </a>
                             </td>
                             <td>
@@ -54,6 +66,8 @@
                         <tfoot>
                         <tr>
                             <th>{{ trans('core::core.table.created at') }}</th>
+                            <th>{{ trans('faq::faqs.question') }}</th>
+                            <th>{{ trans('faq::faqs.answer') }}</th>
                             <th>{{ trans('core::core.table.actions') }}</th>
                         </tr>
                         </tfoot>
@@ -125,6 +139,7 @@
                     "url": '<?php echo Module::asset("core:js/vendor/datatables/{$locale}.json") ?>'
                 },
                 "columns": [
+                    null,
                     null,
                     null,
                     { "sortable": false }
