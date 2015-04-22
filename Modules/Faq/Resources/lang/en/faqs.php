@@ -21,4 +21,6 @@ return [
     ],
     'validation' => [
     ],
+    'answer' => 'Answer',
+    'question' => 'Question',
 ];
