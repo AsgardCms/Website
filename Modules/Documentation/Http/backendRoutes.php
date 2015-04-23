@@ -9,4 +9,9 @@ $router->group(['prefix' => '/documentation'], function (Router $router) {
         'as' => 'admin.docs.index',
         'uses' => 'DocumentationController@index',
     ]);
+
+    $router->post('docs/refresh', [
+        'as' => 'admin.docs.refresh',
+        'uses' => 'DocumentationController@refresh',
+    ]);
 });
