@@ -2,6 +2,7 @@
 
 return [
     'documentation.docs' => [
-        'index'
+        'index',
+        'refresh',
     ],
 ];
