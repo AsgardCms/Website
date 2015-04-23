@@ -1,0 +1,19 @@
+language: php
+
+php:
+  - 7
+  - 5.6
+  - 5.5
+  - 5.4
+  - hhvm
+
+env:
+  - LARAVEL_VERSION="5.0.*@dev" TESTBENCH_VERSION="~3.0@dev"
+
+before_script:
+  - travis_retry composer install --no-interaction --prefer-source --dev
+
+script: phpunit
+
+notifications:
+  slack: asgardcms:rQqM7V2EoZOrsv6GgAemZyOS
