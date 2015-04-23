@@ -1,5 +1,7 @@
 <?php
 
 return [
-// append
+    'documentation.docs' => [
+        'index'
+    ],
 ];
