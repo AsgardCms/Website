@@ -33,6 +33,9 @@ class DocumentationServiceProvider extends ServiceProvider
 
     private function registerBindings()
     {
-        // add bindings
+        $this->app->bind(
+            'Modules\Documentation\Repositories\DocumentationRepository',
+            'Modules\Documentation\Repositories\Git\GitDocumentationRepository'
+        );
     }
 }
