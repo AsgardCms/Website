@@ -19,6 +19,7 @@ class DocumentationServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerBindings();
+        $this->registerConsoleCommands();
     }
 
     /**
@@ -37,5 +38,13 @@ class DocumentationServiceProvider extends ServiceProvider
             'Modules\Documentation\Repositories\DocumentationRepository',
             'Modules\Documentation\Repositories\Git\GitDocumentationRepository'
         );
+    }
+
+    private function registerConsoleCommands()
+    {
+        $this->app->bind('asgard.docs.update', 'Modules\Documentation\Console\UpdateDocumentationCommand');
+        $this->commands([
+            'asgard.docs.update'
+        ]);
     }
 }
