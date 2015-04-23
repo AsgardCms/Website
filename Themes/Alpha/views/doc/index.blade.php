@@ -1,4 +1,4 @@
-@extends('public.layouts.master')
+@extends('layouts.master')
 
 @section('title')Documentation | @parent @stop
 
@@ -10,7 +10,7 @@
     </header>
     <div class="row box row-box">
         <div class="3u 3u(2) 12u$(4)">
-            @include('public.doc.partials.sidebar')
+            @include('doc.partials.sidebar')
         </div>
         <div class="9u 9u(2) 12u$(4) content">
             {!! $content !!}
