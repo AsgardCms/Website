@@ -5,15 +5,16 @@ use Illuminate\Routing\Router;
 /** @var Router $router */
 
 $router->group(['prefix' =>'/entry'], function (Router $router) {
-        $router->bind('entries', function ($id) {
-            return app('Modules\Entry\Repositories\EntryRepository')->find($id);
-        });
-        $router->resource('entries', 'EntryController', ['except' => ['show'], 'names' => [
-            'index' => 'admin.entry.entry.index',
-            'create' => 'admin.entry.entry.create',
-            'store' => 'admin.entry.entry.store',
-            'edit' => 'admin.entry.entry.edit',
-            'update' => 'admin.entry.entry.update',
-            'destroy' => 'admin.entry.entry.destroy',
-        ]]);
+    $router->get('entries', [
+        'as' => 'admin.entry.entry.index',
+        'uses' => 'EntryController@index'
+    ]);
+    $router->get('invite/{email}', [
+        'as' => 'admin.entry.entry.invite',
+        'uses' => 'EntryController@invite'
+    ]);
+    $router->post('batch-invite', [
+        'as' => 'admin.entry.entry.batch-invite',
+        'uses' => 'EntryController@batchInvite'
+    ]);
 });
