@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8ff82fbad328fc8f53b2576063eb6e76",
+    "hash": "b645277a24192a256c0ccbaa23b8fa44",
     "packages": [
         {
             "name": "asgardcms/adminlte-theme",
@@ -423,6 +423,101 @@
                 "workshop"
             ],
             "time": "2015-04-23 17:43:02"
+        },
+        {
+            "name": "bugsnag/bugsnag",
+            "version": "v2.5.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bugsnag/bugsnag-php.git",
+                "reference": "56ee4446be951eadd614a4ec768ddad3c527aa9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bugsnag/bugsnag-php/zipball/56ee4446be951eadd614a4ec768ddad3c527aa9a",
+                "reference": "56ee4446be951eadd614a4ec768ddad3c527aa9a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Bugsnag_": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Smith",
+                    "email": "notifiers@bugsnag.com",
+                    "homepage": "https://bugsnag.com"
+                }
+            ],
+            "description": "Official Bugsnag notifier for PHP applications.",
+            "homepage": "https://github.com/bugsnag/bugsnag-php",
+            "keywords": [
+                "bugsnag",
+                "errors",
+                "exceptions",
+                "logging",
+                "tracking"
+            ],
+            "time": "2015-03-27 18:34:49"
+        },
+        {
+            "name": "bugsnag/bugsnag-laravel",
+            "version": "v1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bugsnag/bugsnag-laravel.git",
+                "reference": "eab38bc44ead6a522132a9bbbde63225f6db7e20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bugsnag/bugsnag-laravel/zipball/eab38bc44ead6a522132a9bbbde63225f6db7e20",
+                "reference": "eab38bc44ead6a522132a9bbbde63225f6db7e20",
+                "shasum": ""
+            },
+            "require": {
+                "bugsnag/bugsnag": ">=2.5.0",
+                "illuminate/support": "4.*|5.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Bugsnag\\BugsnagLaravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Smith",
+                    "email": "notifiers@bugsnag.com"
+                }
+            ],
+            "description": "Official Bugsnag notifier for Laravel applications.",
+            "homepage": "https://github.com/bugsnag/bugsnag-laravel",
+            "keywords": [
+                "bugsnag",
+                "errors",
+                "exceptions",
+                "laravel",
+                "logging",
+                "tracking"
+            ],
+            "time": "2015-03-18 21:07:12"
         },
         {
             "name": "cartalyst/sentry",
@@ -2874,12 +2969,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pingpong-labs/generators.git",
-                "reference": "65982b61bd0c90bdf702434ba996ee179342a156"
+                "reference": "a83891791994de5f687f2b7dabd4688610a14ab6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pingpong-labs/generators/zipball/65982b61bd0c90bdf702434ba996ee179342a156",
-                "reference": "65982b61bd0c90bdf702434ba996ee179342a156",
+                "url": "https://api.github.com/repos/pingpong-labs/generators/zipball/a83891791994de5f687f2b7dabd4688610a14ab6",
+                "reference": "a83891791994de5f687f2b7dabd4688610a14ab6",
                 "shasum": ""
             },
             "require": {
@@ -2914,7 +3009,7 @@
                 "laravel",
                 "pingpong"
             ],
-            "time": "2015-04-19 16:49:03"
+            "time": "2015-04-23 19:40:53"
         },
         {
             "name": "pingpong/menus",

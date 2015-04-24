@@ -148,6 +148,7 @@ return [
         'Cartalyst\Sentry\SentryServiceProvider',
         'Barryvdh\Debugbar\ServiceProvider',
 		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+		'Bugsnag\BugsnagLaravel\BugsnagLaravelServiceProvider',
 		'Modules\Core\Providers\AsgardServiceProvider',
 	],
 
@@ -198,6 +199,7 @@ return [
 		'View'      => 'Illuminate\Support\Facades\View',
 
         'Sentry' => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
+		'Bugsnag' => 'Bugsnag\BugsnagLaravel\BugsnagFacade',
 	],
 
 ];
