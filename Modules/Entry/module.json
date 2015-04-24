@@ -1,0 +1,16 @@
+{
+    "name": "Entry",
+    "alias": "entry",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Entry\\Providers\\EntryServiceProvider",
+    "Modules\\Entry\\Providers\\RouteServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+        "composers.php"
+    ]
+}
