@@ -9,6 +9,10 @@ return [
         'update',
         'destroy',
     ],
-// append
-
+    'entry.batch-invite' => [
+        'batchInvite',
+    ],
+    'entry.invite' => [
+        'invite',
+    ],
 ];
