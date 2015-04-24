@@ -120,8 +120,8 @@ return [
     'composer' => [
         'vendor' => 'pingpong-modules',
         'author' => [
-            "name" => 'Pingpong Labs',
-            'email' => 'pingpong.labs@gmail.com'
+            "name" => 'Nicolas Widart',
+            'email' => 'n.widart@gmail.com'
         ]
     ],
     /*
