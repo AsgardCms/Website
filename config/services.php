@@ -20,7 +20,7 @@ return [
 	],
 
 	'mandrill' => [
-		'secret' => '',
+		'secret' => getenv('MANDRILL_API'),
 	],
 
 	'ses' => [
@@ -33,5 +33,7 @@ return [
 		'model'  => 'User',
 		'secret' => '',
 	],
-
+	'github' => [
+		'token' => getenv('GITHUB_TOKEN')
+	]
 ];
