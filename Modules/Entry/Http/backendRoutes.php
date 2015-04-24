@@ -3,7 +3,9 @@
 use Illuminate\Routing\Router;
 
 /** @var Router $router */
-
+$router->bind('email', function ($email) {
+    return app('Modules\Entry\Repositories\EntryRepository')->findByEmail($email);
+});
 $router->group(['prefix' =>'/entry'], function (Router $router) {
     $router->get('entries', [
         'as' => 'admin.entry.entry.index',
