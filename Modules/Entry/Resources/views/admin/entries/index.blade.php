@@ -31,6 +31,7 @@
                             <th>{{ trans('core::core.table.created at') }}</th>
                             <th>Email</th>
                             <th>Accepted</th>
+                            <th>Completed</th>
                             <th></th>
                         </tr>
                         </thead>
@@ -48,6 +49,13 @@
                                 {{ $entry->accepted ? 'yes' : 'no' }}
                             </td>
                             <td>
+                                <?php if ($entry->accepted): ?>
+                                    {{ $entry->activation->completed ? 'yes' : 'no' }}
+                                <?php else: ?>
+                                    no
+                                <?php endif; ?>
+                            </td>
+                            <td>
                                 <?php if (! $entry->accepted ): ?>
                                     <a href="{{ route('admin.entry.entry.invite', [$entry->email]) }}" class="btn btn-success btn-flat">Invite</a>
                                 <?php endif; ?>
@@ -61,6 +69,7 @@
                             <th>{{ trans('core::core.table.created at') }}</th>
                             <th>Email</th>
                             <th>Accepted</th>
+                            <th>Completed</th>
                             <th></th>
                         </tr>
                         </tfoot>
@@ -110,6 +119,7 @@
                     "url": '<?php echo Module::asset("core:js/vendor/datatables/{$locale}.json") ?>'
                 },
                 "columns": [
+                    null,
                     null,
                     null,
                     null,
