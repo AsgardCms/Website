@@ -36,7 +36,7 @@ class EntryController extends AdminBaseController
      * @param $entry
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function invite($entry)
+    public function invite(Entry $entry)
     {
         $this->entry->invite($entry);
 
