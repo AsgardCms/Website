@@ -3,6 +3,7 @@
 use Modules\Core\Repositories\Eloquent\EloquentBaseRepository;
 use Modules\Entry\Entities\Activation;
 use Modules\Entry\Entities\Entry;
+use Modules\Entry\Events\EntryWasInvited;
 use Modules\Entry\Repositories\EntryRepository;
 
 class EloquentEntryRepository extends EloquentBaseRepository implements EntryRepository
@@ -49,6 +50,8 @@ class EloquentEntryRepository extends EloquentBaseRepository implements EntryRep
         $entry->save();
 
         $this->createNewActivationForEntry($entry, $this->createNewToken($entry->email));
+
+        event(new EntryWasInvited($entry));
 
         return $entry;
     }
