@@ -2,6 +2,10 @@
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @property string email
+ * @property bool accepted
+ */
 class Entry extends Model
 {
     protected $table = 'entries';
