@@ -33,69 +33,29 @@ class EntryController extends AdminBaseController
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return Response
+     * @param $entry
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function create()
+    public function invite($entry)
     {
-        return view('entry::admin.entries.create');
+        $this->entry->invite($entry);
+
+        return redirect()->route('admin.entry.entry.index')->with('success', "Invite sent to {$entry->email}.");
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
-     * @param  Request $request
-     * @return Response
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function store(Request $request)
+    public function batchInvite(Request $request)
     {
-        $this->entry->create($request->all());
+        $entries = $this->entry->notAccepted($request->get('amount', 50));
 
-        Flash::success(trans('entry::entries.messages.entry created'));
+        foreach ($entries as $entry) {
+            $this->entry->invite($entry);
+        }
 
-        return redirect()->route('admin.entry.entry.index');
+        return redirect()->route('admin.entry.entry.index')->with('success', 'Invites sent.');
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  Entry $entry
-     * @return Response
-     */
-    public function edit(Entry $entry)
-    {
-        return view('entry::admin.entries.edit', compact('entry'));
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  Entry $entry
-     * @param  Request $request
-     * @return Response
-     */
-    public function update(Entry $entry, Request $request)
-    {
-        $this->entry->update($entry, $request->all());
-
-        Flash::success(trans('entry::entries.messages.entry updated'));
-
-        return redirect()->route('admin.entry.entry.index');
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  Entry $entry
-     * @return Response
-     */
-    public function destroy(Entry $entry)
-    {
-        $this->entry->destroy($entry);
-
-        Flash::success(trans('entry::entries.messages.entry deleted'));
-
-        return redirect()->route('admin.entry.entry.index');
-    }
 }
