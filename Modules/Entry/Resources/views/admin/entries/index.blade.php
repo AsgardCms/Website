@@ -15,8 +15,8 @@
         <div class="col-xs-12">
             <div class="row">
                 <div class="btn-group pull-right" style="margin: 0 15px 15px 0;">
-                    <a href="{{ URL::route('admin.entry.entry.create') }}" class="btn btn-primary btn-flat" style="padding: 4px 10px;">
-                        <i class="fa fa-pencil"></i> {{ trans('entry::entries.button.create entry') }}
+                    <a href="" class="btn btn-primary btn-flat" style="padding: 4px 10px;" data-toggle="modal" data-target="#sendInvite">
+                        <i class="fa fa-paper-plane"></i> Send new invite batch
                     </a>
                 </div>
             </div>
@@ -71,28 +71,30 @@
             </div>
         </div>
     </div>
-@stop
-
-@section('footer')
-    <a data-toggle="modal" data-target="#keyboardShortcutsModal"><i class="fa fa-keyboard-o"></i></a> &nbsp;
-@stop
-@section('shortcuts')
-    <dl class="dl-horizontal">
-        <dt><code>c</code></dt>
-        <dd>{{ trans('entry::entries.title.create entry') }}</dd>
-    </dl>
+    <div class="modal fade" id="sendInvite" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            {!! Form::open(['route' => 'admin.entry.entry.batch-invite', 'method' => 'post']) !!}
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Send new invite emails</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="number" class="form-control" id="amount" name="amount" placeholder="Amount" value="50">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-primary" value="Send" />
+                </div>
+            </div>
+            {!! Form::close() !!}
+        </div>
+    </div>
 @stop
 
 @section('scripts')
-    <script type="text/javascript">
-        $( document ).ready(function() {
-            $(document).keypressAction({
-                actions: [
-                    { key: 'c', route: "<?= route('admin.entry.entry.create') ?>" }
-                ]
-            });
-        });
-    </script>
     <?php $locale = App::getLocale(); ?>
     <script type="text/javascript">
         $(function () {
