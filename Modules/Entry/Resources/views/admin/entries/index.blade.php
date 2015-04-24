@@ -29,7 +29,9 @@
                         <thead>
                         <tr>
                             <th>{{ trans('core::core.table.created at') }}</th>
-                            <th>{{ trans('core::core.table.actions') }}</th>
+                            <th>Email</th>
+                            <th>Accepted</th>
+                            <th></th>
                         </tr>
                         </thead>
                         <tbody>
@@ -37,15 +39,18 @@
                         <?php foreach ($entries as $entry): ?>
                         <tr>
                             <td>
-                                <a href="{{ URL::route('admin.entry.entry.edit', [$entry->id]) }}">
-                                    {{ $entry->created_at }}
-                                </a>
+                                {{ $entry->created_at }}
                             </td>
                             <td>
-                                <div class="btn-group">
-                                    <a href="{{ URL::route('admin.entry.entry.edit', [$entry->id]) }}" class="btn btn-default btn-flat"><i class="glyphicon glyphicon-pencil"></i></a>
-                                    <button class="btn btn-danger btn-flat" data-toggle="modal" data-target="#confirmation-{{ $entry->id }}"><i class="glyphicon glyphicon-trash"></i></button>
-                                </div>
+                                {{ $entry->email }}
+                            </td>
+                            <td>
+                                {{ $entry->accepted ? 'yes' : 'no' }}
+                            </td>
+                            <td>
+                                <?php if (! $entry->accepted ): ?>
+                                    <a href="" class="btn btn-success btn-flat">Invite</a>
+                                <?php endif; ?>
                             </td>
                         </tr>
                         <?php endforeach; ?>
@@ -54,7 +59,9 @@
                         <tfoot>
                         <tr>
                             <th>{{ trans('core::core.table.created at') }}</th>
-                            <th>{{ trans('core::core.table.actions') }}</th>
+                            <th>Email</th>
+                            <th>Accepted</th>
+                            <th></th>
                         </tr>
                         </tfoot>
                     </table>
@@ -64,30 +71,6 @@
             </div>
         </div>
     </div>
-    <?php if (isset($entries)): ?>
-    <?php foreach ($entries as $entry): ?>
-    <!-- Modal -->
-    <div class="modal fade modal-danger" id="confirmation-{{ $entry->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title" id="myModalLabel">{{ trans('core::core.modal.title') }}</h4>
-                </div>
-                <div class="modal-body">
-                    {{ trans('core::core.modal.confirmation-message') }}
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-outline btn-flat" data-dismiss="modal">{{ trans('core::core.button.cancel') }}</button>
-                    {!! Form::open(['route' => ['admin.entry.entry.destroy', $entry->id], 'method' => 'delete', 'class' => 'pull-left']) !!}
-                    <button type="submit" class="btn btn-outline btn-flat"><i class="glyphicon glyphicon-trash"></i> {{ trans('core::core.button.delete') }}</button>
-                    {!! Form::close() !!}
-                </div>
-            </div>
-        </div>
-    </div>
-    <?php endforeach; ?>
-    <?php endif; ?>
 @stop
 
 @section('footer')
@@ -125,6 +108,7 @@
                     "url": '<?php echo Module::asset("core:js/vendor/datatables/{$locale}.json") ?>'
                 },
                 "columns": [
+                    null,
                     null,
                     null,
                     { "sortable": false }
