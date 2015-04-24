@@ -78,7 +78,10 @@
             <div class="4u 12u(3)">
                 <input type="submit" value="Sign Up" class="fit" />
             </div>
+            <div class="jsMessage">
+            </div>
         </div>
+
     </form>
 
 </section>
@@ -88,12 +91,6 @@
 <script>
 
 $( document ).ready(function() {
-//    $.ajaxSetup({
-//        headers: {
-//            'X-XSRF-TOKEN': $('input[name="_token"]').val()
-//        }
-//    });
-
     $('.bxslider').bxSlider();
 
     $(document).on('submit', 'form.jsSubscribe', function(e) {
@@ -102,13 +99,16 @@ $( document ).ready(function() {
         $.ajax({
             type: 'POST',
             url: $form.attr('action'),
-            data: {email: $form.find('input[name=email]').val()},
+            data: {
+                _token: '{{ csrf_token() }}',
+                email: $form.find('input[name=email]').val()
+            },
             success: function(data) {
                 $form.html('<p class="success">' + data + '</p>');
             },
             error:function (xhr){
                 var error = JSON.parse(xhr.responseText);
-                $form.html('<p class="error">' + error.email[0] + '</p>');
+                $form.find('.jsMessage').append('<p class="error">' + error.email[0] + '</p>');
             }
         });
     });
