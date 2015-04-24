@@ -49,7 +49,7 @@
                             </td>
                             <td>
                                 <?php if (! $entry->accepted ): ?>
-                                    <a href="" class="btn btn-success btn-flat">Invite</a>
+                                    <a href="{{ route('admin.entry.entry.invite', [$entry->email]) }}" class="btn btn-success btn-flat">Invite</a>
                                 <?php endif; ?>
                             </td>
                         </tr>
