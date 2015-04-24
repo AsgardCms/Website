@@ -52,4 +52,16 @@ class CacheEntryDecorator extends BaseCacheDecorator implements EntryRepository
 
         return $this->repository->subscribe($email);
     }
+
+    /**
+     * Invite the given entry
+     * @param object $entry
+     * @return bool
+     */
+    public function invite($entry)
+    {
+        $this->cache->tags($this->entityName)->flush();
+
+        return $this->repository->invite($entry);
+    }
 }

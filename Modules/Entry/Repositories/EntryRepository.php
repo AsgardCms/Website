@@ -22,4 +22,10 @@ interface EntryRepository extends BaseRepository
      */
     public function subscribe($email);
 
+    /**
+     * Invite the given entry
+     * @param object $entry
+     * @return bool
+     */
+    public function invite($entry);
 }
