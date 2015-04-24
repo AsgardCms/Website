@@ -27,9 +27,9 @@ class EntryController extends AdminBaseController
      */
     public function index()
     {
-        //$entries = $this->entry->all();
+        $entries = $this->entry->all();
 
-        return view('entry::admin.entries.index', compact(''));
+        return view('entry::admin.entries.index', compact('entries'));
     }
 
     /**
