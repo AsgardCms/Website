@@ -1,4 +1,4 @@
-@extends('public.layouts.master')
+@extends('layouts.master')
 
 @section('title')Final Step | @parent @stop
 
