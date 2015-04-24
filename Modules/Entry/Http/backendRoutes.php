@@ -16,6 +16,4 @@ $router->group(['prefix' =>'/entry'], function (Router $router) {
             'update' => 'admin.entry.entry.update',
             'destroy' => 'admin.entry.entry.destroy',
         ]]);
-// append
-
 });
