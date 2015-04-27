@@ -1,5 +1,7 @@
 <?php namespace Modules\Documentation\Http\Controllers\Frontend;
 
+use Illuminate\Contracts\Filesystem\FileNotFoundException;
+use Illuminate\Support\Facades\App;
 use Modules\Core\Http\Controllers\BasePublicController;
 use Modules\Documentation\Repositories\DocumentationRepository;
 
@@ -22,7 +24,12 @@ class DocumentationController extends BasePublicController
 
     public function show($page)
     {
-        $title = $this->documentation->getTitle($page);
+        try {
+            $title = $this->documentation->getTitle($page);
+        } catch (FileNotFoundException $e) {
+            App::abort('404');
+        }
+
         $subtitle = $this->documentation->getSubTitle($page);
         $content = $this->documentation->getContent($page);
 
