@@ -48,7 +48,7 @@ class GitDocumentationRepository implements DocumentationRepository
     {
         $pageFile = $this->getDocumentationPath() . "/$page.md";
 
-        return $this->cache->remember("doc_page_{$pageFile}_content", 60, function() use($pageFile)
+        return $this->cache->rememberForever("doc_page_{$pageFile}_content", function() use($pageFile)
         {
             $data = $this->parser->parse($this->finder->get($pageFile));
             return MarkdownExtra::defaultTransform($data->getContent());
