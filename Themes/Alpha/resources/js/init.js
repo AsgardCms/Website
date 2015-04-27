@@ -263,6 +263,9 @@
             target: 'body',
             hash: true
         });
+        $("img.lazy").lazyload({
+            effect : "fadeIn"
+        });
     });
 
 })(jQuery);

@@ -18,6 +18,7 @@
     "bxslider-4": ">=4.2.3",
     "jquery.localScroll": ">=1.4.0",
     "scrollgress": ">=1.0",
-    "skel": ">=2.2.1"
+    "skel": ">=2.2.1",
+    "jquery.lazyload": "*"
   }
 }
