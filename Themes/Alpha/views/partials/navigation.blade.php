@@ -14,8 +14,8 @@
                         <li><a href="{{ route('dashboard.index') }}">Admin</a></li>
                     <?php endif; ?>
                 <?php else: ?>
-                    <li><a href="{{ route('login') }}">Login</a></li>
-                    <li><a href="{{ route('register') }}">Register</a></li>
+                    <li class="{{ Request::is('*auth/login') ? 'active' : ''}}"><a href="{{ route('login') }}">Login</a></li>
+                    <li class="{{ Request::is('*auth/register') ? 'active' : ''}}"><a href="{{ route('register') }}">Register</a></li>
                 <?php endif; ?>
             </ul>
         </li>
