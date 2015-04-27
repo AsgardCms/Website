@@ -25,6 +25,9 @@
     <li class="{{ Request::is('*/core-module/assetmanager') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['core-module/assetmanager']) }}">Asset Manager</a>
     </li>
+    <li class="{{ Request::is('*/core-module/helpers') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['core-module/helpers']) }}">Helpers</a>
+    </li>
     <li class="header">
         <i class="fa fa-tachometer"></i>
         Dashboard Module
