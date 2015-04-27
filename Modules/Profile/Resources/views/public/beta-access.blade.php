@@ -12,7 +12,7 @@
             <div class="9u 9u(2) 12u$(4) content">
                 <?php if ($entry): ?>
                     <h4><strong>Status</strong></h4>
-                    <?php if ($entry->accepted && $entry->activation->completed): ?>
+                    <?php if ($entry->accepted && $entry->activation): ?>
                         <p>
                             You have access to the <strong>AsgardCms</strong> beta, congratulations! <br/>
                             You can install AsgardCms by checking out the <a href="{{ route('doc.index') }}">documentation</a>
