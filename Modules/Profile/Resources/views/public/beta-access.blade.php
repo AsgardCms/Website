@@ -31,6 +31,11 @@
                         <p>You're #{{ $entry->id }} <strong>AsgardCms</strong> beta waiting list.</p>
                         <p>A little bit more patience...</p>
                     <?php endif; ?>
+                <?php else: ?>
+                    <p>You haven't applied to the waiting list yet! What are you waiting for ?</p>
+                    <p>
+                        <a href="/#cta" class="button special fit icon fa-check">Go to the apply form</a>
+                    </p>
                 <?php endif; ?>
             </div>
         </div>
