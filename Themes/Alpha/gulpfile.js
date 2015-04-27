@@ -87,7 +87,7 @@ gulp.task('copies', function() {
 // Images
 gulp.task('images', function(){
     gulp.src('./resources/images/**/*')
-        .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+        .pipe(cache(imagemin({ optimizationLevel: 6, progressive: true, interlaced: true })))
         .pipe(gulp.dest('./assets/images/'));
 });
 
