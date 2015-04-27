@@ -121,7 +121,7 @@ class GitDocumentationRepository implements DocumentationRepository
     {
         $pageFile = $this->getDocumentationPath() . "/$page.md";
 
-        return $this->cache->remember("doc_page_{$pageFile}_title", 60, function() use($pageFile)
+        return $this->cache->rememberForever("doc_page_{$pageFile}_title", function() use($pageFile)
         {
             $data = $this->parser->parse($this->finder->get($pageFile));
 
@@ -139,7 +139,7 @@ class GitDocumentationRepository implements DocumentationRepository
     {
         $pageFile = $this->getDocumentationPath() . "/$page.md";
 
-        return $this->cache->remember("doc_page_{$pageFile}_sub-title", 60, function() use($pageFile)
+        return $this->cache->rememberForever("doc_page_{$pageFile}_sub-title", function() use($pageFile)
         {
             $data = $this->parser->parse($this->finder->get($pageFile));
 
