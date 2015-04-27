@@ -1007,11 +1007,9 @@ body.landing {
         &:first-child {
           margin-left: 0;
         }
-
-        &.active {
-          a:not(.button) {
-            background-color: transparentize($color-header-fg-light, 0.75);
-          }
+        &.active a {
+          background-color: transparentize($color-header-fg-light, 0.75);
+          font-weight: 400;
         }
 
         .button {
@@ -1074,7 +1072,7 @@ body.landing {
 
           &.active {
             a:not(.button) {
-              background-color: rgba(255, 255, 255, 0.2);
+              background: none;
             }
           }
         }

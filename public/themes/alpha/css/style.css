@@ -764,8 +764,9 @@ body.landing #skel-layers-wrapper {
             margin-right: 0.5em; }
         #header nav > ul > li:first-child {
           margin-left: 0; }
-        #header nav > ul > li.active a:not(.button) {
-          background-color: rgba(153, 153, 153, 0.25); }
+        #header nav > ul > li.active a {
+          background-color: rgba(153, 153, 153, 0.25);
+          font-weight: 400; }
         #header nav > ul > li .button {
           margin: 0 0 0 0.5em;
           position: relative; }
@@ -801,7 +802,7 @@ body.landing #skel-layers-wrapper {
     #header.alt nav > ul > li a:not(.button).icon:before {
       color: rgba(255, 255, 255, 0.75); }
     #header.alt nav > ul > li.active a:not(.button) {
-      background-color: rgba(255, 255, 255, 0.2); }
+      background: none; }
     #header.alt input[type="submit"], #header.alt input[type="reset"], #header.alt input[type="button"], #header.alt .button {
       box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5); }
       #header.alt input[type="submit"]:hover, #header.alt input[type="reset"]:hover, #header.alt input[type="button"]:hover, #header.alt .button:hover {
