@@ -10,6 +10,7 @@
             <ul>
                 <?php if ($user): ?>
                     <li><a href="{{ route('logout') }}">Logout</a></li>
+                    <li class="{{ on_route('user.account') ? 'active' : '' }}"><a href="{{ route('user.account') }}">Profile</a></li>
                     <?php if ($user->hasRoleName('Admin')): ?>
                         <li><a href="{{ route('dashboard.index') }}">Admin</a></li>
                     <?php endif; ?>
