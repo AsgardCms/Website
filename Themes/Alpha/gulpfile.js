@@ -60,12 +60,12 @@ gulp.task('scripts', function() {
         './resources/js/vendor/jquery.dropotron.min.js',
         './resources/js/vendor/jquery.scrollgress.min.js',
         './resources/js/vendor/prism.js',
-        vendor + '/lodash/dist/lodash.min.js',
+        //vendor + '/lodash/dist/lodash.min.js',
         vendor + '/skel/dist/skel.min.js',
         './resources/js/vendor/skel-layers.min.js',
         './resources/js/*.js'
     ])
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(concat('all.min.js'))
         .pipe(gulp.dest('./assets/js/dist'))
         .pipe(shell("php ../../artisan stylist:publish " + themeInfo.name))
