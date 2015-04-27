@@ -9,7 +9,7 @@
             <h2>{{ trans('user::auth.register') }}</h2>
         </header>
         <div class="box">
-            @include('flash::message')
+            @include('partials.notifications')
             {!! Form::open(['route' => 'register.post']) !!}
             <div class="row uniform 50%">
                 <div class="12u">

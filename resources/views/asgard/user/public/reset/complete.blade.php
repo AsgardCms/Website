@@ -10,7 +10,7 @@
             <h2>{{ trans('user::auth.reset password') }}</h2>
         </header>
         <div class="box">
-            @include('flash::message')
+            @include('partials.notifications')
             {!! Form::open() !!}
             <div class="row uniform 50%">
                 <div class="12u">

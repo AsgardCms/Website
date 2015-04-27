@@ -981,3 +981,8 @@ body.landing #main {
     color: rgba(255, 255, 255, 0.75) !important; }
   #cta .formerize-placeholder {
     color: rgba(255, 255, 255, 0.75) !important; }
+
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6; }
