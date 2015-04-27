@@ -27,7 +27,6 @@ class EntryController extends BasePublicController
 
     public function subscribe($email)
     {
-        dd('eok' , $email);
         $this->entry->subscribe($email);
 
         return redirect()->back();
