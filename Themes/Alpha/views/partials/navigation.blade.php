@@ -9,7 +9,6 @@
             <a href="" class="icon fa-angle-down">Account</a>
             <ul>
                 <?php if ($user): ?>
-                    <li><a href="{{ route('logout') }}">Logout</a></li>
                     <li class="{{ on_route('user.account') || on_route('user.beta') ? 'active' : '' }}">
                         <a href="{{ route('user.account') }}">Account</a>
                         <ul>
@@ -20,6 +19,7 @@
                     <?php if ($user->hasRoleName('Admin')): ?>
                         <li><a href="{{ route('dashboard.index') }}">Admin</a></li>
                     <?php endif; ?>
+                    <li><a href="{{ route('logout') }}">Logout</a></li>
                 <?php else: ?>
                     <li class="{{ Request::is('*auth/login') ? 'active' : ''}}"><a href="{{ route('login') }}">Login</a></li>
                     <li class="{{ Request::is('*auth/register') ? 'active' : ''}}"><a href="{{ route('register') }}">Register</a></li>
