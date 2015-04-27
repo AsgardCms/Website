@@ -60,7 +60,7 @@ gulp.task('scripts', function() {
         vendor + '/jquery.scrollTo/jquery.scrollTo.min.js',
         vendor + '/jquery.localScroll/jquery.localScroll.min.js',
         './resources/js/vendor/jquery.bxslider.min.js',
-        //'./resources/js/vendor/jquery.dropotron.min.js',
+        './resources/js/vendor/jquery.dropotron.min.js',
         './resources/js/vendor/jquery.scrollgress.min.js',
         './resources/js/vendor/prism.js',
         //vendor + '/lodash/dist/lodash.min.js',
