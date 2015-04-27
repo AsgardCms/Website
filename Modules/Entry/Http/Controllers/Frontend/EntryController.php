@@ -25,6 +25,14 @@ class EntryController extends BasePublicController
         $this->githubService = $githubService;
     }
 
+    public function subscribe($email)
+    {
+        dd('eok' , $email);
+        $this->entry->subscribe($email);
+
+        return redirect()->back();
+    }
+
     public function validateInvite($token)
     {
         return view('entry::public.invites.validate', compact('token'));

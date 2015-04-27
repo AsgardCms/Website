@@ -34,7 +34,8 @@
                 <?php else: ?>
                     <p>You haven't applied to the waiting list yet! What are you waiting for ?</p>
                     <p>
-                        <a href="/#cta" class="button special fit icon fa-check">Go to the apply form</a>
+                        <a href="{{ route('beta.subscribe', [$user->email])}}"
+                           class="button special fit icon fa-check">Apply</a>
                     </p>
                 <?php endif; ?>
             </div>
