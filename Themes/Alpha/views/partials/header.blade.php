@@ -32,12 +32,12 @@
 		<!--[if lte IE 8]><script src="assets/css/ie/html5shiv.js"></script><![endif]-->
 		{!! Theme::style('css/dist/all.min.css') !!}
 		<noscript>
-			{!! Theme::style('css/style-wide.css') !!}
-			{!! Theme::style('css/style-normal.css') !!}
-			{!! Theme::style('css/style-narrow.css') !!}
-			{!! Theme::style('css/style-narrower.css') !!}
-			{!! Theme::style('css/style-mobile.css') !!}
-			{!! Theme::style('css/style-mobilep.css') !!}
+			{!! Theme::style('css/dist/style-wide.min.css') !!}
+			{!! Theme::style('css/dist/style-normal.min.css') !!}
+			{!! Theme::style('css/dist/style-narrow.min.css') !!}
+			{!! Theme::style('css/dist/style-narrower.min.css') !!}
+			{!! Theme::style('css/dist/style-mobile.min.css') !!}
+			{!! Theme::style('css/dist/style-mobilep.min.css') !!}
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ asset('/assets/css/ie/v8.css')}}" /><![endif]-->
 	</head>
