@@ -218,12 +218,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Menu.git",
-                "reference": "377a18c4fb0680e59a40f6f1d70e190b769f664e"
+                "reference": "ca625d50dfb61837815dabb2c2177b8d78a5629d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Menu/zipball/377a18c4fb0680e59a40f6f1d70e190b769f664e",
-                "reference": "377a18c4fb0680e59a40f6f1d70e190b769f664e",
+                "url": "https://api.github.com/repos/AsgardCms/Menu/zipball/ca625d50dfb61837815dabb2c2177b8d78a5629d",
+                "reference": "ca625d50dfb61837815dabb2c2177b8d78a5629d",
                 "shasum": ""
             },
             "require": {
@@ -259,7 +259,7 @@
                 "nested sets",
                 "tree"
             ],
-            "time": "2015-04-25 19:21:05"
+            "time": "2015-04-25 19:44:28"
         },
         {
             "name": "asgardcms/page-module",
@@ -346,12 +346,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/User.git",
-                "reference": "97d09a1e53da7f88f91f4dc0568c9a6290dcc5e3"
+                "reference": "35ffb00e372bd472049a93af94eadba5f37f5a40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/User/zipball/97d09a1e53da7f88f91f4dc0568c9a6290dcc5e3",
-                "reference": "97d09a1e53da7f88f91f4dc0568c9a6290dcc5e3",
+                "url": "https://api.github.com/repos/AsgardCms/User/zipball/35ffb00e372bd472049a93af94eadba5f37f5a40",
+                "reference": "35ffb00e372bd472049a93af94eadba5f37f5a40",
                 "shasum": ""
             },
             "require": {
@@ -377,7 +377,7 @@
                 "authorisation",
                 "user"
             ],
-            "time": "2015-04-22 08:38:31"
+            "time": "2015-04-27 10:04:46"
         },
         {
             "name": "asgardcms/workshop-module",
