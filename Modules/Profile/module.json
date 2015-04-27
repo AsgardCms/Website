@@ -1,0 +1,16 @@
+{
+  "name": "Profile",
+  "alias": "profile",
+  "description": "",
+  "keywords": [],
+  "active": 1,
+  "order": 0,
+  "providers": [
+    "Modules\\Profile\\Providers\\ProfileServiceProvider",
+    "Modules\\Profile\\Providers\\RouteServiceProvider"
+  ],
+  "aliases": {},
+  "files": [
+    "composers.php"
+  ]
+}
