@@ -53,12 +53,14 @@
         </div>
     </section>
 
-    <div class="row">
-        <ul class="bxslider">
-          <li><img data-original="{{ Theme::url('images/ui/admin-settings.jpg') }}" class="lazy" width="1200" height="521" /></li>
-          <li><img data-original="{{ Theme::url('images/ui/admin-media.jpg') }}" class="lazy" width="1200" height="521" /></li>
-          <li><img data-original="{{ Theme::url('images/ui/admin-users.jpg') }}" class="lazy" width="1200" height="521" /></li>
-        </ul>
+    <div class="row uniform 50%">
+        <div class="12u">
+            <ul class="bxslider">
+              <li><img data-original="{{ Theme::url('images/ui/admin-settings.jpg') }}" class="lazy" width="1200" height="521" /></li>
+              <li><img data-original="{{ Theme::url('images/ui/admin-media.jpg') }}" class="lazy" width="1200" height="521" /></li>
+              <li><img data-original="{{ Theme::url('images/ui/admin-users.jpg') }}" class="lazy" width="1200" height="521" /></li>
+            </ul>
+        </div>
     </div>
 
 </section>
