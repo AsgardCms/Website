@@ -42,3 +42,9 @@
     opacity: 1;
   }
 }
+
+// Prism overwrites
+
+.token.cdata, .token.comment, .token.doctype, .token.prolog {
+  color: #AEC1D3;
+}

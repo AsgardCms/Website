@@ -34,6 +34,9 @@
   .anchor:hover {
     opacity: 1; }
 
+.token.cdata, .token.comment, .token.doctype, .token.prolog {
+  color: #AEC1D3; }
+
 /*
 	Alpha by HTML5 UP
 	html5up.net | @n33co

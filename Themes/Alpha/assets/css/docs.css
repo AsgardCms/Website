@@ -32,3 +32,6 @@
     content: '#'; }
   .anchor:hover {
     opacity: 1; }
+
+.token.cdata, .token.comment, .token.doctype, .token.prolog {
+  color: #AEC1D3; }
