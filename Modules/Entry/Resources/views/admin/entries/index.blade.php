@@ -49,7 +49,7 @@
                                 {{ $entry->accepted ? 'yes' : 'no' }}
                             </td>
                             <td>
-                                <?php if ($entry->accepted): ?>
+                                <?php if ($entry->accepted && $entry->activation): ?>
                                     {{ $entry->activation->completed ? 'yes' : 'no' }}
                                 <?php else: ?>
                                     no
