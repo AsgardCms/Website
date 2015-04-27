@@ -23,7 +23,7 @@
                 Asgard CMS will kickstart all your future client applications.
             </p>
         </header>
-        <span class="image featured"><img src="{{ Theme::url('images/admin-ui-screenshot.png') }}" alt="" /></span>
+        <span class="image featured"><img src="{{ Theme::url('images/ui/admin-settings-full-height.jpg') }}" alt="" /></span>
     </section>
 
     <section class="box special features">
@@ -55,9 +55,9 @@
 
     <div class="row">
         <ul class="bxslider">
-          <li><img src="{{ Theme::url('images/admin-ui-screenshot.png') }}" /></li>
-          <li><img src="{{ Theme::url('images/asgard-media.png') }}" /></li>
-          <li><img src="{{ Theme::url('images/asgard-roles.png') }}" /></li>
+          <li><img src="{{ Theme::url('images/ui/admin-settings.jpg') }}" /></li>
+          <li><img src="{{ Theme::url('images/ui/admin-media.jpg') }}" /></li>
+          <li><img src="{{ Theme::url('images/ui/admin-users.jpg') }}" /></li>
         </ul>
     </div>
 
