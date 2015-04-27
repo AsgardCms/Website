@@ -21,7 +21,7 @@ gulp.task('sass', function () {
             'message': 'Sass compiled'
         }))
         .pipe(gulp.dest('./assets/css'))
-        .pipe(minifyCSS({keepBreaks: false}))
+        .pipe(minifyCSS())
         .pipe(rename(function (path) {
             path.basename += ".min";
             path.extname = ".css"
@@ -40,6 +40,7 @@ gulp.task('concat-css', ['sass'], function () {
         vendor + '/skel/dist/skel.css',
         './assets/css/dist/main.min.css'
     ])
+        .pipe(minifyCSS())
         .pipe(concat('all.min.css'))
         .pipe(gulp.dest('./assets/css/dist/'))
         .pipe(shell("php ../../artisan stylist:publish " + themeInfo.name))
