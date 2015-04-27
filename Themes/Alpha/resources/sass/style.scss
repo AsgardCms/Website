@@ -377,6 +377,13 @@ input[type="radio"] {
   opacity: 1.0;
 }
 
+.has-error input {
+  border: 1px solid #C70000 !important;
+}
+.has-error span {
+  color: #C70000 !important;
+}
+
 /* Box */
 
 $box-padding: 3em;
