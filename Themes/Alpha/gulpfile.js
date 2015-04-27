@@ -8,6 +8,8 @@ var gulp = require('gulp'),
     shell = require('gulp-shell'),
     concat = require('gulp-concat'),
     copy = require('gulp-copy'),
+    cache = require('gulp-cache'),
+    imagemin = require('gulp-imagemin'),
     themeInfo = require('./theme.json');
 
 // Sass
@@ -58,7 +60,7 @@ gulp.task('scripts', function() {
         vendor + '/jquery.scrollTo/jquery.scrollTo.min.js',
         vendor + '/jquery.localScroll/jquery.localScroll.min.js',
         './resources/js/vendor/jquery.bxslider.min.js',
-        './resources/js/vendor/jquery.dropotron.min.js',
+        //'./resources/js/vendor/jquery.dropotron.min.js',
         './resources/js/vendor/jquery.scrollgress.min.js',
         './resources/js/vendor/prism.js',
         //vendor + '/lodash/dist/lodash.min.js',
@@ -82,6 +84,13 @@ gulp.task('copies', function() {
         .pipe(gulp.dest('./assets/fonts'));
 });
 
+// Images
+gulp.task('images', function(){
+    gulp.src('./resources/images/**/*')
+        .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+        .pipe(gulp.dest('./assets/images/'));
+});
+
 // Publish all assets
 gulp.task('stylist', ['copies', 'scripts', 'sass', 'concat-css'], shell.task([
     "php ../../artisan stylist:publish " + themeInfo.name
@@ -95,5 +104,5 @@ gulp.task('watch-js', function() {
     gulp.watch(js_path, ['scripts']);
 });
 
-gulp.task('default', ['concat-css', 'watch-sass', 'watch-js', 'stylist']);
+gulp.task('default', ['concat-css', 'watch-sass', 'watch-js', 'images', 'stylist']);
 gulp.task('compile', ['sass', 'concat-css', 'scripts', 'stylist']);
