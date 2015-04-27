@@ -20,11 +20,29 @@
                             {!! $errors->first('email', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
-
-                    <div class="row uniform 50%">
-                        <div class="12u">
-                            <input type="submit" class="btn btn-info btn-block" value="Update"/>
+                </div>
+                <div class="row uniform 50%">
+                    <div class="12u">
+                        <div class="form-group{{ $errors->has('first_name') ? ' has-error' : '' }}">
+                            <input type="text" name="first_name" class="form-control"
+                                   placeholder="{{ trans('user::auth.first_name') }}" value="{{ Input::old('first_name', $user->first_name)}}"/>
+                            {!! $errors->first('first_name', '<span class="help-block">:message</span>') !!}
                         </div>
+                    </div>
+                </div>
+                <div class="row uniform 50%">
+                    <div class="12u">
+                        <div class="form-group{{ $errors->has('last_name') ? ' has-error' : '' }}">
+                            <input type="text" name="last_name" class="form-control"
+                                   placeholder="{{ trans('user::auth.last_name') }}" value="{{ Input::old('last_name', $user->last_name)}}"/>
+                            {!! $errors->first('last_name', '<span class="help-block">:message</span>') !!}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row uniform 50%">
+                    <div class="12u">
+                        <input type="submit" class="btn btn-info btn-block" value="Update"/>
                     </div>
                 </div>
                 {!! Form::close() !!}
