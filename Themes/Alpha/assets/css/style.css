@@ -770,8 +770,7 @@ body.landing #skel-layers-wrapper {
         #header nav > ul > li:first-child {
           margin-left: 0; }
         #header nav > ul > li.active a {
-          background-color: rgba(153, 153, 153, 0.25);
-          font-weight: 400; }
+          background-color: rgba(153, 153, 153, 0.25); }
         #header nav > ul > li .button {
           margin: 0 0 0 0.5em;
           position: relative; }
