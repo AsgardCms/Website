@@ -2,7 +2,6 @@
 
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Response;
-use Modules\Entry\Events\EntryAppliedToBeta;
 use Modules\Entry\Http\Requests\SubscribeRequest;
 use Modules\Entry\Repositories\EntryRepository;
 

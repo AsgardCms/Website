@@ -3,6 +3,7 @@
 use Modules\Core\Repositories\Eloquent\EloquentBaseRepository;
 use Modules\Entry\Entities\Activation;
 use Modules\Entry\Entities\Entry;
+use Modules\Entry\Events\EntryAppliedToBeta;
 use Modules\Entry\Events\EntryWasInvited;
 use Modules\Entry\Repositories\EntryRepository;
 
