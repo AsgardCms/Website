@@ -20,9 +20,7 @@ class EntryController extends Controller
 
     public function subscribe(SubscribeRequest $request)
     {
-        $entry = $this->entry->subscribe($request->email);
-
-        event(new EntryAppliedToBeta($entry));
+        $this->entry->subscribe($request->email);
 
         return Response::json('Thank you! You have successfully applied for beta access.');
     }

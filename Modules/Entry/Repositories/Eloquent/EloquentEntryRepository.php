@@ -26,7 +26,11 @@ class EloquentEntryRepository extends EloquentBaseRepository implements EntryRep
      */
     public function subscribe($email)
     {
-        return $this->model->create(compact('email'));
+        $entry = $this->model->create(compact('email'));
+
+        event(new EntryAppliedToBeta($entry));
+
+        return $entry;
     }
 
     public function notAccepted($limit = 50)
