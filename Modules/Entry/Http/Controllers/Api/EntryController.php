@@ -2,6 +2,7 @@
 
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Response;
+use Modules\Entry\Events\EntryAppliedToBeta;
 use Modules\Entry\Http\Requests\SubscribeRequest;
 use Modules\Entry\Repositories\EntryRepository;
 
@@ -19,7 +20,9 @@ class EntryController extends Controller
 
     public function subscribe(SubscribeRequest $request)
     {
-        $this->entry->subscribe($request->email);
+        $entry = $this->entry->subscribe($request->email);
+
+        event(new EntryAppliedToBeta($entry));
 
         return Response::json('Thank you! You have successfully applied for beta access.');
     }
