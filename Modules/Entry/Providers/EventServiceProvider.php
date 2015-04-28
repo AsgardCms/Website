@@ -8,5 +8,8 @@ class EventServiceProvider extends ServiceProvider
         'Modules\Entry\Events\EntryWasInvited' => [
             'Modules\Entry\Events\Handlers\SendInviteFinalStepEmail',
         ],
+        'Modules\Entry\Events\EntryAppliedToBeta' => [
+            'Modules\Entry\Events\Handlers\SubscribeEntryToMailchimp',
+        ],
     ];
 }
