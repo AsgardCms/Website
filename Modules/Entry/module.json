@@ -11,6 +11,9 @@
     "Modules\\Entry\\Providers\\EventServiceProvider"
   ],
   "aliases": {},
+  "widgets": [
+    "Modules\\Entry\\Widgets\\EntriesWidget"
+  ],
   "files": [
     "composers.php"
   ]
