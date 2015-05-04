@@ -87,7 +87,7 @@
                                 </tr>
                                 <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
                                     <td class="content-block" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
-                                        You can talk to the AsgardCMS community on the freenode <strong>IRC channel: #asgardcms</strong>
+                                        You can talk to the AsgardCMS community on the <strong><a href="http://slack.asgardcms.com/">Slack channel</a></strong>
                                     </td>
                                 </tr>
                                 <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
