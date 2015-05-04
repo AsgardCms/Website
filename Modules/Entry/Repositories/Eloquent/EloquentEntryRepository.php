@@ -1,5 +1,6 @@
 <?php namespace Modules\Entry\Repositories\Eloquent;
 
+use Illuminate\Database\Eloquent\Builder;
 use Modules\Core\Repositories\Eloquent\EloquentBaseRepository;
 use Modules\Entry\Entities\Activation;
 use Modules\Entry\Entities\Entry;
@@ -97,5 +98,16 @@ class EloquentEntryRepository extends EloquentBaseRepository implements EntryRep
     public function countTotalNotInvited()
     {
         return $this->model->where('accepted', 0)->count();
+    }
+
+    /**
+     * Count all entries that are accepted and have completed the invitation
+     * @return int
+     */
+    public function countAcceptedAndCompleted()
+    {
+        return $this->model->whereAccepted(1)->whereHas('activation', function (Builder $q) {
+            $q->where('completed', 1);
+        })->count();
     }
 }

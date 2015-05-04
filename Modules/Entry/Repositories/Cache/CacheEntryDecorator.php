@@ -94,4 +94,19 @@ class CacheEntryDecorator extends BaseCacheDecorator implements EntryRepository
                 }
             );
     }
+
+    /**
+     * Count all entries that are accepted and have completed the invitation
+     * @return int
+     */
+    public function countAcceptedAndCompleted()
+    {
+        return $this->cache
+            ->tags($this->entityName, 'global')
+            ->remember("{$this->locale}.{$this->entityName}.countAcceptedAndCompleted", $this->cacheTime,
+                function () {
+                    return $this->repository->countAcceptedAndCompleted();
+                }
+            );
+    }
 }

@@ -40,4 +40,10 @@ interface EntryRepository extends BaseRepository
      * @return int
      */
     public function countTotalNotInvited();
+
+    /**
+     * Count all entries that are accepted and have completed the invitation
+     * @return int
+     */
+    public function countAcceptedAndCompleted();
 }
