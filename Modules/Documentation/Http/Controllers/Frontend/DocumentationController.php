@@ -2,6 +2,7 @@
 
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Artisan;
 use Modules\Core\Http\Controllers\BasePublicController;
 use Modules\Documentation\Repositories\DocumentationRepository;
 
@@ -34,5 +35,14 @@ class DocumentationController extends BasePublicController
         $content = $this->documentation->getContent($page);
 
         return view('doc.index', compact('content', 'title', 'subtitle'));
+    }
+
+    /**
+     * POST to docs/update
+     * Webhook url for github documentation repository
+     */
+    public function update()
+    {
+        Artisan::call('docs:update');
     }
 }
