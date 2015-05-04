@@ -28,4 +28,10 @@ interface EntryRepository extends BaseRepository
      * @return bool
      */
     public function invite($entry);
+
+    /**
+     * Count amount of entries
+     * @return int
+     */
+    public function countAll();
 }

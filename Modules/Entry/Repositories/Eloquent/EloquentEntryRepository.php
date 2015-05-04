@@ -80,4 +80,13 @@ class EloquentEntryRepository extends EloquentBaseRepository implements EntryRep
         $activation->completed = 0;
         $activation->save();
     }
+
+    /**
+     * Count amount of entries
+     * @return int
+     */
+    public function countAll()
+    {
+        return $this->model->count();
+    }
 }

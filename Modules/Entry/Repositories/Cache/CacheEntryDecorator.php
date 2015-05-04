@@ -64,4 +64,19 @@ class CacheEntryDecorator extends BaseCacheDecorator implements EntryRepository
 
         return $this->repository->invite($entry);
     }
+
+    /**
+     * Count amount of entries
+     * @return int
+     */
+    public function countAll()
+    {
+        return $this->cache
+            ->tags($this->entityName, 'global')
+            ->remember("{$this->locale}.{$this->entityName}.countAll", $this->cacheTime,
+                function () {
+                    return $this->repository->countAll();
+                }
+            );
+    }
 }
