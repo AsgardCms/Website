@@ -3,7 +3,6 @@
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Core\Repositories\Eloquent\EloquentBaseRepository;
 use Modules\Entry\Entities\Activation;
-use Modules\Entry\Entities\Entry;
 use Modules\Entry\Events\EntryAppliedToBeta;
 use Modules\Entry\Events\EntryWasInvited;
 use Modules\Entry\Repositories\EntryRepository;
@@ -108,6 +107,17 @@ class EloquentEntryRepository extends EloquentBaseRepository implements EntryRep
     {
         return $this->model->whereAccepted(1)->whereHas('activation', function (Builder $q) {
             $q->where('completed', 1);
+        })->count();
+    }
+
+    /**
+     * Count all entries that are accepted and have not completed the invitation
+     * @return int
+     */
+    public function countAcceptedAndNotCompleted()
+    {
+        return $this->model->whereAccepted(1)->whereHas('activation', function (Builder $q) {
+            $q->where('completed', 0);
         })->count();
     }
 }
