@@ -34,4 +34,10 @@ interface EntryRepository extends BaseRepository
      * @return int
      */
     public function countAll();
+
+    /**
+     * Count all entries not invited yet
+     * @return int
+     */
+    public function countTotalNotInvited();
 }

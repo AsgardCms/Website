@@ -89,4 +89,13 @@ class EloquentEntryRepository extends EloquentBaseRepository implements EntryRep
     {
         return $this->model->count();
     }
+
+    /**
+     * Count all entries not invited yet
+     * @return int
+     */
+    public function countTotalNotInvited()
+    {
+        return $this->model->where('accepted', 0)->count();
+    }
 }
