@@ -12,7 +12,8 @@
   ],
   "aliases": {},
   "widgets": [
-    "Modules\\Entry\\Widgets\\EntriesWidget"
+    "Modules\\Entry\\Widgets\\EntriesWidget",
+    "Modules\\Entry\\Widgets\\EntriesGraphWidget"
   ],
   "files": [
     "composers.php"
