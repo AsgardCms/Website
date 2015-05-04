@@ -2,6 +2,7 @@
 /vendor
 /node_modules
 .env
+.env.behat
 .DS_Store
 Thumbs.db
 composer.phar
