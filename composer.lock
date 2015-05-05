@@ -346,12 +346,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/User.git",
-                "reference": "a96ca77c326e0d2f51e9bd0fbf4349259f77117a"
+                "reference": "b4cdb8e8b50368b446ae810974363672ecfcea27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/User/zipball/a96ca77c326e0d2f51e9bd0fbf4349259f77117a",
-                "reference": "a96ca77c326e0d2f51e9bd0fbf4349259f77117a",
+                "url": "https://api.github.com/repos/AsgardCms/User/zipball/b4cdb8e8b50368b446ae810974363672ecfcea27",
+                "reference": "b4cdb8e8b50368b446ae810974363672ecfcea27",
                 "shasum": ""
             },
             "require": {
@@ -377,7 +377,7 @@
                 "authorisation",
                 "user"
             ],
-            "time": "2015-05-04 10:17:39"
+            "time": "2015-05-05 09:18:04"
         },
         {
             "name": "asgardcms/workshop-module",
@@ -2103,16 +2103,16 @@
         },
         {
             "name": "knplabs/github-api",
-            "version": "1.4.7",
+            "version": "1.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/php-github-api.git",
-                "reference": "d2729cf6b9d5b6fa340b1ff001dd89e319741baa"
+                "reference": "b53ff0c7eef5063818aac3ea6a3c4f0598bf16be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/php-github-api/zipball/d2729cf6b9d5b6fa340b1ff001dd89e319741baa",
-                "reference": "d2729cf6b9d5b6fa340b1ff001dd89e319741baa",
+                "url": "https://api.github.com/repos/KnpLabs/php-github-api/zipball/b53ff0c7eef5063818aac3ea6a3c4f0598bf16be",
+                "reference": "b53ff0c7eef5063818aac3ea6a3c4f0598bf16be",
                 "shasum": ""
             },
             "require": {
@@ -2160,7 +2160,7 @@
                 "gist",
                 "github"
             ],
-            "time": "2015-04-07 20:24:33"
+            "time": "2015-05-05 08:43:01"
         },
         {
             "name": "kzykhys/git",
