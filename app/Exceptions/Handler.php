@@ -2,6 +2,7 @@
 
 use Exception;
 use Bugsnag\BugsnagLaravel\BugsnagExceptionHandler as ExceptionHandler;
+use Illuminate\Session\TokenMismatchException;
 
 class Handler extends ExceptionHandler
 {
@@ -11,7 +12,8 @@ class Handler extends ExceptionHandler
      * @var array
      */
     protected $dontReport = [
-        'Symfony\Component\HttpKernel\Exception\HttpException'
+        'Symfony\Component\HttpKernel\Exception\HttpException',
+        'Illuminate\Session\TokenMismatchException',
     ];
     /**
      * Report or log an exception.
@@ -35,6 +37,9 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
+        if ($e instanceof TokenMismatchException) {
+            return redirect()->back()->with('warning', 'Form open for too long, please try again.');
+        }
         if (config('app.debug') && class_exists('\Whoops\Run')) {
             return $this->renderExceptionWithWhoops($e);
         }
