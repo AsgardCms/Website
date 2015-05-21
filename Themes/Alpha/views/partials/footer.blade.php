@@ -2,8 +2,10 @@
             <ul class="icons">
                 <li><a href="https://twitter.com/AsgardCMS" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
                 <li><a href="https://github.com/AsgardCms" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+            </ul>
+            <ul class="copyright">
                 <li>
-                    <a href="http://slack.asgardcms.com"><img src="//slack.asgardcms.com/badge.svg" alt="Slack"/></a>
+                    <a href="http://slack.asgardcms.com" target="_blank">Join the conversation on slack!</a>
                 </li>
             </ul>
             <ul class="copyright">
