@@ -146,8 +146,6 @@ return [
     'App\Providers\EventServiceProvider',
     'App\Providers\RouteServiceProvider',
     'Cartalyst\Sentry\SentryServiceProvider',
-    'Barryvdh\Debugbar\ServiceProvider',
-    'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
     'Bugsnag\BugsnagLaravel\BugsnagLaravelServiceProvider',
     'Modules\Core\Providers\AsgardServiceProvider',
 ],
