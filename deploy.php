@@ -1,11 +1,10 @@
 <?php
 
 require 'recipe/symfony.php';
-require 'recipe/common.php';
 
 server('staging', 'asgardcms.com', 22)
     ->user('forge')
-    ->identityFile('~/.ssh/id_rsa.pub', '~/.ssh/id_rsa', '')
+    ->identityFile()
     ->stage('staging')
     ->env('deploy_path', '/home/forge/staging.asgardcms.com');
 
