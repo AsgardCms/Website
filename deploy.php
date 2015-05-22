@@ -12,8 +12,9 @@ set('repository', 'git@github.com:AsgardCms/Website.git');
 
 task('deploy', [
     'deploy:prepare',
+    'deploy:release',
     'deploy:update_code',
     'deploy:vendors',
     'deploy:symlink',
-    'deploy:cleanup'
-]);
+    'cleanup',
+])->desc('Deploy your project');
