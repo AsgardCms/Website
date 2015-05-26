@@ -40,5 +40,8 @@
 			{!! Theme::style('css/dist/style-mobilep.min.css') !!}
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ asset('/assets/css/ie/v8.css')}}" /><![endif]-->
+
+		@section('styles')
+		@show
 	</head>
 	@include("partials.{$header}-header")
