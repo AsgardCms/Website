@@ -40,7 +40,8 @@ gulp.task('concat-css', ['sass'], function () {
         vendor + '/bxslider-4/dist/jquery.bxslider.css',
         './resources/css/vendor/prism.css',
         vendor + '/skel/dist/skel.css',
-        './assets/css/dist/main.min.css'
+        './assets/css/dist/main.min.css',
+        './assets/css/dist/style.min.css',
     ])
         .pipe(minifyCSS())
         .pipe(concat('all.min.css'))

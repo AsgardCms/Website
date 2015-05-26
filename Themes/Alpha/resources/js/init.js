@@ -9,14 +9,6 @@
     skel.init({
         reset: 'full',
         breakpoints: {
-            global: {
-                range: '*',
-                href: '/themes/alpha/css/style.css',
-                containers: '60em',
-                grid: {
-                    gutters: ['2em', 0]
-                }
-            },
             wide: {
                 range: '-1680',
                 href: '/themes/alpha/css/style-wide.css'
