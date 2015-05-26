@@ -2,6 +2,13 @@
 
 @section('title')Blog | @parent @stop
 
+@section('styles')
+    <style>
+        small {
+            font-size: 0.4em;
+        }
+    </style>
+@stop
 @section('content')
     <section id="main" class="container">
         <header>
@@ -18,6 +25,7 @@
                     <?php $url = route(LaravelLocalization::getCurrentLocale() . '.blog.slug', [$post->slug]); ?>
                     <h2>
                         <a href="{{ $url }}">{{ $post->title }}</a>
+                        <small class="pull-right">{{ $post->created_at->format('d-m-Y') }}</small>
                     </h2>
                     <?php $readmore = "&nbsp; <a href='$url'>Read more</a>" ?>
                     {!! str_limit($post->content, 150, $readmore) !!}
