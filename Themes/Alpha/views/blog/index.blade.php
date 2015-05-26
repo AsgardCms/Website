@@ -10,10 +10,12 @@
         article {
             border-bottom: 1px solid #d0d2d0;
             margin-bottom: 1em;
+            padding-bottom: 1em;
         }
         article:last-child {
             border: none;
             margin-bottom: 0;
+            padding-bottom: 0;
         }
     </style>
 @stop
