@@ -5,6 +5,7 @@
         {{--<li><a href="{{ URL::route('install') }}" class="button {{ Request::is('install') ? 'active' : ''}}">Install</a></li>--}}
         <li class="{{ on_route('faq') ? 'active' : ''}}"><a href="{{ URL::route('faq') }}">F.A.Q.</a></li>
         <li class="{{ on_route('doc.show') ? 'active' : ''}}"><a href="{{ URL::route('doc.index') }}">Documentation</a></li>
+        <li class="{{ Request::is('*blog/*') ? 'active' : ''}}"><a href="{{ URL::route(locale() . '.blog') }}">Blog</a></li>
         <li class="{{ Request::is('*auth/*') ? 'active' : ''}}">
             <a href="" class="icon fa-angle-down">Account</a>
             <ul>
