@@ -10,12 +10,13 @@
         </header>
         <div class="row box row-box">
             <div class="3u 3u(2) 12u$(4)">
-                <p>
-                    <a href="{{ route(locale() . '.blog') }}"><i class="fa fa-angle-left"></i> Back to index</a>
-                </p>
                 <ul class="side-menu">
-                    {{--<li>sa</li>--}}
+                    <li class="header">
+                        <i class="fa fa-chevron-circle-left"></i>
+                        <a href="{{ route(locale() . '.blog') }}">Back to index</a>
+                    </li>
                 </ul>
+                @include('blog.partials.latest-posts')
             </div>
             <div class="9u 9u(2) 12u$(4) content">
                 {!! $post->content !!}
