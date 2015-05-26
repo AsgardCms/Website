@@ -20,6 +20,15 @@
             </div>
             <div class="9u 9u(2) 12u$(4) content">
                 {!! $post->content !!}
+
+                <footer>
+                    <?php if ($previous = $post->present()->previous): ?>
+                        <a href="{{ route(locale() . '.blog.slug', [$previous->slug]) }}" class="pull-left"><i class="fa fa-angle-left"></i> Previous post</a>
+                    <?php endif; ?>
+                    <?php if ($next = $post->present()->next): ?>
+                        <a href="{{ route(locale() . '.blog.slug', [$next->slug]) }}" class="pull-right">Next post <i class="fa fa-angle-right"></i></a>
+                    <?php endif; ?>
+                </footer>
             </div>
         </div>
     </section>
