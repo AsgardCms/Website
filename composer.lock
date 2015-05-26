@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "30696f407cce60b0e2bc6857626caa4c",
+    "hash": "87f22bfbe14315ef302954bc9b9dec7f",
     "packages": [
         {
             "name": "asgardcms/adminlte-theme",
@@ -41,6 +41,44 @@
                 "asgard-cms"
             ],
             "time": "2015-04-29 06:51:37"
+        },
+        {
+            "name": "asgardcms/blog-module",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AsgardCms/Blog.git",
+                "reference": "11b1db9ce28229fe2f1b04e21e7d762e121f7bd9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AsgardCms/Blog/zipball/11b1db9ce28229fe2f1b04e21e7d762e121f7bd9",
+                "reference": "11b1db9ce28229fe2f1b04e21e7d762e121f7bd9",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4"
+            },
+            "type": "asgard-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Widart",
+                    "email": "info@asgardcms.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A blog module for AsgardCMS.",
+            "keywords": [
+                "asgardcms",
+                "blog",
+                "journal"
+            ],
+            "time": "2015-04-28 18:52:40"
         },
         {
             "name": "asgardcms/core-module",
@@ -346,12 +384,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/User.git",
-                "reference": "b4cdb8e8b50368b446ae810974363672ecfcea27"
+                "reference": "3c20d1cc1e763b98c07d06e3e53a6e9b737c65a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/User/zipball/b4cdb8e8b50368b446ae810974363672ecfcea27",
-                "reference": "b4cdb8e8b50368b446ae810974363672ecfcea27",
+                "url": "https://api.github.com/repos/AsgardCms/User/zipball/3c20d1cc1e763b98c07d06e3e53a6e9b737c65a6",
+                "reference": "3c20d1cc1e763b98c07d06e3e53a6e9b737c65a6",
                 "shasum": ""
             },
             "require": {
@@ -377,7 +415,7 @@
                 "authorisation",
                 "user"
             ],
-            "time": "2015-05-05 09:18:04"
+            "time": "2015-05-22 10:15:34"
         },
         {
             "name": "asgardcms/workshop-module",
@@ -2159,16 +2197,16 @@
         },
         {
             "name": "knplabs/github-api",
-            "version": "1.4.9",
+            "version": "1.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/php-github-api.git",
-                "reference": "7301517042979fe1374c55629db909da82c66260"
+                "reference": "346761bf33ec3af686d304e679d4729f36b0a943"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/php-github-api/zipball/7301517042979fe1374c55629db909da82c66260",
-                "reference": "7301517042979fe1374c55629db909da82c66260",
+                "url": "https://api.github.com/repos/KnpLabs/php-github-api/zipball/346761bf33ec3af686d304e679d4729f36b0a943",
+                "reference": "346761bf33ec3af686d304e679d4729f36b0a943",
                 "shasum": ""
             },
             "require": {
@@ -2216,7 +2254,7 @@
                 "gist",
                 "github"
             ],
-            "time": "2015-05-21 11:58:47"
+            "time": "2015-05-26 06:11:50"
         },
         {
             "name": "kzykhys/git",
@@ -5237,16 +5275,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.0.16",
+            "version": "2.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "934fd03eb6840508231a7f73eb8940cf32c3b66c"
+                "reference": "c4e8e7725e351184a76544634855b8a9c405a6e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/934fd03eb6840508231a7f73eb8940cf32c3b66c",
-                "reference": "934fd03eb6840508231a7f73eb8940cf32c3b66c",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/c4e8e7725e351184a76544634855b8a9c405a6e3",
+                "reference": "c4e8e7725e351184a76544634855b8a9c405a6e3",
                 "shasum": ""
             },
             "require": {
@@ -5295,7 +5333,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-04-11 04:35:00"
+            "time": "2015-05-25 05:11:59"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -5483,16 +5521,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.6.6",
+            "version": "4.6.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "3afe303d873a4d64c62ef84de491b97b006fbdac"
+                "reference": "57bf06dd4eebe2a5ced79a8de71509e7d5c18b25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3afe303d873a4d64c62ef84de491b97b006fbdac",
-                "reference": "3afe303d873a4d64c62ef84de491b97b006fbdac",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/57bf06dd4eebe2a5ced79a8de71509e7d5c18b25",
+                "reference": "57bf06dd4eebe2a5ced79a8de71509e7d5c18b25",
                 "shasum": ""
             },
             "require": {
@@ -5551,7 +5589,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-04-29 15:18:52"
+            "time": "2015-05-25 05:18:18"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -6373,6 +6411,7 @@
         "asgardcms/adminlte-theme": 20,
         "kzykhys/git": 20,
         "predis/predis": 20,
+        "asgardcms/blog-module": 20,
         "barryvdh/laravel-ide-helper": 20,
         "behat/behat": 20,
         "behat/mink": 20,

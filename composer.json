@@ -30,7 +30,8 @@
     "pda/pheanstalk": "~3.0",
     "bugsnag/bugsnag-laravel": "1.4.2",
     "predis/predis": "~1.1@dev",
-    "mailchimp/mailchimp": "2.0.6"
+    "mailchimp/mailchimp": "2.0.6",
+    "asgardcms/blog-module": "dev-develop"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.0",
