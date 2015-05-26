@@ -29,17 +29,21 @@
                 @include('blog.partials.latest-posts')
             </div>
             <div class="9u 9u(2) 12u$(4) content">
-                <?php foreach($posts as $post): ?>
-                    <article>
-                        <?php $url = route(locale() . '.blog.slug', [$post->slug]); ?>
-                        <h2>
-                            <a href="{{ $url }}">{{ $post->title }}</a>
-                            <small class="pull-right">{{ $post->created_at->format('d-m-Y') }}</small>
-                        </h2>
-                        <?php $readmore = "&nbsp; <a href='$url'>Read more</a>" ?>
-                        {!! str_limit($post->content, 150, $readmore) !!}
-                    </article>
-                <?php endforeach; ?>
+                <?php if ($posts->count() > 0): ?>
+                    <?php foreach($posts as $post): ?>
+                        <article>
+                            <?php $url = route(locale() . '.blog.slug', [$post->slug]); ?>
+                            <h2>
+                                <a href="{{ $url }}">{{ $post->title }}</a>
+                                <small class="pull-right">{{ $post->created_at->format('d-m-Y') }}</small>
+                            </h2>
+                            <?php $readmore = "&nbsp; <a href='$url'>Read more</a>" ?>
+                            {!! str_limit($post->content, 150, $readmore) !!}
+                        </article>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <p>No posts availble yet.</p>
+                <?php endif; ?>
             </div>
         </div>
     </section>
