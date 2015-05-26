@@ -48,12 +48,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Blog.git",
-                "reference": "84b5f9369e03f992d57d849b2233658b2fcd1708"
+                "reference": "dcce083ab29949f2ceef0d0bcdbd8d5f15de86b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Blog/zipball/84b5f9369e03f992d57d849b2233658b2fcd1708",
-                "reference": "84b5f9369e03f992d57d849b2233658b2fcd1708",
+                "url": "https://api.github.com/repos/AsgardCms/Blog/zipball/dcce083ab29949f2ceef0d0bcdbd8d5f15de86b6",
+                "reference": "dcce083ab29949f2ceef0d0bcdbd8d5f15de86b6",
                 "shasum": ""
             },
             "require": {
@@ -78,7 +78,7 @@
                 "blog",
                 "journal"
             ],
-            "time": "2015-05-26 15:13:56"
+            "time": "2015-05-26 17:50:31"
         },
         {
             "name": "asgardcms/core-module",
@@ -86,12 +86,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Core.git",
-                "reference": "d44609a3d6a1fc19cf8cee1e10ef126072866fa6"
+                "reference": "440eb14e4d01f10ea7053c690161e298e06fe3db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Core/zipball/d44609a3d6a1fc19cf8cee1e10ef126072866fa6",
-                "reference": "d44609a3d6a1fc19cf8cee1e10ef126072866fa6",
+                "url": "https://api.github.com/repos/AsgardCms/Core/zipball/440eb14e4d01f10ea7053c690161e298e06fe3db",
+                "reference": "440eb14e4d01f10ea7053c690161e298e06fe3db",
                 "shasum": ""
             },
             "require": {
@@ -128,7 +128,7 @@
                 "asgardcms",
                 "core"
             ],
-            "time": "2015-05-26 14:55:11"
+            "time": "2015-05-26 16:43:27"
         },
         {
             "name": "asgardcms/dashboard-module",
@@ -562,7 +562,7 @@
             "version": "dev-feature/laravel-5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/cartalyst/sentry.git",
+                "url": "git@github.com:cartalyst/sentry.git",
                 "reference": "092192e969520bb287b402fbe77ab070d4267910"
             },
             "dist": {
