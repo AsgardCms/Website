@@ -22,8 +22,7 @@ task('environment', function () {
 })->desc('Doing my stuff');
 
 task('migrate', function () {
-    run('cd {{release_path}}');
-    run('php artisan module:migrate');
+    run('cd {{release_path}}; php artisan module:migrate;');
 })->desc('Doing my stuff');
 
 /**
