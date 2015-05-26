@@ -21,6 +21,11 @@ task('environment', function () {
     run('cp /home/forge/staging.asgardcms.com/shared/.env {{release_path}}/.env');
 })->desc('Doing my stuff');
 
+task('migrate', function () {
+    run('cd {{release_path}}');
+    run('php artisan module:migrate');
+})->desc('Doing my stuff');
+
 /**
  * Swap the MySQL database
  */
@@ -62,6 +67,7 @@ task('deploy', [
     'deploy:symlink',
     'cleanup',
     'environment',
+    'migrate',
     //'mysql',
 ])->desc('Deploy your project');
 //task('deploy', [
