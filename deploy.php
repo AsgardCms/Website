@@ -23,7 +23,7 @@ task('environment', function () {
 
 task('migrate', function () {
     run('cd {{release_path}}; php artisan module:migrate;');
-})->desc('Doing my stuff');
+})->desc('Running module migrations');
 
 /**
  * Swap the MySQL database
