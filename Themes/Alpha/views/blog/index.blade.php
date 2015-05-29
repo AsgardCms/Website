@@ -42,7 +42,7 @@
                         </article>
                     <?php endforeach; ?>
                 <?php else: ?>
-                    <p>No posts availble yet.</p>
+                    <p>No posts available yet, stay tuned!</p>
                 <?php endif; ?>
             </div>
         </div>
