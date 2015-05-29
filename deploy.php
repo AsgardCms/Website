@@ -1,7 +1,7 @@
 <?php
 
-// require 'recipe/laravel.php';
-require_once 'recipe/common.php';
+require_once 'vendor/deployer/deployer/recipe/common.php';
+//require_once 'vendor/deployphp/recipes/recipes/cachetool.php';
 
 set('keep_releases', 5);
 
@@ -24,6 +24,10 @@ task('environment', function () {
 task('migrate', function () {
     run('cd {{release_path}}; php artisan module:migrate;');
 })->desc('Running module migrations');
+
+task('reload:php-fpm', function () {
+    run('/etc/init.d/php5-fpm restart');
+});
 
 /**
  * Swap the MySQL database
@@ -55,6 +59,20 @@ task('mysql', function () {
 // Laravel writable dirs
 set('writable_dirs', ['storage', 'vendor']);
 
+task('cachetool:clear:opcache', function () {
+    $releasePath = env('release_path');
+    $options = get('cachetool', '');
+    if (strlen($options)) {
+        $options = "--fcgi={$options}";
+    }
+    cd($releasePath);
+    $hasCachetool = run("if [ -e $releasePath/cachetool.phar ]; then echo 'true'; fi");
+    if ('true' !== $hasCachetool) {
+        run("curl -sO http://gordalina.github.io/cachetool/downloads/cachetool.phar");
+    }
+    run("php cachetool.phar opcache:reset {$options}");
+})->desc('Clearing OPcode cache');
+
 /**
  * Main task
  */
@@ -66,7 +84,7 @@ task('deploy', [
     'deploy:symlink',
     'cleanup',
     'environment',
-    'migrate',
+    //'migrate',
     //'mysql',
 ])->desc('Deploy your project');
 //task('deploy', [
@@ -76,5 +94,5 @@ task('deploy', [
 //    'mysql',
 //])->desc('Deploy your project');
 
-
+after('deploy', 'cachetool:clear:opcache');
 after('deploy', 'success');
