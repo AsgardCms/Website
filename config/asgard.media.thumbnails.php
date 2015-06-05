@@ -2,12 +2,23 @@
 
 return [
     'smallThumb' => [
-        'fit' => [
+        'resize' => [
             'width' => 50,
-            'height' => 50,
+            'height' => null,
             'callback' => function ($constraint) {
+                $constraint->aspectRatio();
                 $constraint->upsize();
             },
         ],
     ],
+    'featureThumb' => [
+        'resize' => [
+            'width' => 356,
+            'height' => 170,
+            'callback' => function ($constraint) {
+                $constraint->aspectRatio();
+                $constraint->upsize();
+            },
+        ],
+    ]
 ];
