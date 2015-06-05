@@ -13,12 +13,18 @@ return [
     ],
     'featureThumb' => [
         'resize' => [
-            'width' => 356,
-            'height' => 170,
+            'width' => 500,
+            'height' => null,
             'callback' => function ($constraint) {
                 $constraint->aspectRatio();
                 $constraint->upsize();
             },
+        ],
+        'crop' => [
+            'width' => '500',
+            'height' => '200',
+            'x' => 0,
+            'y' => 0,
         ],
     ]
 ];
