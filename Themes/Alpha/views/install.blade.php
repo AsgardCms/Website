@@ -31,7 +31,7 @@
                     <p>
                         Finally, run the install command to get you started:
                         <code style="display: block;">
-                            php artisan platform:install
+                            php artisan asgard:install
                         </code>
                     </p>
                 </li>
