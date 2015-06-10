@@ -6,8 +6,8 @@
     <h2>Asgard CMS</h2>
     <p>An modular multilingual CMS built with Laravel 5.</p>
     <ul class="actions">
-        {{--<li><a href="{{ URL::route('install') }}" class="button special">Install</a></li>--}}
-        <li><a href="#cta" class="button special" id="jsApply">Apply for the beta</a></li>
+        <li><a href="{{ route('page', ['install']) }}" class="button special">Install</a></li>
+        <li><a href="#cta" class="button" id="jsApply">Sign up for updates</a></li>
     </ul>
 </section>
 
@@ -68,8 +68,8 @@
 <!-- CTA -->
 <section id="cta">
 
-    <h2>Apply for beta access</h2>
-    <p>Your email will safely be stored. You will be on the waiting list to join the beta program.</p>
+    <h2>Sign up for updates</h2>
+    <p>Be kept up to date with the development of AsgardCms.</p>
 
     <form action="{{ URL::route('subscribe') }}" method="POST" class="jsSubscribe">
         {!! Form::token() !!}
