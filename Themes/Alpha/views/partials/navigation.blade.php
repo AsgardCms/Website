@@ -2,11 +2,11 @@
 <nav id="nav">
     <ul>
         <li class="{{ on_route('homepage') ? 'active' : ''}}"><a href="{{ URL::to('/') }}">Home</a></li>
-        <li class="{{ Request::is('*features') ? 'active' : ''}}"><a href="{{ url('/features') }}">Features</a></li>
-        {{--<li><a href="{{ URL::route('install') }}" class="button {{ Request::is('install') ? 'active' : ''}}">Install</a></li>--}}
-        <li class="{{ on_route('faq') ? 'active' : ''}}"><a href="{{ URL::route('faq') }}">F.A.Q.</a></li>
+        <li class="{{ Request::is('*features') ? 'active' : ''}}"><a href="{{ route('page', ['features']) }}">Features</a></li>
+        <li class="{{ Request::is('*install') ? 'active' : ''}}"><a href="{{ route('page', ['install']) }}" class="button">Install</a></li>
         <li class="{{ on_route('doc.show') ? 'active' : ''}}"><a href="{{ URL::route('doc.index') }}">Documentation</a></li>
         <li class="{{ Request::is('*blog/*') ? 'active' : ''}}"><a href="{{ URL::route(locale() . '.blog') }}">Blog</a></li>
+        <li class="{{ on_route('faq') ? 'active' : ''}}"><a href="{{ URL::route('faq') }}">F.A.Q.</a></li>
         <li class="{{ Request::is('*auth/*') ? 'active' : ''}}">
             <a href="" class="icon fa-angle-down">Account</a>
             <ul>
