@@ -46,7 +46,7 @@
     </div>
     <div class="row">
         <div class="6u 12u(2)">
-            <a class="button special fit icon fa-book" href="{{ route('doc.index') }}" target="_blank">
+            <a class="button special fit icon fa-book" href="{{ route('doc.index') }}">
                 Read the full documentation
             </a>
         </div>
