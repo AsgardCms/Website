@@ -1,11 +1,11 @@
-@extends('public.layouts.master')
+@extends('layouts.master')
 
 @section('content')
 <!-- Main -->
 <section id="main" class="container">
     <header>
         <h2>Installation</h2>
-        <p>Install Asguard CMS in less then 5 minutes!</p>
+        <p>Install AsgardCms in less then 5 minutes!</p>
     </header>
     <div class="box">
         <h3>Get the code</h3>
@@ -15,7 +15,7 @@
                     <p>
                         First you can get the code using the following command: <br/>
                         <code>
-                            composer create-project nwidart/platform your-project-name --prefer-dist --stability=dev
+                            composer create-project asgardcms/platform your-project-name
                         </code>
                     </p>
                 </li>
@@ -33,14 +33,6 @@
                         <code style="display: block;">
                             php artisan platform:install
                         </code>
-                        This will do the following:
-                         <ul>
-                            <li>Setup database information</li>
-                            <li>Running migrations</li>
-                            <li>Running seeds</li>
-                            <li>Publishing assets</li>
-                            <li>Create a first admin account</li>
-                        </ul>
                     </p>
                 </li>
                 <li>
@@ -54,12 +46,12 @@
     </div>
     <div class="row">
         <div class="6u 12u(2)">
-            <a class="button special fit icon fa-book" href="https://github.com/nWidart-Modules/Documentation" target="_blank">
+            <a class="button special fit icon fa-book" href="{{ route('doc.index') }}" target="_blank">
                 Read the full documentation
             </a>
         </div>
         <div class="6u 12u(2)">
-            <a class="button fit icon fa-th-large" href="https://github.com/nWidart-Modules" target="_blank">
+            <a class="button fit icon fa-th-large" href="https://github.com/AsgardCms" target="_blank">
                 View Modules
             </a>
         </div>
