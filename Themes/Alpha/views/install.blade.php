@@ -38,7 +38,7 @@
                 <li>
                     <p>
                         Done! <br/>
-                        Enjoy your freshly installed website.
+                        Enjoy your freshly installed website. You can login to the back by going to the <code>/backend</code> URI.
                     </p>
                 </li>
             </ol>
