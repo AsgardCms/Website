@@ -7,6 +7,7 @@
         <li class="{{ on_route('doc.show') ? 'active' : ''}}"><a href="{{ URL::route('doc.index') }}">Documentation</a></li>
         <li class="{{ Request::is('*blog/*') ? 'active' : ''}}"><a href="{{ URL::route(locale() . '.blog') }}">Blog</a></li>
         <li class="{{ on_route('faq') ? 'active' : ''}}"><a href="{{ URL::route('faq') }}">F.A.Q.</a></li>
+        <?php if ($user): ?>
         <li class="{{ Request::is('*auth/*') ? 'active' : ''}}">
             <a href="" class="icon fa-angle-down">Account</a>
             <ul>
@@ -28,5 +29,8 @@
                 <?php endif; ?>
             </ul>
         </li>
+        <?php else: ?>
+            <li class="{{ Request::is('*auth/login') ? 'active' : ''}}"><a href="{{ route('login') }}" class="button">Login</a></li>
+        <?php endif; ?>
     </ul>
 </nav>

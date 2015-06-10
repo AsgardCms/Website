@@ -6,7 +6,7 @@
 @section('content')
     <section id="main" class="container">
         <header>
-            <h2>{{ trans('user::auth.register') }}</h2>
+            <h2>Make a new account</h2>
         </header>
         <div class="box">
             @include('partials.notifications')
@@ -37,8 +37,8 @@
             </div>
             <div class="row uniform 50%">
                 <div class="12u">
-                    <input type="submit" class="btn btn-info btn-block" value="{{ trans('user::auth.register me')}}" />
-                    <p>
+                    <input type="submit" class="button special fit" value="{{ trans('user::auth.register me')}}" />
+                    <p style="text-align: center;">
                         <a href="{{ URL::route('login') }}" class="text-center">{{ trans('user::auth.I already have a membership') }}</a>
                     </p>
                 </div>

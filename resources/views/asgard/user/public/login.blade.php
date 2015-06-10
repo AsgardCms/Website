@@ -41,8 +41,11 @@
         </div>
         <div class="row uniform 50%">
             <div class="12u">
-                <input type="submit" class="btn btn-info btn-block" value="{{ trans('user::auth.login') }}"/>
-                <p><a href="{{URL::route('reset')}}">{{ trans('user::auth.forgot password') }}</a> | <a href="{{URL::route('register')}}" class="text-center">{{ trans('user::auth.register')}}</a></p>
+                <input type="submit" class="button  special fit" value="{{ trans('user::auth.login') }}"/>
+                <a href="{{URL::route('register')}}" class="button fit">Make an account</a>
+                <p style="text-align: center;">
+                    <a href="{{URL::route('reset')}}">{{ trans('user::auth.forgot password') }}</a>
+                </p>
             </div>
         </div>
         </form>
