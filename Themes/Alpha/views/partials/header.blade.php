@@ -26,8 +26,8 @@
         <meta property="og:url" content="http://asgardcms.com" />
         <meta property="og:description" content="Introducing a full-featured modular multilingual CMS built on top of the Laravel framework. Asgard CMS will kickstart all your future client applications." />
 		<?php if (isset($page)): ?>
-			<meta name="description" content="{{ $page->meta_description }}" />
-			<title>{{ $page->meta_title }}</title>
+			<meta name="description" content="{!! $page->meta_description !!}" />
+			<title>{!! $page->meta_title !!}</title>
 		<?php else: ?>
 			@section('meta')
 				<meta name="description" content="A modular multilingual Content Management System built with Laravel 5. Introducing a full-featured modular multilingual CMS built on top of the Laravel framework." />
