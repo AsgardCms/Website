@@ -111,6 +111,6 @@
         Workshop Module
     </li>
     <li class="{{ Request::is('*/workshop-module/module-scaffold') ? 'active' : ''}}">
-        <a href="{{ route('doc.show', ['workshop-module/module-scaffold']) }}">Module Scaffold</a>
+        <a href="{{ route('doc.show', ['workshop-module/module-scaffold']) }}">Creating a module</a>
     </li>
 </ul>
