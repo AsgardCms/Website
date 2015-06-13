@@ -88,7 +88,7 @@
         Themes
     </li>
     <li class="{{ Request::is('*/themes/usage') ? 'active' : ''}}">
-        <a href="{{ route('doc.show', ['themes/usage']) }}">Usage</a>
+        <a href="{{ route('doc.show', ['themes/usage']) }}">Creating a theme</a>
     </li>
     <li class="header">
         <i class="fa fa-user"></i>
@@ -105,6 +105,9 @@
     </li>
     <li class="{{ Request::is('*/user-module/middleware') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['user-module/middleware']) }}">Middleware</a>
+    </li>
+    <li class="{{ Request::is('*/user-module/adding-additional-user-data') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['user-module/adding-additional-user-data']) }}">Adding additional user data</a>
     </li>
     <li class="header">
         <i class="fa fa-cogs"></i>
