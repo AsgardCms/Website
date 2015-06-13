@@ -1,9 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>@section('title')Asgard CMS @show </title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="A modular multilingual Content Management System built with Laravel 5. Introducing a full-featured modular multilingual CMS built on top of the Laravel framework." />
 		<meta name="keywords" content="laravel, CMS, Modular, Multilingual" />
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -27,6 +25,15 @@
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://asgardcms.com" />
         <meta property="og:description" content="Introducing a full-featured modular multilingual CMS built on top of the Laravel framework. Asgard CMS will kickstart all your future client applications." />
+		<?php if (isset($page)): ?>
+			<meta name="description" content="{{ $page->meta_description }}" />
+			<title>{{ $page->meta_title }}</title>
+		<?php else: ?>
+			@section('meta')
+				<meta name="description" content="A modular multilingual Content Management System built with Laravel 5. Introducing a full-featured modular multilingual CMS built on top of the Laravel framework." />
+			@show
+			<title>@section('title')AsgardCms @show </title>
+		<?php endif; ?>
         <meta property="og:image" content="{{ asset('/assets/images/thor-the-dark-world-asgard.jpg')}}" />
 
 		<!--[if lte IE 8]><script src="assets/css/ie/html5shiv.js"></script><![endif]-->

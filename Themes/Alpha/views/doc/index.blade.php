@@ -1,6 +1,10 @@
 @extends('layouts.master')
 
-@section('title')Documentation | @parent @stop
+@section('title'){{ $title }} - Documentation | @parent @stop
+
+@section('meta')
+    <meta name="description" content="AsgardCms Documentation: {{ $title }} - {{ $subtitle }}" />
+@stop
 
 @section('content')
 <section id="main" class="container">
