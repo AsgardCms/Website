@@ -21,14 +21,6 @@
                 </li>
                 <li>
                     <p>
-                        Next, install the composer dependencies: <br/>
-                        <code>
-                            composer install
-                        </code>
-                    </p>
-                </li>
-                <li>
-                    <p>
                         Finally, run the install command to get you started:
                         <code style="display: block;">
                             php artisan asgard:install
