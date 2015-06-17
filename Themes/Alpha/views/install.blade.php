@@ -5,7 +5,7 @@
 <section id="main" class="container">
     <header>
         <h2>Installation</h2>
-        <p>Install AsgardCms in less then 5 minutes!</p>
+        <p>Install AsgardCms in less than 5 minutes!</p>
     </header>
     <div class="box">
         <h3>Get the code</h3>
