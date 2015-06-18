@@ -2,6 +2,7 @@
 
 use Exception;
 use Bugsnag\BugsnagLaravel\BugsnagExceptionHandler as ExceptionHandler;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Session\TokenMismatchException;
 
 class Handler extends ExceptionHandler
@@ -37,32 +38,22 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
-        if ($e instanceof TokenMismatchException) {
-            return redirect()->back()->with('warning', 'Form open for too long, please try again.');
-        }
-        if (config('app.debug') && class_exists('\Whoops\Run')) {
-            return $this->renderExceptionWithWhoops($e);
+        if (config('app.debug') === false) {
+            return $this->handleExceptions($e);
         }
 
         return parent::render($request, $e);
     }
 
-    /**
-     * Render an exception using Whoops.
-     *
-     * @param  \Exception $e
-     * @return \Illuminate\Http\Response
-     */
-    protected function renderExceptionWithWhoops(Exception $e)
+    private function handleExceptions($e)
     {
-        $whoops = new \Whoops\Run;
-        $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
+        if ($e instanceof TokenMismatchException) {
+            return redirect()->back()->with('warning', 'Form open for too long, please try again.');
+        }
 
-        return new \Illuminate\Http\Response(
-            $whoops->handleException($e),
-            $e->getStatusCode(),
-            $e->getHeaders()
-        );
+        if ($e instanceof ModelNotFoundException) {
+            return response()->view('errors.'.'404');
+        }
     }
 
 }
