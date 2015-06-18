@@ -15,7 +15,9 @@ class Handler extends ExceptionHandler
     protected $dontReport = [
         'Symfony\Component\HttpKernel\Exception\HttpException',
         'Illuminate\Session\TokenMismatchException',
+        'Illuminate\Database\Eloquent\ModelNotFoundException',
     ];
+
     /**
      * Report or log an exception.
      *
