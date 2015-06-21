@@ -9,6 +9,9 @@
     <li class="{{ Request::is('*/getting-started/contributing') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['getting-started/contributing']) }}">Contributing</a>
     </li>
+    <li class="{{ Request::is('*/getting-started/used-technology') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['getting-started/used-technology']) }}">Used technology</a>
+    </li>
     <li class="header">
         <i class="fa fa-bolt"></i>
         Core Module
