@@ -37,6 +37,7 @@
         <meta property="og:image" content="{{ asset('/assets/images/thor-the-dark-world-asgard.jpg')}}" />
 
 		<!--[if lte IE 8]><script src="assets/css/ie/html5shiv.js"></script><![endif]-->
+		<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
 		{!! Theme::style('css/dist/all.min.css') !!}
 		<noscript>
 			{!! Theme::style('css/dist/style-wide.min.css') !!}
