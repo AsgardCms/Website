@@ -10,7 +10,5 @@
     "Modules\\Documentation\\Providers\\RouteServiceProvider"
     ],
     "aliases":{},
-    "files": [
-        "composers.php"
-    ]
+    "files": []
 }
