@@ -21,7 +21,7 @@
                 }
             },
             narrow: {
-                range: '-980',
+                range: '-1150',
                 href: '/themes/alpha/css/style-narrow.css',
                 containers: '90%'
             },
