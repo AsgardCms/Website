@@ -167,7 +167,7 @@
         <div class="row">
             <div class="12u 12u(2)" style="text-align: center; margin: 50px 0;">
                 <h2>Developer tools</h2>
-                <p><strong>AsgardCms</strong> is made <em>for</em> developers, use our this rapid application development process and stop wasting time building the architecture.</p>
+                <p><strong>AsgardCms</strong> is made <em>for</em> developers, use this rapid application development process and stop wasting time building the architecture.</p>
             </div>
         </div>
 
