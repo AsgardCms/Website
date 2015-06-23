@@ -7,7 +7,6 @@ CKEDITOR.editorConfig = function( config ) {
 	// Define changes to default configuration here.
 	// For the complete reference:
 	// http://docs.ckeditor.com/#!/api/CKEDITOR.config
-	config.extraPlugins = 'youtube';
 
 	// The toolbar groups arrangement, optimized for two toolbar rows.
 	config.toolbarGroups = [
@@ -24,8 +23,7 @@ CKEDITOR.editorConfig = function( config ) {
 		{ name: 'paragraph',   groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ] },
 		{ name: 'styles' },
 		{ name: 'colors' },
-		{ name: 'about' },
-		{ name: 'test'}
+		{ name: 'about' }
 	];
 
 	// Remove some buttons, provided by the standard plugins, which we don't
@@ -38,5 +36,5 @@ CKEDITOR.editorConfig = function( config ) {
 	// Make dialogs simpler.
 	config.removeDialogTabs = 'image:advanced;link:advanced';
 
-	config.filebrowserBrowseUrl =  '/backend/media/media-grid/ckIndex';
+	config.filebrowserBrowseUrl =  '/backend/media/media-grid/ckIndex'
 };
