@@ -122,4 +122,7 @@
     <li class="{{ Request::is('*/workshop-module/module-scaffold') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['workshop-module/module-scaffold']) }}">Creating a module</a>
     </li>
+    <li class="{{ Request::is('*/workshop-module/theme-scaffold') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['workshop-module/theme-scaffold']) }}">Creating a theme</a>
+    </li>
 </ul>
