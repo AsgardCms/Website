@@ -9,7 +9,7 @@
     </header>
     <div class="row">
         <div class="6u 12u(2)">
-            <a class="button fit icon fa-angle-left" href="{{ route('homepage') }}">
+            <a class="button fit icon fa-angle-left" href="{{ url('/') }}">
                 Back to homepage
             </a>
         </div>
