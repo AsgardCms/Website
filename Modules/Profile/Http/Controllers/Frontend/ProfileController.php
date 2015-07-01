@@ -9,10 +9,6 @@ use Modules\User\Repositories\UserRepository;
 class ProfileController extends BasePublicController
 {
     /**
-     * @var Authentication
-     */
-    private $auth;
-    /**
      * @var EntryRepository
      */
     private $entry;
