@@ -10,3 +10,7 @@ $router->get('subscribe/{emailaddress}', [
     'as' => 'beta.subscribe',
     'uses' => 'Frontend\EntryController@subscribe',
 ]);
+
+get('api/subscribe', function() {
+    return redirect()->route('homepage');
+});
