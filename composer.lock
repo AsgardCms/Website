@@ -44,16 +44,16 @@
         },
         {
             "name": "asgardcms/blog-module",
-            "version": "1.0.5",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Blog.git",
-                "reference": "f4b80f2f28c9080d64e43a9e5f3b1639e7f77b04"
+                "reference": "2f307b713288fe07b3a137686d0a2831fd89dca0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Blog/zipball/f4b80f2f28c9080d64e43a9e5f3b1639e7f77b04",
-                "reference": "f4b80f2f28c9080d64e43a9e5f3b1639e7f77b04",
+                "url": "https://api.github.com/repos/AsgardCms/Blog/zipball/2f307b713288fe07b3a137686d0a2831fd89dca0",
+                "reference": "2f307b713288fe07b3a137686d0a2831fd89dca0",
                 "shasum": ""
             },
             "require": {
@@ -78,20 +78,20 @@
                 "blog",
                 "journal"
             ],
-            "time": "2015-06-26 12:29:10"
+            "time": "2015-06-29 09:46:41"
         },
         {
             "name": "asgardcms/core-module",
-            "version": "1.0.12",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Core.git",
-                "reference": "12ea75412cdcf85e2a31b6910fd3a633b32077bd"
+                "reference": "8c8b644a745f7e2bba051372538db2890a932460"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Core/zipball/12ea75412cdcf85e2a31b6910fd3a633b32077bd",
-                "reference": "12ea75412cdcf85e2a31b6910fd3a633b32077bd",
+                "url": "https://api.github.com/repos/AsgardCms/Core/zipball/8c8b644a745f7e2bba051372538db2890a932460",
+                "reference": "8c8b644a745f7e2bba051372538db2890a932460",
                 "shasum": ""
             },
             "require": {
@@ -128,20 +128,20 @@
                 "asgardcms",
                 "core"
             ],
-            "time": "2015-06-26 11:47:17"
+            "time": "2015-06-29 10:17:29"
         },
         {
             "name": "asgardcms/dashboard-module",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Dashboard.git",
-                "reference": "afc295cd09628fd660be5af59cc125f2f4f85c15"
+                "reference": "b081b1ed977d38d880acb6c33418f852dfba12bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Dashboard/zipball/afc295cd09628fd660be5af59cc125f2f4f85c15",
-                "reference": "afc295cd09628fd660be5af59cc125f2f4f85c15",
+                "url": "https://api.github.com/repos/AsgardCms/Dashboard/zipball/b081b1ed977d38d880acb6c33418f852dfba12bf",
+                "reference": "b081b1ed977d38d880acb6c33418f852dfba12bf",
                 "shasum": ""
             },
             "require": {
@@ -165,7 +165,7 @@
                 "asgardcms",
                 "dashboard"
             ],
-            "time": "2015-06-21 18:24:57"
+            "time": "2015-06-29 09:48:57"
         },
         {
             "name": "asgardcms/flatly-theme",
@@ -205,16 +205,16 @@
         },
         {
             "name": "asgardcms/media-module",
-            "version": "1.0.4",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Media.git",
-                "reference": "286f39d13bae43d3c635d53b503163066e013edc"
+                "reference": "96948284ec9de57da5ea59916bed16515a63df97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Media/zipball/286f39d13bae43d3c635d53b503163066e013edc",
-                "reference": "286f39d13bae43d3c635d53b503163066e013edc",
+                "url": "https://api.github.com/repos/AsgardCms/Media/zipball/96948284ec9de57da5ea59916bed16515a63df97",
+                "reference": "96948284ec9de57da5ea59916bed16515a63df97",
                 "shasum": ""
             },
             "require": {
@@ -248,20 +248,20 @@
                 "library",
                 "media"
             ],
-            "time": "2015-06-26 12:01:37"
+            "time": "2015-06-30 09:43:14"
         },
         {
             "name": "asgardcms/menu-module",
-            "version": "1.0.3",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Menu.git",
-                "reference": "f6ac24e704763c2f63494a247d60558fbadbee8d"
+                "reference": "6b9d55cbfb56f90e63733aa51220658195acd8f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Menu/zipball/f6ac24e704763c2f63494a247d60558fbadbee8d",
-                "reference": "f6ac24e704763c2f63494a247d60558fbadbee8d",
+                "url": "https://api.github.com/repos/AsgardCms/Menu/zipball/6b9d55cbfb56f90e63733aa51220658195acd8f9",
+                "reference": "6b9d55cbfb56f90e63733aa51220658195acd8f9",
                 "shasum": ""
             },
             "require": {
@@ -297,20 +297,20 @@
                 "nested sets",
                 "tree"
             ],
-            "time": "2015-06-21 18:25:29"
+            "time": "2015-06-29 09:52:08"
         },
         {
             "name": "asgardcms/page-module",
-            "version": "1.0.4",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Page.git",
-                "reference": "72ac88245c4437a9315cf6658107c229f0bbb20c"
+                "reference": "bda042796d1cd42217c0acd38e7cc9c1903ea69f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Page/zipball/72ac88245c4437a9315cf6658107c229f0bbb20c",
-                "reference": "72ac88245c4437a9315cf6658107c229f0bbb20c",
+                "url": "https://api.github.com/repos/AsgardCms/Page/zipball/bda042796d1cd42217c0acd38e7cc9c1903ea69f",
+                "reference": "bda042796d1cd42217c0acd38e7cc9c1903ea69f",
                 "shasum": ""
             },
             "require": {
@@ -334,20 +334,20 @@
                 "asgardcms",
                 "pages"
             ],
-            "time": "2015-06-26 12:29:11"
+            "time": "2015-06-29 09:53:15"
         },
         {
             "name": "asgardcms/setting-module",
-            "version": "1.0.9",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Setting.git",
-                "reference": "824f6b6bebbf378489f63163385850fc673f2a40"
+                "reference": "b36d38e0a30679ff50240ddbb0e312c25adf080b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Setting/zipball/824f6b6bebbf378489f63163385850fc673f2a40",
-                "reference": "824f6b6bebbf378489f63163385850fc673f2a40",
+                "url": "https://api.github.com/repos/AsgardCms/Setting/zipball/b36d38e0a30679ff50240ddbb0e312c25adf080b",
+                "reference": "b36d38e0a30679ff50240ddbb0e312c25adf080b",
                 "shasum": ""
             },
             "require": {
@@ -377,20 +377,20 @@
                 "Settings",
                 "asgardcms"
             ],
-            "time": "2015-06-22 15:47:33"
+            "time": "2015-06-29 09:54:54"
         },
         {
             "name": "asgardcms/user-module",
-            "version": "1.0.11",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/User.git",
-                "reference": "870fc51bd13c1a92c9c9d64dc39e3ae76bf3fa66"
+                "reference": "a903d949f0a13426f8fe5a584bd7e9d7adfa673d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/User/zipball/870fc51bd13c1a92c9c9d64dc39e3ae76bf3fa66",
-                "reference": "870fc51bd13c1a92c9c9d64dc39e3ae76bf3fa66",
+                "url": "https://api.github.com/repos/AsgardCms/User/zipball/a903d949f0a13426f8fe5a584bd7e9d7adfa673d",
+                "reference": "a903d949f0a13426f8fe5a584bd7e9d7adfa673d",
                 "shasum": ""
             },
             "require": {
@@ -429,20 +429,20 @@
                 "authorisation",
                 "user"
             ],
-            "time": "2015-06-26 18:13:38"
+            "time": "2015-07-01 18:17:14"
         },
         {
             "name": "asgardcms/workshop-module",
-            "version": "1.0.11",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Workshop.git",
-                "reference": "a1a8da92c6c174dd4db4e484ee8e31d87f479288"
+                "reference": "458650726cc81d5659f648b69326a08ebf37fd63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Workshop/zipball/a1a8da92c6c174dd4db4e484ee8e31d87f479288",
-                "reference": "a1a8da92c6c174dd4db4e484ee8e31d87f479288",
+                "url": "https://api.github.com/repos/AsgardCms/Workshop/zipball/458650726cc81d5659f648b69326a08ebf37fd63",
+                "reference": "458650726cc81d5659f648b69326a08ebf37fd63",
                 "shasum": ""
             },
             "require": {
@@ -474,20 +474,20 @@
                 "modules",
                 "workshop"
             ],
-            "time": "2015-06-26 20:48:40"
+            "time": "2015-06-29 10:15:47"
         },
         {
             "name": "bugsnag/bugsnag",
-            "version": "v2.5.4",
+            "version": "v2.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bugsnag/bugsnag-php.git",
-                "reference": "f013ca96b359a9675358710a52ba1aee6c508925"
+                "reference": "30af9dfc67c42bd3c392c7917b4b35d08a53da74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bugsnag/bugsnag-php/zipball/f013ca96b359a9675358710a52ba1aee6c508925",
-                "reference": "f013ca96b359a9675358710a52ba1aee6c508925",
+                "url": "https://api.github.com/repos/bugsnag/bugsnag-php/zipball/30af9dfc67c42bd3c392c7917b4b35d08a53da74",
+                "reference": "30af9dfc67c42bd3c392c7917b4b35d08a53da74",
                 "shasum": ""
             },
             "require": {
@@ -522,7 +522,7 @@
                 "logging",
                 "tracking"
             ],
-            "time": "2015-04-13 19:09:41"
+            "time": "2015-07-01 02:43:15"
         },
         {
             "name": "bugsnag/bugsnag-laravel",
@@ -676,35 +676,29 @@
         },
         {
             "name": "classpreloader/classpreloader",
-            "version": "1.4.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ClassPreloader/ClassPreloader.git",
-                "reference": "b76f3f4f603ebbe7e64351a7ef973431ddaf7b27"
+                "reference": "8c3c14b10309e3b40bce833913a6c0c0b8c8f962"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ClassPreloader/ClassPreloader/zipball/b76f3f4f603ebbe7e64351a7ef973431ddaf7b27",
-                "reference": "b76f3f4f603ebbe7e64351a7ef973431ddaf7b27",
+                "url": "https://api.github.com/repos/ClassPreloader/ClassPreloader/zipball/8c3c14b10309e3b40bce833913a6c0c0b8c8f962",
+                "reference": "8c3c14b10309e3b40bce833913a6c0c0b8c8f962",
                 "shasum": ""
             },
             "require": {
                 "nikic/php-parser": "~1.3",
-                "php": ">=5.3.3",
-                "symfony/console": "~2.1",
-                "symfony/filesystem": "~2.1",
-                "symfony/finder": "~2.1"
+                "php": ">=5.5.9"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.0"
             },
-            "bin": [
-                "classpreloader.php"
-            ],
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
@@ -723,7 +717,7 @@
                 },
                 {
                     "name": "Graham Campbell",
-                    "email": "graham@cachethq.io"
+                    "email": "graham@alt-three.com"
                 }
             ],
             "description": "Helps class loading performance by generating a single PHP file containing all of the autoloaded files for a specific use case",
@@ -732,7 +726,7 @@
                 "class",
                 "preload"
             ],
-            "time": "2015-05-26 10:57:51"
+            "time": "2015-06-28 21:39:13"
         },
         {
             "name": "composer/installers",
@@ -1820,6 +1814,64 @@
             "time": "2015-05-20 03:47:55"
         },
         {
+            "name": "guzzlehttp/psr7",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "af0e1758de355eb113917ad79c3c0e3604bce4bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/af0e1758de355eb113917ad79c3c0e3604bce4bd",
+                "reference": "af0e1758de355eb113917ad79c3c0e3604bce4bd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "PSR-7 message implementation",
+            "keywords": [
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "time": "2015-06-24 19:55:15"
+        },
+        {
             "name": "guzzlehttp/ringphp",
             "version": "1.1.0",
             "source": {
@@ -1922,21 +1974,22 @@
         },
         {
             "name": "intervention/image",
-            "version": "2.2.2",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Intervention/image.git",
-                "reference": "1009557c32205b077e34b2ae611e6316fa423021"
+                "reference": "ff4f45412044f3ab26f29260570a14ff41631d87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Intervention/image/zipball/1009557c32205b077e34b2ae611e6316fa423021",
-                "reference": "1009557c32205b077e34b2ae611e6316fa423021",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/ff4f45412044f3ab26f29260570a14ff41631d87",
+                "reference": "ff4f45412044f3ab26f29260570a14ff41631d87",
                 "shasum": ""
             },
             "require": {
                 "ext-fileinfo": "*",
-                "php": ">=5.3.0"
+                "guzzlehttp/psr7": "~1.1",
+                "php": ">=5.4.0"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9.2",
@@ -1974,7 +2027,7 @@
                 "thumbnail",
                 "watermark"
             ],
-            "time": "2015-06-10 17:50:36"
+            "time": "2015-06-28 15:55:12"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -2321,20 +2374,20 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.1.3",
+            "version": "v5.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "a7ebd043ca178c05cc7946ece03d3a268a5a3f84"
+                "reference": "ef87627cc3a2ecb866214c5be593781016cd43b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/a7ebd043ca178c05cc7946ece03d3a268a5a3f84",
-                "reference": "a7ebd043ca178c05cc7946ece03d3a268a5a3f84",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/ef87627cc3a2ecb866214c5be593781016cd43b1",
+                "reference": "ef87627cc3a2ecb866214c5be593781016cd43b1",
                 "shasum": ""
             },
             "require": {
-                "classpreloader/classpreloader": "~1.2",
+                "classpreloader/classpreloader": "~2.0",
                 "danielstjules/stringy": "~1.8",
                 "doctrine/inflector": "~1.0",
                 "ext-mbstring": "*",
@@ -2445,7 +2498,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-06-24 19:38:07"
+            "time": "2015-06-30 20:45:09"
         },
         {
             "name": "laravelcollective/html",
@@ -2681,16 +2734,16 @@
         },
         {
             "name": "mcamara/laravel-localization",
-            "version": "1.0.8",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcamara/laravel-localization.git",
-                "reference": "151677affd2547fd2233f3a4f9d8b63ae48dcc6c"
+                "reference": "a988746e18aa90fbdbbcfc13c3c17ee74d128e06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcamara/laravel-localization/zipball/151677affd2547fd2233f3a4f9d8b63ae48dcc6c",
-                "reference": "151677affd2547fd2233f3a4f9d8b63ae48dcc6c",
+                "url": "https://api.github.com/repos/mcamara/laravel-localization/zipball/a988746e18aa90fbdbbcfc13c3c17ee74d128e06",
+                "reference": "a988746e18aa90fbdbbcfc13c3c17ee74d128e06",
                 "shasum": ""
             },
             "require": {
@@ -2725,7 +2778,7 @@
                 "localization",
                 "php"
             ],
-            "time": "2015-06-11 10:55:15"
+            "time": "2015-06-28 12:06:58"
         },
         {
             "name": "michelf/php-markdown",
@@ -3042,16 +3095,16 @@
         },
         {
             "name": "pingpong/generators",
-            "version": "2.1.x-dev",
+            "version": "v2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pingpong-labs/generators.git",
-                "reference": "fc3b1eae0dce32ae2c6fa424d221f2eb95f224f1"
+                "reference": "2f3b1d69e58067a943e2b117f6ecc999fe75cddb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pingpong-labs/generators/zipball/fc3b1eae0dce32ae2c6fa424d221f2eb95f224f1",
-                "reference": "fc3b1eae0dce32ae2c6fa424d221f2eb95f224f1",
+                "url": "https://api.github.com/repos/pingpong-labs/generators/zipball/2f3b1d69e58067a943e2b117f6ecc999fe75cddb",
+                "reference": "2f3b1d69e58067a943e2b117f6ecc999fe75cddb",
                 "shasum": ""
             },
             "require": {
@@ -3059,7 +3112,7 @@
                 "illuminate/filesystem": "5.1.*",
                 "illuminate/support": "5.1.*",
                 "php": ">=5.4.0",
-                "pingpong/support": "2.1.*@dev"
+                "pingpong/support": "2.1.*"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9",
@@ -3087,20 +3140,20 @@
                 "laravel",
                 "pingpong"
             ],
-            "time": "2015-06-24 06:24:07"
+            "time": "2015-06-30 08:19:05"
         },
         {
             "name": "pingpong/menus",
-            "version": "2.1.x-dev",
+            "version": "v2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pingpong-labs/menus.git",
-                "reference": "18fb26732e0c03a23fe9f694b91eebda34ffe0c9"
+                "reference": "b763cec782c196d924e8253969e1afa4c852b598"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pingpong-labs/menus/zipball/18fb26732e0c03a23fe9f694b91eebda34ffe0c9",
-                "reference": "18fb26732e0c03a23fe9f694b91eebda34ffe0c9",
+                "url": "https://api.github.com/repos/pingpong-labs/menus/zipball/b763cec782c196d924e8253969e1afa4c852b598",
+                "reference": "b763cec782c196d924e8253969e1afa4c852b598",
                 "shasum": ""
             },
             "require": {
@@ -3139,7 +3192,7 @@
                 "navigation",
                 "pingpong"
             ],
-            "time": "2015-06-22 18:10:56"
+            "time": "2015-06-30 04:40:56"
         },
         {
             "name": "pingpong/modules",
@@ -3147,12 +3200,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nWidart/modules.git",
-                "reference": "4a56084103c789950d59c35e3f2ad11cfe005d52"
+                "reference": "423a08645d0ad82eeb54b42e6b5c190a5ed1320a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nWidart/modules/zipball/4a56084103c789950d59c35e3f2ad11cfe005d52",
-                "reference": "4a56084103c789950d59c35e3f2ad11cfe005d52",
+                "url": "https://api.github.com/repos/nWidart/modules/zipball/423a08645d0ad82eeb54b42e6b5c190a5ed1320a",
+                "reference": "423a08645d0ad82eeb54b42e6b5c190a5ed1320a",
                 "shasum": ""
             },
             "require": {
@@ -3192,20 +3245,20 @@
             "support": {
                 "source": "https://github.com/nWidart/modules/tree/feature/5.1"
             },
-            "time": "2015-06-21 19:12:06"
+            "time": "2015-06-30 07:43:45"
         },
         {
             "name": "pingpong/support",
-            "version": "2.1.x-dev",
+            "version": "v2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pingpong-labs/support.git",
-                "reference": "f11b3749ff4b527d4c2371df99ffb07adca64a41"
+                "reference": "ecb7eadb2e2e1635e716c91e53c186298acf2c18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pingpong-labs/support/zipball/f11b3749ff4b527d4c2371df99ffb07adca64a41",
-                "reference": "f11b3749ff4b527d4c2371df99ffb07adca64a41",
+                "url": "https://api.github.com/repos/pingpong-labs/support/zipball/ecb7eadb2e2e1635e716c91e53c186298acf2c18",
+                "reference": "ecb7eadb2e2e1635e716c91e53c186298acf2c18",
                 "shasum": ""
             },
             "require": {
@@ -3234,7 +3287,7 @@
                 }
             ],
             "description": "Support Component of Pingpong Sky Package",
-            "time": "2015-06-14 14:30:44"
+            "time": "2015-06-30 05:12:03"
         },
         {
             "name": "predis/predis",
@@ -3290,6 +3343,55 @@
                 "redis"
             ],
             "time": "2015-01-02 13:37:26"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2015-05-04 20:22:00"
         },
         {
             "name": "psr/log",
@@ -3775,55 +3877,6 @@
                 }
             ],
             "description": "Symfony EventDispatcher Component",
-            "homepage": "https://symfony.com",
-            "time": "2015-06-08 09:37:21"
-        },
-        {
-            "name": "symfony/filesystem",
-            "version": "v2.7.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "a0d43eb3e17d4f4c6990289805a488a0482a07f3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/a0d43eb3e17d4f4c6990289805a488a0482a07f3",
-                "reference": "a0d43eb3e17d4f4c6990289805a488a0482a07f3",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.9"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "~2.7"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Filesystem\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
             "time": "2015-06-08 09:37:21"
         },
@@ -5002,16 +5055,16 @@
         },
         {
             "name": "deployphp/recipes",
-            "version": "3.0.3",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deployphp/recipes.git",
-                "reference": "06790c8209597ae218075e2c602c4e6210b84871"
+                "reference": "f9c87d844de02a353047e88b8ee949cf2fdd7486"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deployphp/recipes/zipball/06790c8209597ae218075e2c602c4e6210b84871",
-                "reference": "06790c8209597ae218075e2c602c4e6210b84871",
+                "url": "https://api.github.com/repos/deployphp/recipes/zipball/f9c87d844de02a353047e88b8ee949cf2fdd7486",
+                "reference": "f9c87d844de02a353047e88b8ee949cf2fdd7486",
                 "shasum": ""
             },
             "type": "library",
@@ -5055,7 +5108,7 @@
                 "recipes",
                 "slack"
             ],
-            "time": "2015-06-19 16:15:28"
+            "time": "2015-06-29 13:04:18"
         },
         {
             "name": "doctrine/instantiator",
@@ -5203,64 +5256,6 @@
                 "event-emitter"
             ],
             "time": "2012-11-02 14:49:47"
-        },
-        {
-            "name": "guzzlehttp/psr7",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/psr7.git",
-                "reference": "af0e1758de355eb113917ad79c3c0e3604bce4bd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/af0e1758de355eb113917ad79c3c0e3604bce4bd",
-                "reference": "af0e1758de355eb113917ad79c3c0e3604bce4bd",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "psr/http-message": "~1.0"
-            },
-            "provide": {
-                "psr/http-message-implementation": "1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
-                "files": [
-                    "src/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "PSR-7 message implementation",
-            "keywords": [
-                "http",
-                "message",
-                "stream",
-                "uri"
-            ],
-            "time": "2015-06-24 19:55:15"
         },
         {
             "name": "herrera-io/json",
@@ -5882,16 +5877,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.1.6",
+            "version": "2.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "631e365cf26bb2c078683e8d9bcf8bc631ac4d44"
+                "reference": "07e27765596d72c378a6103e80da5d84e802f1e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/631e365cf26bb2c078683e8d9bcf8bc631ac4d44",
-                "reference": "631e365cf26bb2c078683e8d9bcf8bc631ac4d44",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/07e27765596d72c378a6103e80da5d84e802f1e4",
+                "reference": "07e27765596d72c378a6103e80da5d84e802f1e4",
                 "shasum": ""
             },
             "require": {
@@ -5940,7 +5935,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-06-19 07:11:55"
+            "time": "2015-06-30 06:52:35"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -6122,16 +6117,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.7.5",
+            "version": "4.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "f6701ef3faea759acd1910a7751d8d102a7fd5bc"
+                "reference": "0ebabb4cda7d066be8391dfdbaf57fe70ac9a99b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f6701ef3faea759acd1910a7751d8d102a7fd5bc",
-                "reference": "f6701ef3faea759acd1910a7751d8d102a7fd5bc",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/0ebabb4cda7d066be8391dfdbaf57fe70ac9a99b",
+                "reference": "0ebabb4cda7d066be8391dfdbaf57fe70ac9a99b",
                 "shasum": ""
             },
             "require": {
@@ -6190,7 +6185,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-06-21 07:23:36"
+            "time": "2015-06-30 06:53:57"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -6246,55 +6241,6 @@
                 "xunit"
             ],
             "time": "2015-06-11 15:55:48"
-        },
-        {
-            "name": "psr/http-message",
-            "version": "1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/http-message.git",
-                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
-                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Http\\Message\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for HTTP messages",
-            "keywords": [
-                "http",
-                "http-message",
-                "psr",
-                "psr-7",
-                "request",
-                "response"
-            ],
-            "time": "2015-05-04 20:22:00"
         },
         {
             "name": "react/cache",
@@ -7411,6 +7357,55 @@
             "description": "Symfony ExpressionLanguage Component",
             "homepage": "https://symfony.com",
             "time": "2015-05-02 15:21:08"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "v2.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Filesystem.git",
+                "reference": "a0d43eb3e17d4f4c6990289805a488a0482a07f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/a0d43eb3e17d4f4c6990289805a488a0482a07f3",
+                "reference": "a0d43eb3e17d4f4c6990289805a488a0482a07f3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "~2.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Filesystem Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-06-08 09:37:21"
         },
         {
             "name": "symfony/yaml",
