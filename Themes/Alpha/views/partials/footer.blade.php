@@ -30,16 +30,18 @@
 
         {!! Theme::script('js/dist/all.min.js') !!}
         @yield('scripts')
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <?php if (App::environment() == 'production'): ?>
+            <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-56710105-1', 'auto');
-          ga('send', 'pageview');
+              ga('create', 'UA-56710105-1', 'auto');
+              ga('send', 'pageview');
 
-        </script>
+            </script>
+        <?php endif; ?>
         <script>
             // Include the UserVoice JavaScript SDK (only needed once on a page)
             UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/RbeyyitSTCIw12dsDYqA.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
