@@ -112,6 +112,9 @@
     <li class="{{ Request::is('*/user-module/middleware') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['user-module/middleware']) }}">Middleware</a>
     </li>
+    <li class="{{ Request::is('*/user-module/customization') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['user-module/customization']) }}">Customization</a>
+    </li>
     <li class="{{ Request::is('*/user-module/adding-additional-user-data') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['user-module/adding-additional-user-data']) }}">Adding additional user data</a>
     </li>
