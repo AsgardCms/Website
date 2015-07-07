@@ -48,6 +48,9 @@
         <i class="fa fa-file-image-o"></i>
         Media Module
     </li>
+    <li class="{{ Request::is('*/media-module/configuration') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['media-module/configuration']) }}">Configuration</a>
+    </li>
     <li class="{{ Request::is('*/media-module/thumbnails') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['media-module/thumbnails']) }}">Thumbnails</a>
     </li>
