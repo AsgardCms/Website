@@ -34,6 +34,9 @@
     <li class="{{ Request::is('*/core-module/helpers') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['core-module/helpers']) }}">Helpers</a>
     </li>
+    <li class="{{ Request::is('*/core-module/form-macros') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['core-module/form-macros']) }}">Form macros</a>
+    </li>
     <li class="header">
         <i class="fa fa-tachometer"></i>
         Dashboard Module
