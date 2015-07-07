@@ -106,6 +106,9 @@
         <i class="fa fa-user"></i>
         User Module
     </li>
+    <li class="{{ Request::is('*/user-module/configuration') ? 'active' : ''}}">
+        <a href="{{ route('doc.show', ['user-module/configuration']) }}">Configuration</a>
+    </li>
     <li class="{{ Request::is('*/user-module/drivers') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['user-module/drivers']) }}">Drivers</a>
     </li>
@@ -117,9 +120,6 @@
     </li>
     <li class="{{ Request::is('*/user-module/middleware') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['user-module/middleware']) }}">Middleware</a>
-    </li>
-    <li class="{{ Request::is('*/user-module/customization') ? 'active' : ''}}">
-        <a href="{{ route('doc.show', ['user-module/customization']) }}">Customization</a>
     </li>
     <li class="{{ Request::is('*/user-module/adding-additional-user-data') ? 'active' : ''}}">
         <a href="{{ route('doc.show', ['user-module/adding-additional-user-data']) }}">Adding additional user data</a>
