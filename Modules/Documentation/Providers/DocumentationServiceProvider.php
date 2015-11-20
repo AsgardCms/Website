@@ -43,8 +43,10 @@ class DocumentationServiceProvider extends ServiceProvider
     private function registerConsoleCommands()
     {
         $this->app->bind('asgard.docs.update', 'Modules\Documentation\Console\UpdateDocumentationCommand');
+        $this->app->bind('asgard.routes.write', \Modules\Documentation\Console\GenerateDocumentationRoutes::class);
         $this->commands([
-            'asgard.docs.update'
+            'asgard.docs.update',
+            'asgard.routes.write',
         ]);
     }
 }
