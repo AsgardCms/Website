@@ -146,4 +146,21 @@ class GitDocumentationRepository implements DocumentationRepository
             return $data->get('subtitle');
         });
     }
+
+    public function getAllFiles()
+    {
+        $documentationPath = $this->getDocumentationPath();
+        $files = $this->finder->allFiles($documentationPath);
+
+        $cleanedPaths = [];
+
+        foreach ($files as $file) {
+            if ($file->getRelativePathname() === 'readme.md') {
+                continue;
+            }
+            $cleanedPaths[] = str_replace('.md', '', $file->getRelativePathname());
+        }
+
+        return $cleanedPaths;
+    }
 }

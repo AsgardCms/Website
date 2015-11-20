@@ -28,4 +28,6 @@ interface DocumentationRepository
      * @return string
      */
     public function getSubTitle($page);
+
+    public function getAllFiles();
 }
