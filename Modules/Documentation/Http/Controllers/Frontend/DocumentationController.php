@@ -20,7 +20,7 @@ class DocumentationController extends BasePublicController
 
     public function index()
     {
-        return redirect()->route('doc.show', 'getting-started/installation');
+        return redirect()->to('docs/getting-started/installation');
     }
 
     public function show($page)
