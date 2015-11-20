@@ -4,7 +4,7 @@
         <li class="{{ on_route('homepage') ? 'active' : ''}}"><a href="{{ route('homepage') }}">Home</a></li>
         <li class="{{ Request::is('*features') ? 'active' : ''}}"><a href="{{ route('page', ['features']) }}">Features</a></li>
         <li class="{{ Request::is('*install') ? 'active' : ''}}"><a href="{{ route('page', ['install']) }}" class="button">Install</a></li>
-        <li class="{{ on_route('doc.show') ? 'active' : ''}}"><a href="{{ route('doc.index') }}">Documentation</a></li>
+        <li class="{{ Request::is('*docs*') ? 'active' : ''}}"><a href="{{ route('doc.index') }}">Documentation</a></li>
         <li class="{{ Request::is('*blog/*') ? 'active' : ''}}"><a href="{{ route(locale() . '.blog') }}">Blog</a></li>
         <li class="{{ on_route('faq') ? 'active' : ''}}"><a href="{{ route('faq') }}">F.A.Q.</a></li>
         <?php if ($user): ?>

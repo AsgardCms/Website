@@ -132,7 +132,7 @@
 
                         <p>
                             The dashboard is what your client sees first. Add <a
-                                    href="{{ route('doc.show', ['dashboard-module/widgets']) }}">custom widgets </a>to
+                                    href="{{ url('docs/dashboard-module/widgets') }}">custom widgets </a>to
                             you dashboard, whatever data you wish on it!
                         </p>
                     </section>
@@ -164,10 +164,10 @@
 
                         <p>
                             Manage you media in one place. Quickly add <a
-                                    href="{{ route('doc.show', ['media-module/thumbnails']) }}">setup thumbnails</a>, <a
-                                    href="{{ route('doc.show', ['media-module/refreshing-thumbnails']) }}">regenerate
+                                    href="{{ url('docs/media-module/thumbnails') }}">setup thumbnails</a>, <a
+                                    href="{{ url('docs/media-module/refreshing-thumbnails') }}">regenerate
                                 old thumbnails</a>, and <a
-                                    href="{{ route('doc.show', ['media-module/getting-a-thumbnail']) }}">display your
+                                    href="{{ url('docs/media-module/getting-a-thumbnail') }}">display your
                                 thumbnails</a>.
                         </p>
                     </section>
@@ -213,7 +213,7 @@
                         <h3>Menus</h3>
 
                         <p>
-                            <a href="{{ route('doc.show', ['menu-module/managing-menus']) }}">Manage multiple menus</a>,
+                            <a href="{{ url('docs/menu-module/managing-menus') }}">Manage multiple menus</a>,
                             re-order items by drag & drop, and display them where you want.
                         </p>
                     </section>
