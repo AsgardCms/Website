@@ -1,6 +1,7 @@
 <?php namespace Modules\Documentation\Console;
 
 use Illuminate\Console\Command;
+use Modules\Documentation\Services\DocumentationRoutesGenerator;
 use PHPGit\Git;
 
 class UpdateDocumentationCommand extends Command
@@ -11,11 +12,16 @@ class UpdateDocumentationCommand extends Command
      * @var Git
      */
     protected $git;
+    /**
+     * @var DocumentationRoutesGenerator
+     */
+    private $generator;
 
-    public function __construct()
+    public function __construct(DocumentationRoutesGenerator $generator)
     {
         parent::__construct();
         $this->git = new Git;
+        $this->generator = $generator;
     }
 
     public function fire()
@@ -24,6 +30,7 @@ class UpdateDocumentationCommand extends Command
 
         $this->git->setRepository(public_path() . '/Documentation');
         $this->git->pull('origin', 'master');
+        $this->generator->generate();
 
         $this->call('cache:clear');
 
