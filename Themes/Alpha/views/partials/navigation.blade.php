@@ -12,12 +12,7 @@
             <ul>
                 <?php if ($user): ?>
                     <li class="{{ on_route('user.account') || on_route('user.beta') ? 'active' : '' }}">
-                        <a href="{{ route('user.account') }}">Account</a>
-                        <ul>
-                            <li class="{{ on_route('user.account') ? 'active' : '' }}"><a href="{{ route('user.account') }}">Account</a></li>
-                            <li class="{{ on_route('user.beta') ? 'active' : '' }}"><a href="{{ route('user.beta') }}">Beta status</a></li>
-                        </ul>
-                    </li>
+                    <li class="{{ on_route('user.account') ? 'active' : '' }}"><a href="{{ route('user.account') }}">Account</a></li>
                     <?php if ($user->hasRoleName('Admin')): ?>
                         <li><a href="{{ route('dashboard.index') }}">Admin</a></li>
                     <?php endif; ?>
