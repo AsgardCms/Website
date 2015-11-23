@@ -30,19 +30,17 @@ class SidebarExtender implements \Maatwebsite\Sidebar\SidebarExtender
     public function extendWith(Menu $menu)
     {
         $menu->group(trans('core::sidebar.content'), function (Group $group) {
-            $group->item(trans('testimonials::testimonials.title.testimonials'), function (Item $item) {
+            $group->item(trans('testimonial::testimonials.title.testimonials'), function (Item $item) {
                 $item->icon('fa fa-copy');
                 $item->weight(10);
-                $item->authorize(
-                     /* append */
-                );
-                $item->item(trans('testimonials::testimonials.title.testimonials'), function (Item $item) {
+                $item->authorize();
+                $item->item(trans('testimonial::testimonials.title.testimonials'), function (Item $item) {
                     $item->icon('fa fa-copy');
                     $item->weight(0);
                     $item->append('admin.testimonials.testimonial.create');
                     $item->route('admin.testimonials.testimonial.index');
                     $item->authorize(
-                        $this->auth->hasAccess('testimonials.testimonials.index')
+                        true
                     );
                 });
             });

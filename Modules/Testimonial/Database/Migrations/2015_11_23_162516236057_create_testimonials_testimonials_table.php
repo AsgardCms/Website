@@ -12,7 +12,7 @@ class CreateTestimonialsTestimonialsTable extends Migration
      */
     public function up()
     {
-        Schema::create('testimonials__testimonials', function (Blueprint $table) {
+        Schema::create('testimonial__testimonials', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('name');
@@ -29,6 +29,6 @@ class CreateTestimonialsTestimonialsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('testimonials__testimonials');
+        Schema::drop('testimonial__testimonials');
     }
 }

@@ -4,6 +4,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Testimonial extends Model
 {
-    protected $table = 'testimonials__testimonials';
+    protected $table = 'testimonial__testimonials';
     protected $fillable = ['name', 'content', 'url'];
 }

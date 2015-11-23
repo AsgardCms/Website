@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'testimonials.testimonials' => [
+    'testimonial.testimonial' => [
         'index',
         'create',
         'store',

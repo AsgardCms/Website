@@ -2,12 +2,12 @@
 
 @section('content-header')
     <h1>
-        {{ trans('testimonials::testimonials.title.edit testimonial') }}
+        {{ trans('testimonial::testimonials.title.edit testimonial') }}
     </h1>
     <ol class="breadcrumb">
         <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> {{ trans('core::core.breadcrumb.home') }}</a></li>
-        <li><a href="{{ route('admin.testimonials.testimonial.index') }}">{{ trans('testimonials::testimonials.title.testimonials') }}</a></li>
-        <li class="active">{{ trans('testimonials::testimonials.title.edit testimonial') }}</li>
+        <li><a href="{{ route('admin.testimonials.testimonial.index') }}">{{ trans('testimonial::testimonials.title.testimonials') }}</a></li>
+        <li class="active">{{ trans('testimonial::testimonials.title.edit testimonial') }}</li>
     </ol>
 @stop
 
@@ -27,7 +27,7 @@
                     @foreach (LaravelLocalization::getSupportedLocales() as $locale => $language)
                         <?php $i++; ?>
                         <div class="tab-pane {{ locale() == $locale ? 'active' : '' }}" id="tab_{{ $i }}">
-                            @include('testimonials::admin.testimonials.partials.edit-fields', ['lang' => $locale])
+                            @include('testimonial::admin.testimonials.partials.edit-fields', ['lang' => $locale])
                         </div>
                     @endforeach
 

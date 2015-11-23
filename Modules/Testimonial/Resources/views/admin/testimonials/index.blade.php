@@ -2,11 +2,11 @@
 
 @section('content-header')
     <h1>
-        {{ trans('testimonials::testimonials.title.testimonials') }}
+        {{ trans('testimonial::testimonials.title.testimonials') }}
     </h1>
     <ol class="breadcrumb">
         <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> {{ trans('core::core.breadcrumb.home') }}</a></li>
-        <li class="active">{{ trans('testimonials::testimonials.title.testimonials') }}</li>
+        <li class="active">{{ trans('testimonial::testimonials.title.testimonials') }}</li>
     </ol>
 @stop
 
@@ -16,7 +16,7 @@
             <div class="row">
                 <div class="btn-group pull-right" style="margin: 0 15px 15px 0;">
                     <a href="{{ route('admin.testimonials.testimonial.create') }}" class="btn btn-primary btn-flat" style="padding: 4px 10px;">
-                        <i class="fa fa-pencil"></i> {{ trans('testimonials::testimonials.button.create testimonial') }}
+                        <i class="fa fa-pencil"></i> {{ trans('testimonial::testimonials.button.create testimonial') }}
                     </a>
                 </div>
             </div>
@@ -110,7 +110,7 @@
 @section('shortcuts')
     <dl class="dl-horizontal">
         <dt><code>c</code></dt>
-        <dd>{{ trans('testimonials::testimonials.title.create testimonial') }}</dd>
+        <dd>{{ trans('testimonial::testimonials.title.create testimonial') }}</dd>
     </dl>
 @stop
 

@@ -30,7 +30,7 @@ class TestimonialController extends AdminBaseController
     {
         $testimonials = $this->testimonial->all();
 
-        return view('testimonials::admin.testimonials.index', compact('testimonials'));
+        return view('testimonial::admin.testimonials.index', compact('testimonials'));
     }
 
     /**
@@ -40,7 +40,7 @@ class TestimonialController extends AdminBaseController
      */
     public function create()
     {
-        return view('testimonials::admin.testimonials.create');
+        return view('testimonial::admin.testimonials.create');
     }
 
     /**
@@ -66,7 +66,7 @@ class TestimonialController extends AdminBaseController
      */
     public function edit(Testimonial $testimonial)
     {
-        return view('testimonials::admin.testimonials.edit', compact('testimonial'));
+        return view('testimonial::admin.testimonials.edit', compact('testimonial'));
     }
 
     /**
