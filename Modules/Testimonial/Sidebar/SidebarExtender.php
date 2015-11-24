@@ -40,7 +40,7 @@ class SidebarExtender implements \Maatwebsite\Sidebar\SidebarExtender
                     $item->append('admin.testimonials.testimonial.create');
                     $item->route('admin.testimonials.testimonial.index');
                     $item->authorize(
-                        $this->auth->hasAccess('testimonial.testimonials.index')
+                        $this->auth->hasAccess('testimonial.testimonial.index')
                     );
                 });
             });
