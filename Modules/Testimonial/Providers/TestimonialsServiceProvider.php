@@ -2,7 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 use Modules\Testimonial\Composers\AllTestimonialsComposer;
-use Modules\Testimonial\Composers\LatestTestimonialsComposer;
+use Modules\Testimonial\Composers\RandomTestimonialsComposer;
 
 class TestimonialsServiceProvider extends ServiceProvider
 {
@@ -21,7 +21,7 @@ class TestimonialsServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerBindings();
-        view()->composer('home', LatestTestimonialsComposer::class);
+        view()->composer('home', RandomTestimonialsComposer::class);
         view()->composer('testimonials', AllTestimonialsComposer::class);
     }
 

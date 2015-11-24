@@ -3,7 +3,7 @@
 use Illuminate\Contracts\View\View;
 use Modules\Testimonial\Repositories\TestimonialRepository;
 
-class LatestTestimonialsComposer
+class RandomTestimonialsComposer
 {
     /**
      * @var TestimonialRepository
