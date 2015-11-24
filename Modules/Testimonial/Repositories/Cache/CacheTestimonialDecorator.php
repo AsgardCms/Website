@@ -17,12 +17,6 @@ class CacheTestimonialDecorator extends BaseCacheDecorator implements Testimonia
      */
     public function randomTestimonials()
     {
-        return $this->cache
-            ->tags($this->entityName, 'global')
-            ->remember("{$this->locale}.{$this->entityName}.randomTestimonials", $this->cacheTime,
-                function () {
-                    return $this->repository->randomTestimonials();
-                }
-            );
+        return $this->repository->randomTestimonials();
     }
 }
