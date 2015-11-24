@@ -5,7 +5,6 @@
         <li class="{{ Request::is('*features') ? 'active' : ''}}"><a href="{{ route('page', ['features']) }}">Features</a></li>
         <li class="{{ Request::is('*install') ? 'active' : ''}}"><a href="{{ route('page', ['install']) }}" class="button">Install</a></li>
         <li class="{{ Request::is('*docs*') ? 'active' : ''}}"><a href="{{ route('doc.index') }}">Documentation</a></li>
-        <li class="{{ Request::is('*testimonials') ? 'active' : ''}}"><a href="{{ route('testimonials') }}">Testimonials</a></li>
         <li class="{{ Request::is('*blog/*') ? 'active' : ''}}"><a href="{{ route(locale() . '.blog') }}">Blog</a></li>
         <?php if ($user): ?>
         <li class="{{ Request::is('*auth/*') ? 'active' : ''}}">
