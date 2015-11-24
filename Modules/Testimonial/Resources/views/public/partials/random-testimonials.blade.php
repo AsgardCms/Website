@@ -7,7 +7,7 @@
     </div>
     <div class="row uniform 50%">
         <?php foreach ($randomTestimonials as $testimonial): ?>
-        <div class="4u">
+        <div class="4u" style="text-align: center">
             {!! $testimonial->content !!} - <a href="{{ $testimonial->url }}" target="_blank" style="font-style:italic;">{{ $testimonial->name }}</a>
         </div>
         <?php endforeach; ?>
