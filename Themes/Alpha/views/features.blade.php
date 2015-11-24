@@ -74,7 +74,7 @@
         <header>
             <h2>Features</h2>
 
-            <p>An elegant full-featured modular multilingual CMS built on top of the Laravel framework.</p>
+            <p>An elegant, full-featured, modular multilingual CMS built on top of the Laravel framework.</p>
         </header>
         <div class="features">
             <div class="box special feature">
@@ -83,8 +83,8 @@
 
                     <h3>Easy to install</h3>
 
-                    <p>Get up and running in less then 5 minutes! Clone the repository, run install command and you're
-                        done.</p>
+                    <p>Get up and running in less then 5 minutes! Clone the repository, run the installation script and you're
+                        ready to go.</p>
                 </section>
             </div>
             <div class="box special feature">
@@ -94,8 +94,7 @@
                     <h3>Multilingual</h3>
 
                     <p>
-                        Asgard CMS is completely multilingual. The backend too. Add languages as you need, manage them,
-                        easily.
+                        Asgard CMS is fully multilingual with support for a vast array of languages. Manage languages easily through the CMS interface!
                     </p>
                 </section>
             </div>
@@ -105,18 +104,16 @@
 
                     <h3>Modular</h3>
 
-                    <p>Asgard CMS uses a modular approach. Each part of the CMS is a separate module, all modules are
-                        decoupled. Use only the ones you need.</p>
+                    <p>Asgard CMS is fully modular. Each part of the CMS is a separate, decoupled module.</p>
                 </section>
             </div>
         </div>
 
         <div class="row">
             <div class="12u 12u(2)" style="text-align: center; margin: 50px 0;">
-                <h2>Use the ready to use modules to quickstart your app!</h2>
+                <h2>Ready-to-use Modules make your life easier!</h2>
 
-                <p>There are a number of ready to use modules. Some of those are required, pick and choose the others
-                    <strong>you need</strong>.</p>
+                <p>There are a variety of ready-to-use modules, pick the ones that <strong>your application</strong> requires!</p>
             </div>
         </div>
 
@@ -130,11 +127,7 @@
                     <section>
                         <h3>Dashboard</h3>
 
-                        <p>
-                            The dashboard is what your client sees first. Add <a
-                                    href="{{ url('docs/dashboard-module/widgets') }}">custom widgets </a>to
-                            you dashboard, whatever data you wish on it!
-                        </p>
+                        <p>An attractive dashboard, coupled with <a href="{{ url('docs/dashboard-module/widgets') }}">custom widgets</a>, gives you and your clients great visibility.</p>
                     </section>
                 </div>
             </div>
@@ -148,7 +141,7 @@
                         <h3>Page Management</h3>
 
                         <p>
-                            Content is important, start creating content out of the box. Manage your pages easily.
+                            Content management out of the box.
                         </p>
                     </section>
                 </div>
@@ -162,13 +155,7 @@
                     <section>
                         <h3>Media Management</h3>
 
-                        <p>
-                            Manage you media in one place. Quickly add <a
-                                    href="{{ url('docs/media-module/thumbnails') }}">setup thumbnails</a>, <a
-                                    href="{{ url('docs/media-module/refreshing-thumbnails') }}">regenerate
-                                old thumbnails</a>, and <a
-                                    href="{{ url('docs/media-module/getting-a-thumbnail') }}">display your
-                                thumbnails</a>.
+                        <p>Centralised Media Management, allowing you to <a href="{{ url('docs/media-module/thumbnails') }}">define image thumbnail dimensions</a>, <a href="{{ url('docs/media-module/refreshing-thumbnails') }}">regenerate your thumbnails</a>, and <a href="{{ url('docs/media-module/getting-a-thumbnail') }}">display your images in your defined sizes & ratios!</a>.
                         </p>
                     </section>
                 </div>
@@ -195,10 +182,10 @@
                 </figure>
                 <div class="feature-modules">
                     <section>
-                        <h3>Manage your modules</h3>
+                        <h3>Easy Module Management</h3>
 
                         <p>
-                            Manage all your modules in one place. Publish assets, view changelogs and more.
+                            Manage all your modules in the Workshop. Publish assets, view changelogs and more!
                         </p>
                     </section>
                 </div>
@@ -210,11 +197,11 @@
                 </figure>
                 <div class="feature-modules">
                     <section>
-                        <h3>Menus</h3>
+                        <h3>Customise your Menus</h3>
 
                         <p>
                             <a href="{{ url('docs/menu-module/managing-menus') }}">Manage multiple menus</a>,
-                            re-order items by drag & drop, and display them where you want.
+                            re-order items by drag & drop, and display them anywhere.
                         </p>
                     </section>
                 </div>
@@ -224,8 +211,7 @@
             <div class="12u 12u(2)" style="text-align: center; margin: 50px 0;">
                 <h2>Developer tools</h2>
 
-                <p><strong>AsgardCms</strong> is made <em>for</em> developers, use this rapid application development
-                    process and stop wasting time building the architecture.</p>
+                <p><strong>AsgardCms</strong> is made <em>for</em> developers - the in-built rapid-development tools allow you to stop wasting your time on architecture and focus on the functionality!</p>
             </div>
         </div>
 
@@ -236,8 +222,7 @@
 
                     <p>
                         <storng>Quickly</storng>
-                        create new modules with the command line tool, and our scaffolding tool. You'll have a module
-                        setup very fast. All modules are pure PSR-4 autoloaded packages.
+                        create new modules with the command line scaffolding tool. You'll have a translatable, PSR-4 compliant module within seconds.
                     </p>
                 </section>
             </div>
@@ -246,10 +231,7 @@
                     <h3>Themes</h3>
 
                     <p>
-                        <storng>Quickly</storng>
-                        create new themes from the command line. Create the theme specific for your client, easily use
-                        theme inheritance thanks to the <a href="https://github.com/floatingpointsoftware/stylist"
-                                                           target="_blank">Stylist</a> package.
+                        <storng>Quickly</storng> create new themes from the command line. Theme inheritence is also supported, powered by the <a href="https://github.com/floatingpointsoftware/stylist" target="_blank">Stylist</a> package.
                     </p>
                 </section>
             </div>
