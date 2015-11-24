@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- Banner -->
-<section id="banner">
+<section id="banner" style="background: #e89980; padding: 5em 0 13em 0;">
     <h2>Asgard CMS</h2>
     <p>An modular multilingual CMS built with Laravel 5.</p>
     <ul class="actions">
