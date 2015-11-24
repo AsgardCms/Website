@@ -1,6 +1,8 @@
 <?php namespace Modules\Testimonial\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Modules\Testimonial\Composers\AllTestimonialsComposer;
+use Modules\Testimonial\Composers\LatestTestimonialsComposer;
 
 class TestimonialsServiceProvider extends ServiceProvider
 {
@@ -19,6 +21,8 @@ class TestimonialsServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerBindings();
+        view()->composer('home', LatestTestimonialsComposer::class);
+        view()->composer('testimonials', AllTestimonialsComposer::class);
     }
 
     /**

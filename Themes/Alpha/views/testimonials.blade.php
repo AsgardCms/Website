@@ -9,18 +9,13 @@
 
         <section id="main" style="padding-top: 25px">
             <div class="row">
-                <div class="6u 12u(2)">
-                   <p>
-                       " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum hic illo iste laudantium libero
-                       magnam magni quasi rem . " - <a href="">@someUser</a>
-                   </p>
-                </div>
-                <div class="6u 12u(2)">
-                   <p>
-                       " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum hic illo iste laudantium libero
-                       magnam magni quasi rem . " - <a href="">@someUser</a>
-                   </p>
-                </div>
+                <?php foreach ($testimonials as $testimonial): ?>
+                    <div class="6u 12u(2)">
+                       <p>
+                           "{{ $testimonial->content }}" - <a href="{{ $testimonial->url }}">{{ $testimonial->name }}</a>
+                       </p>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </section>
 

@@ -11,4 +11,18 @@ class CacheTestimonialDecorator extends BaseCacheDecorator implements Testimonia
         $this->entityName = 'testimonials.testimonials';
         $this->repository = $testimonial;
     }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Collection
+     */
+    public function randomTestimonials()
+    {
+        return $this->cache
+            ->tags($this->entityName, 'global')
+            ->remember("{$this->locale}.{$this->entityName}.randomTestimonials", $this->cacheTime,
+                function () {
+                    return $this->repository->randomTestimonials();
+                }
+            );
+    }
 }
