@@ -30,23 +30,14 @@ class SidebarExtender implements \Maatwebsite\Sidebar\SidebarExtender
     public function extendWith(Menu $menu)
     {
         $menu->group(trans('core::sidebar.content'), function (Group $group) {
-            $group->item(trans('gallery::abcs.title.abcs'), function (Item $item) {
+            $group->item(trans('gallery::galleries.title.galleries'), function (Item $item) {
                 $item->icon('fa fa-copy');
                 $item->weight(10);
+                $item->append('admin.gallery.gallery.create');
+                $item->route('admin.gallery.gallery.index');
                 $item->authorize(
-                     /* append */
+                    $this->auth->hasAccess('gallery.galleries.index')
                 );
-                $item->item(trans('gallery::galleries.title.galleries'), function (Item $item) {
-                    $item->icon('fa fa-copy');
-                    $item->weight(0);
-                    $item->append('admin.gallery.gallery.create');
-                    $item->route('admin.gallery.gallery.index');
-                    $item->authorize(
-                        $this->auth->hasAccess('gallery.galleries.index')
-                    );
-                });
-// append
-
             });
         });
 
