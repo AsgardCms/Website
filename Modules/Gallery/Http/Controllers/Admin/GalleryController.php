@@ -1,8 +1,9 @@
 <?php namespace Modules\Gallery\Http\Controllers\Admin;
 
 use Laracasts\Flash\Flash;
-use Illuminate\Http\Request;
 use Modules\Gallery\Entities\Gallery;
+use Modules\Gallery\Http\Requests\CreateSiteRequest;
+use Modules\Gallery\Http\Requests\UpdateSiteRequest;
 use Modules\Gallery\Repositories\GalleryRepository;
 use Modules\Core\Http\Controllers\Admin\AdminBaseController;
 
@@ -45,10 +46,10 @@ class GalleryController extends AdminBaseController
     /**
      * Store a newly created resource in storage.
      *
-     * @param  Request $request
+     * @param  CreateSiteRequest $request
      * @return Response
      */
-    public function store(Request $request)
+    public function store(CreateSiteRequest $request)
     {
         $this->gallery->create($request->all());
 
@@ -72,10 +73,10 @@ class GalleryController extends AdminBaseController
      * Update the specified resource in storage.
      *
      * @param  Gallery $gallery
-     * @param  Request $request
+     * @param  UpdateSiteRequest $request
      * @return Response
      */
-    public function update(Gallery $gallery, Request $request)
+    public function update(Gallery $gallery, UpdateSiteRequest $request)
     {
         $this->gallery->update($gallery, $request->all());
 
