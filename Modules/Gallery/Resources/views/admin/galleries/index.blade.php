@@ -29,6 +29,10 @@
                         <thead>
                         <tr>
                             <th>{{ trans('core::core.table.created at') }}</th>
+                            <th>Website name</th>
+                            <th>Website url</th>
+                            <th>Owner name</th>
+                            <th>Owner url</th>
                             <th data-sortable="false">{{ trans('core::core.table.actions') }}</th>
                         </tr>
                         </thead>
@@ -41,6 +45,10 @@
                                     {{ $gallery->created_at }}
                                 </a>
                             </td>
+                            <td>{{ $gallery->website_name }}</td>
+                            <td>{{ $gallery->website_url }}</td>
+                            <td>{{ $gallery->owner_name }}</td>
+                            <td>{{ $gallery->owner_url }}</td>
                             <td>
                                 <div class="btn-group">
                                     <a href="{{ route('admin.gallery.gallery.edit', [$gallery->id]) }}" class="btn btn-default btn-flat"><i class="fa fa-pencil"></i></a>
