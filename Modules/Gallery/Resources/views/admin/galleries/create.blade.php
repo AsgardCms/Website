@@ -31,6 +31,11 @@
                         </div>
                     @endforeach
 
+                    {!! Form::normalInput('website_name', 'Website name', $errors) !!}
+                    {!! Form::normalInput('website_url', 'Website url', $errors) !!}
+                    {!! Form::normalInput('owner_name', 'Owner name', $errors) !!}
+                    {!! Form::normalInput('owner_url', 'Owner url', $errors) !!}
+
                     <div class="box-footer">
                         <button type="submit" class="btn btn-primary btn-flat">{{ trans('core::core.button.create') }}</button>
                         <a class="btn btn-danger pull-right btn-flat" href="{{ route('admin.gallery.gallery.index')}}"><i class="fa fa-times"></i> {{ trans('core::core.button.cancel') }}</a>

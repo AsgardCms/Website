@@ -30,7 +30,10 @@
                             @include('gallery::admin.galleries.partials.edit-fields', ['lang' => $locale])
                         </div>
                     @endforeach
-
+                    {!! Form::normalInput('website_name', 'Website name', $errors, $gallery) !!}
+                    {!! Form::normalInput('website_url', 'Website url', $errors, $gallery) !!}
+                    {!! Form::normalInput('owner_name', 'Owner name', $errors, $gallery) !!}
+                    {!! Form::normalInput('owner_url', 'Owner url', $errors, $gallery) !!}
                     <div class="box-footer">
                         <button type="submit" class="btn btn-primary btn-flat">{{ trans('core::core.button.update') }}</button>
                         <a class="btn btn-danger pull-right btn-flat" href="{{ route('admin.gallery.gallery.index')}}"><i class="fa fa-times"></i> {{ trans('core::core.button.cancel') }}</a>
