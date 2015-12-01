@@ -27,9 +27,9 @@ class GalleryController extends AdminBaseController
      */
     public function index()
     {
-        //$galleries = $this->gallery->all();
+        $galleries = $this->gallery->all();
 
-        return view('gallery::admin.galleries.index', compact(''));
+        return view('gallery::admin.galleries.index', compact('galleries'));
     }
 
     /**
