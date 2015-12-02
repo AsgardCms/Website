@@ -156,13 +156,13 @@
 </div>
 
 <!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.dropotron.min.js"></script>
-<script src="assets/js/jquery.scrollgress.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="assets/js/main.js"></script>
+{!! Theme::script('js/jquery.min.js') !!}
+{!! Theme::script('js/jquery.dropotron.min.js') !!}
+{!! Theme::script('js/jquery.scrollgress.min.js') !!}
+{!! Theme::script('js/skel.min.js') !!}
+{!! Theme::script('js/util.js') !!}
+<!--[if lte IE 8]>{!! Theme::script('js/ie/respond.min.js') !!}<![endif]-->
+{!! Theme::script('js/main.js') !!}
 
 </body>
 </html>
