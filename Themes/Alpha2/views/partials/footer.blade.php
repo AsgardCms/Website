@@ -15,7 +15,7 @@
             </ul>
             <ul class="copyright">
                 <li>Created by <a href="http://nicolaswidart.com">Nicolas Widart</a></li>
-		<li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+		        <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
             </ul>
             <ul class="copyright">
                 <li>
