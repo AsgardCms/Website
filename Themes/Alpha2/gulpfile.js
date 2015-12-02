@@ -13,4 +13,5 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.sass(['main.scss'], 'assets/css/asgard.css');
+    mix.copy('resources/assets/js', 'assets/js');
 });
