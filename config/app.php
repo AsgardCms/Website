@@ -148,6 +148,7 @@ return [
     'Cartalyst\Sentry\SentryServiceProvider',
     'Bugsnag\BugsnagLaravel\BugsnagLaravelServiceProvider',
     'Modules\Core\Providers\AsgardServiceProvider',
+	'Spatie\Backup\BackupServiceProvider',
 ],
 
 	/*
