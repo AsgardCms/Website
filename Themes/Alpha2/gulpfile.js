@@ -12,7 +12,5 @@ elixir.extend("stylistPublish", function() {
 
 elixir(function(mix) {
     mix.sass(['main.scss'], 'assets/css/asgard.css');
-    mix.copy('resources/assets/js', 'assets/js');
-    mix.copy('resources/assets/fonts', 'assets/fonts');
-    mix.copy('resources/assets/css', 'assets/css').stylistPublish();
+    mix.copy('resources/assets/js', 'assets/js').stylistPublish();
 });
