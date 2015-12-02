@@ -5,7 +5,16 @@
 */
 
 (function($) {
-
+	$(document).ready(function () {
+		// ScrollTo
+		$.localScroll({
+			target: 'body',
+			hash: true
+		});
+		$("img.lazy").lazyload({
+			effect : "fadeIn"
+		});
+	});
 	skel.breakpoints({
 		wide: '(max-width: 1680px)',
 		normal: '(max-width: 1280px)',

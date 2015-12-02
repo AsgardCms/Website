@@ -32,6 +32,9 @@
         {!! Theme::script('js/jquery.min.js') !!}
         {!! Theme::script('js/jquery.dropotron.min.js') !!}
         {!! Theme::script('js/jquery.scrollgress.min.js') !!}
+        {!! Theme::script('js/jquery.scrollTo.min.js') !!}
+        {!! Theme::script('js/jquery.localScroll.min.js') !!}
+        {!! Theme::script('js/jquery.lazyload.js') !!}
         {!! Theme::script('js/skel.min.js') !!}
         {!! Theme::script('js/util.js') !!}
         <!--[if lte IE 8]>{!! Theme::script('js/ie/respond.min.js') !!}<![endif]-->
