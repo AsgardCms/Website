@@ -23,7 +23,7 @@
                 Asgard CMS will kickstart all your future client applications.
             </p>
         </header>
-        <span class="image featured"><img data-original="{{ Theme::url('images/ui/admin-settings-full-height.jpg') }}" alt="" class="lazy" width="1200" height="906" /></span>
+        <span class="image featured"><img data-original="{{ asset('assets/images/ui/admin-settings-full-height.jpg') }}" alt="" class="lazy" width="1200" height="906" /></span>
     </section>
     @include('testimonial::public.partials.random-testimonials')
     <section class="box special features">
