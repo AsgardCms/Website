@@ -36,6 +36,7 @@
     <meta property="og:image" content="{{ asset('/assets/images/thor-the-dark-world-asgard.jpg')}}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]>{!! Theme::script('js/ie/html5shiv.js') !!}<![endif]-->
+    {!! Theme::style('css/prism.css') !!}
     {!! Theme::style('css/asgard.css') !!}
     <!--[if lte IE 8]>{!! Theme::style('css/ie8.css') !!}<![endif]-->
     @section('styles')
