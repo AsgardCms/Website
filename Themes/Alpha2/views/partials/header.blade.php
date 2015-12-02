@@ -38,5 +38,7 @@
     <!--[if lte IE 8]>{!! Theme::script('js/ie/html5shiv.js') !!}<![endif]-->
     {!! Theme::style('css/asgard.css') !!}
     <!--[if lte IE 8]>{!! Theme::style('css/ie8.css') !!}<![endif]-->
+    @section('styles')
+    @show
 </head>
 @include("partials.{$header}-header")
