@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     Dropzone.autoDiscover = false;
     var myDropzone = new Dropzone(".dropzone", {
-        url: '/api/file',
+        url: Asgard.dropzonePostUrl,
         autoProcessQueue: true,
         maxFilesize: maxFilesize,
         acceptedFiles : acceptedFiles
