@@ -82,7 +82,9 @@
       "php artisan clear-compiled",
       "php artisan stylist:publish",
       "php artisan module:publish",
-      "php artisan optimize"
+      "php artisan optimize",
+      "php artisan docs:update",
+      "php artisan docs:write-routes"
     ],
     "post-update-cmd": [
       "php artisan clear-compiled",

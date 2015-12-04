@@ -5,7 +5,9 @@ use Illuminate\Routing\Router;
 
 $router->get('docs', ['as' => 'doc.index', 'uses' => 'Frontend\DocumentationController@index']);
 
-include storage_path() . "/routes/documentation_routes.php";
+if (file_exists(storage_path() . "/routes/documentation_routes.php")) {
+    include storage_path() . "/routes/documentation_routes.php";
+}
 
 //$router->get('docs/{page}', ['as' => 'doc.show', 'uses' => 'Frontend\DocumentationController@show'])->where('page', '.*');
 
