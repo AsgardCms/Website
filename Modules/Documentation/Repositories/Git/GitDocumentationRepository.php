@@ -30,7 +30,7 @@ class GitDocumentationRepository implements DocumentationRepository
         $this->cache = $cache;
 
         if ( ! $this->finder->exists($this->getDocumentationPath())) {
-            $this->git->clone('https://github.com/AsgardCms/Documentation.git');
+            $this->git->clone('https://github.com/AsgardCms/Documentation.git', $this->getDocumentationPath());
         }
     }
 
