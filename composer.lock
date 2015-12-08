@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c051c85dec6f1d7f1b658a4326160e12",
-    "content-hash": "222aef091db62b6f9ebe6e4c7405716b",
+    "hash": "7c4a9cf4479c1da54962f650f5020e50",
+    "content-hash": "e359f357da0705ba08f2a810ea4c979a",
     "packages": [
         {
             "name": "asgardcms/adminlte-theme",
-            "version": "1.12.0",
+            "version": "1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/AdminLTE.git",
-                "reference": "ae100f9aae1d39abfb63323fa74c5523bdf3a8bf"
+                "reference": "e1c9dd5ec55f0d0799b0769feda68565886538dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/AdminLTE/zipball/ae100f9aae1d39abfb63323fa74c5523bdf3a8bf",
-                "reference": "ae100f9aae1d39abfb63323fa74c5523bdf3a8bf",
+                "url": "https://api.github.com/repos/AsgardCms/AdminLTE/zipball/e1c9dd5ec55f0d0799b0769feda68565886538dc",
+                "reference": "e1c9dd5ec55f0d0799b0769feda68565886538dc",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,7 @@
             "keywords": [
                 "asgard-cms"
             ],
-            "time": "2015-12-02 10:10:19"
+            "time": "2015-12-04 16:15:08"
         },
         {
             "name": "asgardcms/blog-module",
@@ -83,16 +83,16 @@
         },
         {
             "name": "asgardcms/core-module",
-            "version": "1.18.1",
+            "version": "1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Core.git",
-                "reference": "2d6fbfaa8779f554fa48df41380dbb7d04e13986"
+                "reference": "c1651b31bba440b342f28bbdd277763ecb9cd1c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Core/zipball/2d6fbfaa8779f554fa48df41380dbb7d04e13986",
-                "reference": "2d6fbfaa8779f554fa48df41380dbb7d04e13986",
+                "url": "https://api.github.com/repos/AsgardCms/Core/zipball/c1651b31bba440b342f28bbdd277763ecb9cd1c1",
+                "reference": "c1651b31bba440b342f28bbdd277763ecb9cd1c1",
                 "shasum": ""
             },
             "require": {
@@ -133,20 +133,20 @@
                 "asgardcms",
                 "core"
             ],
-            "time": "2015-12-01 10:56:08"
+            "time": "2015-12-07 19:33:52"
         },
         {
             "name": "asgardcms/dashboard-module",
-            "version": "1.7.1",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Dashboard.git",
-                "reference": "c5a30fa2fae53ec83f24ecd95626360c272cf341"
+                "reference": "7c389abd0db939f2b15a92037e38138523b3ecaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Dashboard/zipball/c5a30fa2fae53ec83f24ecd95626360c272cf341",
-                "reference": "c5a30fa2fae53ec83f24ecd95626360c272cf341",
+                "url": "https://api.github.com/repos/AsgardCms/Dashboard/zipball/7c389abd0db939f2b15a92037e38138523b3ecaa",
+                "reference": "7c389abd0db939f2b15a92037e38138523b3ecaa",
                 "shasum": ""
             },
             "require": {
@@ -170,7 +170,7 @@
                 "asgardcms",
                 "dashboard"
             ],
-            "time": "2015-11-18 15:00:42"
+            "time": "2015-12-07 19:35:45"
         },
         {
             "name": "asgardcms/flatly-theme",
@@ -210,25 +210,26 @@
         },
         {
             "name": "asgardcms/media-module",
-            "version": "1.15.0",
+            "version": "1.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Media.git",
-                "reference": "3b8f326151f964f9fa3ea561ec6e4cda003feee7"
+                "reference": "91471e1e8c7a473af1a7b372439cc4643ebefadc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Media/zipball/3b8f326151f964f9fa3ea561ec6e4cda003feee7",
-                "reference": "3b8f326151f964f9fa3ea561ec6e4cda003feee7",
+                "url": "https://api.github.com/repos/AsgardCms/Media/zipball/91471e1e8c7a473af1a7b372439cc4643ebefadc",
+                "reference": "91471e1e8c7a473af1a7b372439cc4643ebefadc",
                 "shasum": ""
             },
             "require": {
                 "asgardcms/core-module": "~1.0",
                 "composer/installers": "~1.0",
-                "intervention/image": "~2.1",
+                "intervention/image": "^2.3",
                 "php": ">=5.4"
             },
             "require-dev": {
+                "league/flysystem-aws-s3-v3": "~1.0",
                 "orchestra/testbench": "~3.1",
                 "phpunit/phpunit": "~4.0"
             },
@@ -253,20 +254,20 @@
                 "library",
                 "media"
             ],
-            "time": "2015-12-02 10:08:04"
+            "time": "2015-12-07 18:21:14"
         },
         {
             "name": "asgardcms/menu-module",
-            "version": "1.13.0",
+            "version": "1.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Menu.git",
-                "reference": "1a21cfd7d99f37b6871a98734db26d6da92373fb"
+                "reference": "9a0c8089974f1d697bb82e14d1fe971c939de744"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Menu/zipball/1a21cfd7d99f37b6871a98734db26d6da92373fb",
-                "reference": "1a21cfd7d99f37b6871a98734db26d6da92373fb",
+                "url": "https://api.github.com/repos/AsgardCms/Menu/zipball/9a0c8089974f1d697bb82e14d1fe971c939de744",
+                "reference": "9a0c8089974f1d697bb82e14d1fe971c939de744",
                 "shasum": ""
             },
             "require": {
@@ -302,20 +303,20 @@
                 "nested sets",
                 "tree"
             ],
-            "time": "2015-11-27 14:53:22"
+            "time": "2015-12-07 19:41:00"
         },
         {
             "name": "asgardcms/page-module",
-            "version": "1.10.1",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Page.git",
-                "reference": "51d368101c282c4be26191c7cd6813983480aa88"
+                "reference": "f8673852c6b11f468c80d2d69bbf6166fa5b45cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Page/zipball/51d368101c282c4be26191c7cd6813983480aa88",
-                "reference": "51d368101c282c4be26191c7cd6813983480aa88",
+                "url": "https://api.github.com/repos/AsgardCms/Page/zipball/f8673852c6b11f468c80d2d69bbf6166fa5b45cb",
+                "reference": "f8673852c6b11f468c80d2d69bbf6166fa5b45cb",
                 "shasum": ""
             },
             "require": {
@@ -339,20 +340,20 @@
                 "asgardcms",
                 "pages"
             ],
-            "time": "2015-11-27 15:06:52"
+            "time": "2015-12-07 19:43:41"
         },
         {
             "name": "asgardcms/setting-module",
-            "version": "1.12.1",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Setting.git",
-                "reference": "062666e1a54e1a126b19b27aa20d2ccce40e2e4d"
+                "reference": "80576f127018a9ac1595023d78e87f92d9616b0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Setting/zipball/062666e1a54e1a126b19b27aa20d2ccce40e2e4d",
-                "reference": "062666e1a54e1a126b19b27aa20d2ccce40e2e4d",
+                "url": "https://api.github.com/repos/AsgardCms/Setting/zipball/80576f127018a9ac1595023d78e87f92d9616b0a",
+                "reference": "80576f127018a9ac1595023d78e87f92d9616b0a",
                 "shasum": ""
             },
             "require": {
@@ -382,7 +383,7 @@
                 "Settings",
                 "asgardcms"
             ],
-            "time": "2015-11-27 14:55:46"
+            "time": "2015-12-07 19:46:42"
         },
         {
             "name": "asgardcms/translation-module",
@@ -430,16 +431,16 @@
         },
         {
             "name": "asgardcms/user-module",
-            "version": "1.13.1",
+            "version": "1.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/User.git",
-                "reference": "7047e1ffdd97f5be096c0590f551fc06da8289c6"
+                "reference": "30577677e02af6eaa45165322be90e3599b362d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/User/zipball/7047e1ffdd97f5be096c0590f551fc06da8289c6",
-                "reference": "7047e1ffdd97f5be096c0590f551fc06da8289c6",
+                "url": "https://api.github.com/repos/AsgardCms/User/zipball/30577677e02af6eaa45165322be90e3599b362d0",
+                "reference": "30577677e02af6eaa45165322be90e3599b362d0",
                 "shasum": ""
             },
             "require": {
@@ -479,20 +480,20 @@
                 "authorisation",
                 "user"
             ],
-            "time": "2015-11-30 15:30:13"
+            "time": "2015-12-07 19:55:22"
         },
         {
             "name": "asgardcms/workshop-module",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Workshop.git",
-                "reference": "994da4389cf9a0e5b7b7cb3139b68779acf2a2d8"
+                "reference": "8ec5e943578e181084beabb8b9b2df54e836d3fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Workshop/zipball/994da4389cf9a0e5b7b7cb3139b68779acf2a2d8",
-                "reference": "994da4389cf9a0e5b7b7cb3139b68779acf2a2d8",
+                "url": "https://api.github.com/repos/AsgardCms/Workshop/zipball/8ec5e943578e181084beabb8b9b2df54e836d3fa",
+                "reference": "8ec5e943578e181084beabb8b9b2df54e836d3fa",
                 "shasum": ""
             },
             "require": {
@@ -523,20 +524,20 @@
                 "modules",
                 "workshop"
             ],
-            "time": "2015-11-27 15:28:42"
+            "time": "2015-12-07 19:56:40"
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.11.3",
+            "version": "3.11.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "07564505f3d0fc9e84a3ebba5f7d03aa8c4e3adc"
+                "reference": "2524c78e0fa1ed049719b8b6b0696f0b6dfb1ca2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/07564505f3d0fc9e84a3ebba5f7d03aa8c4e3adc",
-                "reference": "07564505f3d0fc9e84a3ebba5f7d03aa8c4e3adc",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2524c78e0fa1ed049719b8b6b0696f0b6dfb1ca2",
+                "reference": "2524c78e0fa1ed049719b8b6b0696f0b6dfb1ca2",
                 "shasum": ""
             },
             "require": {
@@ -601,7 +602,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-12-01 23:02:40"
+            "time": "2015-12-04 01:19:53"
         },
         {
             "name": "bugsnag/bugsnag",
@@ -1263,16 +1264,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.5.1",
+            "version": "v1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "2b9cec5a5e722010cbebc91713d4c11eaa064d5e"
+                "reference": "47c7128262da274f590ae6f86eb137a7a64e82af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/2b9cec5a5e722010cbebc91713d4c11eaa064d5e",
-                "reference": "2b9cec5a5e722010cbebc91713d4c11eaa064d5e",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/47c7128262da274f590ae6f86eb137a7a64e82af",
+                "reference": "47c7128262da274f590ae6f86eb137a7a64e82af",
                 "shasum": ""
             },
             "require": {
@@ -1329,7 +1330,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2015-11-02 18:35:48"
+            "time": "2015-12-03 10:50:37"
         },
         {
             "name": "doctrine/collections",
@@ -1399,16 +1400,16 @@
         },
         {
             "name": "doctrine/common",
-            "version": "v2.5.1",
+            "version": "v2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "0009b8f0d4a917aabc971fb089eba80e872f83f9"
+                "reference": "311001fd9865a4d0d59efff4eac6d7dcb3f5270c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/0009b8f0d4a917aabc971fb089eba80e872f83f9",
-                "reference": "0009b8f0d4a917aabc971fb089eba80e872f83f9",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/311001fd9865a4d0d59efff4eac6d7dcb3f5270c",
+                "reference": "311001fd9865a4d0d59efff4eac6d7dcb3f5270c",
                 "shasum": ""
             },
             "require": {
@@ -1425,7 +1426,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6.x-dev"
+                    "dev-master": "2.5.x-dev"
                 }
             },
             "autoload": {
@@ -1468,7 +1469,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2015-08-31 13:00:22"
+            "time": "2015-12-04 12:49:42"
         },
         {
             "name": "doctrine/dbal",
@@ -1747,16 +1748,16 @@
         },
         {
             "name": "floatingpoint/stylist",
-            "version": "0.2",
+            "version": "0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/floatingpointsoftware/stylist.git",
-                "reference": "1e550b9e858e1b5c1b8d4aa0b448bf114471c570"
+                "reference": "f1276267c25a20f69f12ec0b6a4a0a63cf65d4c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/floatingpointsoftware/stylist/zipball/1e550b9e858e1b5c1b8d4aa0b448bf114471c570",
-                "reference": "1e550b9e858e1b5c1b8d4aa0b448bf114471c570",
+                "url": "https://api.github.com/repos/floatingpointsoftware/stylist/zipball/f1276267c25a20f69f12ec0b6a4a0a63cf65d4c2",
+                "reference": "f1276267c25a20f69f12ec0b6a4a0a63cf65d4c2",
                 "shasum": ""
             },
             "require": {
@@ -1788,7 +1789,7 @@
                 }
             ],
             "description": "Laravel 5 theming package.",
-            "time": "2015-10-05 17:21:46"
+            "time": "2015-12-02 19:31:04"
         },
         {
             "name": "guzzle/guzzle",
@@ -2304,30 +2305,30 @@
         },
         {
             "name": "jeremeamia/SuperClosure",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jeremeamia/super_closure.git",
-                "reference": "b712f39c671e5ead60c7ebfe662545456aade833"
+                "reference": "29a88be2a4846d27c1613aed0c9071dfad7b5938"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jeremeamia/super_closure/zipball/b712f39c671e5ead60c7ebfe662545456aade833",
-                "reference": "b712f39c671e5ead60c7ebfe662545456aade833",
+                "url": "https://api.github.com/repos/jeremeamia/super_closure/zipball/29a88be2a4846d27c1613aed0c9071dfad7b5938",
+                "reference": "29a88be2a4846d27c1613aed0c9071dfad7b5938",
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "~1.0",
-                "php": ">=5.4"
+                "nikic/php-parser": "^1.2|^2.0",
+                "php": ">=5.4",
+                "symfony/polyfill-php56": "^1.0"
             },
             "require-dev": {
-                "codeclimate/php-test-reporter": "~0.1.2",
-                "phpunit/phpunit": "~4.0"
+                "phpunit/phpunit": "^4.0|^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -2358,7 +2359,7 @@
                 "serialize",
                 "tokenizer"
             ],
-            "time": "2015-03-11 20:06:43"
+            "time": "2015-12-05 17:17:57"
         },
         {
             "name": "knplabs/github-api",
@@ -2560,16 +2561,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.1.25",
+            "version": "v5.1.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "53979acc664debc401bfcb61086c4fc4f196b22d"
+                "reference": "be7fbb60376bd61f07e9c637473e5b2cf7eebe5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/53979acc664debc401bfcb61086c4fc4f196b22d",
-                "reference": "53979acc664debc401bfcb61086c4fc4f196b22d",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/be7fbb60376bd61f07e9c637473e5b2cf7eebe5c",
+                "reference": "be7fbb60376bd61f07e9c637473e5b2cf7eebe5c",
                 "shasum": ""
             },
             "require": {
@@ -2643,7 +2644,7 @@
                 "aws/aws-sdk-php": "Required to use the SQS queue driver and SES mail driver (~3.0).",
                 "doctrine/dbal": "Required to rename columns and drop SQLite columns (~2.4).",
                 "fzaninotto/faker": "Required to use the eloquent factory builder (~1.4).",
-                "guzzlehttp/guzzle": "Required to use the Mailgun and Mandrill mail drivers (~5.3|~6.0).",
+                "guzzlehttp/guzzle": "Required to use the Mailgun and Mandrill mail drivers and the ping methods on schedules (~5.3|~6.0).",
                 "iron-io/iron_mq": "Required to use the iron queue driver (~2.0).",
                 "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (~1.0).",
                 "league/flysystem-rackspace": "Required to use the Flysystem Rackspace driver (~1.0).",
@@ -2685,7 +2686,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-11-30 19:24:36"
+            "time": "2015-12-02 21:59:57"
         },
         {
             "name": "laravelcollective/html",
@@ -3347,32 +3348,38 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v1.4.1",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "f78af2c9c86107aa1a34cd1dbb5bbe9eeb0d9f51"
+                "reference": "c542e5d86a9775abd1021618eb2430278bfc1e01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/f78af2c9c86107aa1a34cd1dbb5bbe9eeb0d9f51",
-                "reference": "f78af2c9c86107aa1a34cd1dbb5bbe9eeb0d9f51",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/c542e5d86a9775abd1021618eb2430278bfc1e01",
+                "reference": "c542e5d86a9775abd1021618eb2430278bfc1e01",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": ">=5.3"
+                "php": ">=5.4"
             },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "bin": [
+                "bin/php-parse"
+            ],
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
-                "files": [
-                    "lib/bootstrap.php"
-                ]
+                "psr-4": {
+                    "PhpParser\\": "lib/PhpParser"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -3388,7 +3395,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2015-09-19 14:15:08"
+            "time": "2015-12-04 15:28:43"
         },
         {
             "name": "paragonie/random_compat",
@@ -4575,6 +4582,114 @@
                 "options"
             ],
             "time": "2015-11-18 13:48:51"
+        },
+        {
+            "name": "symfony/polyfill-php56",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php56.git",
+                "reference": "a6bd4770a6967517e6610529e14afaa3111094a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/a6bd4770a6967517e6610529e14afaa3111094a3",
+                "reference": "a6bd4770a6967517e6610529e14afaa3111094a3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/polyfill-util": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php56\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 5.6+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2015-11-04 20:28:58"
+        },
+        {
+            "name": "symfony/polyfill-util",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-util.git",
+                "reference": "4271c55cbc0a77b2641f861b978123e46b3da969"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/4271c55cbc0a77b2641f861b978123e46b3da969",
+                "reference": "4271c55cbc0a77b2641f861b978123e46b3da969",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Util\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony utilities for portability of PHP codes",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compat",
+                "compatibility",
+                "polyfill",
+                "shim"
+            ],
+            "time": "2015-11-04 20:28:58"
         },
         {
             "name": "symfony/process",
@@ -6032,27 +6147,32 @@
         },
         {
             "name": "laravel/homestead",
-            "version": "v2.1.8",
+            "version": "dev-php-7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "301484041e062bb62b42d2bbbf0d636408d0f6b4"
+                "reference": "5a6db47d605eafcba04a5f110811abf9631e27b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/301484041e062bb62b42d2bbbf0d636408d0f6b4",
-                "reference": "301484041e062bb62b42d2bbbf0d636408d0f6b4",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/5a6db47d605eafcba04a5f110811abf9631e27b5",
+                "reference": "5a6db47d605eafcba04a5f110811abf9631e27b5",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4",
-                "symfony/console": "~2.0",
-                "symfony/process": "~2.0"
+                "php": ">=5.5.9",
+                "symfony/console": "~2.3|~3.0",
+                "symfony/process": "~2.3|~3.0"
             },
             "bin": [
                 "homestead"
             ],
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-php-7": "3.0-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Laravel\\Homestead\\": "src/"
@@ -6069,7 +6189,7 @@
                 }
             ],
             "description": "A virtual machine for web artisans.",
-            "time": "2015-10-01 17:07:30"
+            "time": "2015-12-08 14:23:39"
         },
         {
             "name": "maximebf/debugbar",
@@ -7306,28 +7426,28 @@
         },
         {
             "name": "sebastian/diff",
-            "version": "1.3.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "863df9687835c62aa423a22412d26fa2ebde3fd3"
+                "reference": "13edfd8706462032c2f52b4b862974dd46b71c9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/863df9687835c62aa423a22412d26fa2ebde3fd3",
-                "reference": "863df9687835c62aa423a22412d26fa2ebde3fd3",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/13edfd8706462032c2f52b4b862974dd46b71c9e",
+                "reference": "13edfd8706462032c2f52b4b862974dd46b71c9e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.2"
+                "phpunit/phpunit": "~4.8"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -7350,11 +7470,11 @@
                 }
             ],
             "description": "Diff implementation",
-            "homepage": "http://www.github.com/sebastianbergmann/diff",
+            "homepage": "https://github.com/sebastianbergmann/diff",
             "keywords": [
                 "diff"
             ],
-            "time": "2015-02-22 15:13:53"
+            "time": "2015-12-08 07:14:41"
         },
         {
             "name": "sebastian/environment",
@@ -7525,16 +7645,16 @@
         },
         {
             "name": "sebastian/recursion-context",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/recursion-context.git",
-                "reference": "994d4a811bafe801fb06dccbee797863ba2792ba"
+                "reference": "913401df809e99e4f47b27cdd781f4a258d58791"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/994d4a811bafe801fb06dccbee797863ba2792ba",
-                "reference": "994d4a811bafe801fb06dccbee797863ba2792ba",
+                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/913401df809e99e4f47b27cdd781f4a258d58791",
+                "reference": "913401df809e99e4f47b27cdd781f4a258d58791",
                 "shasum": ""
             },
             "require": {
@@ -7574,7 +7694,7 @@
             ],
             "description": "Provides functionality to recursively process PHP variables",
             "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
-            "time": "2015-06-21 08:04:50"
+            "time": "2015-11-11 19:50:13"
         },
         {
             "name": "sebastian/version",
@@ -8037,7 +8157,8 @@
         "behat/behat": 20,
         "behat/mink": 20,
         "behat/mink-extension": 20,
-        "laracasts/behat-laravel-extension": 20
+        "laracasts/behat-laravel-extension": 20,
+        "laravel/homestead": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

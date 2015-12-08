@@ -47,7 +47,7 @@
     "laracasts/behat-laravel-extension": "dev-master",
     "deployer/deployer": "~3.0",
     "deployphp/recipes": "~3.0",
-    "laravel/homestead": "^2.1"
+    "laravel/homestead": "dev-php-7"
   },
   "repositories": [
     {
