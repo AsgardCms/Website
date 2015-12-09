@@ -5,7 +5,14 @@
         <li class="{{ Request::is('*features') ? 'active' : ''}}"><a href="{{ route('page', ['features']) }}">Features</a></li>
         <li class="{{ Request::is('*install') ? 'active' : ''}}"><a href="{{ route('page', ['install']) }}" class="button">Install</a></li>
         <li class="{{ Request::is('*docs*') ? 'active' : ''}}"><a href="{{ route('doc.index') }}">Documentation</a></li>
-        <li class="{{ Request::is('*blog/*') ? 'active' : ''}}"><a href="{{ route(locale() . '.blog') }}">Blog</a></li>
+        <li>
+            <a href="" class="icon fa-angle-down">Resources</a>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCjxqRXpzEihmTMZh86GgDQw" target="_blank">Screencasts</a>
+                </li>
+            </ul>
+        </li>
         <?php if ($user): ?>
         <li class="{{ Request::is('*auth/*') ? 'active' : ''}}">
             <a href="" class="icon fa-angle-down">Account</a>
