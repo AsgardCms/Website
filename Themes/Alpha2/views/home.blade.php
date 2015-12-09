@@ -4,7 +4,7 @@
         <!-- Banner -->
 <section id="banner" style="background: #e89980; padding: 5em 0 13em 0;">
     <h2>Asgard CMS</h2>
-    <p>An modular multilingual CMS built with Laravel 5.</p>
+    <p>A modular multilingual CMS built with Laravel 5.</p>
     <ul class="actions">
         <li><a href="{{ route('page', ['install']) }}" class="button special">Install</a></li>
         <li><a href="#cta" class="button" id="jsApply">Sign up for updates</a></li>
