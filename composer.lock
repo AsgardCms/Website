@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "asgardcms/adminlte-theme",
-            "version": "1.12.1",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/AdminLTE.git",
-                "reference": "e1c9dd5ec55f0d0799b0769feda68565886538dc"
+                "reference": "ce8914e319eb19f96a76d5d2b08948fcaef633d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/AdminLTE/zipball/e1c9dd5ec55f0d0799b0769feda68565886538dc",
-                "reference": "e1c9dd5ec55f0d0799b0769feda68565886538dc",
+                "url": "https://api.github.com/repos/AsgardCms/AdminLTE/zipball/ce8914e319eb19f96a76d5d2b08948fcaef633d0",
+                "reference": "ce8914e319eb19f96a76d5d2b08948fcaef633d0",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,7 @@
             "keywords": [
                 "asgard-cms"
             ],
-            "time": "2015-12-04 16:15:08"
+            "time": "2015-12-10 15:35:15"
         },
         {
             "name": "asgardcms/blog-module",
@@ -210,16 +210,16 @@
         },
         {
             "name": "asgardcms/media-module",
-            "version": "1.16.0",
+            "version": "1.17.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Media.git",
-                "reference": "91471e1e8c7a473af1a7b372439cc4643ebefadc"
+                "reference": "804b48a0b68406eb36ce1aa58ee7bedfbce4fac7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Media/zipball/91471e1e8c7a473af1a7b372439cc4643ebefadc",
-                "reference": "91471e1e8c7a473af1a7b372439cc4643ebefadc",
+                "url": "https://api.github.com/repos/AsgardCms/Media/zipball/804b48a0b68406eb36ce1aa58ee7bedfbce4fac7",
+                "reference": "804b48a0b68406eb36ce1aa58ee7bedfbce4fac7",
                 "shasum": ""
             },
             "require": {
@@ -254,7 +254,7 @@
                 "library",
                 "media"
             ],
-            "time": "2015-12-07 18:21:14"
+            "time": "2015-12-09 22:22:11"
         },
         {
             "name": "asgardcms/menu-module",
@@ -387,16 +387,16 @@
         },
         {
             "name": "asgardcms/translation-module",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Translation.git",
-                "reference": "f52fd4023aa652f3e467ea59856e2d17f0f84aeb"
+                "reference": "f21ff0d3c49e8e2d367e2a011958b5fd1eb391af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Translation/zipball/f52fd4023aa652f3e467ea59856e2d17f0f84aeb",
-                "reference": "f52fd4023aa652f3e467ea59856e2d17f0f84aeb",
+                "url": "https://api.github.com/repos/AsgardCms/Translation/zipball/f21ff0d3c49e8e2d367e2a011958b5fd1eb391af",
+                "reference": "f21ff0d3c49e8e2d367e2a011958b5fd1eb391af",
                 "shasum": ""
             },
             "require": {
@@ -427,7 +427,7 @@
                 }
             ],
             "description": "Module containing all AsgardCms translations",
-            "time": "2015-12-01 12:38:36"
+            "time": "2015-12-09 22:25:21"
         },
         {
             "name": "asgardcms/user-module",
@@ -528,16 +528,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.11.4",
+            "version": "3.11.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "2524c78e0fa1ed049719b8b6b0696f0b6dfb1ca2"
+                "reference": "7bf365f33b79e6bda6b936343c669537aa598e7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2524c78e0fa1ed049719b8b6b0696f0b6dfb1ca2",
-                "reference": "2524c78e0fa1ed049719b8b6b0696f0b6dfb1ca2",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7bf365f33b79e6bda6b936343c669537aa598e7c",
+                "reference": "7bf365f33b79e6bda6b936343c669537aa598e7c",
                 "shasum": ""
             },
             "require": {
@@ -602,7 +602,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-12-04 01:19:53"
+            "time": "2015-12-08 21:54:51"
         },
         {
             "name": "bugsnag/bugsnag",
@@ -3399,16 +3399,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "1.1.1",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "a208865a5aeffc2dbbef2a5b3409887272d93f32"
+                "reference": "d762ee5b099a29044603cd4649851e81aa66cb47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/a208865a5aeffc2dbbef2a5b3409887272d93f32",
-                "reference": "a208865a5aeffc2dbbef2a5b3409887272d93f32",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/d762ee5b099a29044603cd4649851e81aa66cb47",
+                "reference": "d762ee5b099a29044603cd4649851e81aa66cb47",
                 "shasum": ""
             },
             "require": {
@@ -3443,7 +3443,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2015-12-01 02:52:15"
+            "time": "2015-12-10 14:48:13"
         },
         {
             "name": "pda/pheanstalk",
@@ -4983,16 +4983,16 @@
         },
         {
             "name": "venturecraft/revisionable",
-            "version": "1.23.0",
+            "version": "1.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/VentureCraft/revisionable.git",
-                "reference": "75af7add8d857ac0dfcb41398f1958c7ac51d72c"
+                "reference": "99c27d94f80ae9240cec89c4276f61e748e989a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/VentureCraft/revisionable/zipball/75af7add8d857ac0dfcb41398f1958c7ac51d72c",
-                "reference": "75af7add8d857ac0dfcb41398f1958c7ac51d72c",
+                "url": "https://api.github.com/repos/VentureCraft/revisionable/zipball/99c27d94f80ae9240cec89c4276f61e748e989a5",
+                "reference": "99c27d94f80ae9240cec89c4276f61e748e989a5",
                 "shasum": ""
             },
             "require": {
@@ -5027,7 +5027,7 @@
                 "model",
                 "revision"
             ],
-            "time": "2015-11-09 22:01:31"
+            "time": "2015-12-09 21:48:10"
         },
         {
             "name": "vlucas/phpdotenv",
