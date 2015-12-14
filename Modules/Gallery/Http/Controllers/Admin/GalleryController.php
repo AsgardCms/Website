@@ -6,6 +6,7 @@ use Modules\Gallery\Http\Requests\CreateSiteRequest;
 use Modules\Gallery\Http\Requests\UpdateSiteRequest;
 use Modules\Gallery\Repositories\GalleryRepository;
 use Modules\Core\Http\Controllers\Admin\AdminBaseController;
+use Modules\Media\Repositories\FileRepository;
 
 class GalleryController extends AdminBaseController
 {
@@ -64,9 +65,11 @@ class GalleryController extends AdminBaseController
      * @param  Gallery $gallery
      * @return Response
      */
-    public function edit(Gallery $gallery)
+    public function edit(Gallery $gallery, FileRepository $fileRepository)
     {
-        return view('gallery::admin.galleries.edit', compact('gallery'));
+        $image = $fileRepository->findFileByZoneForEntity('image', $gallery);
+
+        return view('gallery::admin.galleries.edit', compact('gallery', 'image'));
     }
 
     /**
