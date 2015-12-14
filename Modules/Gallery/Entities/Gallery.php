@@ -2,10 +2,11 @@
 
 use Dimsav\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Media\Support\Traits\MediaRelation;
 
 class Gallery extends Model
 {
-    use Translatable;
+    use Translatable, MediaRelation;
 
     protected $table = 'gallery__galleries';
     public $translatedAttributes = ['description'];
