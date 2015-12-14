@@ -34,6 +34,12 @@
                     {!! Form::normalInput('website_url', 'Website url', $errors, $gallery) !!}
                     {!! Form::normalInput('owner_name', 'Owner name', $errors, $gallery) !!}
                     {!! Form::normalInput('owner_url', 'Owner url', $errors, $gallery) !!}
+                    <h4>Featured image</h4>
+                    @include('media::admin.fields.file-link', [
+                        'entityClass' => 'Modules\\\\Gallery\\\\Entities\\\\Gallery',
+                        'entityId' => $gallery->id,
+                        'zone' => 'image'
+                    ])
                     <div class="box-footer">
                         <button type="submit" class="btn btn-primary btn-flat">{{ trans('core::core.button.update') }}</button>
                         <a class="btn btn-danger pull-right btn-flat" href="{{ route('admin.gallery.gallery.index')}}"><i class="fa fa-times"></i> {{ trans('core::core.button.cancel') }}</a>
