@@ -1,7 +1,8 @@
-<?php namespace Modules\Gallery\Http\Controllers\Frontend;
+<?php namespace Modules\Gallery\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use Modules\Gallery\Repositories\GalleryRepository;
+use Modules\Media\Repositories\FileRepository;
 
 class GalleryController extends Controller
 {
