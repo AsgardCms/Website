@@ -484,16 +484,16 @@
         },
         {
             "name": "asgardcms/workshop-module",
-            "version": "1.12.0",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Workshop.git",
-                "reference": "8ec5e943578e181084beabb8b9b2df54e836d3fa"
+                "reference": "90ce0a4b3407a296e38560b624bb568ed2bb6eac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Workshop/zipball/8ec5e943578e181084beabb8b9b2df54e836d3fa",
-                "reference": "8ec5e943578e181084beabb8b9b2df54e836d3fa",
+                "url": "https://api.github.com/repos/AsgardCms/Workshop/zipball/90ce0a4b3407a296e38560b624bb568ed2bb6eac",
+                "reference": "90ce0a4b3407a296e38560b624bb568ed2bb6eac",
                 "shasum": ""
             },
             "require": {
@@ -524,7 +524,7 @@
                 "modules",
                 "workshop"
             ],
-            "time": "2015-12-07 19:56:40"
+            "time": "2015-12-10 16:14:00"
         },
         {
             "name": "aws/aws-sdk-php",
@@ -3549,12 +3549,12 @@
             "version": "v2.1.5",
             "source": {
                 "type": "git",
-                "url": "git@github.com:pingpong-labs/menus.git",
-                "reference": "82ad5fa465a021f5fb39efde949cfc3a984cb57f"
+                "url": "https://github.com/pingpong-labs/menus.git",
+                "reference": "05064e489b8c661b2c4eaebdafc53039616688c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pingpong-labs/menus/zipball/82ad5fa465a021f5fb39efde949cfc3a984cb57f",
+                "url": "https://api.github.com/repos/pingpong-labs/menus/zipball/05064e489b8c661b2c4eaebdafc53039616688c0",
                 "reference": "05064e489b8c661b2c4eaebdafc53039616688c0",
                 "shasum": ""
             },
@@ -6151,12 +6151,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "5a6db47d605eafcba04a5f110811abf9631e27b5"
+                "reference": "2b510feb5ec3ed81a6d78c3409125a0ca90509dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/5a6db47d605eafcba04a5f110811abf9631e27b5",
-                "reference": "5a6db47d605eafcba04a5f110811abf9631e27b5",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/2b510feb5ec3ed81a6d78c3409125a0ca90509dd",
+                "reference": "2b510feb5ec3ed81a6d78c3409125a0ca90509dd",
                 "shasum": ""
             },
             "require": {
@@ -6189,7 +6189,7 @@
                 }
             ],
             "description": "A virtual machine for web artisans.",
-            "time": "2015-12-08 14:23:39"
+            "time": "2015-12-11 14:51:01"
         },
         {
             "name": "maximebf/debugbar",
@@ -6798,16 +6798,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.19",
+            "version": "4.8.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "b2caaf8947aba5e002d42126723e9d69795f32b4"
+                "reference": "ea76b17bced0500a28098626b84eda12dbcf119c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b2caaf8947aba5e002d42126723e9d69795f32b4",
-                "reference": "b2caaf8947aba5e002d42126723e9d69795f32b4",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ea76b17bced0500a28098626b84eda12dbcf119c",
+                "reference": "ea76b17bced0500a28098626b84eda12dbcf119c",
                 "shasum": ""
             },
             "require": {
@@ -6866,7 +6866,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-11-30 08:18:59"
+            "time": "2015-12-12 07:45:58"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
