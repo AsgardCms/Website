@@ -36,12 +36,14 @@
                             <input type="hidden" name="has_hidden_website_url">
                             <input id="has_hidden_website_url" name="has_hidden_website_url" type="checkbox"
                                    class="flat-blue" value="1"
-                                    {{ isset($gallery->has_hidden_website_url) && (bool)$gallery->has_hidden_website_url === true ? 'checked' : '' }} />
+                                    {{ isset($gallery->has_hidden_website_url) && $gallery->has_hidden_website_url === true ? 'checked' : '' }} />
                             Has hidden website URL
                             {!! $errors->first('has_hidden_website_url', '<span class="help-block">:message</span>') !!}
                         </label>
                     </div>
-                    {!! Form::normalInput('website_url', 'Website url', $errors, $gallery) !!}
+                    <div class="website_url" style="{{ $gallery->has_hidden_website_url === true  ? 'display:none;' : ''}}">
+                        {!! Form::normalInput('website_url', 'Website url', $errors, $gallery) !!}
+                    </div>
                     {!! Form::normalInput('owner_name', 'Owner name', $errors, $gallery) !!}
                     {!! Form::normalInput('owner_url', 'Owner url', $errors, $gallery) !!}
                     <h4>Featured image</h4>
@@ -88,14 +90,8 @@
                 radioClass: 'iradio_flat-blue'
             });
 
-            $('input[type="checkbox"]').on('ifChecked', function(){
-                $(this).parent().find('input[type=hidden]').remove();
-            });
-
-            $('input[type="checkbox"]').on('ifUnchecked', function(){
-                var name = $(this).attr('name'),
-                    input = '<input type="hidden" name="' + name + '" value="0" />';
-                $(this).parent().append(input);
+            $('input[type="checkbox"]').on('ifToggled', function(){
+                $('.website_url').toggle();
             });
         });
     </script>
