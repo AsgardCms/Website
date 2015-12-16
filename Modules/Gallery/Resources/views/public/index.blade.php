@@ -78,7 +78,7 @@
                     <div class="box special feature">
                         <figure>
                             <a href="{{ $project->present()->targetUrl }}" target="_blank">
-                                <img src="{{ $project->image->path }}" alt="{{ $project->website_name }}"/>
+                                <img src="{{ Imagy::getThumbnail($project->image->path, 'galleryThumbnail') }}" alt="{{ $project->website_name }}"/>
                             </a>
                         </figure>
                         <div class="box-content">
