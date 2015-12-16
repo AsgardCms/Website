@@ -21,7 +21,7 @@ class TestimonialsServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerBindings();
-        view()->composer('home', RandomTestimonialsComposer::class);
+        view()->composer('testimonial::public.partials.random-testimonials', RandomTestimonialsComposer::class);
         view()->composer('testimonials', AllTestimonialsComposer::class);
     }
 
