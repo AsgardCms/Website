@@ -23,9 +23,6 @@
 		mobile: '(max-width: 736px)',
 		mobilep: '(max-width: 480px)'
 	});
-	skel.layout({
-		grid: true
-	});
 
 	$(function() {
 
