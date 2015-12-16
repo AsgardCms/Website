@@ -94,7 +94,9 @@
         </section>
 
         @include('partials.call_to_action_install')
-        @include('testimonial::public.partials.random-testimonials')
+        <div style="margin-top: 20px;">
+            @include('testimonial::public.partials.random-testimonials')
+        </div>
     </section>
 
 @stop
