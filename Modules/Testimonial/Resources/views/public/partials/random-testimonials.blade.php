@@ -2,7 +2,7 @@
     <?php if ($randomTestimonials->count() !== 0): ?>
     <div class="row uniform 50%">
         <div class="12u">
-            <h3 style="text-align: center">What other are saying</h3>
+            <h3 style="text-align: center">What others are saying</h3>
         </div>
     </div>
     <div class="row uniform 50%">
