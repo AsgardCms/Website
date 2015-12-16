@@ -211,7 +211,7 @@
             <div class="12u 12u(2)" style="text-align: center; margin: 50px 0;">
                 <h2>Developer tools</h2>
 
-                <p><strong>AsgardCms</strong> is made <em>for</em> developers - the in-built rapid-development tools allow you to stop wasting your time on architecture and focus on the functionality!</p>
+                <p><strong>AsgardCms</strong> is made <em>for</em> developers - the built-in rapid-development tools allow you to stop wasting your time on architecture and focus on the functionality!</p>
             </div>
         </div>
 
