@@ -1917,6 +1917,8 @@ body.landing #page-wrapper {
             margin-right: 0.5em; }
         #header nav > ul > li:first-child {
           margin-left: 0; }
+        #header nav > ul > li.active a {
+          background-color: rgba(153, 153, 153, 0.25); }
         #header nav > ul > li.active a:not(.button) {
           background-color: rgba(153, 153, 153, 0.25); }
         #header nav > ul > li .button {
