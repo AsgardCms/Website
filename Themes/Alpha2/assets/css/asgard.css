@@ -100,48 +100,48 @@ body {
 
 .container.\31 25\25		{
   width: 100%;
-  max-width: 75em;
-  min-width: 60em; }
+  max-width: 87.5em;
+  min-width: 70em; }
 
 .container.\37 5\25			{
-  width: 45em; }
+  width: 52.5em; }
 
 .container.\35 0\25			{
-  width: 30em; }
+  width: 35em; }
 
 .container.\32 5\25			{
-  width: 15em; }
+  width: 17.5em; }
 
 .container {
-  width: 60em; }
+  width: 70em; }
 
 @media screen and (max-width: 1680px) {
   .container.\31 25\25		{
     width: 100%;
-    max-width: 75em;
-    min-width: 60em; }
+    max-width: 87.5em;
+    min-width: 70em; }
   .container.\37 5\25			{
-    width: 45em; }
+    width: 52.5em; }
   .container.\35 0\25			{
-    width: 30em; }
+    width: 35em; }
   .container.\32 5\25			{
-    width: 15em; }
+    width: 17.5em; }
   .container {
-    width: 60em; } }
+    width: 70em; } }
 
 @media screen and (max-width: 1280px) {
   .container.\31 25\25		{
     width: 100%;
-    max-width: 75em;
-    min-width: 60em; }
+    max-width: 87.5em;
+    min-width: 70em; }
   .container.\37 5\25			{
-    width: 45em; }
+    width: 52.5em; }
   .container.\35 0\25			{
-    width: 30em; }
+    width: 35em; }
   .container.\32 5\25			{
-    width: 15em; }
+    width: 17.5em; }
   .container {
-    width: 60em; } }
+    width: 70em; } }
 
 @media screen and (max-width: 980px) {
   .container.\31 25\25		{
