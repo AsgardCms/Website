@@ -1236,7 +1236,8 @@ pre {
   padding: 1em 1.5em; }
 
 code {
-  background: #f8f8f8;
+  background: #F5F5F5;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
   border-radius: 6px;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   color: black;

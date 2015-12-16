@@ -167,7 +167,8 @@
 	}
 
 	code {
-		background: _palette(border-bg);
+		background: #F5F5F5;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
 		border-radius: _size(border-radius);
 		font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 		color: black;
