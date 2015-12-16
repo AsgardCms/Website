@@ -236,18 +236,7 @@
                 </section>
             </div>
         </div>
-        <div class="row">
-            <div class="6u 12u(2)">
-                <a class="button special fit icon fa-book" href="{{ route('doc.index') }}">
-                    Read the full documentation
-                </a>
-            </div>
-            <div class="6u 12u(2)">
-                <a class="button fit icon fa-th-large" href="https://github.com/AsgardCms" target="_blank">
-                    View Modules
-                </a>
-            </div>
-        </div>
+        @include('partials.call_to_action_install')
     </section>
 
 @stop
