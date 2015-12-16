@@ -18,6 +18,9 @@ class Gallery extends Model
         'owner_name',
         'description'
     ];
+    protected $casts = [
+        'has_hidden_website_url' => 'boolean',
+    ];
 
     public function getImageAttribute()
     {
