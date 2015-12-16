@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('title') Sites Built With AsgardCms | @parent @stop
 @section('styles')
     <style>
         figure {
@@ -93,6 +94,7 @@
         </section>
 
         @include('partials.call_to_action_install')
+        @include('testimonial::public.partials.random-testimonials')
     </section>
 
 @stop
