@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('title') Sites Built With AsgardCms | @parent @stop
 @section('styles')
     <style>
         figure {
@@ -76,15 +77,15 @@
                 <?php foreach ($projects as $project): ?>
                     <div class="box special feature">
                         <figure>
-                            <a href="{{ $project->website_url }}">
+                            <a href="{{ $project->present()->targetUrl }}" target="_blank">
                                 <img src="{{ $project->image->path }}" alt="{{ $project->website_name }}"/>
                             </a>
                         </figure>
                         <div class="box-content">
                             <h3>
-                                <a href="{{ $project->website_url }}" target="_blank">{{ $project->website_name }}</a>
+                                <a href="{{ $project->present()->targetUrl }}" target="_blank">{{ $project->website_name }}</a>
                             </h3>
-                            <small style="font-size: .8em">Developed by <a href="{{ $project->owner_url }}">{{ $project->owner_name }}</a></small>
+                            <small style="font-size: .8em">Developed by <a href="{{ $project->owner_url }}" target="_blank">{{ $project->owner_name }}</a></small>
                             {!! $project->description !!}
                         </div>
                     </div>
@@ -92,17 +93,9 @@
             </div>
         </section>
 
-        <div class="row">
-            <div class="6u 12u(2)">
-                <a class="button fit icon fa-download" href="{{ route('page', ['install'])  }}">
-                    Install AsgardCms
-                </a>
-            </div>
-            <div class="6u 12u(2)">
-                <a class="button special fit icon fa-book" href="{{ route('doc.index') }}">
-                    Go to the documentation
-                </a>
-            </div>
+        @include('partials.call_to_action_install')
+        <div style="margin-top: 20px;">
+            @include('testimonial::public.partials.random-testimonials')
         </div>
     </section>
 

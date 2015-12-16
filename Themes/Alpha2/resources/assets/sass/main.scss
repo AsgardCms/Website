@@ -1033,6 +1033,9 @@
 					&:first-child {
 						margin-left: 0;
 					}
+					&.active a {
+						background-color: transparentize(_palette(header, fg-light), 0.75);
+					}
 
 					&.active {
 						a:not(.button) {

@@ -32,7 +32,18 @@
                     @endforeach
 
                     {!! Form::normalInput('website_name', 'Website name', $errors) !!}
-                    {!! Form::normalInput('website_url', 'Website url', $errors) !!}
+                    <div class="checkbox{{ $errors->has('has_hidden_website_url') ? ' has-error' : '' }}">
+                        <label for="has_hidden_website_url">
+                            <input type="hidden" name="has_hidden_website_url">
+                            <input id="has_hidden_website_url" name="has_hidden_website_url" type="checkbox"
+                                   class="flat-blue" value="1" />
+                            Has hidden website URL
+                            {!! $errors->first('has_hidden_website_url', '<span class="help-block">:message</span>') !!}
+                        </label>
+                    </div>
+                    <div class="website_url">
+                        {!! Form::normalInput('website_url', 'Website url', $errors) !!}
+                    </div>
                     {!! Form::normalInput('owner_name', 'Owner name', $errors) !!}
                     {!! Form::normalInput('owner_url', 'Owner url', $errors) !!}
 
@@ -74,14 +85,8 @@
                 radioClass: 'iradio_flat-blue'
             });
 
-            $('input[type="checkbox"]').on('ifChecked', function(){
-                $(this).parent().find('input[type=hidden]').remove();
-            });
-
-            $('input[type="checkbox"]').on('ifUnchecked', function(){
-                var name = $(this).attr('name'),
-                    input = '<input type="hidden" name="' + name + '" value="0" />';
-                $(this).parent().append(input);
+            $('input[type="checkbox"]').on('ifToggled', function(){
+                $('.website_url').toggle();
             });
         });
     </script>

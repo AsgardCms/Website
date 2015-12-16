@@ -2,15 +2,27 @@
 
 use Dimsav\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model;
+use Laracasts\Presenter\PresentableTrait;
 use Modules\Media\Support\Traits\MediaRelation;
 
 class Gallery extends Model
 {
-    use Translatable, MediaRelation;
+    use Translatable, MediaRelation, PresentableTrait;
 
+    protected $presenter = \Modules\Gallery\Presenters\Gallery::class;
     protected $table = 'gallery__galleries';
     public $translatedAttributes = ['description'];
-    protected $fillable = ['website_url', 'website_name', 'owner_url', 'owner_name', 'description'];
+    protected $fillable = [
+        'website_url',
+        'website_name',
+        'has_hidden_website_url',
+        'owner_url',
+        'owner_name',
+        'description'
+    ];
+    protected $casts = [
+        'has_hidden_website_url' => 'boolean',
+    ];
 
     public function getImageAttribute()
     {
