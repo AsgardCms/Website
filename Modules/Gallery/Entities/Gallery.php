@@ -2,12 +2,14 @@
 
 use Dimsav\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model;
+use Laracasts\Presenter\PresentableTrait;
 use Modules\Media\Support\Traits\MediaRelation;
 
 class Gallery extends Model
 {
-    use Translatable, MediaRelation;
+    use Translatable, MediaRelation, PresentableTrait;
 
+    protected $presenter = \Modules\Gallery\Presenters\Gallery::class;
     protected $table = 'gallery__galleries';
     public $translatedAttributes = ['description'];
     protected $fillable = [

@@ -76,15 +76,15 @@
                 <?php foreach ($projects as $project): ?>
                     <div class="box special feature">
                         <figure>
-                            <a href="{{ $project->website_url }}">
+                            <a href="{{ $project->present()->targetUrl }}" target="_blank">
                                 <img src="{{ $project->image->path }}" alt="{{ $project->website_name }}"/>
                             </a>
                         </figure>
                         <div class="box-content">
                             <h3>
-                                <a href="{{ $project->website_url }}" target="_blank">{{ $project->website_name }}</a>
+                                <a href="{{ $project->present()->targetUrl }}" target="_blank">{{ $project->website_name }}</a>
                             </h3>
-                            <small style="font-size: .8em">Developed by <a href="{{ $project->owner_url }}">{{ $project->owner_name }}</a></small>
+                            <small style="font-size: .8em">Developed by <a href="{{ $project->owner_url }}" target="_blank">{{ $project->owner_name }}</a></small>
                             {!! $project->description !!}
                         </div>
                     </div>
