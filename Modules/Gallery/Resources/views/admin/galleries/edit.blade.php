@@ -31,6 +31,16 @@
                         </div>
                     @endforeach
                     {!! Form::normalInput('website_name', 'Website name', $errors, $gallery) !!}
+                    <div class="checkbox{{ $errors->has('has_hidden_website_url') ? ' has-error' : '' }}">
+                        <label for="has_hidden_website_url">
+                            <input type="hidden" name="has_hidden_website_url">
+                            <input id="has_hidden_website_url" name="has_hidden_website_url" type="checkbox"
+                                   class="flat-blue" value="1"
+                                    {{ isset($gallery->has_hidden_website_url) && (bool)$gallery->has_hidden_website_url === true ? 'checked' : '' }} />
+                            Has hidden website URL
+                            {!! $errors->first('has_hidden_website_url', '<span class="help-block">:message</span>') !!}
+                        </label>
+                    </div>
                     {!! Form::normalInput('website_url', 'Website url', $errors, $gallery) !!}
                     {!! Form::normalInput('owner_name', 'Owner name', $errors, $gallery) !!}
                     {!! Form::normalInput('owner_url', 'Owner url', $errors, $gallery) !!}
