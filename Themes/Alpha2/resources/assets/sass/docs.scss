@@ -3,7 +3,7 @@
 }
 .side-menu {
   list-style: outside none none;
-  font-size: 16px;
+  font-size: 0.9em;
   margin-bottom: 40px;
   li {
     position: relative;
@@ -20,6 +20,9 @@
     font-weight: 600;
     letter-spacing: 1px;
     margin-top: 20px;
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   li.active a {

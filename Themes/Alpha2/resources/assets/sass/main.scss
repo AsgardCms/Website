@@ -5,7 +5,6 @@
 @import url('font-awesome.min.css');
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 
-@import 'alpha2';
 /*
 	Alpha by HTML5 UP
 	html5up.net | @n33co
@@ -170,11 +169,13 @@
 	code {
 		background: _palette(border-bg);
 		border-radius: _size(border-radius);
-		border: solid 1px _palette(border);
-		font-family: _font(family-fixed);
-		font-size: 0.9em;
+		font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+		color: black;
+		font-size: 0.85em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
+		word-break: normal;
+		word-wrap: normal;
 	}
 
 	.align-left {

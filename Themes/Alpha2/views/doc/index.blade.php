@@ -12,11 +12,11 @@
         <h2>{{ $title }}</h2>
         <p>{{ $subtitle }}</p>
     </header>
-    <div class="row box row-box">
-        <div class="3u 3u(2) 12u$(4)">
+    <div class="row box row-box 0%">
+        <div class="3u">
             @include('doc.partials.sidebar')
         </div>
-        <div class="9u 9u(2) 12u$(4) content">
+        <div class="9u">
             {!! $content !!}
         </div>
     </div>

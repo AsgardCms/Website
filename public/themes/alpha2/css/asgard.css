@@ -5,7 +5,7 @@
 
 .side-menu {
   list-style: outside none none;
-  font-size: 16px;
+  font-size: 0.9em;
   margin-bottom: 40px; }
   .side-menu li {
     position: relative; }
@@ -19,6 +19,8 @@
     font-weight: 600;
     letter-spacing: 1px;
     margin-top: 20px; }
+    .side-menu li.header:first-child {
+      margin-top: 0; }
   .side-menu li.active a {
     color: #999;
     border: none; }
@@ -36,22 +38,6 @@
 
 .token.cdata, .token.comment, .token.doctype, .token.prolog {
   color: #AEC1D3; }
-
-pre, code {
-  font-size: 0.8em; }
-
-code, code[class*="language-"], pre[class*="language-"] {
-  margin-left: -7px;
-  background: none repeat scroll 0% 0% #565752 !important;
-  color: #F8F8F2 !important;
-  text-shadow: 0px 1px rgba(0, 0, 0, 0.3);
-  font-family: Consolas, Monaco, "Andale Mono", monospace;
-  border-radius: 0.3em !important;
-  border: none !important;
-  font-size: 0.8em; }
-
-:not(pre) > code[class*=language-], pre[class*=language-] {
-  background: #565752 !important; }
 
 /*
 	Alpha by HTML5 UP
@@ -1252,11 +1238,13 @@ pre {
 code {
   background: #f8f8f8;
   border-radius: 6px;
-  border: solid 1px #e5e5e5;
-  font-family: monospace;
-  font-size: 0.9em;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  color: black;
+  font-size: 0.85em;
   margin: 0 0.25em;
-  padding: 0.25em 0.65em; }
+  padding: 0.25em 0.65em;
+  word-break: normal;
+  word-wrap: normal; }
 
 .align-left {
   text-align: left; }
