@@ -10,7 +10,14 @@ class Gallery extends Model
 
     protected $table = 'gallery__galleries';
     public $translatedAttributes = ['description'];
-    protected $fillable = ['website_url', 'website_name', 'owner_url', 'owner_name', 'description'];
+    protected $fillable = [
+        'website_url',
+        'website_name',
+        'has_hidden_website_url',
+        'owner_url',
+        'owner_name',
+        'description'
+    ];
 
     public function getImageAttribute()
     {
