@@ -36,8 +36,24 @@
   .anchor:hover {
     opacity: 1; }
 
-.token.cdata, .token.comment, .token.doctype, .token.prolog {
-  color: #AEC1D3; }
+.documentation h2 {
+  margin: 0.5em 0 0.1em 0;
+  font-size: 2.15em; }
+
+.documentation h3 {
+  margin: 0.5em 0 0.5em 0; }
+
+.documentation h4 {
+  font-size: 1.4em;
+  margin: 0.5em 0 0.5em 0; }
+
+.documentation p {
+  margin: 0.2em 0 0.4em 0; }
+
+.documentation ul {
+  margin: 0 0 0 1.5em; }
+  .documentation ul li {
+    padding-left: 0; }
 
 /*
 	Alpha by HTML5 UP
@@ -1141,9 +1157,9 @@ body {
   background: #f5f5f5; }
 
 body, input, select, textarea {
-  color: #777;
+  color: #555;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 16pt;
+  font-size: 13pt;
   font-weight: 300;
   line-height: 1.65em;
   letter-spacing: -0.015em; }
@@ -1241,7 +1257,7 @@ code {
   border-radius: 6px;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   color: black;
-  font-size: 0.85em;
+  font-size: 0.80em;
   margin: 0 0.25em;
   padding: 0.25em 0.65em;
   word-break: normal;

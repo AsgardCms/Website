@@ -45,8 +45,25 @@
   }
 }
 
-// Prism overwrites
-
-.token.cdata, .token.comment, .token.doctype, .token.prolog {
-  color: #AEC1D3;
+.documentation {
+  h2 {
+    margin: 0.5em 0 0.1em 0;
+    font-size: 2.15em;
+  }
+  h3 {
+    margin: 0.5em 0 0.5em 0;
+  }
+  h4 {
+    font-size: 1.4em;
+    margin: 0.5em 0 0.5em 0;
+  }
+  p {
+    margin: 0.2em 0 0.4em 0;
+  }
+  ul {
+    margin: 0 0 0 1.5em;
+    li {
+      padding-left: 0;
+    }
+  }
 }

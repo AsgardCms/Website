@@ -16,7 +16,7 @@
         <div class="3u">
             @include('doc.partials.sidebar')
         </div>
-        <div class="9u">
+        <div class="9u documentation">
             {!! $content !!}
         </div>
     </div>

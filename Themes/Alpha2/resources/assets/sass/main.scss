@@ -48,9 +48,9 @@
 	}
 
 	body, input, select, textarea {
-		color: _palette(fg);
+		color: #555;
 		font-family: _font(family);
-		font-size: 16pt;
+		font-size: 13pt;
 		font-weight: _font(weight);
 		line-height: 1.65em;
 		letter-spacing: -0.015em;
@@ -172,7 +172,7 @@
 		border-radius: _size(border-radius);
 		font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 		color: black;
-		font-size: 0.85em;
+		font-size: 0.80em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
 		word-break: normal;

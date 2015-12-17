@@ -9,6 +9,7 @@ pre > code[class*=language-], pre[class*=language-] {
 	background: none;
 	border: none;
 	box-shadow: none;
+	font-size: 0.9em;
 }
 
 code[class*="language-"],
