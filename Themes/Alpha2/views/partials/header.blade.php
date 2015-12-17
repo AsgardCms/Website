@@ -35,6 +35,7 @@
     <?php endif; ?>
     <meta property="og:image" content="{{ asset('/assets/images/thor-the-dark-world-asgard.jpg')}}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta id="token" name="token" value="{{ csrf_token() }}" />
     <!--[if lte IE 8]>{!! Theme::script('js/ie/html5shiv.js') !!}<![endif]-->
     {!! Theme::style('css/prism.css') !!}
     {!! Theme::style('css/asgard.css') !!}
