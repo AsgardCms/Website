@@ -147,7 +147,7 @@
                     },
                     submitWebsite: function () {
                         var $form = $('.websiteForm'),
-                            data = {name: this.name, email: this.email, website_url: this.website_url, message: this.message}
+                            data = {name: this.name, email: this.email, website_url: this.website_url, message: this.message},
                             $messageWrapper = $('.message');
 
                         this.$http.post($form.attr('action'), data, function(data) {
