@@ -22,4 +22,11 @@ class GalleryController extends Controller
 
         return view('gallery::public.index', compact('projects'));
     }
+
+    public function resetOpCache()
+    {
+        opcache_reset();
+
+        return redirect()->to('/');
+    }
 }
