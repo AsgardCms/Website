@@ -137,7 +137,7 @@
                 el: '.app',
                 data: {
                     name: '',
-                    email: 'n.widart@gmail.com',
+                    email: '',
                     website_url: '',
                     message: ''
                 },
@@ -147,14 +147,20 @@
                     },
                     submitWebsite: function () {
                         var $form = $('.websiteForm'),
-                            data = {name: this.name, email: this.email, website_url: this.website_url, message: this.message};
+                            data = {name: this.name, email: this.email, website_url: this.website_url, message: this.message}
+                            $messageWrapper = $('.message');
 
                         this.$http.post($form.attr('action'), data, function(data) {
                             $form.fadeOut();
-                            $('.message').text(data);
+                            $messageWrapper.text(data);
                             setTimeout(function () {
                                 $('#cta').slideUp();
                             }, 2000);
+                        }).error(function (errors) {
+                            $messageWrapper.empty();
+                            $.each(errors, function (field, error) {
+                                $messageWrapper.append(error[0] + '<br />');
+                            });
                         });
                     }
                 }

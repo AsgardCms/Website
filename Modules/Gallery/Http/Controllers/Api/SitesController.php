@@ -4,6 +4,7 @@ use Illuminate\Contracts\Mail\Mailer;
 use Illuminate\Http\Request;
 use Illuminate\Mail\Message;
 use Illuminate\Routing\Controller;
+use Modules\Gallery\Http\Requests\SubmitWebsiteRequest;
 
 class SitesController extends Controller
 {
@@ -17,7 +18,7 @@ class SitesController extends Controller
         $this->mailer = $mailer;
     }
 
-    public function create(Request $request)
+    public function create(SubmitWebsiteRequest $request)
     {
         $data = $request->all();
 
