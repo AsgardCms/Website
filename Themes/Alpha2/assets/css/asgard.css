@@ -55,6 +55,16 @@
   .documentation ul li {
     padding-left: 0; }
 
+.documentation blockquote {
+  background: #f4645f;
+  color: #fff;
+  border-radius: 3px;
+  margin: 10px 0 20px;
+  padding: 10px 15px;
+  border-left: none;
+  font-style: normal;
+  font-weight: 400; }
+
 /*
 	Alpha by HTML5 UP
 	html5up.net | @n33co
