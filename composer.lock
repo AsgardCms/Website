@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7c4a9cf4479c1da54962f650f5020e50",
+    "hash": "c96717833050c712d1185dd23c9c64f2",
     "content-hash": "e359f357da0705ba08f2a810ea4c979a",
     "packages": [
         {
@@ -83,16 +83,16 @@
         },
         {
             "name": "asgardcms/core-module",
-            "version": "1.20.0",
+            "version": "1.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Core.git",
-                "reference": "c1651b31bba440b342f28bbdd277763ecb9cd1c1"
+                "reference": "ae0aa97d7e38761667bde0a9b95df2a501508a30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Core/zipball/c1651b31bba440b342f28bbdd277763ecb9cd1c1",
-                "reference": "c1651b31bba440b342f28bbdd277763ecb9cd1c1",
+                "url": "https://api.github.com/repos/AsgardCms/Core/zipball/ae0aa97d7e38761667bde0a9b95df2a501508a30",
+                "reference": "ae0aa97d7e38761667bde0a9b95df2a501508a30",
                 "shasum": ""
             },
             "require": {
@@ -117,6 +117,11 @@
                 "asgardcms/notification-module": "Allows notifications to be sent to the user. Optionally real-time notifications."
             },
             "type": "asgard-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -133,7 +138,7 @@
                 "asgardcms",
                 "core"
             ],
-            "time": "2015-12-07 19:33:52"
+            "time": "2015-12-16 20:49:43"
         },
         {
             "name": "asgardcms/dashboard-module",
@@ -210,16 +215,16 @@
         },
         {
             "name": "asgardcms/media-module",
-            "version": "1.17.2",
+            "version": "1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Media.git",
-                "reference": "804b48a0b68406eb36ce1aa58ee7bedfbce4fac7"
+                "reference": "edaa40679c827d14a46dec75e12ae67f7428896d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Media/zipball/804b48a0b68406eb36ce1aa58ee7bedfbce4fac7",
-                "reference": "804b48a0b68406eb36ce1aa58ee7bedfbce4fac7",
+                "url": "https://api.github.com/repos/AsgardCms/Media/zipball/edaa40679c827d14a46dec75e12ae67f7428896d",
+                "reference": "edaa40679c827d14a46dec75e12ae67f7428896d",
                 "shasum": ""
             },
             "require": {
@@ -254,20 +259,20 @@
                 "library",
                 "media"
             ],
-            "time": "2015-12-09 22:22:11"
+            "time": "2015-12-17 12:51:49"
         },
         {
             "name": "asgardcms/menu-module",
-            "version": "1.14.0",
+            "version": "1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Menu.git",
-                "reference": "9a0c8089974f1d697bb82e14d1fe971c939de744"
+                "reference": "a84161794cf96bf03be05663fb73b33a275c5272"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Menu/zipball/9a0c8089974f1d697bb82e14d1fe971c939de744",
-                "reference": "9a0c8089974f1d697bb82e14d1fe971c939de744",
+                "url": "https://api.github.com/repos/AsgardCms/Menu/zipball/a84161794cf96bf03be05663fb73b33a275c5272",
+                "reference": "a84161794cf96bf03be05663fb73b33a275c5272",
                 "shasum": ""
             },
             "require": {
@@ -303,7 +308,7 @@
                 "nested sets",
                 "tree"
             ],
-            "time": "2015-12-07 19:41:00"
+            "time": "2015-12-18 16:32:21"
         },
         {
             "name": "asgardcms/page-module",
@@ -387,16 +392,16 @@
         },
         {
             "name": "asgardcms/translation-module",
-            "version": "1.6.1",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Translation.git",
-                "reference": "f21ff0d3c49e8e2d367e2a011958b5fd1eb391af"
+                "reference": "1f13a7503360cf7047d58c1c91ae324cdd3416af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Translation/zipball/f21ff0d3c49e8e2d367e2a011958b5fd1eb391af",
-                "reference": "f21ff0d3c49e8e2d367e2a011958b5fd1eb391af",
+                "url": "https://api.github.com/repos/AsgardCms/Translation/zipball/1f13a7503360cf7047d58c1c91ae324cdd3416af",
+                "reference": "1f13a7503360cf7047d58c1c91ae324cdd3416af",
                 "shasum": ""
             },
             "require": {
@@ -427,7 +432,7 @@
                 }
             ],
             "description": "Module containing all AsgardCms translations",
-            "time": "2015-12-09 22:25:21"
+            "time": "2015-12-18 16:26:47"
         },
         {
             "name": "asgardcms/user-module",
@@ -528,16 +533,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.11.5",
+            "version": "3.11.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "7bf365f33b79e6bda6b936343c669537aa598e7c"
+                "reference": "cbad6eab2e212a6931b587135204f12aef2e1a47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7bf365f33b79e6bda6b936343c669537aa598e7c",
-                "reference": "7bf365f33b79e6bda6b936343c669537aa598e7c",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/cbad6eab2e212a6931b587135204f12aef2e1a47",
+                "reference": "cbad6eab2e212a6931b587135204f12aef2e1a47",
                 "shasum": ""
             },
             "require": {
@@ -602,7 +607,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-12-08 21:54:51"
+            "time": "2015-12-18 00:05:04"
         },
         {
             "name": "bugsnag/bugsnag",
@@ -2561,16 +2566,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.1.26",
+            "version": "v5.1.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "be7fbb60376bd61f07e9c637473e5b2cf7eebe5c"
+                "reference": "b16f80878fd3603022d3c84593397cedd9af0bcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/be7fbb60376bd61f07e9c637473e5b2cf7eebe5c",
-                "reference": "be7fbb60376bd61f07e9c637473e5b2cf7eebe5c",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/b16f80878fd3603022d3c84593397cedd9af0bcf",
+                "reference": "b16f80878fd3603022d3c84593397cedd9af0bcf",
                 "shasum": ""
             },
             "require": {
@@ -2616,7 +2621,6 @@
                 "illuminate/events": "self.version",
                 "illuminate/exception": "self.version",
                 "illuminate/filesystem": "self.version",
-                "illuminate/foundation": "self.version",
                 "illuminate/hashing": "self.version",
                 "illuminate/http": "self.version",
                 "illuminate/log": "self.version",
@@ -2686,7 +2690,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-12-02 21:59:57"
+            "time": "2015-12-17 20:35:38"
         },
         {
             "name": "laravelcollective/html",
@@ -6151,12 +6155,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "2b510feb5ec3ed81a6d78c3409125a0ca90509dd"
+                "reference": "66b5cac5d90575be3cf689206397e35e4d8aa718"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/2b510feb5ec3ed81a6d78c3409125a0ca90509dd",
-                "reference": "2b510feb5ec3ed81a6d78c3409125a0ca90509dd",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/66b5cac5d90575be3cf689206397e35e4d8aa718",
+                "reference": "66b5cac5d90575be3cf689206397e35e4d8aa718",
                 "shasum": ""
             },
             "require": {
@@ -6189,7 +6193,7 @@
                 }
             ],
             "description": "A virtual machine for web artisans.",
-            "time": "2015-12-11 14:51:01"
+            "time": "2015-12-16 17:09:41"
         },
         {
             "name": "maximebf/debugbar",
