@@ -47,6 +47,10 @@
             padding: 10px;
         }
 
+        .error {
+            display: block;
+            text-align: left;
+        }
         @media screen and (max-width: 900px) {
             #main .features .feature {
                 width: 45%;
@@ -72,33 +76,44 @@
             <header style="margin-bottom: 0;">
                 <h2>Sites built with AsgardCms</h2>
                 <p>
-                    <a href="" @click.prevent="openForm">Submit your own website</a>
+                    <a href="" class="button special" @click.prevent="openForm">Submit your own website</a>
                 </p>
             </header>
         </section>
         <section id="cta" style="display: none;">
             <p>Submit finished websites you have developed with AsgardCms.</p>
             <p class="message"></p>
-            <form action="{{ route('api.sites.submit') }}" method="POST" class="websiteForm" style="width: 50em;">
-                {!! Form::token() !!}
-                <div class="row uniform 50%">
-                    <div class="6u">
-                        <input type="text" name="name" id="name" placeholder="Full name" v-model="name" />
+            <validator name="validationWebsite">
+                <form action="{{ route('api.sites.submit') }}" method="POST" class="websiteForm" style="width: 50em;">
+                    {!! Form::token() !!}
+                    <div class="row uniform 50%">
+                        <div class="6u">
+                            <input type="text" name="name" id="name" placeholder="Full name"
+                                   v-model="name" v-validate:name="['required']" />
+                            <span v-show="$validationWebsite.name.required" class="error">Your name is required.</span>
+                        </div>
+                        <div class="6u">
+                            <input type="email" name="email" id="email" placeholder="Email Address"
+                                   v-model="email" v-validate:email="['required']"/>
+                            <span v-show="$validationWebsite.email.required" class="error">Your email is required.</span>
+                        </div>
+                        <div class="12u">
+                            <input type="text" name="website_url" id="website_url" placeholder="Website URL"
+                                   v-model="website_url" v-validate:website_url="['required']"/>
+                            <span v-show="$validationWebsite.website_url.required" class="error">The website URL is required.</span>
+                        </div>
+                        <div class="12u">
+                            <textarea name="message" id="message" placeholder="Message"
+                                      v-model="message" v-validate:message="['required']"></textarea>
+                            <span v-show="$validationWebsite.message.required" class="error">A message is required.</span>
+                        </div>
+                        <div class="12u">
+                            <input type="submit" value="Submit site" class="fit"
+                                   @click.prevent="submitWebsite" v-if="$validationWebsite.valid"/>
+                        </div>
                     </div>
-                    <div class="6u">
-                        <input type="email" name="email" id="email" placeholder="Email Address" v-model="email"/>
-                    </div>
-                    <div class="12u">
-                        <input type="text" name="website_url" id="website_url" placeholder="Website URL" v-model="website_url"/>
-                    </div>
-                    <div class="12u">
-                        <textarea name="message" id="message" placeholder="Message" v-model="message"></textarea>
-                    </div>
-                    <div class="12u">
-                        <input type="submit" value="Submit site" class="fit" @click.prevent="submitWebsite"/>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </validator>
         </section>
     </div>
     <section id="main" class="container">
@@ -130,6 +145,7 @@
 @section('scripts')
     {!! Theme::script('js/vue.min.js') !!}
     {!! Theme::script('js/vue-resource.min.js') !!}
+    {!! Theme::script('js/vue-validator.min.js') !!}
     <script>
         $( document ).ready(function() {
             Vue.http.headers.common['X-CSRF-TOKEN'] = window.document.querySelector('meta#token').getAttribute('value');
