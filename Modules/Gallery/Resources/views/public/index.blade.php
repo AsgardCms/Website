@@ -78,7 +78,7 @@
         </section>
         <section id="cta" style="display: none;">
             <p>Submit finished websites you have developed with AsgardCms.</p>
-
+            <p class="message"></p>
             <form action="{{ route('api.sites.submit') }}" method="POST" class="websiteForm" style="width: 50em;">
                 {!! Form::token() !!}
                 <div class="row uniform 50%">
@@ -150,6 +150,11 @@
                             data = {name: this.name, email: this.email, website_url: this.website_url, message: this.message};
 
                         this.$http.post($form.attr('action'), data, function(data) {
+                            $form.fadeOut();
+                            $('.message').text('Thank you for submitting your website! We\'ll get back to your as soon as possible.')
+                            setTimeout(function () {
+                                $('#cta').slideUp();
+                            }, 2000);
                         });
                     }
                 }
