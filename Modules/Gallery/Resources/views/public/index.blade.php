@@ -85,16 +85,15 @@
             <p class="message"></p>
             <validator name="validationWebsite">
                 <form action="{{ route('api.sites.submit') }}" method="POST" class="websiteForm" style="width: 50em;">
-                    {!! Form::token() !!}
                     <div class="row uniform 50%">
                         <div class="6u">
                             <input type="text" name="name" id="name" placeholder="Full name"
-                                   v-model="name" v-validate:name="['required']" />
+                                   v-model="name" v-validate:name="['required']" value="{{ $currentUser ? $currentUser->present()->fullName : '' }}" />
                             <span v-show="$validationWebsite.name.required" class="error">Your name is required.</span>
                         </div>
                         <div class="6u">
                             <input type="email" name="email" id="email" placeholder="Email Address"
-                                   v-model="email" v-validate:email="['required']"/>
+                                   v-model="email" v-validate:email="['required']"  value="{{ $currentUser ? $currentUser->email : '' }}"/>
                             <span v-show="$validationWebsite.email.required" class="error">Your email is required.</span>
                         </div>
                         <div class="12u">
