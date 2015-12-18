@@ -19,6 +19,7 @@ class GalleryServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerBindings();
+        view()->composer('gallery::public.index', \Modules\Core\Composers\CurrentUserViewComposer::class);
     }
 
     /**
