@@ -14,7 +14,7 @@
     </li>
     <li>
         <a href="" class="jsUpgradeGuide"> <i class="fa fa-plus"></i>Upgrade guides</a>
-        <ul style="{{ Request::is('*/upgrade-guides/*') ? '' : 'display: none;' }}" class="side-menu">
+        <ul style="{{ Request::is('*/upgrade-guides/*') ? '' : 'display: none;' }} margin-bottom: 0" class="side-menu">
             <li class="{{ Request::is('*/upgrade-guides/platform') ? 'active' : ''}}">
                 <a href="{{ url('docs/upgrade-guides/platform') }}">Platform</a>
             </li>
