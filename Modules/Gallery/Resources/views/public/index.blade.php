@@ -128,8 +128,8 @@
 @stop
 
 @section('scripts')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.1.17/vue-resource.min.js"></script>
+    {!! Theme::script('js/vue.min.js') !!}
+    {!! Theme::script('js/vue-resource.min.js') !!}
     <script>
         $( document ).ready(function() {
             Vue.http.headers.common['X-CSRF-TOKEN'] = window.document.querySelector('meta#token').getAttribute('value');
