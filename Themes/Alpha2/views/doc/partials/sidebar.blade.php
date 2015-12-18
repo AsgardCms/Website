@@ -12,6 +12,35 @@
     <li class="{{ Request::is('*/getting-started/used-technology') ? 'active' : ''}}">
         <a href="{{ url('docs/getting-started/used-technology') }}">Used technology</a>
     </li>
+    <li>
+        <a href="" class="jsUpgradeGuide"> <i class="fa fa-plus"></i>Upgrade guides</a>
+        <ul style="{{ Request::is('*/upgrade-guides/*') ? '' : 'display: none;' }}" class="side-menu">
+            <li class="{{ Request::is('*/upgrade-guides/platform') ? 'active' : ''}}">
+                <a href="{{ url('docs/upgrade-guides/platform') }}">Platform</a>
+            </li>
+            <li class="{{ Request::is('*/upgrade-guides/core') ? 'active' : ''}}">
+                <a href="{{ url('docs/upgrade-guides/core') }}">Core Module</a>
+            </li>
+            <li class="{{ Request::is('*/upgrade-guides/media') ? 'active' : ''}}">
+                <a href="{{ url('docs/upgrade-guides/media') }}">Media Module</a>
+            </li>
+            <li class="{{ Request::is('*/upgrade-guides/menu') ? 'active' : ''}}">
+                <a href="{{ url('docs/upgrade-guides/menu') }}">Menu Module</a>
+            </li>
+            <li class="{{ Request::is('*/upgrade-guides/setting') ? 'active' : ''}}">
+                <a href="{{ url('docs/upgrade-guides/setting') }}">Setting Module</a>
+            </li>
+            <li class="{{ Request::is('*/upgrade-guides/user') ? 'active' : ''}}">
+                <a href="{{ url('docs/upgrade-guides/user') }}">User Module</a>
+            </li>
+            <li class="{{ Request::is('*/upgrade-guides/translation') ? 'active' : ''}}">
+                <a href="{{ url('docs/upgrade-guides/translation') }}">Translation Module</a>
+            </li>
+            <li class="{{ Request::is('*/upgrade-guides/workshop') ? 'active' : ''}}">
+                <a href="{{ url('docs/upgrade-guides/workshop') }}">Workshop Module</a>
+            </li>
+        </ul>
+    </li>
     <li class="header">
         <i class="fa fa-bolt"></i>
         Core Module

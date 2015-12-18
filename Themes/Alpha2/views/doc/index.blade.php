@@ -22,3 +22,14 @@
     </div>
 </section>
 @stop
+
+@section('scripts')
+    <script>
+        $( document ).ready(function() {
+            $('.jsUpgradeGuide').on('click', function (e) {
+                e.preventDefault();
+                $(this).next().slideToggle();
+            });
+        });
+    </script>
+@stop
