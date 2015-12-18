@@ -151,7 +151,7 @@
 
                         this.$http.post($form.attr('action'), data, function(data) {
                             $form.fadeOut();
-                            $('.message').text('Thank you for submitting your website! We\'ll get back to your as soon as possible.')
+                            $('.message').text(data);
                             setTimeout(function () {
                                 $('#cta').slideUp();
                             }, 2000);

@@ -26,5 +26,7 @@ class SitesController extends Controller
             $message->replyTo($data['email'], $data['name']);
             $message->subject('AsgardCms: New Website Proposal');
         });
+
+        return response()->json('Thank you for submitting your website! We\'ll get back to your as soon as possible .');
     }
 }
