@@ -21,6 +21,9 @@
             <li class="{{ Request::is('*/upgrade-guides/core') ? 'active' : ''}}">
                 <a href="{{ url('docs/upgrade-guides/core') }}">Core Module</a>
             </li>
+            <li class="{{ Request::is('*/upgrade-guides/page') ? 'active' : ''}}">
+                <a href="{{ url('docs/upgrade-guides/page') }}">Page Module</a>
+            </li>
             <li class="{{ Request::is('*/upgrade-guides/media') ? 'active' : ''}}">
                 <a href="{{ url('docs/upgrade-guides/media') }}">Media Module</a>
             </li>
