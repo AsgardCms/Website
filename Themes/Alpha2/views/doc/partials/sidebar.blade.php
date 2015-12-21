@@ -77,6 +77,13 @@
         <a href="{{ url('docs/dashboard-module/widgets') }}">Widgets</a>
     </li>
     <li class="header">
+        <i class="fa fa-file-text"></i>
+        Page Module
+    </li>
+    <li class="{{ Request::is('*/page-module/custom-fields') ? 'active' : ''}}">
+        <a href="{{ url('docs/page-module/custom-fields') }}">Custom fields</a>
+    </li>
+    <li class="header">
         <i class="fa fa-file-image-o"></i>
         Media Module
     </li>
