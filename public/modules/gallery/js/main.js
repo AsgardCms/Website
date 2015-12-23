@@ -1,0 +1,11 @@
+import Vue from 'Vue'
+import VueResource from 'vue-resource'
+import VueValidator from 'vue-validator'
+
+Vue.config.debug = true;
+
+Vue.use(VueResource);
+Vue.http.headers.common['X-CSRF-TOKEN'] = window.document.querySelector('meta#token').getAttribute('value');
+
+import app from './app'
+new Vue(app).$mount('.app');
