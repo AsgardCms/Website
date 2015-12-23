@@ -8,10 +8,11 @@
     "order": 1,
     "providers": [
         "Modules\\Gallery\\Providers\\GalleryServiceProvider",
-        "Modules\\Gallery\\Providers\\RouteServiceProvider"
+        "Modules\\Gallery\\Providers\\RouteServiceProvider",
+        "Lord\\Laroute\\LarouteServiceProvider"
     ],
     "aliases":{},
     "files": [
-        
+
     ]
 }

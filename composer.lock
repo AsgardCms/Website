@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c96717833050c712d1185dd23c9c64f2",
-    "content-hash": "e359f357da0705ba08f2a810ea4c979a",
+    "hash": "6ad6c9185d920fb82416faf56b5e73f5",
+    "content-hash": "175fc8d6bb202dadb8f279e59cfd5da7",
     "packages": [
         {
             "name": "asgardcms/adminlte-theme",
@@ -2929,6 +2929,57 @@
             ],
             "description": "Flysystem adapter for the AWS S3 SDK v3.x",
             "time": "2015-11-19 08:44:16"
+        },
+        {
+            "name": "lord/laroute",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aaronlord/laroute.git",
+                "reference": "e9ced9e9c4f69e5da2dae1c2aebc185289748a33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aaronlord/laroute/zipball/e9ced9e9c4f69e5da2dae1c2aebc185289748a33",
+                "reference": "e9ced9e9c4f69e5da2dae1c2aebc185289748a33",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "5.0.*|5.1.*",
+                "illuminate/console": "5.0.*|5.1.*",
+                "illuminate/filesystem": "5.0.*|5.1.*",
+                "illuminate/routing": "5.0.*|5.1.*",
+                "illuminate/support": "5.0.*|5.1.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lord\\Laroute\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Lord",
+                    "email": "hello@aaronlord.is"
+                }
+            ],
+            "description": "Access Laravels URL/Route helper functions, from JavaScript.",
+            "keywords": [
+                "javascript",
+                "laravel",
+                "routes",
+                "routing"
+            ],
+            "time": "2015-06-10 10:22:58"
         },
         {
             "name": "maatwebsite/laravel-sidebar",
@@ -6159,7 +6210,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/66b5cac5d90575be3cf689206397e35e4d8aa718",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/50b1a7fbec58783e13241bc27909ab1ab146069b",
                 "reference": "66b5cac5d90575be3cf689206397e35e4d8aa718",
                 "shasum": ""
             },
