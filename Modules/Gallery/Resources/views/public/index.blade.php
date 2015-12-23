@@ -72,6 +72,34 @@
 @stop
 @section('content')
     <div class="app">
+        <submit-site></submit-site>
+    </div>
+    <section id="main" class="container">
+        <div class="features">
+            <?php foreach ($projects as $project): ?>
+                <div class="box special feature">
+                    <figure>
+                        <a href="{{ $project->present()->targetUrl }}" target="_blank">
+                            <img src="{{ Imagy::getThumbnail($project->image->path, 'galleryThumbnail') }}" alt="{{ $project->website_name }}"/>
+                        </a>
+                    </figure>
+                    <div class="box-content">
+                        <h3>
+                            <a href="{{ $project->present()->targetUrl }}" target="_blank">{{ $project->website_name }}</a>
+                        </h3>
+                        <small style="font-size: .8em">Developed by <a href="{{ $project->owner_url }}" target="_blank">{{ $project->owner_name }}</a></small>
+                        {!! $project->description !!}
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+        @include('partials.call_to_action_install')
+        <div style="margin-top: 5.5em;">
+            @include('testimonial::public.partials.random-testimonials')
+        </div>
+    </section>
+
+    <template id="submit_to_gallery">
         <section id="main" class="container" style="padding-bottom: 0;">
             <header style="margin-bottom: 0;">
                 <h2>Sites built with AsgardCms</h2>
@@ -114,31 +142,7 @@
                 </form>
             </validator>
         </section>
-    </div>
-    <section id="main" class="container">
-        <div class="features">
-            <?php foreach ($projects as $project): ?>
-                <div class="box special feature">
-                    <figure>
-                        <a href="{{ $project->present()->targetUrl }}" target="_blank">
-                            <img src="{{ Imagy::getThumbnail($project->image->path, 'galleryThumbnail') }}" alt="{{ $project->website_name }}"/>
-                        </a>
-                    </figure>
-                    <div class="box-content">
-                        <h3>
-                            <a href="{{ $project->present()->targetUrl }}" target="_blank">{{ $project->website_name }}</a>
-                        </h3>
-                        <small style="font-size: .8em">Developed by <a href="{{ $project->owner_url }}" target="_blank">{{ $project->owner_name }}</a></small>
-                        {!! $project->description !!}
-                    </div>
-                </div>
-            <?php endforeach; ?>
-        </div>
-        @include('partials.call_to_action_install')
-        <div style="margin-top: 5.5em;">
-            @include('testimonial::public.partials.random-testimonials')
-        </div>
-    </section>
+    </template>
 @stop
 
 @section('scripts')
@@ -148,13 +152,15 @@
     <script>
         $( document ).ready(function() {
             Vue.http.headers.common['X-CSRF-TOKEN'] = window.document.querySelector('meta#token').getAttribute('value');
-            new Vue({
-                el: '.app',
-                data: {
-                    name: '',
-                    email: '',
-                    website_url: '',
-                    message: ''
+            Vue.component('submit-site', {
+                template: '#submit_to_gallery',
+                data: function () {
+                    return {
+                        name: '',
+                        email: '',
+                        website_url: '',
+                        message: ''
+                    }
                 },
                 methods: {
                     openForm: function () {
@@ -162,8 +168,8 @@
                     },
                     submitWebsite: function () {
                         var $form = $('.websiteForm'),
-                            data = {name: this.name, email: this.email, website_url: this.website_url, message: this.message},
-                            $messageWrapper = $('.message');
+                                data = {name: this.name, email: this.email, website_url: this.website_url, message: this.message},
+                                $messageWrapper = $('.message');
 
                         this.$http.post($form.attr('action'), data, function(data) {
                             $form.fadeOut();
@@ -179,6 +185,9 @@
                         });
                     }
                 }
+            });
+            new Vue({
+                el: '.app'
             });
         });
     </script>
