@@ -5,7 +5,8 @@
     "require": {
         "php": ">=5.4",
         "composer/installers": "~1.0",
-        "asgardcms/core-module": "~1.0"
+        "asgardcms/core-module": "~1.0",
+		"lord/laroute": "^2.1"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0",
@@ -29,5 +30,11 @@
 		"psr-4": {
 			"Modules\\Gallery\\": ""
 		}
-	}
+	},
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/nWidart/modules"
+      }
+    ]
 }
