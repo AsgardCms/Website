@@ -22,7 +22,7 @@ elixir.extend('laroute', function(message) {
 elixir(function(mix) {
     mix.laroute();
 
-    mix.browserify('gallery.js');
+    mix.browserify('main.js');
     //mix.browserSync({
     //    proxy: 'asgardcms.app',
     //    open: false
