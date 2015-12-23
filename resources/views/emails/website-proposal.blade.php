@@ -14,7 +14,7 @@
     <li>Website URL: <a href="{{ $data['website_url'] }}">{{ $data['website_url'] }}</a></li>
     <li>Message:</li>
 </ul>
-{{ nl2br($data['message']) }}
+{!! nl2br($data['message']) !!}
 
 <p>Reply to this email to contact the person.</p>
 
