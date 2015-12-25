@@ -3,4 +3,8 @@
         <i class="fa fa-user"></i>
         <a href="{{ route('user.account') }}">Account</a>
     </li>
+    <li class="{{ Request::is('*/account/modules*') ? 'active' : '' }}">
+        <i class="fa fa-cubes"></i>
+        <a href="{{ route('p.modules.index') }}">Modules</a>
+    </li>
 </ul>
