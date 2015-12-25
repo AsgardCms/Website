@@ -12,6 +12,9 @@
                 <li>
                     <a href="https://www.youtube.com/channel/UCjxqRXpzEihmTMZh86GgDQw" target="_blank">Screencasts</a>
                 </li>
+                <li>
+                    <a href="http://forum.asgardcms.com">Forum</a>
+                </li>
             </ul>
         </li>
         <?php if ($user): ?>
