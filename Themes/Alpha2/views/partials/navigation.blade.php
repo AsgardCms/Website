@@ -18,12 +18,13 @@
             </ul>
         </li>
         <?php if ($user): ?>
-        <li class="{{ Request::is('*auth/*') ? 'active' : ''}}">
+        <li class="{{ Request::is('*/account*') ? 'active' : '' }}">
             <a href="" class="icon fa-angle-down">Account</a>
             <ul>
                 <?php if ($user): ?>
-                    <li class="{{ on_route('user.account') || on_route('user.beta') ? 'active' : '' }}">
-                    <li class="{{ on_route('user.account') ? 'active' : '' }}"><a href="{{ route('user.account') }}">Account</a></li>
+                <li class="{{ Request::is('*/account*') ? 'active' : '' }}">
+                    <a href="{{ route('user.account') }}">Account</a>
+                </li>
                     <?php if ($user->hasRoleName('Admin')): ?>
                         <li><a href="{{ route('dashboard.index') }}">Admin</a></li>
                     <?php endif; ?>
