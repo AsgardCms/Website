@@ -6,10 +6,10 @@
             <h2>Edit your account</h2>
         </header>
         <div class="row box row-box">
-            <div class="3u 3u(2) 12u$(4)">
+            <div class="2u">
                 @include('profile::public.partials.sidebar')
             </div>
-            <div class="9u 9u(2) 12u$(4) content">
+            <div class="10u content">
                 @include('partials.notifications')
                 {!! Form::open(['route' => 'user.account.update']) !!}
                 <div class="row uniform 50%">
