@@ -1,5 +1,6 @@
 <?php namespace Modules\Module\Http\Controllers\Admin;
 
+use FloatingPoint\Stylist\Facades\ThemeFacade as Theme;
 use Laracasts\Flash\Flash;
 use Illuminate\Http\Request;
 use Modules\Module\Entities\Module;
@@ -18,6 +19,7 @@ class ModuleController extends AdminBaseController
         parent::__construct();
 
         $this->module = $module;
+        $this->requireAssets();
     }
 
     /**
@@ -97,5 +99,13 @@ class ModuleController extends AdminBaseController
         flash()->success(trans('core::core.messages.resource deleted', ['name' => trans('module::modules.title.modules')]));
 
         return redirect()->route('admin.module.module.index');
+    }
+
+    private function requireAssets()
+    {
+        $this->assetManager->addAsset('simplemde.css', Theme::url('vendor/simplemde/dist/simplemde.min.css'));
+        $this->assetManager->addAsset('simplemde.js', Theme::url('vendor/simplemde/dist/simplemde.min.js'));
+        $this->assetPipeline->requireJs('simplemde.js');
+        $this->assetPipeline->requireCss('simplemde.css');
     }
 }
