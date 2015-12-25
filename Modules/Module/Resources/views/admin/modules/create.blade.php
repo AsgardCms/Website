@@ -13,6 +13,7 @@
 
 @section('styles')
     {!! Theme::script('js/vendor/ckeditor/ckeditor.js') !!}
+    {!! Theme::script('js/vendor/ckeditor/ckeditor.js') !!}
     {!! Theme::style('css/vendor/iCheck/flat/blue.css') !!}
 @stop
 
@@ -22,12 +23,33 @@
         <div class="col-md-12">
             <div class="nav-tabs-custom" id="app">
                 <div class="tab-content">
-                    {!! Form::normalInput('packagist_url', 'Packagist url', $errors, null, ['v-model' => 'packagist_url']) !!}
                     <div class='form-group{{ $errors->has("packagist_url") ? ' has-error' : '' }}'>
                         {!! Form::label("packagist_url", 'Packagist URL') !!}
                         <input type="text" class="form-control" name="packagist_url" id="packagist_url"
-                               placeholder="Packagist URL"  value="{{ old('packagist_url') }}" v-model="packagist_url">
+                               placeholder="Packagist URL" v-model="packagist_url">
+                        <button type="submit" @click.prevent="fetchData" class="btn btn-success btn-flat">Load</button>
                         {!! $errors->first("packagist_url", '<span class="help-block">:message</span>') !!}
+                    </div>
+                    <div class="form-group">
+                        {!! Form::label('vendor', 'Vendor') !!}
+                        <input type="text" class="form-control" name="vendor" id="vendor"
+                               placeholder="Vendor" v-model="vendor">
+                    </div>
+
+                    <div class="form-group">
+                        {!! Form::label('name', 'Name') !!}
+                        <input type="text" class="form-control" name="name" id="name"
+                               placeholder="Name" v-model="name">
+                    </div>
+                    <div class="form-group">
+                        {!! Form::label('excerpt', 'Excerpt') !!}
+                        <input type="text" class="form-control" name="excerpt" id="excerpt"
+                               placeholder="Excerpt" v-model="excerpt">
+                    </div>
+                    <div class="form-group">
+                        {!! Form::label('description', 'Description') !!}
+                        <textarea class="form-control descriptionMde" name="description" id="description"
+                                  placeholder="Description" v-model="description"></textarea>
                     </div>
 
                     <div class="box-footer">
@@ -54,10 +76,10 @@
 
 @section('scripts')
     <?php Stylist::activate('Alpha2') ?>
-    {!! Theme::script('js/vue.min.js') !!}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.13/vue.js"></script>
     {!! Theme::script('js/vue-resource.min.js') !!}
     <?php Stylist::activate('AdminLTE') ?>
-    <script src="{!! Module::asset('module:js/backend_module.js') !!}"></script>
+
     <script type="text/javascript">
         $( document ).ready(function() {
             $(document).keypressAction({
@@ -76,13 +98,32 @@
         });
     </script>
     <script>
+        var routes = {
+            modulePackagistData: '{{ route('module.packagist_data') }}'
+        };
         $( document ).ready(function() {
+            var descriptionMde = new SimpleMDE({element: $(".descriptionMde")[0]});
+            Vue.http.headers.common['X-CSRF-TOKEN'] = window.document.querySelector('meta#token').getAttribute('value');
             new Vue({
                 el: '#app',
                 data: {
-                    packagist_url: 'asd'
+                    packagist_url: 'asgardcms/notification-module',
+                    vendor: '',
+                    name: '',
+                    excerpt: '',
+                    description: ''
+                },
+                methods: {
+                    fetchData: function () {
+                        this.$http.post(routes.modulePackagistData, {packagist_url: this.packagist_url}, function (data) {
+                            this.vendor = data.vendor;
+                            this.name = data.name;
+                            this.excerpt = data.excerpt;
+                            descriptionMde.value(data.description);
+                        });
+                    }
                 }
-            });
+            })
         });
 
     </script>
