@@ -11,4 +11,19 @@ class CacheModuleDecorator extends BaseCacheDecorator implements ModuleRepositor
         $this->entityName = 'module.modules';
         $this->repository = $module;
     }
+
+    /**
+     * @param int $userId
+     * @return \Illuminate\Database\Eloquent\Collection
+     */
+    public function allForUser($userId)
+    {
+        return $this->cache
+            ->tags($this->entityName, 'global')
+            ->remember("{$this->locale}.{$this->entityName}.allForUser.{$userId}", $this->cacheTime,
+                function () use ($userId) {
+                    return $this->repository->allForUser($userId);
+                }
+            );
+    }
 }
