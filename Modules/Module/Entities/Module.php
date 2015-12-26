@@ -14,5 +14,9 @@ class Module extends Model
         'description',
         'documentation',
         'changelog',
+        'favourites',
+        'total_downloads',
+        'monthly_downloads',
+        'daily_downloads',
     ];
 }
