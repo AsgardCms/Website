@@ -10,7 +10,7 @@ class CreateModuleRequest extends FormRequest
             'vendor' => 'required',
             'name' => 'required',
             'excerpt' => 'required',
-            'category' => 'required',
+            'category_id' => 'required',
             'description' => 'required',
             'documentation' => 'required',
         ];
