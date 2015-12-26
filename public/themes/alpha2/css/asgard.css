@@ -1338,6 +1338,17 @@ label {
   font-size: 0.9em;
   font-weight: 400; }
 
+.has-error input[type="text"],
+.has-error input[type="password"],
+.has-error input[type="email"],
+.has-error select,
+.has-error textarea {
+  border-color: #e89980;
+  box-shadow: 0 0 0 2px #e89980; }
+
+.has-error .help-block {
+  color: #e89980; }
+
 input[type="text"],
 input[type="password"],
 input[type="email"],

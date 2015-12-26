@@ -269,6 +269,18 @@
 		font-weight: 400;
 	}
 
+	.has-error input[type="text"],
+	.has-error input[type="password"],
+	.has-error input[type="email"],
+	.has-error select,
+	.has-error textarea  {
+		border-color: _palette(accent2, bg);
+		box-shadow: 0 0 0 2px _palette(accent2, bg);
+	}
+	.has-error .help-block {
+		color: _palette(accent2, bg);
+	}
+
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
