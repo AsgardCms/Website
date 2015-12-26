@@ -20,6 +20,10 @@
             <div class="10u content" id="app">
                 <a href="{{ route('p.modules.index') }}" class="button small pull-right"><i class="fa fa-arrow-circle-o-left"></i> Back</a>
                 {!! Form::open(['route' => 'p.modules.store']) !!}
+                <input type="hidden" v-model="favourites" name="favourites">
+                <input type="hidden" v-model="total_downloads" name="total_downloads">
+                <input type="hidden" v-model="monthly_downloads" name="monthly_downloads">
+                <input type="hidden" v-model="daily_downloads" name="daily_downloads">
                 <div class="row uniform 50%">
                     <div class="9u 12u(mobilep) {{ $errors->has('packagist_uri') ? ' has-error' : '' }}">
                         <input type="text" name="packagist_uri" id="packagist_uri" placeholder="Packagist vendor/name" v-model="packagist_uri">
@@ -99,8 +103,10 @@
             name: '{{ old('name') }}',
             excerpt: '{{ old('excerpt') }}',
             category: '{{ old('category') }}',
-            description: '{{ old('description') }}',
-            documentation: '{{ old('documentation') }}'
+            favourites: '{{ old('favourites') }}',
+            total_downloads: '{{ old('total_downloads') }}',
+            monthly_downloads: '{{ old('monthly_downloads') }}',
+            daily_downloads: '{{ old('daily_downloads') }}'
         };
         $( document ).ready(function() {
             var descriptionMde = new SimpleMDE({
@@ -121,6 +127,10 @@
                     excerpt: oldInput.excerpt,
                     description: '',
                     documentation: '',
+                    favourites: oldInput.favourites,
+                    total_downloads: oldInput.total_downloads,
+                    monthly_downloads: oldInput.monthly_downloads,
+                    daily_downloads: oldInput.daily_downloads,
                     category: oldInput.category
                 },
                 methods: {
@@ -129,13 +139,17 @@
                             this.vendor = data.vendor;
                             this.name = data.name;
                             this.excerpt = data.excerpt;
+                            this.favourites = data.favourites;
+                            this.total_downloads = data.total_downloads;
+                            this.monthly_downloads = data.monthly_downloads;
+                            this.daily_downloads = data.daily_downloads;
                             descriptionMde.value(data.description);
                         });
                     }
                 },
                 ready() {
-                    descriptionMde.value(oldInput.description);
-                    documentationMde.value(oldInput.documentation);
+//                    descriptionMde.value(oldInput.description);
+//                    documentationMde.value(oldInput.documentation);
                 }
             })
         });
