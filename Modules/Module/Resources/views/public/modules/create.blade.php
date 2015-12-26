@@ -92,7 +92,11 @@
 @stop
 
 @section('scripts')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.13/vue.js"></script>
+    <?php if (app()->environment() === 'local'): ?>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.13/vue.js"></script>
+    <?php else: ?>
+        {!! Theme::script('js/vue.min.js') !!}
+    <?php endif; ?>
     {!! Theme::script('js/vue-resource.min.js') !!}
     {!! Theme::script('js/simplemde.min.js') !!}
     <script>
