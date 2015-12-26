@@ -6,6 +6,7 @@ class Module extends Model
 {
     protected $table = 'module__modules';
     protected $fillable = [
+        'category_id',
         'is_published',
         'vendor',
         'name',
