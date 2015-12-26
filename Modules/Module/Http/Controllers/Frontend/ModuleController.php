@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Modules\Core\Http\Controllers\BasePublicController;
+use Modules\Module\Entities\Module;
 use Modules\Module\Http\Requests\CreateModuleRequest;
 use Modules\Module\Repositories\CategoryRepository;
 use Modules\Module\Repositories\ModuleRepository;
@@ -40,6 +41,18 @@ class ModuleController extends BasePublicController
     }
 
     public function store(CreateModuleRequest $request)
+    {
+        $module = $this->moduleRepository->create($request->all());
+
+        return redirect()->route('p.modules.createGallery', $module->id);
+    }
+
+    public function createGallery(Module $module)
+    {
+        return view('module::public.modules.createGallery', compact('module'));
+    }
+
+    public function storeGallery(Request $request)
     {
         dd($request->all());
     }
