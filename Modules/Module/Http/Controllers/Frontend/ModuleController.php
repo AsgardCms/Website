@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Modules\Core\Http\Controllers\BasePublicController;
+use Modules\Media\Repositories\FileRepository;
 use Modules\Module\Entities\Module;
 use Modules\Module\Http\Requests\CreateModuleRequest;
 use Modules\Module\Repositories\CategoryRepository;
@@ -47,9 +48,11 @@ class ModuleController extends BasePublicController
         return redirect()->route('p.modules.createGallery', $module->id);
     }
 
-    public function createGallery(Module $module)
+    public function createGallery(Module $module, FileRepository $fileRepository)
     {
-        return view('module::public.modules.createGallery', compact('module'));
+        $images = $fileRepository->findMultipleFilesByZoneForEntity('module_gallery', $module);
+
+        return view('module::public.modules.createGallery', compact('module', 'images'));
     }
 
     public function storeGallery(Request $request)
