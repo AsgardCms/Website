@@ -54,9 +54,4 @@ class ModuleController extends BasePublicController
 
         return view('module::public.modules.createGallery', compact('module', 'images'));
     }
-
-    public function storeGallery(Request $request)
-    {
-        dd($request->all());
-    }
 }

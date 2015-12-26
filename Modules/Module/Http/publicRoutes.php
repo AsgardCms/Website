@@ -11,5 +11,4 @@ $router->group(['middleware' => 'logged.in'], function (Router $router) {
     get('account/modules/create', ['uses' => 'Frontend\ModuleController@create', 'as' => 'p.modules.create']);
     post('account/modules', ['uses' => 'Frontend\ModuleController@store', 'as' => 'p.modules.store']);
     get('account/modules/{singleModule}/createGallery', ['uses' => 'Frontend\ModuleController@createGallery', 'as' => 'p.modules.createGallery']);
-    post('account/modules/{singleModule}/storeGallery', ['uses' => 'Frontend\ModuleController@storeGallery', 'as' => 'p.modules.storeGallery']);
 });
