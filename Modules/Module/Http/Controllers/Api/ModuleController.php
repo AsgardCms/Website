@@ -1,11 +1,9 @@
 <?php namespace Modules\Module\Http\Controllers\Api;
 
-use Illuminate\Contracts\Filesystem\Factory;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\Module\Transformers\ModuleDataTransformer;
 use Packagist\Api\Client;
-use Packagist\Api\Result\Package;
-use PHPGit\Git;
 
 class ModuleController extends Controller
 {
@@ -14,39 +12,20 @@ class ModuleController extends Controller
      */
     private $packagist;
     /**
-     * @var Git
+     * @var ModuleDataTransformer
      */
-    private $git;
-    /**
-     * @var Factory
-     */
-    private $finder;
+    private $transformer;
 
-    public function __construct(Client $packagist, Git $git, Factory $finder)
+    public function __construct(Client $packagist, ModuleDataTransformer $transformer)
     {
         $this->packagist = $packagist;
-        $this->git = $git;
-        $this->finder = $finder;
+        $this->transformer = $transformer;
     }
 
     public function packagistData(Request $request)
     {
-        $package = $this->packagist->get($request->get('packagist_url'));
-        list($vendor, $name) = $this->splitVendorAndName($package->getName());
+        $package = $this->packagist->get($request->get('packagist_uri'));
 
-//        $this->finder->disk('local')->makeDirectory('storage/modules/' . $package->getName());
-//        $this->git->clone($package->getRepository(), storage_path('modules/' . $package->getName()));
-
-        return response()->json([
-            'vendor' => $vendor,
-            'name' => $name,
-            'excerpt' => $package->getDescription(),
-            'description' => $this->finder->disk('local')->get('storage/modules/' . $package->getName() . '/readme.md'),
-        ]);
-    }
-
-    private function splitVendorAndName($vendorName)
-    {
-        return explode('/', $vendorName);
+        return response()->json($this->transformer->transform($package));
     }
 }
