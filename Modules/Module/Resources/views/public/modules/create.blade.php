@@ -26,9 +26,9 @@
                 <input type="hidden" v-model="monthly_downloads" name="monthly_downloads">
                 <input type="hidden" v-model="daily_downloads" name="daily_downloads">
                 <div class="row uniform 50%">
-                    <div class="9u 12u(mobilep) {{ $errors->has('packagist_uri') ? ' has-error' : '' }}">
+                    <div class="9u 12u(mobilep) {{ $errors->has('packagist_url') ? ' has-error' : '' }}">
                         <input type="text" name="packagist_url" id="packagist_uri" placeholder="Packagist vendor/name" v-model="packagist_uri">
-                        {!! $errors->first('packagist_uri', '<span class="help-block">:message</span>') !!}
+                        {!! $errors->first('packagist_url', '<span class="help-block">:message</span>') !!}
                     </div>
 
                     <div class="3u 12u(mobilep)">
@@ -122,7 +122,7 @@
             new Vue({
                 el: '#app',
                 data: {
-                    packagist_uri: 'asgardcms/notification-module',
+                    packagist_uri: '',
                     vendor: oldInput.vendor,
                     name: oldInput.name,
                     excerpt: oldInput.excerpt,
