@@ -20,13 +20,14 @@
             <div class="10u content" id="app">
                 <a href="{{ route('p.modules.index') }}" class="button small pull-right"><i class="fa fa-arrow-circle-o-left"></i> Back</a>
                 {!! Form::open(['route' => 'p.modules.store']) !!}
+                <input type="hidden" name="user_id" value="{{ $currentUser->id }}">
                 <input type="hidden" v-model="favourites" name="favourites">
                 <input type="hidden" v-model="total_downloads" name="total_downloads">
                 <input type="hidden" v-model="monthly_downloads" name="monthly_downloads">
                 <input type="hidden" v-model="daily_downloads" name="daily_downloads">
                 <div class="row uniform 50%">
                     <div class="9u 12u(mobilep) {{ $errors->has('packagist_uri') ? ' has-error' : '' }}">
-                        <input type="text" name="packagist_uri" id="packagist_uri" placeholder="Packagist vendor/name" v-model="packagist_uri">
+                        <input type="text" name="packagist_url" id="packagist_uri" placeholder="Packagist vendor/name" v-model="packagist_uri">
                         {!! $errors->first('packagist_uri', '<span class="help-block">:message</span>') !!}
                     </div>
 
@@ -53,7 +54,7 @@
                 <div class="row uniform 50%">
                     <div class="12u{{ $errors->has('category') ? ' has-error' : '' }}">
                         <div class="select-wrapper">
-                            <select name="category" id="category" v-model="category">
+                            <select name="category_id" id="category" v-model="category">
                                 <option value="">- Category -</option>
                                 <?php foreach ($categories as $category): ?>
                                 <option value="{{ $category->id }}">{{ $category->name }}</option>
