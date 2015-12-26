@@ -13,4 +13,11 @@ class EloquentModuleRepository extends EloquentBaseRepository implements ModuleR
     {
         return $this->model->whereUserId($userId)->get();
     }
+
+    public function create($data)
+    {
+        $data['slug'] = str_slug($data['vendor']) . '/' . str_slug($data['name']);
+
+        return $this->model->create($data);
+    }
 }
