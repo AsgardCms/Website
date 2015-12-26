@@ -7,6 +7,7 @@ class CreateModuleRequest extends FormRequest
     public function rules()
     {
         return [
+            'packagist_url' => 'required|unique:module__modules,packagist_url',
             'vendor' => 'required',
             'name' => 'required',
             'excerpt' => 'required',
