@@ -16,7 +16,7 @@ class EloquentModuleRepository extends EloquentBaseRepository implements ModuleR
 
     public function create($data)
     {
-        $data['slug'] = str_slug($data['vendor']) . '/' . str_slug($data['name']);
+        $data['slug'] = str_slug($data['vendor']) . '_' . str_slug($data['name']);
 
         return $this->model->create($data);
     }
