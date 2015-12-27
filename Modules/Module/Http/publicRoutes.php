@@ -15,6 +15,6 @@ $router->group(['middleware' => 'logged.in'], function (Router $router) {
         get('account/modules/{singleModule}/edit', ['uses' => 'Frontend\ModuleController@edit', 'as' => 'p.modules.edit']);
         post('account/modules/{singleModule}', ['uses' => 'Frontend\ModuleController@update', 'as' => 'p.modules.update']);
         get('account/modules/{singleModule}/submit', ['uses' => 'Frontend\ModuleController@submit', 'as' => 'p.modules.submit']);
-        get('account/modules/{singleModule}/thankYou', ['uses' => 'Frontend\ModuleController@thankYou', 'as' => 'p.modules.thankYou']);
     });
+    get('account/modules/{singleModule}/thankYou', ['uses' => 'Frontend\ModuleController@thankYou', 'as' => 'p.modules.thankYou']);
 });
