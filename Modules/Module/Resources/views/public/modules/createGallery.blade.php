@@ -14,6 +14,14 @@
             </div>
             <div class="10u content" id="app">
                 <form action="" class="dropzone"></form>
+                <div class="row uniform">
+                    <div class="12u">
+                        <ul class="actions pull-right">
+                            <li><a href="{{ route('p.modules.edit', $module->id) }}">Back</a></li>
+                            <li><a href="{{ route('p.modules.submit', $module->id) }}" class="button special">Submit for approval</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -30,7 +38,8 @@
                 savedImages.push({
                     id: "{{ $image->id }}",
                     name: "{{ $image->filename }}",
-                    url: "{{ $image->path }}"
+                    url: "{{ $image->path }}",
+                    size: "{{ $image->filesize }}"
                 });
             @endforeach
         @endif
@@ -64,7 +73,7 @@
                 });
                 if (typeof savedImages !== 'undefined' && Array.isArray(savedImages)) {
                     savedImages.forEach(function (savedImage) {
-                        var removeButton = Dropzone.createElement("<button>Remove file</button>");
+                        var removeButton = Dropzone.createElement("<button class='button small' style='margin-top: 10px'>Remove file</button>");
                         self.options.addedfile.call(self, savedImage);
                         self.options.thumbnail.call(self, savedImage, savedImage.url);
                         savedImage.previewElement.classList.add('dz-complete');
