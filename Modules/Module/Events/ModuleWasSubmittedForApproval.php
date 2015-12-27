@@ -7,7 +7,7 @@ class ModuleWasSubmittedForApproval
     /**
      * @var Module
      */
-    private $module;
+    public $module;
 
     public function __construct(Module $module)
     {
