@@ -20,6 +20,7 @@ $router->group(['prefix' =>'/module'], function (Router $router) {
     get('modules/create', ['as' => 'admin.module.module.create', 'uses' => 'ModuleController@create']);
     post('modules', ['as' => 'admin.module.module.store', 'uses' => 'ModuleController@store']);
     get('modules/{modules}/edit', ['as' => 'admin.module.module.edit', 'uses' => 'ModuleController@edit']);
+    get('modules/{modules}/view', ['as' => 'admin.module.module.view', 'uses' => 'ModuleController@view']);
     put('modules/{modules}/edit', ['as' => 'admin.module.module.update', 'uses' => 'ModuleController@update']);
     delete('modules/{modules}', ['as' => 'admin.module.module.destroy', 'uses' => 'ModuleController@destroy']);
 });

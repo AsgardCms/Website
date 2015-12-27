@@ -40,12 +40,12 @@
                         <?php foreach ($modules as $module): ?>
                         <tr>
                             <td>
-                                <a href="{{ route('admin.module.module.edit', [$module->id]) }}">
+                                <a href="{{ route('admin.module.module.view', [$module->id]) }}">
                                     {{ $module->created_at }}
                                 </a>
                             </td>
                             <td>
-                                <a href="{{ route('admin.module.module.edit', [$module->id]) }}">
+                                <a href="{{ route('admin.module.module.view', [$module->id]) }}">
                                     <?php if ($module->isInReview()): ?>
                                         <span class="label label-danger">Awaiting review</span>
                                     <?php else: ?>
@@ -54,14 +54,19 @@
                                 </a>
                             </td>
                             <td>
-                                <a href="{{ route('admin.module.module.edit', [$module->id]) }}">
+                                <a href="{{ route('admin.module.module.view', [$module->id]) }}">
                                     {{ $module->packagist_url }}
                                 </a>
                             </td>
                             <td>
+                                <a href="{{ route('admin.module.module.view', [$module->id]) }}">
+                                    {{ $module->user->present()->fullName }}
+                                </a>
+                            </td>
+                            <td>
                                 <div class="btn-group">
-                                    <a href="{{ route('admin.module.module.edit', [$module->id]) }}" class="btn btn-default btn-flat"><i class="fa fa-pencil"></i></a>
-                                    <button class="btn btn-danger btn-flat" data-toggle="modal" data-target="#modal-delete-confirmation" data-action-target="{{ route('admin.module.module.destroy', [$module->id]) }}"><i class="fa fa-trash"></i></button>
+                                    <a href="{{ route('admin.module.module.view', [$module->id]) }}" class="btn btn-default btn-flat"><i class="fa fa-eye"></i></a>
+
                                 </div>
                             </td>
                         </tr>

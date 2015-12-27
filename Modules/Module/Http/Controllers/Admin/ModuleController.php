@@ -86,6 +86,11 @@ class ModuleController extends AdminBaseController
         return redirect()->route('admin.module.module.index');
     }
 
+    public function view(Module $module)
+    {
+        return view('module::admin.modules.view', compact('module'));
+    }
+
     /**
      * Remove the specified resource from storage.
      *
