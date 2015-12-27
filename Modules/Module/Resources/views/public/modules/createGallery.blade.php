@@ -6,7 +6,7 @@
 @section('content')
     <section id="main" class="container">
         <header>
-            <h2>Add images for {{ $module->packagist_url }}</h2>
+            <h2>Add images for {{ $module->packagist_uri }}</h2>
         </header>
         <div class="row box row-box">
             <div class="2u">

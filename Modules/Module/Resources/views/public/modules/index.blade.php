@@ -19,9 +19,9 @@
                     <?php foreach ($modules as $module): ?>
                         <li>
                             <?php if ($module->isInReview()): ?>
-                                {{ $module->packagist_url }} <em>(In Review)</em>
+                                {{ $module->packagist_uri }} <em>(In Review)</em>
                             <?php else: ?>
-                                <a href="{{ route('p.modules.edit', $module->id) }}">{{ $module->packagist_url }}</a>
+                                <a href="{{ route('p.modules.edit', $module->id) }}">{{ $module->packagist_uri }}</a>
                             <?php endif; ?>
                         </li>
                     <?php endforeach; ?>

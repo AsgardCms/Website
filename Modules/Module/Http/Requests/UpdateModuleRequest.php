@@ -9,7 +9,7 @@ class UpdateModuleRequest extends FormRequest
         $id = $this->route()->getParameter('singleModule')->id;
 
         return [
-            'packagist_url' => 'required|unique:module__modules,packagist_url,' . $id,
+            'packagist_uri' => 'required|unique:module__modules,packagist_uri,' . $id,
             'vendor' => 'required',
             'name' => 'required',
             'excerpt' => 'required',

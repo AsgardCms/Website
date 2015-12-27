@@ -25,9 +25,9 @@
                 <input type="hidden" v-model="monthly_downloads" name="monthly_downloads">
                 <input type="hidden" v-model="daily_downloads" name="daily_downloads">
                 <div class="row uniform 50%">
-                    <div class="9u 12u(mobilep) {{ $errors->has('packagist_url') ? ' has-error' : '' }}">
-                        <input type="text" name="packagist_url" id="packagist_uri" placeholder="Packagist vendor/name" v-model="packagist_uri">
-                        {!! $errors->first('packagist_url', '<span class="help-block">:message</span>') !!}
+                    <div class="9u 12u(mobilep) {{ $errors->has('packagist_uri') ? ' has-error' : '' }}">
+                        <input type="text" name="packagist_uri" id="packagist_uri" placeholder="Packagist vendor/name" v-model="packagist_uri">
+                        {!! $errors->first('packagist_uri', '<span class="help-block">:message</span>') !!}
                     </div>
 
                     <div class="3u 12u(mobilep)">
@@ -104,7 +104,7 @@
             modulePackagistData: '{{ route('module.packagist_data') }}'
         };
         var oldInput = {
-            packagist_uri: '{{ old('packagist_uri', $module->packagist_url) }}',
+            packagist_uri: '{{ old('packagist_uri', $module->packagist_uri) }}',
             vendor: '{{ old('vendor', $module->vendor) }}',
             name: '{{ old('name', $module->name) }}',
             excerpt: '{{ old('excerpt', $module->excerpt) }}',
