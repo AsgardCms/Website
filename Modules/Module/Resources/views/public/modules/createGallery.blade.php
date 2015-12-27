@@ -13,6 +13,7 @@
                 @include('profile::public.partials.sidebar')
             </div>
             <div class="10u content" id="app">
+                @include('partials.notifications')
                 <form action="" class="dropzone">{!! csrf_field() !!}</form>
                 <div class="row uniform">
                     <div class="12u">
