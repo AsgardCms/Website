@@ -2,6 +2,7 @@
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Laracasts\Presenter\PresentableTrait;
 use Modules\Media\Support\Traits\MediaRelation;
 
 /**
@@ -25,8 +26,9 @@ use Modules\Media\Support\Traits\MediaRelation;
  */
 class Module extends Model
 {
-    use MediaRelation;
+    use MediaRelation, PresentableTrait;
 
+    protected $presenter = \Modules\Module\Presenters\Module::class;
     protected $table = 'module__modules';
     protected $fillable = [
         'category_id',
