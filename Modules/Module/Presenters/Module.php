@@ -10,4 +10,14 @@ class Module extends Presenter
     {
         return self::PACKAGIST_URL . $this->entity->packagist_uri;
     }
+
+    public function status()
+    {
+        if ($this->entity->isInReview() === true) {
+            return '<span class="label label-danger">Awaiting review</span>';
+        }
+        if ($this->entity->isInReview() === false) {
+            return '<span class="label label-default">W.I.P.</span>';
+        }
+    }
 }

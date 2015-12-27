@@ -47,11 +47,7 @@
                             </td>
                             <td>
                                 <a href="{{ route('admin.module.module.view', [$module->id]) }}">
-                                    <?php if ($module->isInReview()): ?>
-                                        <span class="label label-danger">Awaiting review</span>
-                                    <?php else: ?>
-                                        <span class="label label-default">W.I.P.</span>
-                                    <?php endif; ?>
+                                    {!! $module->present()->status !!}
                                 </a>
                             </td>
                             <td>
