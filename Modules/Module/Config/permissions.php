@@ -18,7 +18,7 @@ return [
         'destroy',
         'view',
         'reject',
-        'validate',
+        'publish',
     ],
 // append
 

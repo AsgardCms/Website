@@ -66,10 +66,10 @@
                 </div>
             </div>
             <div class="box-footer">
-                <div class="btn-group pull-right">A
+                <div class="btn-group pull-right">
                     <a class="btn btn-default btn-flat" href="{{ route('admin.module.module.index')}}"><i class="fa fa-times"></i> {{ trans('core::core.button.cancel') }}</a>
                     <a href="{{ route('admin.module.module.reject', $module->id) }}" class="btn btn-warning btn-flat ">Reject</a>
-                    <a href="{{ route('admin.module.module.validate', $module->id) }}" class="btn btn-success btn-flat ">Validate</a>
+                    <a href="{{ route('admin.module.module.publish', $module->id) }}" class="btn btn-success btn-flat ">Publish</a>
                 </div>
             </div>
         </div>

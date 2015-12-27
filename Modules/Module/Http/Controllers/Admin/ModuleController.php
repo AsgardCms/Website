@@ -99,7 +99,7 @@ class ModuleController extends AdminBaseController
 
     }
 
-    public function validate(Module $module)
+    public function publish(Module $module)
     {
 
     }
