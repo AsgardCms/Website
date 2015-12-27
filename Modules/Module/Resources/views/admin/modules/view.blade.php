@@ -61,8 +61,11 @@
                 </div>
             </div>
             <div class="box-footer">
-                <button type="submit" class="btn btn-primary btn-flat pull-right">{{ trans('core::core.button.update') }}</button>
-                <a class="btn btn-danger pull-right btn-flat" href="{{ route('admin.module.module.index')}}"><i class="fa fa-times"></i> {{ trans('core::core.button.cancel') }}</a>
+                <div class="btn-group pull-right">A
+                    <a class="btn btn-default btn-flat" href="{{ route('admin.module.module.index')}}"><i class="fa fa-times"></i> {{ trans('core::core.button.cancel') }}</a>
+                    <a href="{{ route('admin.module.module.reject', $module->id) }}" class="btn btn-warning btn-flat ">Reject</a>
+                    <a href="{{ route('admin.module.module.validate', $module->id) }}" class="btn btn-success btn-flat ">Validate</a>
+                </div>
             </div>
         </div>
     </div>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Modules\Module\Entities\Module;
 use Modules\Module\Repositories\ModuleRepository;
 use Modules\Core\Http\Controllers\Admin\AdminBaseController;
+use PhpParser\Node\Expr\BinaryOp\Mod;
 
 class ModuleController extends AdminBaseController
 {
@@ -89,6 +90,16 @@ class ModuleController extends AdminBaseController
     public function view(Module $module)
     {
         return view('module::admin.modules.view', compact('module'));
+    }
+
+    public function reject(Module $module)
+    {
+
+    }
+
+    public function validate(Module $module)
+    {
+
     }
 
     /**

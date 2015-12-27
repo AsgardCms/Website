@@ -21,6 +21,8 @@ $router->group(['prefix' =>'/module'], function (Router $router) {
     post('modules', ['as' => 'admin.module.module.store', 'uses' => 'ModuleController@store']);
     get('modules/{modules}/edit', ['as' => 'admin.module.module.edit', 'uses' => 'ModuleController@edit']);
     get('modules/{modules}/view', ['as' => 'admin.module.module.view', 'uses' => 'ModuleController@view']);
+    get('modules/{modules}/reject', ['as' => 'admin.module.module.reject', 'uses' => 'ModuleController@reject']);
+    get('modules/{modules}/validate', ['as' => 'admin.module.module.validate', 'uses' => 'ModuleController@validate']);
     put('modules/{modules}/edit', ['as' => 'admin.module.module.update', 'uses' => 'ModuleController@update']);
     delete('modules/{modules}', ['as' => 'admin.module.module.destroy', 'uses' => 'ModuleController@destroy']);
 });
