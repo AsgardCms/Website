@@ -5,6 +5,18 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Media\Support\Traits\MediaRelation;
 
 /**
+ * @property string packagist_uri
+ * @property string vendor
+ * @property string name
+ * @property string slug
+ * @property string excerpt
+ * @property string description
+ * @property string documentation
+ * @property string changelog
+ * @property integer daily_downloads
+ * @property integer monthly_downloads
+ * @property integer total_downloads
+ * @property integer favourites
  * @property \Carbon\Carbon submitted_at
  * @property \Carbon\Carbon rejected_at
  * @property \Carbon\Carbon published_at
