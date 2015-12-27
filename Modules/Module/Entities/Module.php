@@ -30,4 +30,11 @@ class Module extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    public function submitForApproval()
+    {
+        $this->is_submitted = true;
+
+        return $this->save();
+    }
 }

@@ -1,5 +1,6 @@
 <?php namespace Modules\Module\Repositories\Cache;
 
+use Modules\Module\Entities\Module;
 use Modules\Module\Repositories\ModuleRepository;
 use Modules\Core\Repositories\Cache\BaseCacheDecorator;
 
@@ -23,6 +24,22 @@ class CacheModuleDecorator extends BaseCacheDecorator implements ModuleRepositor
             ->remember("{$this->locale}.{$this->entityName}.allForUser.{$userId}", $this->cacheTime,
                 function () use ($userId) {
                     return $this->repository->allForUser($userId);
+                }
+            );
+    }
+
+    /**
+     * Submit a module into the approval process
+     * @param Module $module
+     * @return bool
+     */
+    public function submitForApproval(Module $module)
+    {
+        return $this->cache
+            ->tags($this->entityName, 'global')
+            ->remember("{$this->locale}.{$this->entityName}.submitForApproval.{$module->id}", $this->cacheTime,
+                function () use ($module) {
+                    return $this->repository->submitForApproval($module);
                 }
             );
     }

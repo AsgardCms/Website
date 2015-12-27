@@ -1,5 +1,6 @@
 <?php namespace Modules\Module\Repositories\Eloquent;
 
+use Modules\Module\Entities\Module;
 use Modules\Module\Repositories\ModuleRepository;
 use Modules\Core\Repositories\Eloquent\EloquentBaseRepository;
 
@@ -19,5 +20,15 @@ class EloquentModuleRepository extends EloquentBaseRepository implements ModuleR
         $data['slug'] = str_slug($data['vendor']) . '_' . str_slug($data['name']);
 
         return $this->model->create($data);
+    }
+
+    /**
+     * Submit a module into the approval process
+     * @param Module $module
+     * @return bool
+     */
+    public function submitForApproval(Module $module)
+    {
+        return $module->submitForApproval();
     }
 }
