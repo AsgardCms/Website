@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="3u 12u(mobilep)">
-                        <input type="submit" value="Load" class="fit" @click.prevent="fetchData">
+                        <a href="" class="fit fetchDataButton button" @click.prevent="fetchData">Load</a>
                     </div>
                 </div>
                 <div class="row uniform 50%">
@@ -141,6 +141,8 @@
                 },
                 methods: {
                     fetchData: function () {
+                        var $fetchDataButton = $('.fetchDataButton');
+                        $fetchDataButton.html('<i class="fa fa-spinner fa-pulse"></i> Loading');
                         this.$http.post(routes.modulePackagistData, {packagist_uri: this.packagist_uri}, function (data) {
                             this.vendor = data.vendor;
                             this.name = data.name;
@@ -150,12 +152,13 @@
                             this.monthly_downloads = data.monthly_downloads;
                             this.daily_downloads = data.daily_downloads;
                             descriptionMde.value(data.description);
+                        }).success(function () {
+                            $fetchDataButton.html('Data imported');
+                            setTimeout(function () {
+                                $fetchDataButton.html('Load');
+                            }, 1000);
                         });
                     }
-                },
-                ready() {
-//                    descriptionMde.value(oldInput.description);
-//                    documentationMde.value(oldInput.documentation);
                 }
             })
         });
