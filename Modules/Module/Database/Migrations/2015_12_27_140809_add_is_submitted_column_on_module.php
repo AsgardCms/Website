@@ -13,7 +13,7 @@ class AddIsSubmittedColumnOnModule extends Migration
     public function up()
     {
         Schema::table('module__modules', function (Blueprint $table) {
-            $table->timestamp('submitted_at')->after('favourites');
+            $table->timestamp('submitted_at')->after('favourites')->nullable()->default(null);
         });
     }
 
