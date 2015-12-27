@@ -69,4 +69,11 @@ class ModuleController extends BasePublicController
 
         return redirect()->route('p.modules.createGallery', $module->id);
     }
+
+    public function submit(Module $module)
+    {
+        $this->moduleRepository->submitForApproval($module);
+
+        return view('module::public.modules.thank-you');
+    }
 }

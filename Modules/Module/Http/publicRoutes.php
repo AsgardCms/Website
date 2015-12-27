@@ -13,4 +13,5 @@ $router->group(['middleware' => 'logged.in'], function (Router $router) {
     get('account/modules/{singleModule}/createGallery', ['uses' => 'Frontend\ModuleController@createGallery', 'as' => 'p.modules.createGallery']);
     get('account/modules/{singleModule}/edit', ['uses' => 'Frontend\ModuleController@edit', 'as' => 'p.modules.edit']);
     post('account/modules/{singleModule}', ['uses' => 'Frontend\ModuleController@update', 'as' => 'p.modules.update']);
+    get('account/modules/{singleModule}/submit', ['uses' => 'Frontend\ModuleController@submit', 'as' => 'p.modules.submit']);
 });
