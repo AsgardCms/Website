@@ -80,7 +80,7 @@
                 </div>
                 <div class="row uniform">
                     <div class="12u">
-                        <ul class="actions">
+                        <ul class="actions pull-right">
                             <li><input type="submit" value="Go to next step"></li>
                         </ul>
                     </div>
