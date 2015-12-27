@@ -96,6 +96,16 @@ class Module extends Model
         return $this->submitted_at !== null;
     }
 
+    public function isPublished()
+    {
+        return $this->published_at !== null;
+    }
+
+    public function isRejected()
+    {
+        return $this->rejected_at !== null;
+    }
+
     public function getImagesAttribute()
     {
         return $this->files()->where('zone', 'module_gallery')->get();
