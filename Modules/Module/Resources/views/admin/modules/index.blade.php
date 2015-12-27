@@ -29,6 +29,9 @@
                         <thead>
                         <tr>
                             <th>{{ trans('core::core.table.created at') }}</th>
+                            <th>Waiting review</th>
+                            <th>Packagist URL</th>
+                            <th>Author</th>
                             <th data-sortable="false">{{ trans('core::core.table.actions') }}</th>
                         </tr>
                         </thead>
@@ -39,6 +42,20 @@
                             <td>
                                 <a href="{{ route('admin.module.module.edit', [$module->id]) }}">
                                     {{ $module->created_at }}
+                                </a>
+                            </td>
+                            <td>
+                                <a href="{{ route('admin.module.module.edit', [$module->id]) }}">
+                                    <?php if ($module->isInReview()): ?>
+                                        <span class="label label-danger">Awaiting review</span>
+                                    <?php else: ?>
+                                        <span class="label label-default">W.I.P.</span>
+                                    <?php endif; ?>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="{{ route('admin.module.module.edit', [$module->id]) }}">
+                                    {{ $module->packagist_url }}
                                 </a>
                             </td>
                             <td>
@@ -54,6 +71,9 @@
                         <tfoot>
                         <tr>
                             <th>{{ trans('core::core.table.created at') }}</th>
+                            <th>Waiting review</th>
+                            <th>Packagist URL</th>
+                            <th>Author</th>
                             <th>{{ trans('core::core.table.actions') }}</th>
                         </tr>
                         </tfoot>

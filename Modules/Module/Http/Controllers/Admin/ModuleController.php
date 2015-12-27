@@ -29,9 +29,9 @@ class ModuleController extends AdminBaseController
      */
     public function index()
     {
-        //$modules = $this->module->all();
+        $modules = $this->module->all();
 
-        return view('module::admin.modules.index', compact(''));
+        return view('module::admin.modules.index', compact('modules'));
     }
 
     /**
