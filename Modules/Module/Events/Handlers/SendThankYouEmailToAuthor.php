@@ -20,7 +20,7 @@ class SendThankYouEmailToAuthor
     {
         $module = $event->module;
 
-        $this->mailer->send('module::emails.thank-you', compact('module'), function (Message $message) use ($module) {
+        $this->mailer->queue('module::emails.thank-you', compact('module'), function (Message $message) use ($module) {
             $message->subject('AsgardCms: Module submitted');
             $message->to($module->user->email);
         });
