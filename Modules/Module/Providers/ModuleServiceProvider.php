@@ -1,6 +1,7 @@
 <?php namespace Modules\Module\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Modules\Module\Http\Middleware\GuardSubmittedModules;
 
 class ModuleServiceProvider extends ServiceProvider
 {
@@ -19,6 +20,11 @@ class ModuleServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerBindings();
+    }
+
+    public function boot()
+    {
+        $this->app['router']->middleware('guard.submitted', GuardSubmittedModules::class);
     }
 
     /**
