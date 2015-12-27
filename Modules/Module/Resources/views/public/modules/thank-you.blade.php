@@ -14,6 +14,8 @@
                     <strong>Thank you</strong> for submitting your module! <br>
                     We're starting our review process and will let you know if you module has been accepted. Please do keep in mind only the best module with perfect quality will be accepted.
                 </p>
+                <p>It is possible we contact your to add changes to the module to make it better for the end user.</p>
+                <p>Happy developing!</p>
             </div>
         </div>
     </section>
