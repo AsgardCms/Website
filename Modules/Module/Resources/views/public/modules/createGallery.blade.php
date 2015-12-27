@@ -62,15 +62,6 @@
                         }
                     });
                 };
-                this.on("addedfile", function(file) {
-                    var removeButton = Dropzone.createElement("<button class='button small' style='margin-top: 10px'>Remove file</button>");
-                    removeButton.addEventListener("click", function(e) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        self.deleteTheFile(savedImage);
-                    });
-                    file.previewElement.appendChild(removeButton);
-                });
                 if (typeof savedImages !== 'undefined' && Array.isArray(savedImages)) {
                     savedImages.forEach(function (savedImage) {
                         var removeButton = Dropzone.createElement("<button class='button small' style='margin-top: 10px'>Remove file</button>");
