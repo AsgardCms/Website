@@ -13,17 +13,17 @@ class Module extends Presenter
 
     public function status()
     {
-        if ($this->entity->isInReview() === true) {
-            return '<span class="label label-danger">Awaiting review</span>';
-        }
-        if ($this->entity->isInReview() === false) {
-            return '<span class="label label-default">W.I.P.</span>';
-        }
         if ($this->entity->isPublished() === true) {
             return '<span class="label label-success">Online</span>';
         }
         if ($this->entity->isRejected() === true) {
             return '<span class="label label-danger">Rejected</span>';
+        }
+        if ($this->entity->isInReview() === true) {
+            return '<span class="label label-danger">Awaiting review</span>';
+        }
+        if ($this->entity->isInReview() === false) {
+            return '<span class="label label-default">W.I.P.</span>';
         }
 
         return '<span class="label label-default">Unknown</span>';
