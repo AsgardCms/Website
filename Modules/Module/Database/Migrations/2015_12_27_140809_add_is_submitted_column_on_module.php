@@ -13,7 +13,7 @@ class AddIsSubmittedColumnOnModule extends Migration
     public function up()
     {
         Schema::table('module__modules', function (Blueprint $table) {
-            $table->boolean('is_submitted')->default(false)->after('is_published');
+            $table->timestamp('submitted_at')->after('favourites');
         });
     }
 
@@ -24,7 +24,7 @@ class AddIsSubmittedColumnOnModule extends Migration
     public function down()
     {
         Schema::table('module__modules', function (Blueprint $table) {
-            $table->dropColumn('is_submitted');
+            $table->dropColumn('submitted_at');
         });
     }
 }
