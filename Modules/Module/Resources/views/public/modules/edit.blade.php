@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="row uniform 50%">
-                    <div class="12u{{ $errors->has('category') ? ' has-error' : '' }}">
+                    <div class="12u{{ $errors->has('category_id') ? ' has-error' : '' }}">
                         <div class="select-wrapper">
                             <select name="category_id" id="category" v-model="category">
                                 <option value="">- Category -</option>
@@ -60,7 +60,7 @@
                                 <option value="{{ $category->id }}">{{ $category->name }}</option>
                                 <?php endforeach; ?>
                             </select>
-                            {!! $errors->first('category', '<span class="help-block">:message</span>') !!}
+                            {!! $errors->first('category_id', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
                 </div>
