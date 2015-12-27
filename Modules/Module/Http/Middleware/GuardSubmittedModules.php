@@ -11,7 +11,7 @@ class GuardSubmittedModules
     public function handle($request, \Closure $next)
     {
         if ($request->singleModule->isInReview()) {
-            return redirect()->route('p.modules.index')->with('message', 'You cannot edit a module in review.');
+            return redirect()->route('p.modules.index')->with('warning', 'You cannot edit a module in review.');
         }
 
         return $next($request);
