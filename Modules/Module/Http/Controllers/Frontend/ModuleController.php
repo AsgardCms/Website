@@ -32,14 +32,14 @@ class ModuleController extends BasePublicController
     {
         $modules = $this->moduleRepository->allForUser($this->auth->check()->id);
 
-        return view('module::public.modules.index', compact('modules'));
+        return view('module::account.modules.index', compact('modules'));
     }
 
     public function create()
     {
         $categories = $this->categoryRepository->all();
 
-        return view('module::public.modules.create', compact('categories'));
+        return view('module::account.modules.create', compact('categories'));
     }
 
     public function store(CreateModuleRequest $request)
@@ -53,14 +53,14 @@ class ModuleController extends BasePublicController
     {
         $images = $fileRepository->findMultipleFilesByZoneForEntity('module_gallery', $module);
 
-        return view('module::public.modules.createGallery', compact('module', 'images'));
+        return view('module::account.modules.createGallery', compact('module', 'images'));
     }
 
     public function edit(Module $module)
     {
         $categories = $this->categoryRepository->all();
 
-        return view('module::public.modules.edit', compact('module', 'categories'));
+        return view('module::account.modules.edit', compact('module', 'categories'));
     }
 
     public function update(Module $module, UpdateModuleRequest $request)
@@ -82,6 +82,6 @@ class ModuleController extends BasePublicController
 
     public function thankYou(Module $module)
     {
-        return view('module::public.modules.thank-you');
+        return view('module::account.modules.thank-you');
     }
 }
