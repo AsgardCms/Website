@@ -73,6 +73,6 @@ class Module extends Model
      */
     public function isInReview()
     {
-        return $this->submitted_at !== '0000-00-00 00:00:00';
+        return $this->submitted_at !== null;
     }
 }
