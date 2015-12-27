@@ -44,4 +44,13 @@ class Module extends Model
 
         return $this->save();
     }
+
+    /**
+     * Is the current module in review ?
+     * @return bool
+     */
+    public function isInReview()
+    {
+        return (bool) $this->is_submitted;
+    }
 }
