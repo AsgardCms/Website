@@ -13,7 +13,7 @@
                 @include('profile::public.partials.sidebar')
             </div>
             <div class="10u content" id="app">
-                <form action="" class="dropzone"></form>
+                <form action="" class="dropzone">{!! csrf_field() !!}</form>
                 <div class="row uniform">
                     <div class="12u">
                         <ul class="actions pull-right">
@@ -63,7 +63,7 @@
                     });
                 };
                 this.on("addedfile", function(file) {
-                    var removeButton = Dropzone.createElement("<button>Remove file</button>");
+                    var removeButton = Dropzone.createElement("<button class='button small' style='margin-top: 10px'>Remove file</button>");
                     removeButton.addEventListener("click", function(e) {
                         e.preventDefault();
                         e.stopPropagation();
