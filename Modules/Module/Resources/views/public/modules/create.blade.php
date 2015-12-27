@@ -18,7 +18,6 @@
                 @include('profile::public.partials.sidebar')
             </div>
             <div class="10u content" id="app">
-                <a href="{{ route('p.modules.index') }}" class="button small pull-right"><i class="fa fa-arrow-circle-o-left"></i> Back</a>
                 {!! Form::open(['route' => 'p.modules.store']) !!}
                 <input type="hidden" name="user_id" value="{{ $currentUser->id }}">
                 <input type="hidden" v-model="favourites" name="favourites">
@@ -81,6 +80,7 @@
                 <div class="row uniform">
                     <div class="12u">
                         <ul class="actions pull-right">
+                            <li><a href="{{ route('p.modules.index') }}">Back to index</a></li>
                             <li><input type="submit" value="Go to next step"></li>
                         </ul>
                     </div>
