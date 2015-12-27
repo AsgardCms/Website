@@ -14,8 +14,8 @@ class AddExtraTimestampsColumnsOnModule extends Migration
     {
         Schema::table('module__modules', function (Blueprint $table) {
             $table->dropColumn('is_published');
-            $table->timestamp('published_at')->after('submitted_at');
-            $table->timestamp('rejected_at')->after('submitted_at');
+            $table->timestamp('published_at')->after('submitted_at')->nullable()->default(null);
+            $table->timestamp('rejected_at')->after('submitted_at')->nullable()->default(null);
             $table->renameColumn('packagist_url', 'packagist_uri');
         });
     }
