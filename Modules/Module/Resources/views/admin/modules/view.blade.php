@@ -12,6 +12,11 @@
 @stop
 
 @section('styles')
+    <style>
+        .CodeMirror {
+            height: 300px;
+        }
+    </style>
     {!! Theme::script('js/vendor/ckeditor/ckeditor.js') !!}
     {!! Theme::style('css/vendor/iCheck/flat/blue.css') !!}
 @stop
@@ -22,9 +27,37 @@
             <div class="box box-solid">
                 <div class="box-body">
                     <dl class="dl-horizontal">
-                        <dt>Packagist url</dt>
-                        <dd>{{ $module->packagist_url }}</dd>
+                        <dt>Submitted at</dt>
+                        <dd>
+                            {{ $module->submitted_at }}
+                        </dd>
+                        <dt>Packagist uri</dt>
+                        <dd>
+                            {{ $module->packagist_uri }}
+                            <a href="{{ $module->present()->packagistUrl }}" target="_blank" class="btn btn-primary btn-flat btn-xs">View On packagist</a>
+                        </dd>
+                        <dt>Excerpt</dt>
+                        <dd>
+                            {{ $module->excerpt }}
+                        </dd>
+                        <dt>Category</dt>
+                        <dd>
+                            {{ $module->category->name }}
+                        </dd>
+                        <dt>Author</dt>
+                        <dd>
+                            {{ $module->user->present()->fullName }} ({{ $module->user->email }})
+                        </dd>
                     </dl>
+                    <hr>
+                    <div class="form-group">
+                        {!! Form::label('description', 'Description') !!}
+                        <textarea class="form-control descriptionMde" name="description" id="description">{{ $module->description }}</textarea>
+                    </div>
+                    <div class="form-group">
+                        {!! Form::label('documentation', 'Documentation') !!}
+                        <textarea class="form-control documentationMde" name="documentation" id="documentation">{{ $module->documentation }}</textarea>
+                    </div>
                 </div>
             </div>
             <div class="box-footer">
@@ -61,16 +94,8 @@
                 checkboxClass: 'icheckbox_flat-blue',
                 radioClass: 'iradio_flat-blue'
             });
-
-            $('input[type="checkbox"]').on('ifChecked', function(){
-                $(this).parent().find('input[type=hidden]').remove();
-            });
-
-            $('input[type="checkbox"]').on('ifUnchecked', function(){
-                var name = $(this).attr('name'),
-                    input = '<input type="hidden" name="' + name + '" value="0" />';
-                $(this).parent().append(input);
-            });
+            var descriptionMde = new SimpleMDE({element: $(".descriptionMde")[0]});
+            var documentationMde = new SimpleMDE({element: $(".documentationMde")[0]});
         });
     </script>
 @stop
