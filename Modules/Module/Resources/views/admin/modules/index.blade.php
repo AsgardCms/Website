@@ -30,7 +30,7 @@
                         <tr>
                             <th>{{ trans('core::core.table.created at') }}</th>
                             <th>Waiting review</th>
-                            <th>Packagist URL</th>
+                            <th>Packagist URI</th>
                             <th>Author</th>
                             <th data-sortable="false">{{ trans('core::core.table.actions') }}</th>
                         </tr>
@@ -55,7 +55,7 @@
                             </td>
                             <td>
                                 <a href="{{ route('admin.module.module.view', [$module->id]) }}">
-                                    {{ $module->packagist_url }}
+                                    {{ $module->packagist_uri }}
                                 </a>
                             </td>
                             <td>
@@ -77,7 +77,7 @@
                         <tr>
                             <th>{{ trans('core::core.table.created at') }}</th>
                             <th>Waiting review</th>
-                            <th>Packagist URL</th>
+                            <th>Packagist URI</th>
                             <th>Author</th>
                             <th>{{ trans('core::core.table.actions') }}</th>
                         </tr>
