@@ -48,6 +48,10 @@
                         <dd>
                             {{ $module->user->present()->fullName }} ({{ $module->user->email }})
                         </dd>
+                        <dt>Status</dt>
+                        <dd>
+                            {!! $module->present()->status !!}
+                        </dd>
                     </dl>
                     <hr>
                     <div class="form-group">
@@ -65,13 +69,15 @@
                     <?php endforeach; ?>
                 </div>
             </div>
+            <?php if ($module->isInReview()): ?>
             <div class="box-footer">
-                <div class="btn-group pull-right">
-                    <a class="btn btn-default btn-flat" href="{{ route('admin.module.module.index')}}"><i class="fa fa-times"></i> {{ trans('core::core.button.cancel') }}</a>
-                    <a href="{{ route('admin.module.module.reject', $module->id) }}" class="btn btn-warning btn-flat ">Reject</a>
-                    <a href="{{ route('admin.module.module.publish', $module->id) }}" class="btn btn-success btn-flat ">Publish</a>
-                </div>
+                    <div class="btn-group pull-right">
+                        <a class="btn btn-default btn-flat" href="{{ route('admin.module.module.index')}}"><i class="fa fa-times"></i> {{ trans('core::core.button.cancel') }}</a>
+                        <a href="{{ route('admin.module.module.reject', $module->id) }}" class="btn btn-warning btn-flat ">Reject</a>
+                        <a href="{{ route('admin.module.module.publish', $module->id) }}" class="btn btn-success btn-flat ">Publish</a>
+                    </div>
             </div>
+            <?php endif; ?>
         </div>
     </div>
 @stop
