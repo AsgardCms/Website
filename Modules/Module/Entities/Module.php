@@ -25,4 +25,9 @@ class Module extends Model
         'monthly_downloads',
         'daily_downloads',
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }
