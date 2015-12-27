@@ -17,7 +17,11 @@
                 <ul>
                     <?php foreach ($modules as $module): ?>
                         <li>
-                            <a href="{{ route('p.modules.edit', $module->id) }}">{{ $module->vendor . '/' . $module->name }}</a>
+                            <?php if ($module->isInReview()): ?>
+                                {{ $module->packagist_url }} <em>(In Review)</em>
+                            <?php else: ?>
+                                <a href="{{ route('p.modules.edit', $module->id) }}">{{ $module->packagist_url }}</a>
+                            <?php endif; ?>
                         </li>
                     <?php endforeach; ?>
                 </ul>
