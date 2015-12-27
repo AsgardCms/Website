@@ -1,5 +1,6 @@
 <?php namespace Modules\Module\Entities;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Media\Support\Traits\MediaRelation;
 
@@ -47,7 +48,7 @@ class Module extends Model
 
     public function submitForApproval()
     {
-        $this->is_submitted = true;
+        $this->submitted_at = Carbon::now();
 
         return $this->save();
     }
