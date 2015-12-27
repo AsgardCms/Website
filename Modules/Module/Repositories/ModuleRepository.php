@@ -17,4 +17,10 @@ interface ModuleRepository extends BaseRepository
      * @return bool
      */
     public function submitForApproval(Module $module);
+
+    /**
+     * Get all the published modules
+     * @return \Illuminate\Database\Eloquent\Collection
+     */
+    public function allPublished();
 }

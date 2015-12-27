@@ -43,4 +43,19 @@ class CacheModuleDecorator extends BaseCacheDecorator implements ModuleRepositor
                 }
             );
     }
+
+    /**
+     * Get all the published modules
+     * @return \Illuminate\Database\Eloquent\Collection
+     */
+    public function allPublished()
+    {
+        return $this->cache
+            ->tags($this->entityName, 'global')
+            ->remember("{$this->locale}.{$this->entityName}.allPublished", $this->cacheTime,
+                function () {
+                    return $this->repository->allPublished();
+                }
+            );
+    }
 }

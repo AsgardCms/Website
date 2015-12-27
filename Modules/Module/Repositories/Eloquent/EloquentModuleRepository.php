@@ -36,4 +36,13 @@ class EloquentModuleRepository extends EloquentBaseRepository implements ModuleR
 
         return $model;
     }
+
+    /**
+     * Get all the published modules
+     * @return \Illuminate\Database\Eloquent\Collection
+     */
+    public function allPublished()
+    {
+        return $this->model->whereNotNull('published_at')->get();
+    }
 }
