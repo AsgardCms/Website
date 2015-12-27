@@ -67,14 +67,14 @@
                 <div class="row uniform 50%">
                     <div class="12u{{ $errors->has('description') ? ' has-error' : '' }}">
                         <label for="description">Description</label>
-                        <textarea name="description" class="descriptionMde" id="description" placeholder="Module Description"></textarea>
+                        <textarea name="description" class="descriptionMde" id="description" placeholder="Module Description">{{ old('description') }}</textarea>
                         {!! $errors->first('description', '<span class="help-block">:message</span>') !!}
                     </div>
                 </div>
                 <div class="row uniform 50%">
                     <div class="12u{{ $errors->has('documentation') ? ' has-error' : '' }}">
                         <label for="documentation">Documentation</label>
-                        <textarea name="documentation" class="documentationMde" id="documentation"></textarea>
+                        <textarea name="documentation" class="documentationMde" id="documentation">{{ old('documentation') }}</textarea>
                         {!! $errors->first('documentation', '<span class="help-block">:message</span>') !!}
                     </div>
                 </div>
