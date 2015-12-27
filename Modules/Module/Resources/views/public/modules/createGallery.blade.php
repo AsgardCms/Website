@@ -13,8 +13,7 @@
                 @include('profile::public.partials.sidebar')
             </div>
             <div class="10u content" id="app">
-                {!! Form::open(['route' => ['p.modules.storeGallery', $module->id], 'files' => true, 'class' => 'dropzone']) !!}
-                {!! Form::close() !!}
+                <form action="" class="dropzone"></form>
             </div>
         </div>
     </section>
