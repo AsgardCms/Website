@@ -68,6 +68,26 @@ class Module extends Model
     }
 
     /**
+     * @return bool
+     */
+    public function publish()
+    {
+        $this->published_at = Carbon::now();
+
+        return $this->save();
+    }
+
+    /**
+     * @return bool
+     */
+    public function reject()
+    {
+        $this->rejected_at = Carbon::now();
+
+        return $this->save();
+    }
+
+    /**
      * Is the current module in review ?
      * @return bool
      */
