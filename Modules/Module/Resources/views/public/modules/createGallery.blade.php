@@ -18,8 +18,8 @@
                 <div class="row uniform">
                     <div class="12u">
                         <ul class="actions pull-right">
-                            <li><a href="{{ route('p.modules.edit', $module->id) }}">Back</a></li>
-                            <li><a href="{{ route('p.modules.submit', $module->id) }}" class="button special">Submit for approval</a></li>
+                            <li><a href="{{ route('account.modules.edit', $module->id) }}">Back</a></li>
+                            <li><a href="{{ route('account.modules.submit', $module->id) }}" class="button special">Submit for approval</a></li>
                         </ul>
                     </div>
                 </div>

@@ -11,9 +11,9 @@
             </div>
             <div class="10u content">
                 @include('partials.notifications')
-                <a href="{{ route('p.modules.create') }}" class="button special small pull-right">Submit a module</a>
+                <a href="{{ route('account.modules.create') }}" class="button special small pull-right">Submit a module</a>
                 <?php if ($modules->count() === 0): ?>
-                    <p>You have no modules. <a href="{{ route('p.modules.create') }}">Submit your first one.</a></p>
+                    <p>You have no modules. <a href="{{ route('account.modules.create') }}">Submit your first one.</a></p>
                 <?php endif; ?>
                 <ul>
                     <?php foreach ($modules as $module): ?>
@@ -21,7 +21,7 @@
                             <?php if ($module->isInReview()): ?>
                                 {{ $module->packagist_uri }} <em>(In Review)</em>
                             <?php else: ?>
-                                <a href="{{ route('p.modules.edit', $module->id) }}">{{ $module->packagist_uri }}</a>
+                                <a href="{{ route('account.modules.edit', $module->id) }}">{{ $module->packagist_uri }}</a>
                             <?php endif; ?>
                         </li>
                     <?php endforeach; ?>

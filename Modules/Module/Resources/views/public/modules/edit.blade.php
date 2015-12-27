@@ -18,7 +18,7 @@
                 @include('profile::public.partials.sidebar')
             </div>
             <div class="10u content" id="app">
-                {!! Form::open(['route' => ['p.modules.update', $module->id]]) !!}
+                {!! Form::open(['route' => ['account.modules.update', $module->id]]) !!}
                 <input type="hidden" name="user_id" value="{{ $currentUser->id }}">
                 <input type="hidden" v-model="favourites" name="favourites">
                 <input type="hidden" v-model="total_downloads" name="total_downloads">
@@ -81,7 +81,7 @@
                 <div class="row uniform">
                     <div class="12u">
                         <ul class="actions pull-right">
-                            <li><a href="{{ route('p.modules.index') }}">Back to index</a></li>
+                            <li><a href="{{ route('account.modules.index') }}">Back to index</a></li>
                             <li><input type="submit" value="Go to next step"></li>
                         </ul>
                     </div>

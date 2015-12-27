@@ -5,6 +5,6 @@
     </li>
     <li class="{{ Request::is('*/account/modules*') ? 'active' : '' }}">
         <i class="fa fa-cubes"></i>
-        <a href="{{ route('p.modules.index') }}">Modules</a>
+        <a href="{{ route('account.modules.index') }}">Modules</a>
     </li>
 </ul>

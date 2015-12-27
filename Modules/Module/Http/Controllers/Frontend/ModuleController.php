@@ -46,7 +46,7 @@ class ModuleController extends BasePublicController
     {
         $module = $this->moduleRepository->create($request->all());
 
-        return redirect()->route('p.modules.createGallery', $module->id);
+        return redirect()->route('account.modules.createGallery', $module->id);
     }
 
     public function createGallery(Module $module, FileRepository $fileRepository)
@@ -67,7 +67,7 @@ class ModuleController extends BasePublicController
     {
         $this->moduleRepository->update($module, $request->all());
 
-        return redirect()->route('p.modules.createGallery', $module->id);
+        return redirect()->route('account.modules.createGallery', $module->id);
     }
 
     public function submit(Module $module)
@@ -77,7 +77,7 @@ class ModuleController extends BasePublicController
         }
         $this->moduleRepository->submitForApproval($module);
 
-        return redirect()->route('p.modules.thankYou', $module->id);
+        return redirect()->route('account.modules.thankYou', $module->id);
     }
 
     public function thankYou(Module $module)
