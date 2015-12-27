@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="3u 12u(mobilep)">
-                        <a href="" class="fit fetchDataButton button" @click.prevent="fetchData">Load</a>
+                        <a href="" class="fit fetchDataButton button" @click.prevent="fetchData" v-show="packagist_uri">Load</a>
                     </div>
                 </div>
                 <div class="row uniform 50%">
