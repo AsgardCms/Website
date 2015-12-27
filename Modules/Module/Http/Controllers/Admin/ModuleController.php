@@ -96,12 +96,16 @@ class ModuleController extends AdminBaseController
 
     public function reject(Module $module)
     {
+        $module->reject();
 
+        return redirect()->route('admin.module.module.index')->withSuccess('Module rejected');
     }
 
     public function publish(Module $module)
     {
+        $module->publish();
 
+        return redirect()->route('admin.module.module.index')->withSuccess('Module published');
     }
 
     /**
