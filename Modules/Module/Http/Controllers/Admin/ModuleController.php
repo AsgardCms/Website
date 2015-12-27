@@ -3,6 +3,8 @@
 use FloatingPoint\Stylist\Facades\ThemeFacade as Theme;
 use Laracasts\Flash\Flash;
 use Illuminate\Http\Request;
+use Modules\Media\Image\Imagy;
+use Modules\Media\Repositories\FileRepository;
 use Modules\Module\Entities\Module;
 use Modules\Module\Repositories\ModuleRepository;
 use Modules\Core\Http\Controllers\Admin\AdminBaseController;
@@ -108,8 +110,16 @@ class ModuleController extends AdminBaseController
      * @param  Module $module
      * @return Response
      */
-    public function destroy(Module $module)
+    public function destroy(Module $module, FileRepository $fileRepository, Imagy $imagy)
     {
+        if ($module->images->count() > 0) {
+            foreach ($module->images as $image) {
+                \DB::table('media__imageables')->whereFileId($image->id)->delete();
+                $file = $fileRepository->find($image->id);
+                $imagy->deleteAllFor($file);
+                $fileRepository->destroy($file);
+            }
+        }
         $this->module->destroy($module);
 
         flash()->success(trans('core::core.messages.resource deleted', ['name' => trans('module::modules.title.modules')]));
