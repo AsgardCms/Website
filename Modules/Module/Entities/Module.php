@@ -31,6 +31,13 @@ class Module extends Model
         return $this->belongsTo(Category::class);
     }
 
+    public function user()
+    {
+        $driver = config('asgard.user.users.driver', 'Sentinel');
+
+        return $this->belongsTo("Modules\\User\\Entities\\{$driver}\\User");
+    }
+
     public function submitForApproval()
     {
         $this->is_submitted = true;
