@@ -74,6 +74,11 @@ class ModuleController extends BasePublicController
     {
         $this->moduleRepository->submitForApproval($module);
 
+        return redirect()->route('p.modules.thankYou', $module->id);
+    }
+
+    public function thankYou(Module $module)
+    {
         return view('module::public.modules.thank-you');
     }
 }
