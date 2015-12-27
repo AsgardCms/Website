@@ -152,10 +152,6 @@
                             descriptionMde.value(data.description);
                         });
                     }
-                },
-                ready() {
-//                    descriptionMde.value(oldInput.description);
-//                    documentationMde.value(oldInput.documentation);
                 }
             })
         });
