@@ -28,6 +28,7 @@
                     <div class="9u 12u(mobilep) {{ $errors->has('packagist_uri') ? ' has-error' : '' }}">
                         <input type="text" name="packagist_uri" id="packagist_uri" placeholder="Packagist vendor/name" v-model="packagist_uri">
                         {!! $errors->first('packagist_uri', '<span class="help-block">:message</span>') !!}
+                        <span class="help-block" v-if="packagist_not_found">Package not found, please double check the given URI.</span>
                     </div>
 
                     <div class="3u 12u(mobilep)">

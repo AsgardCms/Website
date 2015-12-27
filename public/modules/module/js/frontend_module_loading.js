@@ -12,7 +12,8 @@ new Vue({
         total_downloads: oldInput.total_downloads,
         monthly_downloads: oldInput.monthly_downloads,
         daily_downloads: oldInput.daily_downloads,
-        category: oldInput.category
+        category: oldInput.category,
+        packagist_not_found: ''
     },
     methods: {
         fetchData: function () {
@@ -32,6 +33,9 @@ new Vue({
                 setTimeout(function () {
                     $fetchDataButton.html('Load');
                 }, 1000);
+            }).error(function () {
+                this.packagist_not_found = 'Package not found, please double check the given URI.'
+                $fetchDataButton.html('Load');
             });
         }
     }
