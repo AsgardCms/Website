@@ -18,3 +18,4 @@ $router->group(['middleware' => 'logged.in'], function (Router $router) {
     });
     get('account/modules/{singleModule}/thankYou', ['uses' => 'Frontend\ModuleController@thankYou', 'as' => 'account.modules.thankYou']);
 });
+get('modules', ['uses' => 'Frontend\PublicModuleController@index', ['public.modules.index']]);
