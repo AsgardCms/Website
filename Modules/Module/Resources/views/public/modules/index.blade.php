@@ -17,7 +17,7 @@
                 <ul>
                     <?php foreach ($modules as $module): ?>
                         <li>
-                            <a href="">{{ $module->vendor . '/' . $module->name }}</a>
+                            <a href="{{ route('p.modules.edit', $module->id) }}">{{ $module->vendor . '/' . $module->name }}</a>
                         </li>
                     <?php endforeach; ?>
                 </ul>
