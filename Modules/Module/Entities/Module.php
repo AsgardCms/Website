@@ -33,7 +33,7 @@ class Module extends Model
     protected $fillable = [
         'category_id',
         'user_id',
-        'packagist_url',
+        'packagist_uri',
         'is_published',
         'vendor',
         'name',
