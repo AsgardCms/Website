@@ -6,6 +6,7 @@ use Modules\Core\Http\Controllers\BasePublicController;
 use Modules\Media\Repositories\FileRepository;
 use Modules\Module\Entities\Module;
 use Modules\Module\Http\Requests\CreateModuleRequest;
+use Modules\Module\Http\Requests\UpdateModuleRequest;
 use Modules\Module\Repositories\CategoryRepository;
 use Modules\Module\Repositories\ModuleRepository;
 
@@ -53,5 +54,19 @@ class ModuleController extends BasePublicController
         $images = $fileRepository->findMultipleFilesByZoneForEntity('module_gallery', $module);
 
         return view('module::public.modules.createGallery', compact('module', 'images'));
+    }
+
+    public function edit(Module $module)
+    {
+        $categories = $this->categoryRepository->all();
+
+        return view('module::public.modules.edit', compact('module', 'categories'));
+    }
+
+    public function update(Module $module, UpdateModuleRequest $request)
+    {
+        $this->moduleRepository->update($module, $request->all());
+
+        return redirect()->route('p.modules.createGallery', $module->id);
     }
 }
