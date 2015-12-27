@@ -3,6 +3,13 @@
 use Illuminate\Database\Eloquent\Model;
 use Modules\Media\Support\Traits\MediaRelation;
 
+/**
+ * @property \Carbon\Carbon submitted_at
+ * @property \Carbon\Carbon rejected_at
+ * @property \Carbon\Carbon published_at
+ * @property \Carbon\Carbon created_at
+ * @property \Carbon\Carbon updated_at
+ */
 class Module extends Model
 {
     use MediaRelation;
@@ -51,6 +58,6 @@ class Module extends Model
      */
     public function isInReview()
     {
-        return (bool) $this->is_submitted;
+        return $this->submitted_at === '0000-00-00 00:00:00';
     }
 }
