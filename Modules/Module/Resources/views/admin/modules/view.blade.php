@@ -58,6 +58,11 @@
                         {!! Form::label('documentation', 'Documentation') !!}
                         <textarea class="form-control documentationMde" name="documentation" id="documentation">{{ $module->documentation }}</textarea>
                     </div>
+                    <hr>
+                    <h3>Images</h3>
+                    <?php foreach ($module->images as $image): ?>
+                    <img src="{{ $image->path }}" alt=""/>
+                    <?php endforeach; ?>
                 </div>
             </div>
             <div class="box-footer">

@@ -75,4 +75,9 @@ class Module extends Model
     {
         return $this->submitted_at !== null;
     }
+
+    public function getImagesAttribute()
+    {
+        return $this->files()->where('zone', 'module_gallery')->get();
+    }
 }
