@@ -34,7 +34,7 @@ new Vue({
                     $fetchDataButton.html('Load');
                 }, 1000);
             }).error(function () {
-                this.packagist_not_found = 'Package not found, please double check the given URI.'
+                this.packagist_not_found = 'Package not found, please double check the given URI.';
                 $fetchDataButton.html('Load');
             });
         }
