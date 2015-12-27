@@ -1,6 +1,7 @@
 <?php namespace Modules\Module\Repositories\Eloquent;
 
 use Modules\Module\Entities\Module;
+use Modules\Module\Events\ModuleWasSubmittedForApproval;
 use Modules\Module\Repositories\ModuleRepository;
 use Modules\Core\Repositories\Eloquent\EloquentBaseRepository;
 
@@ -29,6 +30,10 @@ class EloquentModuleRepository extends EloquentBaseRepository implements ModuleR
      */
     public function submitForApproval(Module $module)
     {
-        return $module->submitForApproval();
+        $model = $module->submitForApproval();
+
+        event(new ModuleWasSubmittedForApproval($module));
+
+        return $model;
     }
 }
