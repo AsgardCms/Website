@@ -16,6 +16,7 @@ return [
         'edit',
         'update',
         'destroy',
+        'view',
     ],
 // append
 
