@@ -11,6 +11,6 @@ class PublicModuleController extends BasePublicController
 
     public function index()
     {
-        return view();
+        return view('module::public.index');
     }
 }
