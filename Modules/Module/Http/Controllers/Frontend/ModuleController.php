@@ -74,7 +74,13 @@ class ModuleController extends BasePublicController
     public function submit(Module $module)
     {
         if ($module->images->count() < 3) {
-            return redirect()->back()->withError('You need to add at least 3 images');
+            return redirect()->back()->withError('You need to add at least 3 images.');
+        }
+        if ($module->icon_image->count() > 1) {
+            return redirect()->back()->withError('You can only have 1 icon.');
+        }
+        if ($module->icon_image->count() < 1) {
+            return redirect()->back()->withError('You need to upload one icon.');
         }
         $this->moduleRepository->submitForApproval($module);
 
