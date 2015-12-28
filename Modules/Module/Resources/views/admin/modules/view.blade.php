@@ -67,6 +67,11 @@
                     <?php foreach ($module->images as $image): ?>
                     <img src="{{ $image->path }}" alt=""/>
                     <?php endforeach; ?>
+                    <hr>
+                    <h3>Icon</h3>
+                    <?php foreach ($module->icon_image as $image): ?>
+                    <img src="{{ $image->path }}" alt=""/>
+                    <?php endforeach; ?>
                 </div>
             </div>
             <?php if ($module->isInReview()): ?>
