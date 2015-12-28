@@ -51,9 +51,10 @@ class ModuleController extends BasePublicController
 
     public function createGallery(Module $module, FileRepository $fileRepository)
     {
-        $images = $fileRepository->findMultipleFilesByZoneForEntity('module_gallery', $module);
+        $galleryImages = $fileRepository->findMultipleFilesByZoneForEntity('module_gallery', $module);
+        $iconImage = $fileRepository->findMultipleFilesByZoneForEntity('module_icon', $module);
 
-        return view('module::account.modules.createGallery', compact('module', 'images'));
+        return view('module::account.modules.createGallery', compact('module', 'galleryImages', 'iconImage'));
     }
 
     public function edit(Module $module)
