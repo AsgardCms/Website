@@ -43,7 +43,7 @@ class ModuleController extends Controller
     {
         $savedFile = $this->fileService->store($request->file('file'));
 
-        $module->files()->attach($savedFile->id, ['imageable_type' => get_class($module), 'zone' => 'module_gallery']);
+        $module->files()->attach($savedFile->id, ['imageable_type' => get_class($module), 'zone' => $request->get('zone')]);
     }
 
     public function unlink(Module $module, Request $request, FileRepository $fileRepository, Imagy $imagy)
