@@ -110,4 +110,9 @@ class Module extends Model
     {
         return $this->files()->where('zone', 'module_gallery')->get();
     }
+
+    public function getIconImageAttribute()
+    {
+        return $this->files()->where('zone', 'module_icon')->get();
+    }
 }
