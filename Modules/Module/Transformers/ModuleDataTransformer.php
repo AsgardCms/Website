@@ -39,7 +39,7 @@ class ModuleDataTransformer
             'vendor' => $vendor,
             'name' => $name,
             'excerpt' => $package->getDescription(),
-            'description' => $this->diskFactory->disk('local')->get('storage/modules/' . $package->getName() . '/readme.md'),
+            'description' => $this->getReadmeFileFor($package),
             'favourites' => $package->getFavers(),
             'total_downloads' => $package->getDownloads()->getTotal(),
             'monthly_downloads' => $package->getDownloads()->getMonthly(),
@@ -50,5 +50,22 @@ class ModuleDataTransformer
     private function splitVendorAndName($vendorName)
     {
         return explode('/', $vendorName);
+    }
+
+    /**
+     * Get the readme file contents if one exists
+     * @param Package $package
+     * @return string
+     */
+    private function getReadmeFileFor(Package $package)
+    {
+        $readmeLocation = 'storage/modules/' . $package->getName();
+        if ($this->diskFactory->disk('local')->exists($readmeLocation . '/readme.md')) {
+            return $this->diskFactory->disk('local')->get($readmeLocation . '/readme.md');
+        }
+        if ($this->diskFactory->disk('local')->exists($readmeLocation . '/README.md')) {
+            return $this->diskFactory->disk('local')->get($readmeLocation . '/README.md');
+        }
+        return '';
     }
 }
