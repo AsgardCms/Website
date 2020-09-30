@@ -1,8 +1,10 @@
 ## AsgardCMS.com website
 
-This is the repository holding the asgardcms.com website
+This repository is responsible for holding asgardcms.com website.
 
-To install this locally:
+AsgardCms is a Laravel 5 based CMS that utilises the power and flexibility of the framework. The multilingual support out of the box is fantastic and the growing community is friendly and helpful! Simon Funk.
+
+Step to install this project locally is:
 
 - `git clone`
 - `composer install`
@@ -12,3 +14,5 @@ To install this locally:
 - `vagrant up`
 - `vagrant ssh`
 - `php artisan asgard:install`
+
+Hope you like my projec!!
