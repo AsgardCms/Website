@@ -1,4 +1,4 @@
-## AsgardCMS.com website
+## AsgardCMS.com helpful website
 
 This is the repository holding the asgardcms.com website
 
