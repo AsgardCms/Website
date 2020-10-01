@@ -12,4 +12,4 @@ To install this locally:
 - `vagrant up`
 - `vagrant ssh`
 - `php artisan asgard:install`
-- • keep using and give us feedback
+- keep using and give us feedback
