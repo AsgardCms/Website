@@ -1,8 +1,8 @@
-## AsgardCMS.com website
+## AsgardCMS.com website details:-
 
-This is the repository holding the asgardcms.com website
+This is the repository containing the asgardcms.com website data and backend program,
 
-To install this locally:
+To install this locally, follow these steps in-order:
 
 - `git clone`
 - `composer install`
@@ -12,3 +12,5 @@ To install this locally:
 - `vagrant up`
 - `vagrant ssh`
 - `php artisan asgard:install`
+
+After this you are done with downloading.
