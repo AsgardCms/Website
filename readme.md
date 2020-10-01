@@ -2,13 +2,13 @@
 
 This is the repository holding the asgardcms.com website
 
-To install this locally:
+to install this locally:
 
 - `git clone`
 - `composer install`
 - `php ./vendor/bin/homestead make --after --aliases`
 - configure `Homstead.yaml`
-- Add site to `/etc/hosts`
+- add site to `/etc/hosts`
 - `vagrant up`
 - `vagrant ssh`
 - `php artisan asgard:install`
