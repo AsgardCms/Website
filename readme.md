@@ -4,7 +4,7 @@ This is the repository holding the asgardcms.com website
 
 To install this locally:
 
-- `git clone`
+- `do git clone`
 - `composer install`
 - `php ./vendor/bin/homestead make --after --aliases`
 - configure `Homstead.yaml`
